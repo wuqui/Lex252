@@ -1,5 +1,8 @@
-# Lex252 — Lexicology and Lexicography (Seminar)
+---
+toc: false
+author: "Dr. Quirin Würschinger, LMU Munich"
+---
 
-Welcome to the course website.
+# Schedule
 
 {{< include schedule.qmd >}}
