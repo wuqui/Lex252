@@ -1,3 +1,5 @@
+date: last-modified
+
 project:
   type: website
   output-dir: _site
@@ -6,10 +8,9 @@ site-url: https://wuqui.github.io/Lex252/
 
 website:
   title: "Lex252"
-  description: "Lexicology and Lexicography (Seminar)"
+  description: "Lexicology and Lexicography"
   navbar:
     left:
-      # (no Home / Schedule in navbar per preference)
       - text: "Sessions"
         menu:
           - text: "01 — Introduction"
@@ -26,10 +27,4 @@ format:
 filters:
   - auto-dark
 
-## Author is set per-slide; avoid global author on pages
-# author: "Quirin Würschinger, LMU Munich"
-
 bibliography: references.bib
-
-
-
