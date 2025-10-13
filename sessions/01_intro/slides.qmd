@@ -3,6 +3,8 @@ title: "Session 01 — Introduction"
 subtitle: "Lexicology and Lexicography"
 author: "Quirin Würschinger, LMU Munich"
 date: 2025-10-13
+filters:
+  - auto-dark
 format:
   clean-revealjs:
     slide-level: 0

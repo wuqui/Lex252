@@ -23,6 +23,9 @@ format:
     toc: true
     css: custom.css
 
+filters:
+  - auto-dark
+
 ## Author is set per-slide; avoid global author on pages
 # author: "Quirin Würschinger, LMU Munich"
 
