@@ -1,13 +1,15 @@
 ---
-title: "Session 01 — Introduction"
-subtitle: "Lexicology and Lexicography"
-author: "Quirin Würschinger, LMU Munich"
-date: 2025-10-13
+title: "01 — Organisation and introduction"
+subtitle: "Lexicology and Lexicography (Seminar)"
+author: "Dr. Quirin Würschinger, LMU Munich"
+date: 2025-10-21
+metadata:
+  linkprefix: ../../
 filters:
   - auto-dark
 format:
   clean-revealjs:
-    slide-level: 0
+    slide-level: 2
     css: ../../custom.css
     minScale: 0.2
     maxScale: 2.0
@@ -20,14 +22,163 @@ revealjs-plugins:
   - excalidraw
 ---
 
-# Welcome
+# Organisation
 
-- Course scope and expectations.
+- Course website: <https://wuqui.github.io/Lex252/>
+- Time: Tuesdays 10:15–11:45 (LMU term calendar applies).
+- Slides are on the website under Sessions; each page embeds the slides.
+
+
+## Registration
+
+- Any open issues? Module requirements, exam registration, etc.
+
+
+## Course description
+
+- This course provides an in-depth exploration of English **lexicology** and **lexicography**, 
+- examining **key areas** including word-formation processes, semantic analysis of word senses, and patterns of lexical innovation, variation and change. 
+- Grounded in **empirical language data** from dictionaries and corpora, students will develop analytical skills for studying lexis through 
+    - **dictionaries** like the Oxford English Dictionary (OED) and Wiktionary, 
+    - and **corpora** such as BNC 2014 Spoken and COCA on the corpus platforms Sketch Engine and english-corpora.org. 
+- The programme emphasises **practical experience** in frequency analysis, collocation analysis, and Word Sketches through collaborative group projects, enabling students to use authentic data and empirical methods for lexicological research projects.
+
+
+## Schedule
+
+{{< include ../../schedule.qmd >}}
+
+
+## Literature
+
+### Key textbooks
+
+Bauer, Laurie. 2022. *An Introduction to English Lexicology*. Edinburgh University Press.
+
+Lipka, Leonhard. 2002. *English Lexicology: Lexical Structure, Word Semantics and Word-Formation*. Tübingen: Narr.
+
+Schmid, Hans-Jörg. 2016. *English Morphology and Word-Formation - An Introduction*. 2nd ed. Berlin: Erich Schmidt Verlag.
+
+
+## Requirements
+
+- Active participation and preparation.
+- Weekly readings and short exercises.
+- Term paper.
+
+Special case: Modulprüfung → see next slide.
 
 ___
 
-## What is lexicology?
+### Modulprüfung
 
-- Study of the lexicon and word meaning.
+::: {.smaller}
+Wichtige Information nur (!) für Studierende im **BA Anglistik (PStO 2019**, Studienbeginn WiSe 2019/20 oder später), die diese Lehrveranstaltung als **Modul WP 1.2** belegt haben:
+
+- Modul WP 1.2 ist nur ein Teil des Gesamtmoduls WP 1, das mit einer **Gesamt-Modulprüfung** (gemeinsame Prüfung über beide Modulteile hinweg) endet, die erfordert, dass **beide Modulteile besucht wurden**. 
+- Bitte überprüfen Sie deswegen anhand der Übersicht unten und Ihres Stundenplans noch einmal, ob Sie in diesem Semester auch tatsächlich eine Veranstaltung **im anderen Modulteil WP 1.1** belegt haben und für diese auch zugelassen wurden. Sollte dies nicht der Fall sein, wenden Sie sich bitte schnellstmöglich an die Studiengangskoordination ([studienberatung@anglistik.uni-muenchen.de](mailto:studienberatung@anglistik.uni-muenchen.de)). 
+- Die **Anmeldung zur Gesamt-Modulprüfung** erfolgt im Prüfungsanmeldezeitraum (7.1. – 23.1.2026). Bitte melden Sie sich dann bei dem/der Dozent*in an, bei dem/der Sie die Veranstaltung für das **Modul WP 1.1** besuchen.
+- Das gleiche gilt für folgende Module in anderen Studiengängen: TUM MA  (neu), Modul WP 11.2 (> WP 11.1 muss im gleichen Semester besucht werden)
+
+→ All of The assessment for WP 1 takes place in WP 1.1. There is no assessment in this course if you take it as WP 1.2. 
+:::
+
+___
+
+![](img/wp-1.1.png)
+
+![](img/wp-1.2.png)
+
+
+
+# Introduction to Lexicology and Lexicography
+
+## What is a *word*?
+
+- Distinguish between types/lexemes, word‑forms, and tokens.
+- Example tokens: *drink*, *drank*, *drinking*.
+
+___
+
+### How many words?
+
+> Paul was drinking beer in his favourite bar. He enjoyed having a drink every now and then. He thought he did not drink much, but his wife thought that he drank.
+
+::: {.fragment}
+→ 31 running words/tokens
+:::
+
+___
+
+### Types vs tokens 
+
+|     | type       | token      |
+| --- | ---------- | ---------- |
+| 1   | DRINK $^v$ | *drinking* |
+|     |            | *drink*    |
+|     |            | *drunk*    |
+| 2   | DRINK $^n$ | *drink*    |
+
+– *tokens*: *he*$^1$, *he*$^2$ …  
+– *word forms*: *drinking*, *drank* are word‑forms of DRINK$^v$  
+– *types/lexemes*: e.g. DRINK$^v$
+
+___
+
+## The linguistic sign (de Saussure)
+
+![](img/linguistic-sign-model.png){width="600"}
+
+___
+
+## Types of signs
+
+- indices: relation of naturalness
+- icons: relation of similarity
+- symbols: relation of arbitrariness
+
+___
+
+## Function of words in communication
+
+Organon model (Bühler):
+
+![](img/organon-model.png){width="600"}
+
+___
+
+## Structure in the lexicon
+
+### internal vs external
+  
+![](img/lexicon-structure-internal-external.png){width="500"}
+
+___
+
+### paradigmatic vs syntagmatic
+  
+![](img/lexicon-structure-paradigmatic-syntagmatic.png){width="500"}
+
+
+## Quote
+
+> “What is most important, however, is that in lexicology the stock of words or lexical items is not simply regarded as a list of *isolated elements*. Lexicologists try to find out *generalisations* and *regularities* and especially consider *relations* between elements. Lexicology is therefore concerned with *structures*, not with a mere agglomeration of words.” (Lipka 1992: 1)
+
+
+## Function of Lexicology in language
+
+![](img/function-of-lexicology.png){width="500"}
+
+
+## Practice: using dictionaries
+
+- What kinds of information can we find in the OED?
+- phonology, word‑formation, semantics, sociolinguistics, register, usage frequency
+
+
+## For next week
+
+- Read: Bauer (2022) Introduction, ch. 1.
+- PDF: [Download chapter 1](att/Bauer2022Introduction_ch-1.pdf)
 
 

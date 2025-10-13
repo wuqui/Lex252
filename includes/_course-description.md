@@ -1,0 +1,8 @@
+- This course provides an in-depth exploration of English lexicology and lexicography, examining key areas including 
+    - word-formation processes, 
+    - semantic analysis of word senses, 
+    - and patterns of lexical variation and change. 
+- Grounded in authentic language data from dictionaries and corpora, students will develop analytical skills for studying lexical usage 
+    - through dictionaries like Wiktionary and the Oxford English Dictionary (OED), 
+    - alongside corpora such as COCA and English Trends on the corpus platforms english-corpora.org and Sketch Engine. 
+- The programme emphasises practical experience in frequency analysis, collocation studies, Word Sketches through collaborative group projects, enabling students to apply corpus-based methodologies to lexicological research projects.

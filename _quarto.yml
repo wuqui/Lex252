@@ -28,3 +28,6 @@ filters:
   - auto-dark
 
 bibliography: references.bib
+
+metadata:
+  linkprefix: ""
