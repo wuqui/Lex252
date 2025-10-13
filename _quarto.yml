@@ -9,20 +9,22 @@ website:
   description: "Lexicology and Lexicography (Seminar)"
   navbar:
     left:
-      - text: "Home"
-        href: index.qmd
-      - text: "Schedule"
-        href: schedule.qmd
-      - text: "Session 01"
-        href: sessions/01_intro/index.qmd
+      # (no Home / Schedule in navbar per preference)
+      - text: "Sessions"
+        menu:
+          - text: "01 — Introduction"
+            href: sessions/01_intro/index.qmd
   page-navigation: true
   search: true
 
 format:
   html:
     theme: light
+    toc: true
+    css: custom.css
 
-author: "Quirin Würschinger, LMU Munich"
+## Author is set per-slide; avoid global author on pages
+# author: "Quirin Würschinger, LMU Munich"
 
 bibliography: references.bib
 

@@ -1,5 +1,5 @@
 | Week | Date | Topic |
 |---|---|---|
-| 1 | 2025-10-20 | Introduction |
+| 1 | 2025-10-20 | [Introduction](sessions/01_intro/index.qmd) |
 
 
