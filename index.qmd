@@ -1,0 +1,5 @@
+# Lex252 — Lexicology and Lexicography (Seminar)
+
+Welcome to the course website.
+
+{{< include schedule.qmd >}}

@@ -1,0 +1,31 @@
+---
+title: "Session 01 — Introduction"
+subtitle: "Lexicology and Lexicography"
+author: "Quirin Würschinger, LMU Munich"
+date: 2025-10-13
+format:
+  clean-revealjs:
+    slide-level: 0
+    css: ../../custom.css
+    minScale: 0.2
+    maxScale: 2.0
+    excalidraw:
+      button: false
+      shortcut: "`"
+      theme: "light"
+revealjs-plugins:
+  - pointer
+  - excalidraw
+---
+
+# Welcome
+
+- Course scope and expectations.
+
+___
+
+## What is lexicology?
+
+- Study of the lexicon and word meaning.
+
+

@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: _site
+
+site-url: https://wuqui.github.io/Lex252/
+
+website:
+  title: "Lex252"
+  description: "Lexicology and Lexicography (Seminar)"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Schedule"
+        href: schedule.qmd
+      - text: "Session 01"
+        href: sessions/01_intro/index.qmd
+  page-navigation: true
+  search: true
+
+format:
+  html:
+    theme: light
+
+author: "Quirin Würschinger, LMU Munich"
+
+bibliography: references.bib
+
+
+
