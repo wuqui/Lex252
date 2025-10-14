@@ -1,8 +1,17 @@
 ---
-toc: false
+title: "Lexicology and Lexicography"
 author: "Dr. Quirin Würschinger, LMU Munich"
+toc: true
+nocite: |
+  @*
 ---
 
-# Schedule
+## Schedule
 
-{{< include schedule.qmd >}}
+{{< include includes/_schedule.qmd >}}
+
+
+## Course bibliography
+
+::: {#refs}
+:::

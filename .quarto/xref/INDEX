@@ -1,14 +1,20 @@
 {
+  "includes/lsf-description.md": {
+    "lsf-description.html": "aadae99d"
+  },
   "index.qmd": {
-    "index.html": "809264f0"
+    "index.html": "61329c34"
   },
   "sessions/01_intro/slides.qmd": {
-    "slides.html": "40b66c8e"
+    "slides.html": "5b12c3b1"
   },
   "sessions/01_intro/index.qmd": {
-    "index.html": "44b02dc8"
+    "index.html": "f6127652"
   },
   "schedule.qmd": {
-    "schedule.html": "7f5b7377"
+    "schedule.html": "8b2fc7a4"
+  },
+  "includes/schedule.qmd": {
+    "schedule.html": "4f451086"
   }
 }

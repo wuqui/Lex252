@@ -1,6 +1,6 @@
 ---
 title: "01 — Organisation and introduction"
-subtitle: "Lexicology and Lexicography (Seminar)"
+subtitle: "Lexicology and Lexicography"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-10-21
 metadata:
@@ -11,8 +11,8 @@ format:
   clean-revealjs:
     slide-level: 2
     css: ../../custom.css
-    minScale: 0.2
-    maxScale: 2.0
+    fig-cap-location: top
+    fig-align: center
     excalidraw:
       button: false
       shortcut: "`"
@@ -24,17 +24,24 @@ revealjs-plugins:
 
 # Organisation
 
-- Course website: <https://wuqui.github.io/Lex252/>
-- Time: Tuesdays 10:15–11:45 (LMU term calendar applies).
-- Slides are on the website under Sessions; each page embeds the slides.
+## Course materials
+
+Course website: 
+: <https://wuqui.github.io/Lex252/>
+
+Time
+: Tuesdays 10:15–11:45
+
+Place
+: Amalienstr. 73A, Room 101 ([Raumfinder](https://www.lmu.de/raumfinder/#/building/bw0147/map?room=014701101_))
 
 
 ## Registration
 
-- Any open issues? Module requirements, exam registration, etc.
+Any open issues? Module requirements, exam registration, etc.
 
 
-## Course description
+## Course description {.small}
 
 - This course provides an in-depth exploration of English **lexicology** and **lexicography**, 
 - examining **key areas** including word-formation processes, semantic analysis of word senses, and patterns of lexical innovation, variation and change. 
@@ -46,27 +53,35 @@ revealjs-plugins:
 
 ## Schedule
 
-{{< include ../../schedule.qmd >}}
+{{< include ../../includes/_schedule.qmd >}}
 
 
 ## Literature
 
-### Key textbooks
+**Key textbooks:**
 
-Bauer, Laurie. 2022. *An Introduction to English Lexicology*. Edinburgh University Press.
+[@Bauer2022Introduction]{.fullcite}
 
-Lipka, Leonhard. 2002. *English Lexicology: Lexical Structure, Word Semantics and Word-Formation*. Tübingen: Narr.
+[@Lipka2002EnglishLexicology]{.fullcite}
 
-Schmid, Hans-Jörg. 2016. *English Morphology and Word-Formation - An Introduction*. 2nd ed. Berlin: Erich Schmidt Verlag.
+[@Schmid2016EnglishMorphology]{.fullcite}
 
 
 ## Requirements
 
-- Active participation and preparation.
-- Weekly readings and short exercises.
-- Term paper.
+- Active participation and preparation
+- Weekly readings and short exercises
+- Term paper; rule of thumb:
+    - 3 ECTS: short paper (≈ 3–5 pages)
+    - 6 ECTS: long paper (≈ 10–12 pages)
 
+::: {.callout-important}
+Please check your Studien-/Prüfungsordnung for the exact specification.
+:::
+
+::: {.callout-note}
 Special case: Modulprüfung → see next slide.
+:::
 
 ___
 
@@ -80,23 +95,144 @@ Wichtige Information nur (!) für Studierende im **BA Anglistik (PStO 2019**, St
 - Die **Anmeldung zur Gesamt-Modulprüfung** erfolgt im Prüfungsanmeldezeitraum (7.1. – 23.1.2026). Bitte melden Sie sich dann bei dem/der Dozent*in an, bei dem/der Sie die Veranstaltung für das **Modul WP 1.1** besuchen.
 - Das gleiche gilt für folgende Module in anderen Studiengängen: TUM MA  (neu), Modul WP 11.2 (> WP 11.1 muss im gleichen Semester besucht werden)
 
-→ All of The assessment for WP 1 takes place in WP 1.1. There is no assessment in this course if you take it as WP 1.2. 
+
+::: {.callout-note}
+All of The assessment for WP 1 takes place in WP 1.1. 
+
+There is no assessment in this course if you take it as WP 1.2. 
+:::
 :::
 
 ___
 
-![](img/wp-1.1.png)
+#### WP 1 courses offered this semester
 
-![](img/wp-1.2.png)
+![WP 1.1](img/wp-1.1.png){height="200"}
 
+![WP 1.2](img/wp-1.2.png){height="200"}
+
+
+# Course preview
+
+## Words, dictionaries, and the lexicon
+
+::: {layout="[40,60]"}
+- What is a word? [@Bauer2022Introduction]
+- What is the lexicon? [@Lipka1992OutlineEnglish]
+- Is there structure in the lexicon or is it just a "bag of words"?
+
+![](img/session02_oed-advanced-search.png)
+:::
+
+## Morphology and word-formation
+
+:::: {layout="[50,50]"}
+- Cover basics of morphology and word-formation based on the framework by @Schmid2016EnglishMorphology 
+- Apply theoretical foundations to analyse word-formation processes. 
+- What are differences in behavioural profiles and productivity of morphemic and non-morphemic word-formation processes?
+- How can we study morphology and word-formation based on empirical data?
+
+![](img/session03_word-formation-overview.png)
+::::
+
+## Dictionaries: fundamentals, examples, use cases
+
+:::: {layout="[50,50]"}
+- What is the difference between dictionaries and the lexicon?
+- What is the mental lexicon?
+- What kinds of dictionaries are there?
+
+![Word embeddings.](img/session04_word-embeddings.png)
+::::
+
+## Using dictionaries and analysing data
+
+:::: {layout="[40,60]"}
+- How can we use dictionaries to study the lexicon?
+- How do we access data from dictionaries?
+- How do we store and process data?
+- Hands-on: Practice working with lexicological data.
+
+![](img/excel-pivot-chart.png)
+::::
+
+## Corpora: theories, methods, applications
+
+:::: {layout="[40,60]"}
+- Introduce corpus linguistics as a usage-based method and contrast it with introspection.
+- Tour Sketch Engine (BNC 2014 Spoken) to collect frequency and collocation methods.
+- Learn how to search corpora, do frequency analysis and collocation analysis.
+
+![Sketch Engine](img/session06_sketch-engine.png)
+::::
+
+## Semantics: meanings and functions
+
+- How can we study meaning in the lexicon?
+- How can we use collocation analysis and Word Sketches based on empirical corpus data in Sketch Engine?
+- How do we interpret the results?
+- Hands-on: Case study on the meaning of source and full forms of clippings (e.g. *brother* vs *bro*)
+
+![@Hilpert2023Meaning](img/session07_clipping-collocations.png)
+
+## Studying lexis empirically
+
+:::: {layout="[40,60]"}
+- More practice on using dictionaries and corpora to study the lexicon.
+- How can we obtain data?
+- How can we store and organise these data effectively?
+- How can we analyse these data in Excel?
+- How can we create visualisations of our results?
+
+![](img/session08_project-productivity.png)
+::::
+
+## Lexical innovation: new words and meanings
+
+:::: {layout="[60,40]"}
+- New products and practices enter the linguistic system on the level of lexis.
+- Why do speakers coin new words?
+- Which new words are being coined and spread successfully?
+- Are there patterns among recent neologisms? (e.g. word-formation processes, semantic domains)
+- Which trajectories of spread do we observe?
+
+![@Kerremans2015Web](img/session09_s-curve.png)
+::::
+
+## Lexical change: historical and recent shifts
+
+:::: {layout="[50,50]"}
+- How has the English lexicon changed over time?
+- Which kinds of recent changes do we observe?
+- How can we use diachronic data to study language change in the lexicon? (dictionaries, corpora)
+
+![Decline in usage of the term *telephone* in the COCA.](img/session10_telephone-decline.png)
+::::
+
+## Lexical variation: speakers and communities
+
+:::: {layout="[50,50]"}
+- How do speakers use language in different contexts and communities?
+- Can we observe individual variation between speakers?
+- How can we study this based on empirical data from dictionaries and corpora?
+
+![@Grieve2018MappingLexicalInnovation](img/session11_regional-innovation.png)
+::::
+
+## Lexical variation: text types, genres, registers {.small}
+
+- How can we model variation in language use between text types, registers, genres, and medium?
+- How do speakers use language in different contexts? (e.g. formal vs informal)
+- Does variation in use between text types correlate with language change?
+- Shift focus to diaphasic variation and register-sensitive vocabulary.
+- Case study: language change in the system of modal verbs [@Hilpert2015Grammatical]
+
+![Text type variation in the use of *ought* in the COCA.](img/text-type-variation-ought.png)
 
 
 # Introduction to Lexicology and Lexicography
 
 ## What is a *word*?
-
-- Distinguish between types/lexemes, word‑forms, and tokens.
-- Example tokens: *drink*, *drank*, *drinking*.
 
 ___
 
@@ -123,62 +259,51 @@ ___
 – *word forms*: *drinking*, *drank* are word‑forms of DRINK$^v$  
 – *types/lexemes*: e.g. DRINK$^v$
 
-___
 
-## The linguistic sign (de Saussure)
-
-![](img/linguistic-sign-model.png){width="600"}
+## What is the lexicon?
 
 ___
 
-## Types of signs
+### Does the lexicon have structure?
 
-- indices: relation of naturalness
-- icons: relation of similarity
-- symbols: relation of arbitrariness
+::: {.fragment} 
+[@Lipka1992OutlineEnglish]{.fullcite}
 
-___
-
-## Function of words in communication
-
-Organon model (Bühler):
-
-![](img/organon-model.png){width="600"}
+![](img/lexicon-structure-internal-external.png)
+:::
 
 ___
 
-## Structure in the lexicon
-
-### internal vs external
+### Fundamental types of lexical structures
   
-![](img/lexicon-structure-internal-external.png){width="500"}
-
-___
-
-### paradigmatic vs syntagmatic
-  
-![](img/lexicon-structure-paradigmatic-syntagmatic.png){width="500"}
+![@Lipka1992OutlineEnglish](img/lexicon-structure-paradigmatic-syntagmatic.png)
 
 
 ## Quote
 
-> “What is most important, however, is that in lexicology the stock of words or lexical items is not simply regarded as a list of *isolated elements*. Lexicologists try to find out *generalisations* and *regularities* and especially consider *relations* between elements. Lexicology is therefore concerned with *structures*, not with a mere agglomeration of words.” (Lipka 1992: 1)
+> “What is most important, however, is that in lexicology the stock of words or lexical items is not simply regarded as a list of *isolated elements*. Lexicologists try to find out *generalisations* and *regularities* and especially consider *relations* between elements. Lexicology is therefore concerned with *structures*, not with a mere agglomeration of words.” [@Lipka1992OutlineEnglish: 1]
 
 
-## Function of Lexicology in language
+## The role of the Lexicology in language
 
-![](img/function-of-lexicology.png){width="500"}
+![@Lipka1992OutlineEnglish](img/function-of-lexicology.png)
 
 
 ## Practice: using dictionaries
 
-- What kinds of information can we find in the OED?
-- phonology, word‑formation, semantics, sociolinguistics, register, usage frequency
+What kinds of lexicological information can we find in the OED?
+
+e.g. about phonology, word‑formation, semantics, sociolinguistics, register, usage frequency
 
 
 ## For next week
 
-- Read: Bauer (2022) Introduction, ch. 1.
-- PDF: [Download chapter 1](att/Bauer2022Introduction_ch-1.pdf)
+Read: @Bauer2022Introduction, ch. 1.
+
+You can download the PDF excerpt [here](att/Bauer2022Introduction_ch-1.pdf).
 
 
+# References
+
+::: {#refs}
+:::
