@@ -1,1 +1,6 @@
+# Quarto build artifacts and caches
+_site/
+.quarto/
+_freeze/
+
 /.quarto/
