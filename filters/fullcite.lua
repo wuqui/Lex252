@@ -119,12 +119,15 @@ local function fullcite_inlines(cite_inlines)
       tmp_meta[k] = v
     end
   end
-  -- Resolve bibliography to absolute path based on project_root
-  if tmp_meta.bibliography and project_root then
-    tmp_meta.bibliography = resolve_bibliography_meta(tmp_meta.bibliography, project_root)
-    -- DEBUG: log resolved path
-    local bib_path = pandoc.utils.stringify(tmp_meta.bibliography)
-    io.stderr:write('[fullcite DEBUG] project_root=' .. project_root .. ', resolved bib=' .. bib_path .. ', exists=' .. tostring(file_exists(bib_path)) .. '\n')
+  -- Resolve bibliography to absolute path
+  if tmp_meta.bibliography then
+    local bib_str = pandoc.utils.stringify(tmp_meta.bibliography)
+    -- If already absolute, keep it; otherwise make absolute via normalize
+    if not pandoc.path.is_absolute(bib_str) then
+      -- Relative paths in metadata are relative to the document's directory
+      local cwd = pandoc.system.get_working_directory()
+      tmp_meta.bibliography = pandoc.MetaString(pandoc.path.normalize(pandoc.path.join({cwd, bib_str})))
+    end
   end
   -- If still no bibliography present, attempt to set to project_root/references.bib
   if not tmp_meta.bibliography and project_root then
@@ -212,7 +215,8 @@ function Span(el)
 end
 
 return {
-  { Meta = Meta, Span = Span }
+  { Meta = Meta },
+  { Span = Span }
 }
 
 
