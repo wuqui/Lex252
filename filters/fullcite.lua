@@ -112,15 +112,19 @@ local function fullcite_inlines(cite_inlines)
   local tmp_blocks = pandoc.List()
   tmp_blocks:insert(pandoc.Para(cite_inlines))
   tmp_blocks:insert(pandoc.Div({}, pandoc.Attr('refs')))
-  -- Ensure bibliography and csl propagate
+  -- Ensure bibliography and csl propagate; copy all relevant meta
   local tmp_meta = pandoc.Meta({})
-  -- Copy CSL if present
-  if doc_meta and doc_meta.csl then
-    tmp_meta.csl = doc_meta.csl
+  for k, v in pairs(doc_meta or {}) do
+    if k == 'csl' or k == 'bibliography' or k == 'references' or k == 'nocite' then
+      tmp_meta[k] = v
+    end
   end
-  -- Prefer a resolved bibliography based on the project's root
-  if doc_meta and doc_meta.bibliography then
-    tmp_meta.bibliography = resolve_bibliography_meta(doc_meta.bibliography, project_root)
+  -- Resolve bibliography to absolute path based on project_root
+  if tmp_meta.bibliography and project_root then
+    tmp_meta.bibliography = resolve_bibliography_meta(tmp_meta.bibliography, project_root)
+    -- DEBUG: log resolved path
+    local bib_path = pandoc.utils.stringify(tmp_meta.bibliography)
+    io.stderr:write('[fullcite DEBUG] project_root=' .. project_root .. ', resolved bib=' .. bib_path .. ', exists=' .. tostring(file_exists(bib_path)) .. '\n')
   end
   -- If still no bibliography present, attempt to set to project_root/references.bib
   if not tmp_meta.bibliography and project_root then
