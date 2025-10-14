@@ -114,6 +114,10 @@ local function fullcite_inlines(cite_inlines)
   tmp_blocks:insert(pandoc.Div({}, pandoc.Attr('refs')))
   -- Ensure bibliography and csl propagate
   local tmp_meta = pandoc.Meta({})
+  -- Copy CSL if present
+  if doc_meta and doc_meta.csl then
+    tmp_meta.csl = doc_meta.csl
+  end
   -- Prefer a resolved bibliography based on the project's root
   if doc_meta and doc_meta.bibliography then
     tmp_meta.bibliography = resolve_bibliography_meta(doc_meta.bibliography, project_root)
