@@ -4,7 +4,6 @@
 
 local doc_meta = pandoc.Meta({})
 local project_root = nil
-local FALLBACK_BIB = "/Users/quirin/promo/lehre/2025-2_sem_lexicology/quarto/references.bib"
 
 local function file_exists(path)
   local f = io.open(path, 'r')
@@ -23,38 +22,32 @@ end
 -- NOTE: Some pandoc.path helpers may be unavailable in certain versions;
 -- keep resolution simple and robust by using the working directory.
 
-local function normalize_bibliography_paths(m)
-  local bib = m.bibliography
-  if not bib then return m end
-  local base = nil
-  if PANDOC_STATE and PANDOC_STATE.input_files and #PANDOC_STATE.input_files > 0 then
-    base = pandoc.path.directory(PANDOC_STATE.input_files[1])
-  else
-    base = pandoc.system.get_working_directory()
-  end
+-- Resolve a bibliography Meta value to absolute paths relative to project_root
+local function resolve_bibliography_meta(meta_bib, base_root)
+  if not meta_bib then return nil end
   local function to_abs(path_str)
     if pandoc.path.is_absolute(path_str) then return path_str end
-    return pandoc.path.normalize(pandoc.path.join({ base, path_str }))
+    return pandoc.path.normalize(pandoc.path.join({ base_root, path_str }))
   end
-  if bib.t == 'MetaList' then
+  if meta_bib.t == 'MetaList' then
     local new_list = pandoc.List()
-    for _, item in ipairs(bib) do
+    for _, item in ipairs(meta_bib) do
       local s = pandoc.utils.stringify(item)
       new_list:insert(pandoc.MetaString(to_abs(s)))
     end
-    m.bibliography = pandoc.MetaList(new_list)
+    return pandoc.MetaList(new_list)
   else
-    local s = pandoc.utils.stringify(bib)
-    m.bibliography = pandoc.MetaString(to_abs(s))
+    local s = pandoc.utils.stringify(meta_bib)
+    return pandoc.MetaString(to_abs(s))
   end
-  return m
 end
 
 function Meta(m)
-  doc_meta = normalize_bibliography_paths(m)
+  -- Keep the document metadata unchanged; only record it for later use.
+  doc_meta = m
   -- Prefer Quarto's project dir if available; else working directory
   project_root = os.getenv('QUARTO_PROJECT_DIR') or pandoc.system.get_working_directory()
-  return doc_meta
+  return nil
 end
 
 local function has_class(el, class)
@@ -121,8 +114,11 @@ local function fullcite_inlines(cite_inlines)
   tmp_blocks:insert(pandoc.Div({}, pandoc.Attr('refs')))
   -- Ensure bibliography and csl propagate
   local tmp_meta = pandoc.Meta({})
-  for k, v in pairs(doc_meta or {}) do tmp_meta[k] = v end
-  -- If no bibliography present, attempt to set to project_root/references.bib
+  -- Prefer a resolved bibliography based on the project's root
+  if doc_meta and doc_meta.bibliography then
+    tmp_meta.bibliography = resolve_bibliography_meta(doc_meta.bibliography, project_root)
+  end
+  -- If still no bibliography present, attempt to set to project_root/references.bib
   if not tmp_meta.bibliography and project_root then
     local cand = pandoc.path.join({ project_root, 'references.bib' })
     if file_exists(cand) then
@@ -149,9 +145,6 @@ local function fullcite_inlines(cite_inlines)
     if file_exists(cand) then
       tmp_meta.bibliography = pandoc.MetaString(cand)
     end
-  end
-  if not tmp_meta.bibliography and FALLBACK_BIB and file_exists(FALLBACK_BIB) then
-    tmp_meta.bibliography = pandoc.MetaString(FALLBACK_BIB)
   end
   local tmp_doc = pandoc.Pandoc(tmp_blocks, tmp_meta)
 
