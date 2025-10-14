@@ -30,7 +30,7 @@ filters:
   - auto-dark
   - filters/fullcite.lua
 
-bibliography: /Users/quirin/promo/lehre/2025-2_sem_lexicology/quarto/references.bib
+bibliography: references.bib
 
 metadata:
   linkprefix: ""
