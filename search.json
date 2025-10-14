@@ -1,17 +1,45 @@
 [
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Lex252",
+    "objectID": "sessions/01_intro/index.html",
+    "href": "sessions/01_intro/index.html",
+    "title": "01 — Introduction",
+    "section": "",
+    "text": "Slides\n\n\n\nOpen full screen"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lexicology and Lexicography",
     "section": "",
     "text": "Date\nTopic\n\n\n\n\n1\n21 Oct.\nOrganisation and introduction\n\n\n2\n28 Oct.\nWords, dictionaries, and the lexicon\n\n\n3\n4 Nov.\nMorphology and word-formation: theory and analysis\n\n\n4\n11 Nov.\nDictionaries: fundamentals, examples, use cases\n\n\n5\n18 Nov.\nUsing dictionaries and analysing data\n\n\n6\n25 Nov.\nCorpora: theories, methods, and applications\n\n\n7\n2 Dec.\nSemantics: studying meanings and functions of words\n\n\n8\n9 Dec.\nStudying lexis empirically\n\n\n9\n16 Dec.\nLexical innovation: new words and meanings\n\n\n\n\n\n\n\n10\n13 Jan.\nLexical change: historical and recent changes in the English lexicon\n\n\n11\n20 Jan.\nLexical variation: speakers and communities\n\n\n12\n27 Jan.\nLexical variation: text types, genres, registers\n\n\n13\n3 Feb.\nSummary, discussion, review, and outlook"
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Lexicology and Lexicography",
+    "section": "",
+    "text": "Date\nTopic\n\n\n\n\n1\n21 Oct.\nOrganisation and introduction\n\n\n2\n28 Oct.\nWords, dictionaries, and the lexicon\n\n\n3\n4 Nov.\nMorphology and word-formation: theory and analysis\n\n\n4\n11 Nov.\nDictionaries: fundamentals, examples, use cases\n\n\n5\n18 Nov.\nUsing dictionaries and analysing data\n\n\n6\n25 Nov.\nCorpora: theories, methods, and applications\n\n\n7\n2 Dec.\nSemantics: studying meanings and functions of words\n\n\n8\n9 Dec.\nStudying lexis empirically\n\n\n9\n16 Dec.\nLexical innovation: new words and meanings\n\n\n\n\n\n\n\n10\n13 Jan.\nLexical change: historical and recent changes in the English lexicon\n\n\n11\n20 Jan.\nLexical variation: speakers and communities\n\n\n12\n27 Jan.\nLexical variation: text types, genres, registers\n\n\n13\n3 Feb.\nSummary, discussion, review, and outlook"
+  },
+  {
+    "objectID": "index.html#course-bibliography",
+    "href": "index.html#course-bibliography",
+    "title": "Lexicology and Lexicography",
+    "section": "Course bibliography",
+    "text": "Course bibliography\n\n\nBauer, Laurie. 2022. An Introduction to English Lexicology. Edinburgh University Press.\n\n\nBühler, Karl. 1934. Sprachtheorie. Jena: Fischer.\n\n\nGrieve, Jack, Andrea Nini, and Diansheng Guo. 2018. “Mapping Lexical Innovation in American English.” Journal of English Linguistics 46 (4): 293–319. https://doi.org/10.1177/0075424218793191.\n\n\nHilpert, Martin, and Christian Mair. 2015. “Grammatical Change.” In The Cambridge Handbook of English Corpus Linguistics, edited by Douglas Biber and Randi Reppen. Cambridge: Cambridge University Press.\n\n\nHilpert, Martin, David Correia Saavedra, and Jennifer Rains. 2023. “Meaning Differences Between English Clippings and Their Source Words: A Corpus-Based Study.” ICAME Journal 47 (1): 19–37. https://doi.org/10.2478/icame-2023-0002.\n\n\nJackson, Howard. 1988. Words and Their Meaning. 1st ed. Learning about Language. London: Longman.\n\n\nKeller, Rudi. 1994. Sprachwandel: Von Der Unsichtbaren Hand in Der Sprache. Tübingen: Francke.\n\n\nKerremans, Daphné. 2015. A Web of New Words. Bern: Peter Lang. https://doi.org/10.3726/978-3-653-04788-2.\n\n\nLipka, Leonhard. 1992. An Outline of English Lexicology. Forschung Und Studium Anglistik. Tübingen: Niemeyer.\n\n\n———. 2002. English Lexicology: Lexical Structure, Word Semantics and Word-Formation. Tübingen: Narr.\n\n\nSaussure, Ferdinand de. 1916. Cours de Linguistique Générale. Lausanne: Payot.\n\n\nSaussure, Ferdinand de. 1983. Course in General Linguistics. London: Duckworth.\n\n\nSchmid, Hans-Jörg. 2016. English Morphology and Word-Formation - an Introduction. 2nd ed. Berlin: Erich Schmidt Verlag.\n\n\n———. 2020. The Dynamics of the Linguistic System. Usage, Conventionalization, and Entrenchment. Oxford: Oxford University Press."
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#course-materials",
+    "href": "sessions/01_intro/slides.html#course-materials",
+    "title": "01 — Organisation and introduction",
+    "section": "Course materials",
+    "text": "Course materials\n\nCourse website:\n\nhttps://wuqui.github.io/Lex252/\n\nTime\n\nTuesdays 10:15–11:45\n\nPlace\n\nAmalienstr. 73A, Room 101 (Raumfinder)"
   },
   {
     "objectID": "sessions/01_intro/slides.html#registration",
     "href": "sessions/01_intro/slides.html#registration",
     "title": "01 — Organisation and introduction",
     "section": "Registration",
-    "text": "Registration\n\nAny open issues? Module requirements, exam registration, etc."
+    "text": "Registration\nAny open issues? Module requirements, exam registration, etc."
   },
   {
     "objectID": "sessions/01_intro/slides.html#course-description",
@@ -32,49 +60,105 @@
     "href": "sessions/01_intro/slides.html#literature",
     "title": "01 — Organisation and introduction",
     "section": "Literature",
-    "text": "Literature\nKey textbooks\nBauer, Laurie. 2022. An Introduction to English Lexicology. Edinburgh University Press.\nLipka, Leonhard. 2002. English Lexicology: Lexical Structure, Word Semantics and Word-Formation. Tübingen: Narr.\nSchmid, Hans-Jörg. 2016. English Morphology and Word-Formation - An Introduction. 2nd ed. Berlin: Erich Schmidt Verlag."
+    "text": "Literature\nKey textbooks:\n(Bauer 2022)\n(Lipka 2002)\n(Schmid 2016)"
   },
   {
     "objectID": "sessions/01_intro/slides.html#requirements",
     "href": "sessions/01_intro/slides.html#requirements",
     "title": "01 — Organisation and introduction",
     "section": "Requirements",
-    "text": "Requirements\n\nActive participation and preparation.\nWeekly readings and short exercises.\nTerm paper.\n\nSpecial case: Modulprüfung → see next slide."
+    "text": "Requirements\n\nActive participation and preparation\nWeekly readings and short exercises\nTerm paper; rule of thumb:\n\n3 ECTS: short paper (≈ 3–5 pages)\n6 ECTS: long paper (≈ 10–12 pages)\n\n\n\n\n\n\n\n\nImportant\n\n\nPlease check your Studien-/Prüfungsordnung for the exact specification.\n\n\n\n\n\n\n\n\n\nNote\n\n\nSpecial case: Modulprüfung → see next slide."
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#words-dictionaries-and-the-lexicon",
+    "href": "sessions/01_intro/slides.html#words-dictionaries-and-the-lexicon",
+    "title": "01 — Organisation and introduction",
+    "section": "Words, dictionaries, and the lexicon",
+    "text": "Words, dictionaries, and the lexicon\n\n\n\n\nWhat is a word? (Bauer 2022)\nWhat is the lexicon? (Lipka 1992)\nIs there structure in the lexicon or is it just a “bag of words”?"
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#morphology-and-word-formation",
+    "href": "sessions/01_intro/slides.html#morphology-and-word-formation",
+    "title": "01 — Organisation and introduction",
+    "section": "Morphology and word-formation",
+    "text": "Morphology and word-formation\n\n\n\n\nCover basics of morphology and word-formation based on the framework by Schmid (2016)\nApply theoretical foundations to analyse word-formation processes.\nWhat are differences in behavioural profiles and productivity of morphemic and non-morphemic word-formation processes?\nHow can we study morphology and word-formation based on empirical data?"
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#dictionaries-fundamentals-examples-use-cases",
+    "href": "sessions/01_intro/slides.html#dictionaries-fundamentals-examples-use-cases",
+    "title": "01 — Organisation and introduction",
+    "section": "Dictionaries: fundamentals, examples, use cases",
+    "text": "Dictionaries: fundamentals, examples, use cases\n\n\n\n\nWhat is the difference between dictionaries and the lexicon?\nWhat is the mental lexicon?\nWhat kinds of dictionaries are there?\n\n\n\n\n\nWord embeddings."
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#using-dictionaries-and-analysing-data",
+    "href": "sessions/01_intro/slides.html#using-dictionaries-and-analysing-data",
+    "title": "01 — Organisation and introduction",
+    "section": "Using dictionaries and analysing data",
+    "text": "Using dictionaries and analysing data\n\n\n\n\nHow can we use dictionaries to study the lexicon?\nHow do we access data from dictionaries?\nHow do we store and process data?\nHands-on: Practice working with lexicological data."
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#corpora-theories-methods-applications",
+    "href": "sessions/01_intro/slides.html#corpora-theories-methods-applications",
+    "title": "01 — Organisation and introduction",
+    "section": "Corpora: theories, methods, applications",
+    "text": "Corpora: theories, methods, applications\n\n\n\n\nIntroduce corpus linguistics as a usage-based method and contrast it with introspection.\nTour Sketch Engine (BNC 2014 Spoken) to collect frequency and collocation methods.\nLearn how to search corpora, do frequency analysis and collocation analysis.\n\n\n\n\n\nSketch Engine"
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#semantics-meanings-and-functions",
+    "href": "sessions/01_intro/slides.html#semantics-meanings-and-functions",
+    "title": "01 — Organisation and introduction",
+    "section": "Semantics: meanings and functions",
+    "text": "Semantics: meanings and functions\n\nHow can we study meaning in the lexicon?\nHow can we use collocation analysis and Word Sketches based on empirical corpus data in Sketch Engine?\nHow do we interpret the results?\nHands-on: Case study on the meaning of source and full forms of clippings (e.g. brother vs bro)\n\n\nHilpert, Saavedra, and Rains (2023)"
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#studying-lexis-empirically",
+    "href": "sessions/01_intro/slides.html#studying-lexis-empirically",
+    "title": "01 — Organisation and introduction",
+    "section": "Studying lexis empirically",
+    "text": "Studying lexis empirically\n\n\n\n\nMore practice on using dictionaries and corpora to study the lexicon.\nHow can we obtain data?\nHow can we store and organise these data effectively?\nHow can we analyse these data in Excel?\nHow can we create visualisations of our results?"
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#lexical-innovation-new-words-and-meanings",
+    "href": "sessions/01_intro/slides.html#lexical-innovation-new-words-and-meanings",
+    "title": "01 — Organisation and introduction",
+    "section": "Lexical innovation: new words and meanings",
+    "text": "Lexical innovation: new words and meanings\n\n\n\n\nNew products and practices enter the linguistic system on the level of lexis.\nWhy do speakers coin new words?\nWhich new words are being coined and spread successfully?\nAre there patterns among recent neologisms? (e.g. word-formation processes, semantic domains)\nWhich trajectories of spread do we observe?\n\n\n\n\n\nKerremans (2015)"
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#lexical-change-historical-and-recent-shifts",
+    "href": "sessions/01_intro/slides.html#lexical-change-historical-and-recent-shifts",
+    "title": "01 — Organisation and introduction",
+    "section": "Lexical change: historical and recent shifts",
+    "text": "Lexical change: historical and recent shifts\n\n\n\n\nHow has the English lexicon changed over time?\nWhich kinds of recent changes do we observe?\nHow can we use diachronic data to study language change in the lexicon? (dictionaries, corpora)\n\n\n\n\n\nDecline in usage of the term telephone in the COCA."
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#lexical-variation-speakers-and-communities",
+    "href": "sessions/01_intro/slides.html#lexical-variation-speakers-and-communities",
+    "title": "01 — Organisation and introduction",
+    "section": "Lexical variation: speakers and communities",
+    "text": "Lexical variation: speakers and communities\n\n\n\n\nHow do speakers use language in different contexts and communities?\nCan we observe individual variation between speakers?\nHow can we study this based on empirical data from dictionaries and corpora?\n\n\n\n\n\nGrieve, Nini, and Guo (2018)"
+  },
+  {
+    "objectID": "sessions/01_intro/slides.html#lexical-variation-text-types-genres-registers",
+    "href": "sessions/01_intro/slides.html#lexical-variation-text-types-genres-registers",
+    "title": "01 — Organisation and introduction",
+    "section": "Lexical variation: text types, genres, registers",
+    "text": "Lexical variation: text types, genres, registers\n\nHow can we model variation in language use between text types, registers, genres, and medium?\nHow do speakers use language in different contexts? (e.g. formal vs informal)\nDoes variation in use between text types correlate with language change?\nShift focus to diaphasic variation and register-sensitive vocabulary.\nCase study: language change in the system of modal verbs (Hilpert and Mair 2015)\n\n\nText type variation in the use of ought in the COCA."
   },
   {
     "objectID": "sessions/01_intro/slides.html#what-is-a-word",
     "href": "sessions/01_intro/slides.html#what-is-a-word",
     "title": "01 — Organisation and introduction",
     "section": "What is a word?",
-    "text": "What is a word?\n\nDistinguish between types/lexemes, word‑forms, and tokens.\nExample tokens: drink, drank, drinking."
+    "text": "What is a word?"
   },
   {
-    "objectID": "sessions/01_intro/slides.html#the-linguistic-sign-de-saussure",
-    "href": "sessions/01_intro/slides.html#the-linguistic-sign-de-saussure",
+    "objectID": "sessions/01_intro/slides.html#what-is-the-lexicon",
+    "href": "sessions/01_intro/slides.html#what-is-the-lexicon",
     "title": "01 — Organisation and introduction",
-    "section": "The linguistic sign (de Saussure)",
-    "text": "The linguistic sign (de Saussure)"
-  },
-  {
-    "objectID": "sessions/01_intro/slides.html#types-of-signs",
-    "href": "sessions/01_intro/slides.html#types-of-signs",
-    "title": "01 — Organisation and introduction",
-    "section": "Types of signs",
-    "text": "Types of signs\n\nindices: relation of naturalness\nicons: relation of similarity\nsymbols: relation of arbitrariness"
-  },
-  {
-    "objectID": "sessions/01_intro/slides.html#function-of-words-in-communication",
-    "href": "sessions/01_intro/slides.html#function-of-words-in-communication",
-    "title": "01 — Organisation and introduction",
-    "section": "Function of words in communication",
-    "text": "Function of words in communication\nOrganon model (Bühler):"
-  },
-  {
-    "objectID": "sessions/01_intro/slides.html#structure-in-the-lexicon",
-    "href": "sessions/01_intro/slides.html#structure-in-the-lexicon",
-    "title": "01 — Organisation and introduction",
-    "section": "Structure in the lexicon",
-    "text": "Structure in the lexicon\ninternal vs external"
+    "section": "What is the lexicon?",
+    "text": "What is the lexicon?"
   },
   {
     "objectID": "sessions/01_intro/slides.html#quote",
@@ -84,45 +168,24 @@
     "text": "Quote\n\n“What is most important, however, is that in lexicology the stock of words or lexical items is not simply regarded as a list of isolated elements. Lexicologists try to find out generalisations and regularities and especially consider relations between elements. Lexicology is therefore concerned with structures, not with a mere agglomeration of words.” (Lipka 1992: 1)"
   },
   {
-    "objectID": "sessions/01_intro/slides.html#function-of-lexicology-in-language",
-    "href": "sessions/01_intro/slides.html#function-of-lexicology-in-language",
+    "objectID": "sessions/01_intro/slides.html#the-role-of-the-lexicology-in-language",
+    "href": "sessions/01_intro/slides.html#the-role-of-the-lexicology-in-language",
     "title": "01 — Organisation and introduction",
-    "section": "Function of Lexicology in language",
-    "text": "Function of Lexicology in language"
+    "section": "The role of the Lexicology in language",
+    "text": "The role of the Lexicology in language\n\nLipka (1992)"
   },
   {
     "objectID": "sessions/01_intro/slides.html#practice-using-dictionaries",
     "href": "sessions/01_intro/slides.html#practice-using-dictionaries",
     "title": "01 — Organisation and introduction",
     "section": "Practice: using dictionaries",
-    "text": "Practice: using dictionaries\n\nWhat kinds of information can we find in the OED?\nphonology, word‑formation, semantics, sociolinguistics, register, usage frequency"
+    "text": "Practice: using dictionaries\nWhat kinds of lexicological information can we find in the OED?\ne.g. about phonology, word‑formation, semantics, sociolinguistics, register, usage frequency"
   },
   {
     "objectID": "sessions/01_intro/slides.html#for-next-week",
     "href": "sessions/01_intro/slides.html#for-next-week",
     "title": "01 — Organisation and introduction",
     "section": "For next week",
-    "text": "For next week\n\nRead: Bauer (2022) Introduction, ch. 1.\nPDF: Download chapter 1"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Schedule\n\n\n\n\nDate\nTopic\n\n\n\n\n1\n21 Oct.\nOrganisation and introduction\n\n\n2\n28 Oct.\nWords, dictionaries, and the lexicon\n\n\n3\n4 Nov.\nMorphology and word-formation: theory and analysis\n\n\n4\n11 Nov.\nDictionaries: fundamentals, examples, use cases\n\n\n5\n18 Nov.\nUsing dictionaries and analysing data\n\n\n6\n25 Nov.\nCorpora: theories, methods, and applications\n\n\n7\n2 Dec.\nSemantics: studying meanings and functions of words\n\n\n8\n9 Dec.\nStudying lexis empirically\n\n\n9\n16 Dec.\nLexical innovation: new words and meanings\n\n\n\n\n\n\n\n10\n13 Jan.\nLexical change: historical and recent changes in the English lexicon\n\n\n11\n20 Jan.\nLexical variation: speakers and communities\n\n\n12\n27 Jan.\nLexical variation: text types, genres, registers\n\n\n13\n3 Feb.\nSummary, discussion, review, and outlook"
-  },
-  {
-    "objectID": "includes/lsf-description.html",
-    "href": "includes/lsf-description.html",
-    "title": "Kommentar",
-    "section": "",
-    "text": "Kommentar\nThis course provides an in-depth exploration of English lexicology and lexicography, examining key areas including word-formation processes, semantic analysis of word senses, and patterns of lexical innovation, variation and change. Grounded in authentic language data from dictionaries and corpora, students will develop analytical skills for studying lexis through dictionaries like the Oxford English Dictionary (OED) and Wiktionary, and corpora such as BNC 2014 Spoken and COCA on the corpus platforms Sketch Engine and english-corpora.org. The programme emphasises practical experience in frequency analysis, collocation analysis, and Word Sketches through collaborative group projects, enabling students to use authentic data and empirical methods for lexicological research projects.\n\n\nLiteratur\nBauer, Laurie. 2022. An Introduction to English Lexicology. Edinburgh University Press.\nLipka, Leonhard. 2002. English Lexicology: Lexical Structure, Word Semantics and Word-Formation. Tübingen: Narr.\nSchmid, Hans-Jörg. 2016. English Morphology and Word-Formation - An Introduction. 2nd ed. Berlin: Erich Schmidt Verlag."
-  },
-  {
-    "objectID": "sessions/01_intro/index.html",
-    "href": "sessions/01_intro/index.html",
-    "title": "01 — Introduction",
-    "section": "",
-    "text": "Slides\n\n\n\nOpen full screen"
+    "text": "For next week\nRead: Bauer (2022), ch. 1.\nYou can download the PDF excerpt here."
   }
 ]
