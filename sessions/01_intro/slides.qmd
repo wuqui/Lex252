@@ -26,19 +26,14 @@ revealjs-plugins:
 
 ## Course materials
 
-Course website: 
-: <https://wuqui.github.io/Lex252/>
-
-Time
-: Tuesdays 10:15–11:45
-
-Place
-: Amalienstr. 73A, Room 101 ([Raumfinder](https://www.lmu.de/raumfinder/#/building/bw0147/map?room=014701101_))
+Course website: <https://wuqui.github.io/Lex252/>
 
 
 ## Registration
 
-Any open issues? Module requirements, exam registration, etc.
+Any open issues? 
+
+Module requirements, exam registration, etc.
 
 
 ## Course description {.small}
