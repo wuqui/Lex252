@@ -3,7 +3,6 @@ date: last-modified
 project:
   type: website
   output-dir: _site
-  post-render: scripts/generate-pdfs.sh
 
 site-url: https://wuqui.github.io/Lex252/
 
