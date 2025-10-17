@@ -9,6 +9,6 @@ toc: false
   <iframe src="slides.html" title="Session 01 Slides" allowfullscreen></iframe>
 </div>
 
-[Open full screen](slides.html)
+[Open full screen](slides.html) | [Download PDF](slides.pdf)
 
 
