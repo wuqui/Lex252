@@ -5,8 +5,6 @@ author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-10-21
 metadata:
   linkprefix: ../../
-filters:
-  - auto-dark
 format:
   clean-revealjs:
     slide-level: 2
@@ -24,9 +22,13 @@ revealjs-plugins:
 
 # Outline
 
-1. **Organisation** — course structure, requirements, and materials
-2. **Course preview** — overview of topics and methods
-3. **Introduction** — what is lexicology?
+1. **Organisation**: course structure, requirements, and materials
+2. **Course preview**: overview of topics and methods
+3. **Introduction**: what is lexicology?
+
+::: {.notes}
+- 10:15–10:16
+:::
 
 
 # Organisation
@@ -35,12 +37,20 @@ revealjs-plugins:
 
 Course website: <https://wuqui.github.io/Lex252/>
 
+::: {.notes}
+- 10:15–10:17
+:::
+
 
 ## Registration
 
 Any open issues? 
 
 Module requirements, exam registration, etc.
+
+::: {.notes}
+- 10:17–10:19
+:::
 
 
 ## Course description {.small}
@@ -52,10 +62,18 @@ Module requirements, exam registration, etc.
     - and **corpora** such as BNC 2014 Spoken and COCA on the corpus platforms Sketch Engine and english-corpora.org. 
 - The programme emphasises **practical experience** in frequency analysis, collocation analysis, and Word Sketches through collaborative group projects, enabling students to use authentic data and empirical methods for lexicological research projects.
 
+::: {.notes}
+- 10:19–10:23
+:::
+
 
 ## Schedule
 
 {{< include ../../includes/_schedule.qmd >}}
+
+::: {.notes}
+- 10:23–10:26
+:::
 
 
 ## Literature
@@ -68,6 +86,10 @@ Module requirements, exam registration, etc.
 
 [@Schmid2016EnglishMorphology]{.fullcite}
 
+::: {.notes}
+- 10:26–10:28
+:::
+
 
 ## Requirements
 
@@ -77,12 +99,16 @@ Module requirements, exam registration, etc.
     - 3 ECTS: short paper (≈ 3–5 pages)
     - 6 ECTS: long paper (≈ 10–12 pages)
 
-::: {.callout-important}
+:::: {.callout-important}
 Please check your Studien-/Prüfungsordnung for the exact specification.
-:::
+::::
 
-::: {.callout-note}
+:::: {.callout-note}
 Special case: Modulprüfung → see next slide.
+::::
+
+::: {.notes}
+- 10:28–10:32
 :::
 
 ___
@@ -113,60 +139,83 @@ ___
 
 ![WP 1.2](img/wp-1.2.png){height="200"}
 
+::: {.notes}
+- 10:32–10:38 (incl. images)
+:::
 
 # Course preview
 
 ## Words, dictionaries, and the lexicon
 
-::: {layout="[40,60]"}
+:::: {layout="[40,60]"}
 - What is a word? [@Bauer2022Introduction]
 - What is the lexicon? [@Lipka1992OutlineEnglish]
 - Is there structure in the lexicon or is it just a "bag of words"?
 
 ![](img/session02_oed-advanced-search.png)
+::::
+
+::: {.notes}
+- 10:38–10:41
 :::
 
 ## Morphology and word-formation
 
-:::: {layout="[50,50]"}
+::::: {layout="[50,50]"}
 - Cover basics of morphology and word-formation based on the framework by @Schmid2016EnglishMorphology 
 - Apply theoretical foundations to analyse word-formation processes. 
 - What are differences in behavioural profiles and productivity of morphemic and non-morphemic word-formation processes?
 - How can we study morphology and word-formation based on empirical data?
 
 ![](img/session03_word-formation-overview.png)
-::::
+:::::
+
+::: {.notes}
+- 10:41–10:45
+:::
 
 ## Dictionaries: fundamentals, examples, use cases
 
-:::: {layout="[50,50]"}
+::::: {layout="[50,50]"}
 - What is the difference between dictionaries and the lexicon?
 - What is the mental lexicon?
 - What kinds of dictionaries are there?
 
 ![Word embeddings.](img/session04_word-embeddings.png)
-::::
+:::::
+
+::: {.notes}
+- 10:45–10:47
+:::
 
 ## Using dictionaries and analysing data
 
-:::: {layout="[40,60]"}
+::::: {layout="[40,60]"}
 - How can we use dictionaries to study the lexicon?
 - How do we access data from dictionaries?
 - How do we store and process data?
 - Hands-on: Practice working with lexicological data.
 
 ![](img/excel-pivot-chart.png)
-::::
+:::::
+
+::: {.notes}
+- 10:47–10:50
+:::
 
 ## Corpora: theories, methods, applications
 
-:::: {layout="[40,60]"}
+::::: {layout="[40,60]"}
 - Introduce corpus linguistics as a usage-based method and contrast it with introspection.
 - Tour Sketch Engine (BNC 2014 Spoken) to collect frequency and collocation methods.
 - Learn how to search corpora, do frequency analysis and collocation analysis.
 
 ![Sketch Engine](img/session06_sketch-engine.png)
-::::
+:::::
+
+::: {.notes}
+- 10:50–10:53
+:::
 
 ## Semantics: meanings and functions
 
@@ -177,9 +226,14 @@ ___
 
 ![@Hilpert2023Meaning](img/session07_clipping-collocations.png)
 
+:::: {.notes}
+- 10:53–10:57
+- BREAK — announce 5-minute break at 10:57; resume 11:02
+::::
+
 ## Studying lexis empirically
 
-:::: {layout="[40,60]"}
+:::::: {layout="[40,60]"}
 - More practice on using dictionaries and corpora to study the lexicon.
 - How can we obtain data?
 - How can we store and organise these data effectively?
@@ -187,11 +241,16 @@ ___
 - How can we create visualisations of our results?
 
 ![](img/session08_project-productivity.png)
+::::::
+
+:::: {.notes}
+- 11:02–11:05
+- AFTER BREAK — welcome back and restart at 11:02
 ::::
 
 ## Lexical innovation: new words and meanings
 
-:::: {layout="[60,40]"}
+::::: {layout="[60,40]"}
 - New products and practices enter the linguistic system on the level of lexis.
 - Why do speakers coin new words?
 - Which new words are being coined and spread successfully?
@@ -199,27 +258,39 @@ ___
 - Which trajectories of spread do we observe?
 
 ![@Kerremans2015Web](img/session09_s-curve.png)
-::::
+:::::
+
+::: {.notes}
+- 11:05–11:08
+:::
 
 ## Lexical change: historical and recent shifts
 
-:::: {layout="[50,50]"}
+::::: {layout="[50,50]"}
 - How has the English lexicon changed over time?
 - Which kinds of recent changes do we observe?
 - How can we use diachronic data to study language change in the lexicon? (dictionaries, corpora)
 
 ![Decline in usage of the term *telephone* in the COCA.](img/session10_telephone-decline.png)
-::::
+:::::
+
+::: {.notes}
+- 11:08–11:11
+:::
 
 ## Lexical variation: speakers and communities
 
-:::: {layout="[50,50]"}
+::::: {layout="[50,50]"}
 - How do speakers use language in different contexts and communities?
 - Can we observe individual variation between speakers?
 - How can we study this based on empirical data from dictionaries and corpora?
 
 ![@Grieve2018MappingLexicalInnovation](img/session11_regional-innovation.png)
-::::
+:::::
+
+::: {.notes}
+- 11:11–11:14
+:::
 
 ## Lexical variation: text types, genres, registers {.small}
 
@@ -231,23 +302,32 @@ ___
 
 ![Text type variation in the use of *ought* in the COCA.](img/text-type-variation-ought.png)
 
+::: {.notes}
+- 11:14–11:17
+:::
 
 # Introduction to Lexicology and Lexicography
 
 ## What is a *word*?
 
-___
+::: {.notes}
+- 11:17–11:19
+:::
 
+___
 ### How many words?
 
 > Paul was drinking beer in his favourite bar. He enjoyed having a drink every now and then. He thought he did not drink much, but his wife thought that he drank.
 
-::: {.fragment}
+:::: {.fragment}
 → 31 running words/tokens
+::::
+
+::: {.notes}
+- 11:19–11:22
 :::
 
 ___
-
 ### Types vs tokens 
 
 |     | type       | token      |
@@ -261,97 +341,102 @@ ___
 – *word forms*: *drinking*, *drank* are word‑forms of DRINK$^v$  
 – *types/lexemes*: e.g. DRINK$^v$
 
+::: {.notes}
+- 11:22–11:25
+:::
 
 ## What is the lexicon?
+
+::: {.notes}
+- 11:25–11:27
+:::
 
 ___
 
 ### Does the lexicon have structure?
 
-:::: {.small}
-::: {layout="[50,50]"}
-:::: {#left}
+::::: {.small}
+:::: {layout="[50,50]"}
+::::: {#left}
 [@Lipka1992OutlineEnglish]{.fullcite}
 
 ![](img/lexicon-structure-internal-external.png)
-::::
-:::: {#right .fragment .incremental}
+:::::
+::::: {#right .fragment .incremental}
 - **External** structure of the lexicon (relations):
     - **paradigmatic**: substitution in the same slot (synonymy, antonymy, hyponymy), e.g., *big* ↔ *large*; *car* ↔ *vehicle*.
     - **syntagmatic**: co-occurrence patterns/collocations and valency, e.g., *strong tea*; *take a photo*; *commit a crime*.
 - **Internal** structure of lexical items (items):
     - **complex** (morphological): built from morphemes, e.g., *un‑happy‑ness*, *blackbird*, *rethink*.
     - **simple** (semantic): monomorphemic with sense structure, e.g., *bank* (money vs river), semantic features like [+ANIMATE] for *dog*.
+:::::
 ::::
-:::
 
-::::
+:::::
 
 ::: {.notes}
-
-- 2–3 minutes; contrast external relations vs internal item structure.
-- Ask: Give a paradigmatic alternative to *vehicle*. Then: a collocation for *tea*.
-- Build example live: *unhappiness* from morphemes; contrast with polysemy of *bank*.
-- Bridge: Later sessions cover morphology and collocation/semantics in depth.
+- 11:27–11:30
 :::
+
 ___
 
 ### Fundamental types of lexical structures
 
-:::: {.small}
-::: {layout="[50,50]"}
-:::: {#left}
+::::: {.small}
+:::: {layout="[50,50]"}
+::::: {#left}
 ![@Lipka1992OutlineEnglish](img/lexicon-structure-paradigmatic-syntagmatic.png)
-::::
-:::: {#right .fragment .incremental}
+:::::
+::::: {#right .fragment .incremental}
 - **Paradigmatic**: *red – blue – green*; *car* ↔ *vehicle*; *alive* ↔ *dead*.
 - **Word‑formation families**: *happy → unhappy → unhappiness*; *black + bird → blackbird*.
 - **Syntagmatic**: *heavy rain*, *strong tea*, *make a decision*, *commit a crime*.
 - **Selectional preferences**: *drink tea/coffee*, *pay attention*, *raise awareness*.
+:::::
 ::::
-:::
-::::
+
+:::::
 
 ::: {.notes}
-- 1–2 minutes, mostly examples; elicit one per line from students.
-- Prompt: “Another collocate for tea?” “One derivation from create?”
+- 11:30–11:33
 :::
-
 
 ## Quote
 
 > “What is most important, however, is that in lexicology the stock of words or lexical items is not simply regarded as a list of **isolated elements**. Lexicologists try to find out **generalisations** and **regularities** and especially consider **relations** between elements. Lexicology is therefore concerned with **structures**, not with a mere agglomeration of words.” [@Lipka1992OutlineEnglish: 1]
 
-::: {.notes}
+:::: {.notes}
+- 11:33–11:35
 - 00:45–01:00: Paraphrase. “Lexicology is not a ‘bag of words’. It looks for patterns: how words relate to each other (paradigmatic/syntagmatic) and how items are internally structured (morphology, senses).”
 - Key takeaway: We study the lexicon as a system with structure, not isolated entries. This motivates methods like collocation analysis and word‑formation analysis.
 - Quick prompt: “Name one relation between two words (synonym/antonym/hypernym) and one natural collocation.”
 - Bridge: “Next we move from this principle to concrete structures: paradigmatic vs syntagmatic, and how they appear in real data.”
-:::
+::::
 
 
 ## The role of the Lexicology in language
 
-:::: {.small}
-::: {layout="[50,50]"}
-:::: {#left}
+::::: {.small}
+:::: {layout="[50,50]"}
+::::: {#left}
 ![@Lipka1992OutlineEnglish](img/function-of-lexicology.png)
-::::
-:::: {#right .fragment .incremental}
+:::::
+::::: {#right .fragment .incremental}
  - **morphology** × **synchronic**: productivity of *-ness* (e.g., *kindness*, *happiness*); compounding patterns (e.g., *blackbird*, *laptop stand*)
  - **morphology** × **diachronic**: rise/fall of *-th* (e.g., *warmth*, *width*); reanalysis in compounds (e.g., *hamburger* → *burger*, *cheeseburger*)
  - **semantics** × **synchronic**: sense network of *charge* (money: *service charge*; legal: *press charges*; electricity: *charge a battery*)
  - **semantics** × **diachronic**: change in *gay* (cheerful → sexual identity); *mouse* (animal → device)
-::::
-:::
+:::::
 ::::
 
-::: {.notes}
+:::::
+
+:::: {.notes}
+- 11:35–11:42
 - 1–2 minutes: read the 3 axes; point to the Lexicology layer.
 - Quick prompts: “Which cell studies the shift of *gay*?” “Where does *un-* productivity sit?”
 - Bridge: We will sample both slices this term (morphology/semantics × synchronic/diachronic).
-:::
-
+::::
 
 # For next week
 
@@ -359,8 +444,11 @@ Read: @Bauer2022Introduction, ch. 1.
 
 You can download the PDF excerpt [here](att/Bauer2022Introduction_ch-1.pdf).
 
+::: {.notes}
+- 11:42–11:45
+:::
 
 # References
 
-::: {#refs}
-:::
+:::: {#refs}
+::::

@@ -29,14 +29,8 @@ format:
 filters:
   - auto-dark
   - filters/fullcite.lua
-  - filters/strip-notes.lua
 
 bibliography: references.bib
 
 metadata:
   linkprefix: ""
-
-profiles:
-  publish:
-    metadata:
-      strip-notes: true
