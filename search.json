@@ -7,6 +7,13 @@
     "text": "Slides\n\n\n\nOpen full screen | Download PDF"
   },
   {
+    "objectID": "sessions/02_lexicon/index.html",
+    "href": "sessions/02_lexicon/index.html",
+    "title": "02 — Words, dictionaries, and the lexicon",
+    "section": "",
+    "text": "Slides\n\n\n\nOpen full screen | Download PDF"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Lexicology and Lexicography",
@@ -25,7 +32,70 @@
     "href": "index.html#course-bibliography",
     "title": "Lexicology and Lexicography",
     "section": "Course bibliography",
-    "text": "Course bibliography\n\n\nBauer, Laurie. 2022. An Introduction to English Lexicology. Edinburgh University Press.\n\n\nBühler, Karl. 1934. Sprachtheorie. Jena: Fischer.\n\n\nGrieve, Jack, Andrea Nini, and Diansheng Guo. 2018. “Mapping Lexical Innovation in American English.” Journal of English Linguistics 46 (4): 293–319. https://doi.org/10.1177/0075424218793191.\n\n\nHilpert, Martin, and Christian Mair. 2015. “Grammatical Change.” In The Cambridge Handbook of English Corpus Linguistics, edited by Douglas Biber and Randi Reppen. Cambridge: Cambridge University Press.\n\n\nHilpert, Martin, David Correia Saavedra, and Jennifer Rains. 2023. “Meaning Differences Between English Clippings and Their Source Words: A Corpus-Based Study.” ICAME Journal 47 (1): 19–37. https://doi.org/10.2478/icame-2023-0002.\n\n\nJackson, Howard. 1988. Words and Their Meaning. 1st ed. Learning about Language. London: Longman.\n\n\nKeller, Rudi. 1994. Sprachwandel: Von Der Unsichtbaren Hand in Der Sprache. Tübingen: Francke.\n\n\nKerremans, Daphné. 2015. A Web of New Words. Bern: Peter Lang. https://doi.org/10.3726/978-3-653-04788-2.\n\n\nLipka, Leonhard. 1992. An Outline of English Lexicology. Forschung Und Studium Anglistik. Tübingen: Niemeyer.\n\n\n———. 2002. English Lexicology: Lexical Structure, Word Semantics and Word-Formation. Tübingen: Narr.\n\n\nSaussure, Ferdinand de. 1916. Cours de Linguistique Générale. Lausanne: Payot.\n\n\nSchmid, Hans-Jörg. 2016. English Morphology and Word-Formation - an Introduction. 2nd ed. Berlin: Erich Schmidt Verlag.\n\n\n———. 2020. The Dynamics of the Linguistic System. Usage, Conventionalization, and Entrenchment. Oxford: Oxford University Press."
+    "text": "Course bibliography\n\n\nBauer, Laurie. 2022. An Introduction to English Lexicology. Edinburgh University Press.\n\n\nBühler, Karl. 1934. Sprachtheorie. Jena: Fischer.\n\n\nGrieve, Jack, Andrea Nini, and Diansheng Guo. 2018. “Mapping Lexical Innovation in American English.” Journal of English Linguistics 46 (4): 293–319. https://doi.org/10.1177/0075424218793191.\n\n\nHaspelmath, Martin. 2023. “Defining the Word.” WORD 69 (3): 283–97. https://doi.org/10.1080/00437956.2023.2237272.\n\n\nHilpert, Martin, and Christian Mair. 2015. “Grammatical Change.” In The Cambridge Handbook of English Corpus Linguistics, edited by Douglas Biber and Randi Reppen. Cambridge: Cambridge University Press.\n\n\nHilpert, Martin, David Correia Saavedra, and Jennifer Rains. 2023. “Meaning Differences Between English Clippings and Their Source Words: A Corpus-Based Study.” ICAME Journal 47 (1): 19–37. https://doi.org/10.2478/icame-2023-0002.\n\n\nJackson, Howard. 1988. Words and Their Meaning. 1st ed. Learning about Language. London: Longman.\n\n\nKeller, Rudi. 1994. Sprachwandel: Von Der Unsichtbaren Hand in Der Sprache. Tübingen: Francke.\n\n\nKerremans, Daphné. 2015. A Web of New Words. Bern: Peter Lang. https://doi.org/10.3726/978-3-653-04788-2.\n\n\nLipka, Leonhard. 1992. An Outline of English Lexicology. Forschung Und Studium Anglistik. Tübingen: Niemeyer.\n\n\n———. 2002. English Lexicology: Lexical Structure, Word Semantics and Word-Formation. Tübingen: Narr.\n\n\nOgden, Charles Kay, and I. A. Richards. 1923. The Meaning of Meaning. London: K. Paul, Trench, Trubner & Co.\n\n\nSaussure, Ferdinand de. 1916. Cours de Linguistique Générale. Lausanne: Payot.\n\n\nSchmid, Hans-Jörg. 2016. English Morphology and Word-Formation - an Introduction. 2nd ed. Berlin: Erich Schmidt Verlag.\n\n\n———. 2020. The Dynamics of the Linguistic System. Usage, Conventionalization, and Entrenchment. Oxford: Oxford University Press."
+  },
+  {
+    "objectID": "sessions/02_lexicon/slides.html#utterance-criterion",
+    "href": "sessions/02_lexicon/slides.html#utterance-criterion",
+    "title": "02 — The lexicon",
+    "section": "Utterance criterion",
+    "text": "Utterance criterion\n\n“A word is the smallest unit which can stand on its own as an utterance.” (Bauer 2022: 1)\n\n\n\nbut: mentioning vs use\n\nA: Is it inadvisable or unadvisable?\nB: Un.\n\ngrammatical words as utterances (e.g. the) only in special contexts"
+  },
+  {
+    "objectID": "sessions/02_lexicon/slides.html#phonological-criterion",
+    "href": "sessions/02_lexicon/slides.html#phonological-criterion",
+    "title": "02 — The lexicon",
+    "section": "Phonological criterion",
+    "text": "Phonological criterion\n\n“A word [in isolation] has a single intonational focus point, or movement of pitch.” (Bauer 2022: 2)\n\n\n\nbut: sequencing and alternatives affect prosody\n\nin the beginning vs first vs forever vs for ever\n\nminimal pair in intonation: record (N) vs record (V) in isolation vs context\n\nExamples:\n\nHe will reˈcord the song. / He bought the ˈrecord."
+  },
+  {
+    "objectID": "sessions/02_lexicon/slides.html#semantic-criterion",
+    "href": "sessions/02_lexicon/slides.html#semantic-criterion",
+    "title": "02 — The lexicon",
+    "section": "Semantic criterion",
+    "text": "Semantic criterion\n\n“A word has a single, unitary meaning.” (Bauer 2022: 2)\n\n\nbut: near-synonymous expressions can differ in meaning\nfinally vs in the end (closure vs narrative sequencing)\nExamples:\n\nWe finally arrived after midnight. / In the end, we stayed home."
+  },
+  {
+    "objectID": "sessions/02_lexicon/slides.html#orthographic-criterion",
+    "href": "sessions/02_lexicon/slides.html#orthographic-criterion",
+    "title": "02 — The lexicon",
+    "section": "Orthographic criterion",
+    "text": "Orthographic criterion\n\n“words are unitary orthographic units” (Bauer 2022: 2)\n\n\n\nbut: spacing and hyphenation vary\n\ncoffee pot vs coffee-pot\nin so far as vs in‑so‑far‑as\n\ndiachronic change: all right vs alright (usage note in OED)\n\nExamples:\n\nIt’s all right. / It’s alright. (nonstandard in some styles)."
+  },
+  {
+    "objectID": "sessions/02_lexicon/slides.html#dictionary-criterion",
+    "href": "sessions/02_lexicon/slides.html#dictionary-criterion",
+    "title": "02 — The lexicon",
+    "section": "Dictionary criterion",
+    "text": "Dictionary criterion\n\n“A word is listed in the dictionary.” (Bauer 2022: 2)\n\n\nbut: circularity; sub‑lexical units are also listed (e.g. prefix un‑)"
+  },
+  {
+    "objectID": "sessions/02_lexicon/slides.html#practical-definition",
+    "href": "sessions/02_lexicon/slides.html#practical-definition",
+    "title": "02 — The lexicon",
+    "section": "Practical definition",
+    "text": "Practical definition\n\n“We will accept the spelling conventions of English as defining words […] which has the advantage of being practical.” (Bauer 2022: 3)\n\nFurther reading: Haspelmath, Martin. 2023. “Defining the Word.” WORD 69 (3): 283–97. https://doi.org/10.1080/00437956.2023.2237272."
+  },
+  {
+    "objectID": "sessions/02_lexicon/slides.html#criteria-cheat-sheet",
+    "href": "sessions/02_lexicon/slides.html#criteria-cheat-sheet",
+    "title": "02 — The lexicon",
+    "section": "Criteria cheat sheet",
+    "text": "Criteria cheat sheet\n\n\n\nCriterion\nDiagnostic\nQuick example\n\n\n\n\nUtterance\nstandalone?\nUn. (context-dependent)\n\n\nPhonology\nstress pattern?\nrecord N vs V\n\n\nSemantic\nunitary meaning?\nfinally ≠ in the end\n\n\nOrthography\nspacing/hyphens?\nalright vs all right\n\n\nDictionary\nlisted?\nun- (sub-lexical but listed)"
+  },
+  {
+    "objectID": "sessions/02_lexicon/slides.html#micro-check-is-this-a-word",
+    "href": "sessions/02_lexicon/slides.html#micro-check-is-this-a-word",
+    "title": "02 — The lexicon",
+    "section": "Micro-check: Is this a word?",
+    "text": "Micro-check: Is this a word?\nalright\n\n→ orthographic controversy; cf. practical definition (accept spelling conventions)\n\nhoneybee vs honey bee\n\n→ orthographic criterion; both attested; check dictionary practice\n\n\n\n10:44–10:45\nEvidence task (60s): look up headword, check usage/orthography note, cite one example"
+  },
+  {
+    "objectID": "sessions/02_lexicon/slides.html#problems-in-delineating-the-term-word",
+    "href": "sessions/02_lexicon/slides.html#problems-in-delineating-the-term-word",
+    "title": "02 — The lexicon",
+    "section": "Problems in delineating the term word",
+    "text": "Problems in delineating the term word\nNames\n\n\n\n\nnames have unique reference; they pattern differently from common nouns\nexamples:\n\nthe Samantha\nThis isn’t the Paris I remember. (common‑noun use; compare corpus: “This isn’t the Paris of my youth”)\n\nroles as noun phrases (no modifiers): the former Argentine\n\n\n\n\n\n\n\n\nWhen do names pattern like common nouns?\n\n\n\n10:45–10:50"
   },
   {
     "objectID": "sessions/01_intro/slides.html#course-materials",
