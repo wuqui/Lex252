@@ -36,3 +36,6 @@ bibliography: references.bib
 
 metadata:
   linkprefix: ""
+
+params:
+  show_solutions: false

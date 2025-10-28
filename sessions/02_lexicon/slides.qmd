@@ -18,6 +18,8 @@ format:
 revealjs-plugins:
   - pointer
   - excalidraw
+params:
+  show_solutions: false
 ---
 
 # Outline
@@ -27,11 +29,18 @@ revealjs-plugins:
 3. Paradigms: inflection and derivation
 4. Practice: Using the OED
 
+. . .
+
+::: {.content-visible when-meta="params.show_solutions"}
+solutions check
+:::
+
+
 ::: {.notes}
 - 10:35–10:36
 :::
 
-# What is a word? [@Bauer2022Introduction]
+# Criteria for wordness
 
 ::: {.notes}
 - 10:35–10:44
@@ -121,29 +130,33 @@ Further reading: [@Haspelmath2023DefiningWord]{.fullcite}
 
 ## Criteria cheat sheet
 
-| Criterion | Diagnostic | Quick example |
-|---|---|---|
-| Utterance | standalone? | *Un.* (context-dependent) |
-| Phonology | stress pattern? | *record* N vs V |
-| Semantic | unitary meaning? | *finally* ≠ *in the end* |
-| Orthography | spacing/hyphens? | *alright* vs *all right* |
-| Dictionary | listed? | *un-* (sub-lexical but listed) |
+| Criterion    | Diagnostic           | Quick example                      |
+| :----------- | :------------------- | :--------------------------------- |
+| Utterance    | standalone?          | *Un.* (context-dependent)          |
+| Phonology    | stress pattern?      | *first* vs *for ever*              |
+| Semantic     | unitary meaning?     | *finally* vs *in the end*          |
+| Orthography  | spacing/hyphens?     | *alright* vs *all right*           |
+| Dictionary   | listed?              | *un-* (sub-lexical but listed)     |
 
 ---
 
-## Micro-check: Is this a word?
+## Check: is this a word?
 
 *alright*
 
-::: {.fragment}
+. . .
+
+::::: {.content-visible when-meta="params.show_solutions"}
 → orthographic controversy; cf. practical definition (accept spelling conventions)
-:::
+:::::
 
 *honeybee* vs *honey bee*
 
-::: {.fragment}
+. . .
+
+::::: {.content-visible when-meta="params.show_solutions"}
 → orthographic criterion; both attested; check dictionary practice
-:::
+:::::
 
 ::: {.notes}
 - 10:44–10:45
@@ -152,9 +165,11 @@ Further reading: [@Haspelmath2023DefiningWord]{.fullcite}
 
 ---
 
-## Problems in delineating the term *word*
+# Problems in delineating the term *word*
 
-### Names
+## Names
+
+. . .
 
 ::: {layout="[60,40]"}
 - names have unique reference; they pattern differently from common nouns
@@ -176,7 +191,7 @@ When do names pattern like common nouns?
 
 ---
 
-### Multi-word expressions (MWE)
+## Multi-word expressions (MWE)
 
 - compounds: *blackbird*, *coffee pot*
 - phrasal verbs: *look up*, *take off*
@@ -185,7 +200,7 @@ When do names pattern like common nouns?
 
 ---
 
-### Compounds
+## Compounds
 
 - *passion flower*; *sunflower*; *wall‑flower*
 - onomasiological competition: *honey bee* vs *honeybee*
@@ -200,7 +215,7 @@ When do names pattern like common nouns?
     - headword spelling
     - variant forms list
     - example citations
-- OED finding: *honey bee* (primary); *honeybee* (variant)
+- OED finding: *honeybee* (primary); *honey bee* (variant)
 
 | Evidence | Result |
 |---|---|
@@ -208,9 +223,8 @@ When do names pattern like common nouns?
 | Current usage | both forms common |
 :::
 
----
 
-### Phrasal verbs
+## Phrasal verbs
 
 - *He passed out.*  
 - *He fainted.*
@@ -219,9 +233,8 @@ Examples:
 
 - *She looked up the word.* / *She looked the word up.*
 
----
 
-### Collocations
+## Collocations
 
 Continuum:
 
@@ -252,7 +265,7 @@ Examples:
 
 ---
 
-### Idioms & proverbs
+## Idioms & proverbs
 
 - **Idioms**: *He kicked the bucket.* (= He died)
 - **Proverbs**: *Too many cooks spoil the broth.* (fixed formulaic)
@@ -262,9 +275,8 @@ Examples:
 - *She spilled the beans.* (= revealed the secret)
 - *A stitch in time saves nine.* (cannot reorder)
 
----
 
-### Worked example: ambiguous case
+## Worked example: ambiguous case
 
 ::: {.small}
 *break down*
@@ -294,37 +306,41 @@ Conclusion:
 :::
 :::
 
----
 
-### Micro-check: Classify the MWE
+## Check: Classifying multi-word expressions
 
 *take a photo*
 
-::: {.fragment}
+. . .
+
+:::: {.content-visible when-meta="params.show_solutions"}
 → collocation (light verb construction)
-:::
+::::
 
 *kick the bucket*
 
-::: {.fragment}
-→ idiom (non-compositional)
-:::
+. . .
 
-::::: {.notes}
+:::: {.content-visible when-meta="params.show_solutions"}
+→ idiom (non-compositional)
+::::
+
+::: {.notes}
 - 10:50–10:57
 - BREAK — announce 5‑minute break at 10:57; resume 11:02
-:::::
+:::
+
+
+## Paradigms
+
+::: {.notes}
+- 11:02–11:12
+- AFTER BREAK — resume at 11:02
+:::
 
 ---
 
-### Paradigms
-
-::::: {.notes}
-- 11:02–11:12
-- AFTER BREAK — resume at 11:02
-:::::
-
-#### Inflectional paradigms
+### Inflectional paradigms
 
 > "The term 'paradigm' is in general usage, but its usage is often limited. Although *paradigm* can justifiably be used of any substitution class, it is most often used of substitution classes within the word. Thus the normal use for the term *paradigm* is the kind of substitution class illustrated in the following example." [@Bauer2022Introduction]
 
@@ -334,7 +350,7 @@ This paradigm illustrates two different kinds of word: there is a sense in which
 
 ---
 
-#### Derivational paradigms
+### Derivational paradigms
 
 \(13\)
 
@@ -360,31 +376,41 @@ Although these examples show individual word families, these series are often ge
 ### Visual family tree: derivation
 
 ```
-                    EMPLOY (V)
-                   /    |    \
-                  /     |     \
+                      EMPLOY (V)
+                    /     |      \
+                   /      |       \
             employer  employable  employment
               (N)       (Adj)       (N)
 ```
 
-Examples: THEORY → *theorist*, *theoretical*, *theorise*
-
 ---
 
-### Micro-check: Paradigms
+### Check: Paradigms
 
-Supply one derived form for the base: employ → …
-
-::: {.fragment}
-→ *employer* / *employable* (derivational)
-:::
-
-Identify the inflected form: *walk* → …
+::: {.small}
+1. Identify all inflected forms for the lexeme *walk*^v^
 
 ::: {.fragment}
-→ *walks* / *walked* / *walking* (inflectional)
+::: {.content-visible when-meta="params.show_solutions"}
+- *walks*: 3rd person present 
+- *walking*: present participle
+- *walked*: past tense 
+- *walked*: past participle
+:::
 :::
 
+2. Find as many derived forms as possible for the base X
+
+::: {.fragment}
+::: {.content-visible when-meta="params.show_solutions"}
+- N: *theorist*, *theoretician*, *theoretics*, *theorisation*
+- Adj: *theoretical*, *theoretic*
+- Adv: *theoretically*
+- V: *theorise*
+    - also AmE: *theorize*, *theorization*, *theorizer*
+:::
+:::
+:::
 
 # Practice: Using the OED — Topic & Objective
 
@@ -394,17 +420,6 @@ Identify the inflected form: *walk* → …
 
 - Topic: Using dictionary data to examine lexical structure and usage.
 - Objective: Identify and describe "problematic" lexical cases via OED evidence.
-
----
-
-### Roles
-
-::: {.notes}
-- 11:14–11:15
-:::
-
-- pairs (A/B)
-- A drives lookups; B takes notes; switch roles per task
 
 ---
 
@@ -431,8 +446,8 @@ Identify the inflected form: *walk* → …
 **What to look for:**
 
 - **Task A** (find two problematic cases): variant spellings? usage labels? date range in citations?
-- **Task B** (compare entries): entry structure? cross-references? example density?
-- **Task C** (extract citations + hypothesise): fixedness cues? semantic transparency? paradigmatic alternatives?
+- **Task B** (compare entries): entry structure? cross-references? examples?
+- **Task C** (extract citations & discuss): fixedness cues? semantic transparency? paradigmatic alternatives?
 
 
 # References

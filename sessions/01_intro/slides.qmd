@@ -1,4 +1,5 @@
 ---
+# removed per-file show-solutions; controlled via params in project config
 title: "01 — Organisation and introduction"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
