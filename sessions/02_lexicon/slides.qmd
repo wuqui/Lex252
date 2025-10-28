@@ -29,16 +29,10 @@ params:
 3. Paradigms: inflection and derivation
 4. Practice: Using the OED
 
-. . .
-
-::: {.content-visible when-meta="params.show_solutions"}
-solutions check
-:::
-
-
 ::: {.notes}
 - 10:35–10:36
 :::
+
 
 # Criteria for wordness
 
@@ -399,15 +393,15 @@ Although these examples show individual word families, these series are often ge
 :::
 :::
 
-2. Find as many derived forms as possible for the base X
+2. Find as many derived forms as possible for the base ANALYE.
 
 ::: {.fragment}
 ::: {.content-visible when-meta="params.show_solutions"}
-- N: *theorist*, *theoretician*, *theoretics*, *theorisation*
-- Adj: *theoretical*, *theoretic*
-- Adv: *theoretically*
-- V: *theorise*
-    - also AmE: *theorize*, *theorization*, *theorizer*
+- N: *analysis*, *analyst*
+- Adj: *analytic*, *analytical*
+- Adv: *analytically*
+- V: *analyse*
+    - also AmE: *analyze*, *analyzer*, *analyzable*
 :::
 :::
 :::
