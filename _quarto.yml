@@ -17,6 +17,8 @@ website:
             href: sessions/01_intro/index.qmd
           - text: "02 — The lexicon"
             href: sessions/02_lexicon/index.qmd
+          - text: "03 — Morphology and word-formation"
+            href: sessions/03_morphology/index.qmd
   page-navigation: true
   search: true
 

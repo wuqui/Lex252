@@ -2,7 +2,7 @@
 |---:|--------:|---|
 |  1 | 21 Oct. | [Organisation and introduction]({{< meta linkprefix >}}sessions/01_intro/index.qmd) |
 |  2 | 28 Oct. | [Words, dictionaries, and the lexicon]({{< meta linkprefix >}}sessions/02_lexicon/index.qmd) |
-|  3 |  4 Nov. | Morphology and word-formation: theory and analysis |
+|  3 |  4 Nov. | [Morphology and word-formation]({{< meta linkprefix >}}sessions/03_morphology/index.qmd) |
 |  4 | 11 Nov. | Dictionaries: fundamentals, examples, use cases |
 |  5 | 18 Nov. | Using dictionaries and analysing data |
 |  6 | 25 Nov. | Corpora: theories, methods, and applications |

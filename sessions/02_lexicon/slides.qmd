@@ -157,7 +157,6 @@ Further reading: [@Haspelmath2023DefiningWord]{.fullcite}
 - Evidence task (60s): look up headword, check usage/orthography note, cite one example
 :::
 
----
 
 # Problems in delineating the term *word*
 

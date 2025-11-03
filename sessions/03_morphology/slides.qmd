@@ -1,0 +1,268 @@
+---
+title: "03 — Morphology and word-formation"
+subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
+author: "Dr. Quirin Würschinger, LMU Munich"
+date: 2025-11-04
+metadata:
+  linkprefix: ../../
+format:
+  clean-revealjs:
+    slide-level: 2
+    css: ../../custom.css
+    fig-cap-location: top
+    fig-align: center
+    excalidraw:
+      button: false
+      shortcut: "`"
+      theme: "light"
+revealjs-plugins:
+  - pointer
+  - excalidraw
+params:
+  show_solutions: false
+---
+
+# Outline
+
+1. [**Lexical innovation**](#lexical-innovation): How do new words arise and what are the key types?
+2. [**Morphology vs word-formation**](#morphology-vs-word-formation): What's the distinction and scope?
+3. [**Inflection in Present-Day English**](#inflection-in-present-day-english): What inflectional morphemes exist?
+4. [**Morphological building blocks**](#morphological-building-blocks): What are morphemes and their categories?
+5. [**Morphemic processes**](#morphemic-word-formation-processes): How do derivation and compounding work?
+6. [**Non-morphemic processes**](#non-morphemic-word-formation): What are conversion, clipping, blending, back-formation, and acronyms?
+7. [**Practice**](#practice): How can we analyse word structure?
+8. [**Studying word-formation empirically**](#studying-word-formation-based-on-empirical-data-using-the-oed): How can we use the OED to study neologisms?
+
+::: {.notes}
+- 10:15–10:17
+:::
+
+
+# Theory
+
+## Lexical innovation
+
+::: {.notes}
+- 10:17–10:20
+:::
+
+Types of neologisms [@Kerremans2015Web]:
+
+![](att/image_1701358282980_0.png){width="600"}
+
+:::: {.notes}
+- 10:17–10:20
+::::
+
+## Morphology vs word-formation
+
+::: {.notes}
+- 10:20–10:25
+:::
+
+Based on @Schmid2016EnglishMorphology:
+
+![](att/Schmid2016-morphology-vs-word-formation_1698949643850_0.png){width="700"}
+
+:::: {.notes}
+- 10:20–10:25
+::::
+
+## Inflection in Present-Day English
+
+::: {.notes}
+- 10:25–10:30
+:::
+
+Which inflectional morphemes exist? [@Schmid2016EnglishMorphology]
+
+![](att/image_1701359043921_0.png){width="650"}
+
+:::: {.notes}
+- 10:25–10:30
+::::
+
+## Morphological building blocks
+
+::: {.notes}
+- 10:30–10:35
+:::
+
+![@Schmid2016EnglishMorphology](att/morpheme-types_1701359224211_0.png){width="500"}
+
+:::: {.notes}
+- 10:30–10:35
+::::
+
+## Morphemic word-formation processes
+
+::: {.notes}
+- 10:35–10:43
+:::
+
+![](att/image_1698966977051_0.png){width="500"}
+
+:::: {.notes}
+- 10:35–10:43
+::::
+
+## Non-morphemic word-formation
+
+:::: {.notes}
+- 10:43–10:55 (Section: 10:43–10:55)
+::::
+
+### Overview
+
+:::: {.notes}
+- 10:43–10:46
+::::
+
+![](att/image_1698950159306_0.png){width="600"}
+
+---
+
+### Zero-derivation / conversion vs derivation
+
+:::: {.notes}
+- 10:46–10:49
+::::
+
+![](att/image_1701360305725_0.png){width="500"}
+
+---
+
+### Compounding vs blending
+
+#### Formal properties of blends
+
+*swooshtika* – derogatory reference to Nike logo
+
+![@Kemmer2003Schemas](att/image_1701360686986_0.png){width="400"}
+
+---
+
+#### Semantic properties of blends
+
+*glitterati*
+
+![@Kemmer2003Schemas](att/image_1701359909256_0.png){width="400"}
+
+:::: {.notes}
+- 10:52–10:55
+::::
+
+## Quiz: classify word-formation processes
+
+### Interactive version
+
+```{=html}
+<div style="width:100%;display:flex;flex-direction:column;gap:8px;min-height:635px;"><iframe src="https://wayground.com/embed/quiz/6908f6e48c4e852bd4f3d005" title=" - Wayground" style="flex:1;" frameBorder="0" allowfullscreen></iframe><a href="https://wayground.com/admin?source=embedFrame" target="_blank">Interactive version on Wayground.</a></div>
+```
+
+::::: {.notes}
+- 10:50–10:55 Launch quiz; announce code; show leaderboard; stop at time; announce winner.
+:::::
+
+:::: {.content-visible when-meta="params.show_solutions"}
+---
+
+### Reference answers
+
+| Word                     | Process/type                 |
+|--------------------------|------------------------------|
+| *friendship*             | derivation                   |
+| *distasteful*            | derivation (prefix + suffix) |
+| *washing machine*        | compounding (endocentric)    |
+| *redneck*                | compounding (exocentric)     |
+| *singer-songwriter*      | compounding (copulative)     |
+| *paperback*              | compounding (endocentric)    |
+| *cook* (N) ← *cook* (V)  | conversion                   |
+| *to Google* (V)          | conversion                   |
+| *fridge*                 | clipping                     |
+| *Brangelina*             | blending                     |
+| *swooshtika*             | blending                     |
+| *sightsee*               | back-formation               |
+| *LOL*                    | acronym/initialism           |
+::::
+
+::: {.notes}
+- Keep visible only when solutions are enabled or after-class profile.
+:::
+
+
+## Morphemic vs non-morphemic WF – summary
+
+:::: {.notes}
+- 10:55–10:57
+- BREAK — announce 5-minute break at 10:57; resume 11:02
+::::
+
+![](att/image_1701360349164_0.png){width="600"}
+
+
+## Further reading
+
+:::: {.notes}
+- 10:57–11:00
+::::
+
+- [@Bauer2022Introduction]{.fullcite}
+- [@Lipka2002EnglishLexicology]{.fullcite}
+- [@Schmid2016EnglishMorphology]{.fullcite}
+
+:::: {.notes}
+- AFTER BREAK — resume at 11:00
+::::
+
+
+
+# Studying word-formation based on empirical data using the OED
+
+## Research questions
+
+1. Which neologisms have entered the OED since 2000?
+2. What are the most common word classes among these recent neologisms?
+3. What are the most common word-formation processes?
+4. Which semantic domains are most common?
+5. Since when have these neologisms been in use?
+
+
+## Extracting neologisms from the OED {.small}
+
+Using OED’s Advanced Search functionality, we can extract neologisms – words that have only been used since the year 2000 – from the OED.
+
+![[Search URL](https://www.oed.com/search/advanced/Entries?textTermOpt0=WordPhrase&dateOfUseFirstUse=true&dateOfUseFrom=2000&page=1&sortOption=Frequency)](att/oed-advanced-search.png)
+
+## Analyzing the data in Microsoft Excel
+
+model Excel sheet: [URL](https://1drv.ms/x/c/9a2ec97d593520f9/EbTMdPaevpFJqGqbQT43l3YBf2Pg02PJ8On1XOLh1JiBcA)
+
+---
+
+### Data preparation
+
+1. Open a blank Excel sheet.
+2. Click `import` and `CSV file`.
+3. Select file origin encoding to `Unicode (UTF-8)`.
+3. Specify that the data are **delimited by commas** (`csv`) as column separator.
+4. Convert the region containing the data to a `Table`.
+5. Insert one `Pivot Table` (and `Pivot Chart`) for each research question.
+
+---
+
+### `Table`
+
+![](att/excel-table.png)
+
+---
+
+### `Pivot Table`
+
+![](att/excel-pivot-table.png)
+
+
+# References
+
+:::: {#refs}
+::::
