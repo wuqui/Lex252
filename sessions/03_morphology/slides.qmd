@@ -19,7 +19,7 @@ revealjs-plugins:
   - pointer
   - excalidraw
 params:
-  show_solutions: false
+  show_solutions: true
 ---
 
 # Outline {.small}
@@ -97,25 +97,36 @@ Which types of morphemes are there and how do they differ?
 
 ## Morphemic word-formation processes
 
-::: {.notes}
-- 10:35–10:43
-:::
+Which morphemic word-formation processes are there?
 
-![](att/image_1698966977051_0.png){width="500"}
+. . .
+
+![](att/image_1698966977051_0.png){height="400"}
 
 :::: {.notes}
 - 10:35–10:43
 ::::
+
+## Exercise: conducting a morphological analysis
+
+Provide a full morphological analysis for the word *misinterpretations*.
+
+. . .
+
+::: {.content-visible when-meta="params.show_solutions"}
+![](att/morphological-analysis-misinterpretations.png){height="500"}
+:::
+
 
 ## Non-morphemic word-formation
 
-:::: {.notes}
-- 10:43–10:55 (Section: 10:43–10:55)
-::::
-
 ### Overview
 
+Which non-morphemic word-formation processes are there?
+
+::: {.fragment}
 ![](att/image_1698950159306_0.png)
+:::
 
 :::: {.notes}
 - 10:43–10:46
@@ -138,6 +149,12 @@ What is the difference between zero-derivation and conversion?
 ---
 
 ### Compounding vs blending
+
+#### Compound types
+
+![](att/compound-types.png)
+
+----
 
 #### Formal properties of blends
 
