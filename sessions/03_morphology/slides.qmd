@@ -19,7 +19,7 @@ revealjs-plugins:
   - pointer
   - excalidraw
 params:
-  show_solutions: true
+  show_solutions: false
 ---
 
 # Outline {.small}
