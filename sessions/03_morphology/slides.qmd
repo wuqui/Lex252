@@ -22,7 +22,7 @@ params:
   show_solutions: false
 ---
 
-# Outline
+# Outline {.small}
 
 1. [**Lexical innovation**](#lexical-innovation): How do new words arise and what are the key types?
 2. [**Morphology vs word-formation**](#morphology-vs-word-formation): What's the distinction and scope?
@@ -42,31 +42,29 @@ params:
 
 ## Lexical innovation
 
+How do new words arise?
+
+. . .
+
+![@Kerremans2015Web](att/image_1701358282980_0.png)
+
 ::: {.notes}
 - 10:17–10:20
 :::
 
-Types of neologisms [@Kerremans2015Web]:
-
-![](att/image_1701358282980_0.png){width="600"}
-
-:::: {.notes}
-- 10:17–10:20
-::::
 
 ## Morphology vs word-formation
 
+What is the difference between morphology and word-formation?
+
+. . .
+
+![@Schmid2016EnglishMorphology](att/Schmid2016-morphology-vs-word-formation_1698949643850_0.png)
+
 ::: {.notes}
 - 10:20–10:25
 :::
 
-Based on @Schmid2016EnglishMorphology:
-
-![](att/Schmid2016-morphology-vs-word-formation_1698949643850_0.png){width="700"}
-
-:::: {.notes}
-- 10:20–10:25
-::::
 
 ## Inflection in Present-Day English
 
@@ -74,25 +72,28 @@ Based on @Schmid2016EnglishMorphology:
 - 10:25–10:30
 :::
 
-Which inflectional morphemes exist? [@Schmid2016EnglishMorphology]
+Which inflectional morphemes exist in Present-Day English?
 
-![](att/image_1701359043921_0.png){width="650"}
+. . .
+
+![@Schmid2016EnglishMorphology](att/image_1701359043921_0.png){width="650"}
 
 :::: {.notes}
 - 10:25–10:30
 ::::
 
-## Morphological building blocks
+## Morphological building blocks {.small}
+
+Which types of morphemes are there and how do they differ?
+
+. . .
+
+![@Schmid2016EnglishMorphology](att/morpheme-types_1701359224211_0.png){height="500"}
 
 ::: {.notes}
 - 10:30–10:35
 :::
 
-![@Schmid2016EnglishMorphology](att/morpheme-types_1701359224211_0.png){width="500"}
-
-:::: {.notes}
-- 10:30–10:35
-::::
 
 ## Morphemic word-formation processes
 
@@ -114,21 +115,25 @@ Which inflectional morphemes exist? [@Schmid2016EnglishMorphology]
 
 ### Overview
 
+![](att/image_1698950159306_0.png)
+
 :::: {.notes}
 - 10:43–10:46
 ::::
-
-![](att/image_1698950159306_0.png){width="600"}
 
 ---
 
 ### Zero-derivation / conversion vs derivation
 
+What is the difference between zero-derivation and conversion?
+
+::: {.fragment}
+![](att/image_1701360305725_0.png)
+:::
+
 :::: {.notes}
 - 10:46–10:49
 ::::
-
-![](att/image_1701360305725_0.png){width="500"}
 
 ---
 
