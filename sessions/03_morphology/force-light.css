@@ -1,0 +1,19 @@
+/* Force light mode by disabling auto-dark filters */
+@media (prefers-color-scheme: dark) {
+  body {
+    filter: none !important;
+  }
+  
+  html {
+    background-color: white !important;
+  }
+  
+  img, video, iframe, svg:not(.bi, .fa) {
+    filter: none !important;
+  }
+  
+  pre {
+    filter: none !important;
+  }
+}
+
