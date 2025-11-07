@@ -5,10 +5,14 @@ author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-11-04
 metadata:
   linkprefix: ../../
+filters:
+  - ../../filters/fullcite.lua
 format:
   clean-revealjs:
     slide-level: 2
-    css: ../../custom.css
+    css:
+      - ../../custom.css
+      - force-light.css
     fig-cap-location: top
     fig-align: center
     excalidraw:
@@ -19,7 +23,7 @@ revealjs-plugins:
   - pointer
   - excalidraw
 params:
-  show_solutions: false
+  show_solutions: true
 ---
 
 # Outline {.small}
@@ -46,7 +50,7 @@ How do new words arise?
 
 . . .
 
-![@Kerremans2015Web](att/image_1701358282980_0.png)
+![@Kerremans2015Web](att/image_1701358282980_0.png){width="600px"}
 
 ::: {.notes}
 - 10:17–10:20
@@ -59,7 +63,7 @@ What is the difference between morphology and word-formation?
 
 . . .
 
-![@Schmid2016EnglishMorphology](att/Schmid2016-morphology-vs-word-formation_1698949643850_0.png)
+![@Schmid2016EnglishMorphology](att/Schmid2016-morphology-vs-word-formation_1698949643850_0.png){width=80%}
 
 ::: {.notes}
 - 10:20–10:25
@@ -76,7 +80,7 @@ Which inflectional morphemes exist in Present-Day English?
 
 . . .
 
-![@Schmid2016EnglishMorphology](att/image_1701359043921_0.png){width="650"}
+![@Schmid2016EnglishMorphology](att/image_1701359043921_0.png){width=80%}
 
 :::: {.notes}
 - 10:25–10:30
@@ -101,7 +105,7 @@ Which morphemic word-formation processes are there?
 
 . . .
 
-![](att/image_1698966977051_0.png){height="400"}
+![](att/image_1698966977051_0.png){height=500}
 
 :::: {.notes}
 - 10:35–10:43
@@ -109,12 +113,10 @@ Which morphemic word-formation processes are there?
 
 ## Exercise: conducting a morphological analysis
 
-Provide a full morphological analysis for the word *misinterpretations*.
-
-. . .
+Provide a full morphological analysis for the word *misrepresentations*.
 
 ::: {.content-visible when-meta="params.show_solutions"}
-![](att/morphological-analysis-misinterpretations.png){height="500"}
+{{< svg-frag file="att/misrepresentations_cropped_frag.svg" width="800px" >}}
 :::
 
 
