@@ -19,6 +19,8 @@ website:
             href: sessions/02_lexicon/index.qmd
           - text: "03 — Morphology and word-formation"
             href: sessions/03_morphology/index.qmd
+          - text: "04 — Dictionaries: fundamentals, examples, use cases"
+            href: sessions/04_dictionaries/index.qmd
   page-navigation: true
   search: true
 

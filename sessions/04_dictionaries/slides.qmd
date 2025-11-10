@@ -1,0 +1,247 @@
+---
+title: "04 — Dictionaries: fundamentals, examples, use cases"
+subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
+author: "Dr. Quirin Würschinger, LMU Munich"
+date: 2025-11-11
+metadata:
+  linkprefix: ../../
+filters:
+  - ../../filters/fullcite.lua
+format:
+  clean-revealjs:
+    slide-level: 2
+    css:
+      - ../../custom.css
+    fig-cap-location: top
+    fig-align: center
+    excalidraw:
+      button: false
+      shortcut: "`"
+      theme: "light"
+revealjs-plugins:
+  - pointer
+  - excalidraw
+params:
+  show_solutions: true
+---
+
+# Outline 
+
+[**Studying word-formation empirically**](#studying-word-formation-based-on-empirical-data-using-the-oed): How can we use the OED to study neologisms?
+
+# The Lexicon
+
+## Two senses of *lexicon*
+
+@Lipka1992OutlineEnglish, p. 11
+
+"In the following, I will use *lexicon* in two senses that are not always sharply distinguished:  
+
+a) for a **metalinguistic level**, or a sub-component in a linguistic model; and  
+b) in the **sense of vocabulary** as seen from a systematic, synchronic point of view."  
+
+
+## Objective of lexicology
+
+- “What is most important, however, is that in lexicology the stock of words or lexical items is not simply regarded as a **list of isolated elements**.  
+- Lexicologists try to find out **generalisations** and **regularities** and especially consider **relations** between elements (see chapters n and IV).  
+- Lexicology is therefore concerned with **structures**, not with a mere agglomeration of words (cf. @Jackson1988WordsTheir: 222)."  
+  [@Lipka1992OutlineEnglish, p. 1]
+
+## Definition [@Bauer2022Introduction]
+
+- “The lexicon is what linguists call the dictionary that is assumed to be **in people's heads**, or the linguist's best approximation to that.  
+- It is fundamentally a *psychological entity*, and its contents cannot be observed directly but must be deduced from speakers' and hearers' **behaviour**.  
+- Two fundamental approaches:  
+  1. **Home of the lawless** [@DiSciullo1987Definition] – lexicon contains whatever cannot be predicted by general rule.  
+  2. Wider approach – lexicon contains anything to do with the **structure of words**, whether lawless or not."
+
+## The mental lexicon
+
+### A cognitive view
+
+![](att/image_1698948775221_0.png){width="500"}
+
+---
+
+### Cognitive-linguistic models of the lexicon
+
+![](att/image_1698948757878_0.png){width="700"}
+
+---
+
+### Word embeddings [@Bandyopadhyay2022Interactive]
+
+![](att/image_1698966813935_0.png){width="600"}
+
+---
+
+Interactive demo: <https://projector.tensorflow.org/>
+
+![](att/image_1700082493780_0.png){width="500"}
+
+---
+
+### Associations in the lexicon
+
+![](att/image_1699482332773_0.png){width="600"}
+
+*[@Stella2019Modelling]*
+
+---
+
+### The Stroop Effect [@Stroop1935StudiesInterference]
+
+![](att/image_1699482680365_0.png){width="500"}
+
+---
+
+### Freudian slip [@Bauer2022Introduction]
+
+"If you talk to someone about electricity, and then make them read the phrase *sham dock*, they might very well say *damn shock*, because of prior activation of related words; the Freudian slip depends upon a subject area being readily activated in the brain and brought out inadvertently, whether because of a word related in meaning or pronunciation."
+
+
+# Dictionaries [@Bauer2022Introduction]
+
+## What is a *word*?
+
+- "A word is listed in the dictionary." [@Bauer2022Introduction, p. 2]
+  But:  
+  - circular reasoning – words are listed *because* they are words  
+  - dictionaries also list smaller units (e.g. prefix *un-*)
+- "[...] in general we will accept the spelling conventions of English as defining words. This may not be terribly scientific, but it has the advantage of being practical." [@Bauer2022Introduction, p. 3]
+
+
+## Definition of *dictionary*
+
+- "The term *dictionary* is usually restricted to real-world dictionaries that appear in print and online.
+- Dictionaries provide a list of words of whatever language they deal with – in our case, English – and then give a certain amount of information about each of them.
+- They tend to have two functions, which may at times conflict:
+  1. **Describe** the language as it is (descriptive)  
+  2. Provide an influence for establishing and maintaining the **standard** form of the language (prescriptive)"
+
+---
+
+### Descriptivism vs prescriptivism
+
+::: {.columns}
+:::: {.column width="50%"}
+@Bauer2022Introduction: 18
+
+- "If we assume that one of *'kilometre* and *ki'lometre* is right (and the other therefore wrong), we assume that there is a **unique solution** to this question of English usage …"
+- Language questions are more often like the *jeans* question (multiple acceptable answers) than like the *drive-on-the-right* question (single legal answer).
+::::
+:::: {.column width="50%"}
+![](att/prescriptive_1699480345055_0.jpg){width="500"}
+::::
+:::
+
+---
+
+## Proof of the existence of words
+
+“First of all, dictionaries provide evidence of the existence of a word.  The fact that a word is listed in a dictionary at all is taken to prove that there is such a word.  This can be misleading in two ways:
+
+1. Dictionaries **sometimes list erroneous words** that have no existence outside the dictionary (e.g. *banket*, *sardel*).  
+2. Dictionaries more often **fail to list perfectly good words** – no dictionary can list every word of English.”
+
+
+## Information provided in the OED
+
+![](att/image_1699480538583_0.png){width="650"}
+
+
+## Selected dictionaries
+
+### Urban Dictionary
+
+<https://www.urbandictionary.com/>
+
+![](att/urban-dictionary-neologism_1700084367030_0.png){width="500"}
+
+---
+
+### Wiktionary
+
+<https://www.wiktionary.org/>
+
+![](att/wiktionary_1700084621385_0.png){width="500"}
+
+---
+
+#### WIND (Machine-readable Wiktionary)
+
+@Sajous2020ENGLAWI
+
+<http://redac.univ-tlse2.fr/lexiques/wind.html>
+
+![](att/WIND_1700084693531_0.png){width="450"}
+
+---
+
+![](att/wind-excel.png)
+
+[Excel Sheet](https://1drv.ms/x/c/9a2ec97d593520f9/EfkgNVl9yS4ggJpnEQAAAAABFvznnl_KuUJpr3jsL3s7CA)
+
+---
+
+### Oxford English Dictionary (OED)
+
+![](att/image_1700085431951_0.png){width="600"}
+
+---
+
+#### Advanced search interface
+
+![](att/image_1700086248403_0.png){width="600"}
+
+
+# Studying word-formation based on empirical data using the OED
+
+## Research questions
+
+1. Which neologisms have entered the OED since 2000?
+2. What are the most common word classes among these recent neologisms?
+3. What are the most common word-formation processes?
+4. Which semantic domains are most common?
+5. Since when have these neologisms been in use?
+
+
+## Extracting neologisms from the OED {.small}
+
+Using OED’s Advanced Search functionality, we can extract neologisms – words that have only been used since the year 2000 – from the OED.
+
+![[Search URL](https://www.oed.com/search/advanced/Entries?textTermOpt0=WordPhrase&dateOfUseFirstUse=true&dateOfUseFrom=2000&page=1&sortOption=Frequency)](att/oed-advanced-search.png)
+
+## Analyzing the data in Microsoft Excel
+
+model Excel sheet: [URL](https://1drv.ms/x/c/9a2ec97d593520f9/EbTMdPaevpFJqGqbQT43l3YBf2Pg02PJ8On1XOLh1JiBcA)
+
+---
+
+### Data preparation
+
+1. Open a blank Excel sheet.
+2. Click `import` and `CSV file`.
+3. Select file origin encoding to `Unicode (UTF-8)`.
+3. Specify that the data are **delimited by commas** (`csv`) as column separator.
+4. Convert the region containing the data to a `Table`.
+5. Insert one `Pivot Table` (and `Pivot Chart`) for each research question.
+
+---
+
+### `Table`
+
+![](att/excel-table.png)
+
+---
+
+### `Pivot Table`
+
+![](att/excel-pivot-table.png)
+
+
+# References
+
+:::: {#refs}
+::::

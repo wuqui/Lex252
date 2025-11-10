@@ -1,0 +1,14 @@
+---
+title: "04 — Dictionaries: fundamentals, examples, use cases"
+toc: false
+---
+
+# Slides
+
+<div class="embed-slides">
+  <iframe src="slides.html" title="Session 04: Dictionaries: fundamentals, examples, use cases" allowfullscreen></iframe>
+  </div>
+
+[Open full screen](slides.html) | [Download PDF](slides.pdf)
+
+

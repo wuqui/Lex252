@@ -35,14 +35,13 @@ params:
 5. [**Morphemic processes**](#morphemic-word-formation-processes): How do derivation and compounding work?
 6. [**Non-morphemic processes**](#non-morphemic-word-formation): What are conversion, clipping, blending, back-formation, and acronyms?
 7. [**Practice**](#practice): How can we analyse word structure?
-8. [**Studying word-formation empirically**](#studying-word-formation-based-on-empirical-data-using-the-oed): How can we use the OED to study neologisms?
 
 ::: {.notes}
 - 10:15–10:17
 :::
 
 
-# Theory
+# Introduction
 
 ## Lexical innovation
 
@@ -70,7 +69,7 @@ What is the difference between morphology and word-formation?
 :::
 
 
-## Inflection in Present-Day English
+# Inflection in Present-Day English
 
 ::: {.notes}
 - 10:25–10:30
@@ -86,6 +85,9 @@ Which inflectional morphemes exist in Present-Day English?
 - 10:25–10:30
 ::::
 
+
+# Morphemic word-formation processes
+
 ## Morphological building blocks {.small}
 
 Which types of morphemes are there and how do they differ?
@@ -99,7 +101,7 @@ Which types of morphemes are there and how do they differ?
 :::
 
 
-## Morphemic word-formation processes
+## Overview of morphemic word-formation processes
 
 Which morphemic word-formation processes are there?
 
@@ -120,9 +122,9 @@ Provide a full morphological analysis for the word *misrepresentations*.
 :::
 
 
-## Non-morphemic word-formation
+# Non-morphemic word-formation
 
-### Overview
+## Overview
 
 Which non-morphemic word-formation processes are there?
 
@@ -134,9 +136,8 @@ Which non-morphemic word-formation processes are there?
 - 10:43–10:46
 ::::
 
----
 
-### Zero-derivation / conversion vs derivation
+## Zero-derivation / conversion vs derivation
 
 What is the difference between zero-derivation and conversion?
 
@@ -148,17 +149,16 @@ What is the difference between zero-derivation and conversion?
 - 10:46–10:49
 ::::
 
----
 
-### Compounding vs blending
+## Compounding vs blending
 
-#### Compound types
+### Compound types
 
 ![](att/compound-types.png)
 
 ----
 
-#### Formal properties of blends
+### Formal properties of blends
 
 *swooshtika* – derogatory reference to Nike logo
 
@@ -166,7 +166,7 @@ What is the difference between zero-derivation and conversion?
 
 ---
 
-#### Semantic properties of blends
+### Semantic properties of blends
 
 *glitterati*
 
@@ -176,9 +176,10 @@ What is the difference between zero-derivation and conversion?
 - 10:52–10:55
 ::::
 
-## Quiz: classify word-formation processes
 
-### Interactive version
+# Quiz: classify word-formation processes
+
+## Interactive version
 
 ```{=html}
 <div style="width:100%;display:flex;flex-direction:column;gap:8px;min-height:635px;"><iframe src="https://wayground.com/embed/quiz/6908f6e48c4e852bd4f3d005" title=" - Wayground" style="flex:1;" frameBorder="0" allowfullscreen></iframe><a href="https://wayground.com/admin?source=embedFrame" target="_blank">Interactive version on Wayground.</a></div>
@@ -189,9 +190,7 @@ What is the difference between zero-derivation and conversion?
 :::::
 
 :::: {.content-visible when-meta="params.show_solutions"}
----
-
-### Reference answers
+## Reference answers
 
 | Word                     | Process/type                 |
 |--------------------------|------------------------------|
@@ -238,52 +237,6 @@ What is the difference between zero-derivation and conversion?
 :::: {.notes}
 - AFTER BREAK — resume at 11:00
 ::::
-
-
-
-# Studying word-formation based on empirical data using the OED
-
-## Research questions
-
-1. Which neologisms have entered the OED since 2000?
-2. What are the most common word classes among these recent neologisms?
-3. What are the most common word-formation processes?
-4. Which semantic domains are most common?
-5. Since when have these neologisms been in use?
-
-
-## Extracting neologisms from the OED {.small}
-
-Using OED’s Advanced Search functionality, we can extract neologisms – words that have only been used since the year 2000 – from the OED.
-
-![[Search URL](https://www.oed.com/search/advanced/Entries?textTermOpt0=WordPhrase&dateOfUseFirstUse=true&dateOfUseFrom=2000&page=1&sortOption=Frequency)](att/oed-advanced-search.png)
-
-## Analyzing the data in Microsoft Excel
-
-model Excel sheet: [URL](https://1drv.ms/x/c/9a2ec97d593520f9/EbTMdPaevpFJqGqbQT43l3YBf2Pg02PJ8On1XOLh1JiBcA)
-
----
-
-### Data preparation
-
-1. Open a blank Excel sheet.
-2. Click `import` and `CSV file`.
-3. Select file origin encoding to `Unicode (UTF-8)`.
-3. Specify that the data are **delimited by commas** (`csv`) as column separator.
-4. Convert the region containing the data to a `Table`.
-5. Insert one `Pivot Table` (and `Pivot Chart`) for each research question.
-
----
-
-### `Table`
-
-![](att/excel-table.png)
-
----
-
-### `Pivot Table`
-
-![](att/excel-pivot-table.png)
 
 
 # References
