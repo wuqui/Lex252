@@ -280,6 +280,13 @@
     "text": "Objective of lexicology\n\n“What is most important, however, is that in lexicology the stock of words or lexical items is not simply regarded as a list of isolated elements.\n\nLexicologists try to find out generalisations and regularities and especially consider relations between elements (see chapters n and IV).\n\nLexicology is therefore concerned with structures, not with a mere agglomeration of words (cf. Jackson (1988): 222).”\n(Lipka 1992, 1)"
   },
   {
+    "objectID": "sessions/04_dictionaries/slides.html#list-vs-structure-examples",
+    "href": "sessions/04_dictionaries/slides.html#list-vs-structure-examples",
+    "title": "04 — Dictionaries: fundamentals, examples, use cases",
+    "section": "List vs structure: examples",
+    "text": "List vs structure: examples\nList view: “Words in English cooking”\n\nbutter, salt, pepper, pan, fry\n\nStructure view (relations):\n\ncollocation: strong tea vs. ?powerful tea\n\nsubstitution:\n\ncat → dog (same slot),\nfry → sauté (near-synonym)\n\n\n\n\n10:25–10:28"
+  },
+  {
     "objectID": "sessions/04_dictionaries/slides.html#definition-bauer2022introduction",
     "href": "sessions/04_dictionaries/slides.html#definition-bauer2022introduction",
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
@@ -290,8 +297,8 @@
     "objectID": "sessions/04_dictionaries/slides.html#the-mental-lexicon",
     "href": "sessions/04_dictionaries/slides.html#the-mental-lexicon",
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
-    "section": "The mental lexicon",
-    "text": "The mental lexicon"
+    "section": "The Mental Lexicon",
+    "text": "The Mental Lexicon\nThe Stroop Effect (Stroop 1935)\n\n\n\n\n\n\n\n\n\n\n\n\n\n10:27–10:29"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#what-is-a-word",
@@ -312,42 +319,42 @@
     "href": "sessions/04_dictionaries/slides.html#from-data-to-dictionary-entries",
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
     "section": "From data to dictionary entries",
-    "text": "From data to dictionary entries\n\nCorpus evidence → candidate headwords and senses\nSense discrimination from usage patterns\nDefinition writing and usage labels (register, region, style)\nAttested examples and cross‑references (derivatives, phraseology)\n\n\n\n10:19–10:23"
+    "text": "From data to dictionary entries\n\nCorpus evidence → candidate headwords and senses\n\ne.g., spike of tokens for doomscrolling in 2020–2021\n\nSense discrimination from usage patterns\n\ne.g., tablet with screen/apps vs stone/clay/inscription\n\nDefinition writing and usage labels (register, region, style)\n\ne.g., ain’t = informal; soccer = chiefly AmE\n\nAttested examples and cross‑references (derivatives, phraseology)\n\ne.g., earliest citation; link attention ↔︎ “pay attention”\n\n\n\n\n10:19–10:23"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#how-are-definitions-written",
     "href": "sessions/04_dictionaries/slides.html#how-are-definitions-written",
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
     "section": "How are definitions written?",
-    "text": "How are definitions written?\n\nGenus–differentia vs paraphrase\nControlled defining vocabulary in learner’s dictionaries\nClarity vs coverage: trade‑offs\n\nCheck: propose a defining strategy (justify; then rewrite)\n\nA bird category term (e.g., “raptor”) for non‑experts\n\n“Platform” (as used in social media contexts)\n\n“Set” (noun) — one common sense for beginners\n\nTasks: - Choose strategy (genus–differentia or paraphrase) and justify with intended user. - Rewrite the definition using a controlled defining vocabulary (learner’s style).\n\n\n10:23–10:27"
+    "text": "How are definitions written?\n\nGenus–differentia\n\ne.g., raptor: ‘a bird of prey’\n\nParaphrase\n\ne.g., whisper: ‘to speak very quietly’\n\nControlled vocab\n\ne.g., ban: ‘to say that people must not do something’\n\nClarity vs coverage\n\ne.g., platform (social media): clear for learners, but omits older senses\n\n\n\n\n10:40–10:44"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#ordering-senses",
     "href": "sessions/04_dictionaries/slides.html#ordering-senses",
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
     "section": "Ordering senses",
-    "text": "Ordering senses\n\nChronological (OED) vs prototypical/frequency‑first (learner’s)\nImpact on user tasks (history vs learning)\nCriteria: earliest attested vs most typical/current; user intent matters\n\n\n\nExample: tablet\n\nOED (historical principle): ‘slab/stone or clay for writing; pill’ → later ‘flat touchscreen computer’\n\nLearner’s (prototype/frequency): foregrounds ‘flat touchscreen computer’ for modern users\n\n\nConsequences\n\nChronology helps trace change and citations.\nPrototype helps comprehension and production.\n\n\n\n\n10:27–10:31"
+    "text": "Ordering senses\n\nChronological (OED) vs prototypical/frequency‑first (learner’s)\nImpact on user tasks (history vs learning)\nCriteria: earliest attested vs most typical/current; user intent matters\n\n\n\nExample: tablet\n\nOED (historical principle): ‘slab/stone or clay for writing; pill’ → later ‘flat touchscreen computer’\n\nLearner’s (prototype/frequency): foregrounds ‘flat touchscreen computer’ for modern users\n\n\nConsequences\n\nChronology helps trace change and citations.\nPrototype helps comprehension and production.\n\n\n\n\n10:44–10:48"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#usage-labels",
     "href": "sessions/04_dictionaries/slides.html#usage-labels",
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
     "section": "Usage labels",
-    "text": "Usage labels\nPurpose: guide choices, not police usage\n\nTypical labels with examples:\n\nregion: lorry — chiefly BrE; soccer — chiefly AmE\nregister: ain’t — informal; request vs ask — formal vs neutral\nfield: suture — medical; lemma — linguistics\nstance: pejorative/derogatory flags where appropriate\n\n\nPrinciples: base on attested use; avoid over‑labelling; use neutral wording in definitions."
+    "text": "Usage labels\nPurpose: guide choices, not police usage\nTypical labels with examples:\n\nregion: lorry — chiefly BrE; soccer — chiefly AmE\nregister: ain’t — informal; request vs ask — formal vs neutral\nfield: suture — medical; lemma — linguistics\nstance: pejorative/derogatory flags where appropriate\n\nPrinciples: base on attested use; avoid over‑labelling; use neutral wording in definitions."
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#phraseology-in-entries",
     "href": "sessions/04_dictionaries/slides.html#phraseology-in-entries",
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
     "section": "Phraseology in entries",
-    "text": "Phraseology in entries\n\nCollocations (strong tea, heavy rain), patterns (V + decision)\nMWEs: idioms, phrasal verbs, compounds\n\nWhich is the “better” collocate?\n\nheavy/strong rain\ndeeply/strongly held belief\ndo/make research\ncommit/make a crime\ntake/make a decision\n\n\n\n10:34–10:38"
+    "text": "Phraseology in entries\n\nCollocations (strong tea, heavy rain), patterns (V + decision)\nMWEs: idioms, phrasal verbs, compounds\n\nWhich is the “better” collocate?\n\nheavy/strong rain\ndeeply/strongly held belief\ndo/make research\ncommit/make a crime\ntake/make a decision\n\n\n\n10:52–10:56"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#why-examples-matter",
     "href": "sessions/04_dictionaries/slides.html#why-examples-matter",
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
     "section": "Why examples matter",
-    "text": "Why examples matter\n\nCitations justify senses and usage labels\nCurated vs auto‑extracted: precision vs coverage\nBias: genres, time periods, contributor communities\n\ne.g., pre‑2000 slang under‑represented in print‑heavy sources → missing senses\ne.g., BrE vs AmE: American news sources over‑represent “make a decision” vs BrE “take a decision”\ne.g., field bias: biomedical corpora inflate plural “data are” vs general usage “data is”\n\n\n\n\n10:43–10:45"
+    "text": "Why examples matter\n\nCitations justify senses and usage labels\nCurated vs auto‑extracted: precision vs coverage\nBias: genres, time periods, contributor communities\n\ne.g., pre‑2000 internet slang (e.g., noob) under‑represented in print‑heavy sources → missing senses\ne.g., BrE vs AmE: American news sources over‑represent make a decision vs BrE take a decision\ne.g., field bias: biomedical corpora inflate plural data are vs general usage data is\n\n\n\n\n10:56–10:59"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#proof-of-the-existence-of-words",
@@ -369,13 +376,6 @@
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
     "section": "Selected dictionaries",
     "text": "Selected dictionaries\nUrban Dictionary\nhttps://www.urbandictionary.com/"
-  },
-  {
-    "objectID": "sessions/04_dictionaries/slides.html#bridge-to-the-empirical-task",
-    "href": "sessions/04_dictionaries/slides.html#bridge-to-the-empirical-task",
-    "title": "04 — Dictionaries: fundamentals, examples, use cases",
-    "section": "Bridge to the empirical task",
-    "text": "Bridge to the empirical task\n\nExtract post‑2000 first attestations via OED Advanced Search\nAnalyse word class, formation type, subject area in Excel\n\n\n\n10:50–11:00 — BREAK 11:00–11:05; resume 11:05 (≈40 min empirical block)"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#research-questions",
