@@ -29,10 +29,10 @@ params:
 
 ## Recap
 
-- Morphology vs word‑formation: structure of words vs processes that create new lexemes
-- Inflection vs derivation: grammatical endings (e.g., *walked*, *cats*) vs new lexemes/word classes (e.g., *kindness*, *happiness*)
-- Morphemic vs non‑morphemic word‑formation: derivation/compounding vs conversion, clipping, blending, back‑formation, acronyms
-- Takeaway: we reasoned about words via relations and structure — not mere lists; today we link this perspective to how dictionaries model lexis
+- **Morphology vs word‑formation**: structure of words vs processes that create new lexemes
+- **Inflection vs derivation**: grammatical endings (e.g., *walked*, *cats*) vs new lexemes/word classes (e.g., *kindness*, *happiness*)
+- **Morphemic vs non‑morphemic word‑formation**: derivation/compounding vs conversion, clipping, blending, back‑formation, acronyms
+- **Takeaway**: we reasoned about words via relations and structure — not mere lists; today we link this perspective to how dictionaries model lexis
 
 ::: {.notes}
 - 10:15–10:18
@@ -62,18 +62,6 @@ params:
 a) for a **metalinguistic level**, or a sub-component in a linguistic model; and  
 b) in the **sense of vocabulary** as seen from a systematic, synchronic point of view."  
 
----
-
-### Key ideas — Two senses of lexicon
-
-- Metalinguistic component in a linguistic model (place in a theory)
-- Vocabulary of a language/community (items and their relations)
-- Ambiguity in usage — clarify which sense is meant in context
-
-::: {.notes}
-- 10:19–10:21
-:::
-
 
 ## Objective of lexicology
 
@@ -84,36 +72,18 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 
 ---
 
-### Key ideas — Objective of lexicology
+## List vs structure: examples
 
-- Move beyond lists: explain items via patterns and relations
-- Focus on structures (paradigmatic/syntagmatic) and generalisations
-- Aim: connect evidence to theory and make predictions
+**List** view: “Words in English cooking”  
 
-::: {.notes}
-- 10:23–10:25
-:::
+- *butter*, *salt*, *pepper*, *pan*, *fry*
 
----
+**Structure** view (relations):  
 
-### List vs structure — quick examples
-
-::: {.columns}
-:::: {.column width="50%"}
-- List view: “Words in English cooking”  
-  - *butter*, *salt*, *pepper*, *pan*, *fry*
-- Structure view (relations):  
-  - collocation: *strong tea* vs. ?*powerful tea*  
-  - substitution: *cat* → *dog* (same slot), *fry* → *sauté* (near-synonym)
-::::
-:::: {.column width="50%"}
-Contrasts to discuss:
-
-- strong vs. powerful (collocation)
-- *cat* vs. *dog* (paradigmatic slot)
-- *fry* vs. *sauté* (near-synonym proximity)
-::::
-:::
+- collocation: *strong tea* vs. ?*powerful tea*  
+- substitution: 
+  - *cat* → *dog* (same slot),
+  - *fry* → *sauté* (near-synonym)
 
 ::: {.notes}
 - 10:25–10:28
@@ -128,7 +98,30 @@ Contrasts to discuss:
   1. **Home of the lawless** [@DiSciullo1987Definition] – lexicon contains whatever cannot be predicted by general rule.  
   2. Wider approach – lexicon contains anything to do with the **structure of words**, whether lawless or not."
 
-## The mental lexicon
+
+## The Mental Lexicon
+
+### The Stroop Effect [@Stroop1935StudiesInterference]
+
+::: {layout="[50,50]"}
+![](att/image_1699482680365_0.png)\
+
+{{< video https://www.youtube.com/watch?v=gjesfzWozo4 >}}
+:::
+
+:::: {.notes}
+- 10:27–10:29
+::::
+
+---
+
+### Freudian slip [@Bauer2022Introduction]
+
+"If you talk to someone about electricity, and then make them read the phrase *sham dock*, they might very well say *damn shock*, because of prior activation of related words; the Freudian slip depends upon a subject area being readily activated in the brain and brought out inadvertently, whether because of a word related in meaning or pronunciation."
+
+:::: {.notes}
+- 10:29–10:30
+::::
 
 ---
 
@@ -137,20 +130,20 @@ Contrasts to discuss:
 - Slips and blends; priming effects; Stroop interference 
   - e.g., *RED* printed in blue slows colour naming
 - Reaction-time studies (lexical decision, frequency effects)
-  - e.g., faster decisions for frequent *time* than rare *murrain*
+  - e.g., faster decisions for frequent *time* than rare *furlough*^v^
 - Network structure: degree, clustering, multiplex links
   - e.g., *dog* linked to *cat* (semantic) and *log* (phonological)
 
-::: {.notes}
-- 10:28–10:30
-:::
+:::: {.notes}
+- 10:30–10:31
+::::
 
 ---
 
 ### Cognitive-linguistic models of the lexicon
 
 ::: {layout="[40,60]"}
-![](att/image_1698948775221_0.png){width="500"}
+![](att/image_1698948775221_0.png)
 
 ![](att/image_1698948757878_0.png){width="700"}
 :::
@@ -165,17 +158,34 @@ Contrasts to discuss:
 ![<https://projector.tensorflow.org/>](att/image_1700082493780_0.png){width="500"}
 :::
 
----
+----
 
-### Embeddings — caveats and use
+### Exercise: word embeddings
 
-- Capture distributional similarity (usage-based); not “meaning equals vectors”
-- Sensitive to training data/bias; opaque dimensions
-- Best for intuition-building and retrieval; not a ground truth
+::: {.small}
+<http://vectors.nlpl.eu/explore/embeddings/en/>
 
-::: {.notes}
-- 10:35–10:37
+1. Explore synonyms and antonyms (Similar words)
+    - Enter a seed word (e.g., `happy_ADJ`).
+    - Inspect the 5 nearest neighbours.
+    - Compare with an antonym (e.g., `sad_ADJ`).
+2. Visualise semantic clusters (Visualization)
+    - Choose two related groups (e.g., animals vs furniture).
+    - Plot in vector space; describe visible groupings.
+3. Word analogies (Calculator)
+    - Try analogies, e.g., `male_ADJ : doctor_NOUN = female_ADJ : ?`.
+    - Test several analogies; note successes and failures.
+4. Investigate ambiguity
+    - Pick a polysemous word (e.g., *bank*).
+    - Analyse how neighbours reflect different senses.
 :::
+
+<!-- <!-- ::: {.notes} -->
+<!-- - 10:37–10:41 -->
+<!-- - animals: `gorilla_NOUN,goat_NOUN,elephant_NOUN,cow_NOUN,dog_NOUN,hawk_NOUN,cat_NOUN,mouse_NOUN,baboon_NOUN,tiger_NOUN,fly_NOUN,hamster_NOUN` -->
+<!-- - furniture: `dresser_NOUN,desk_NOUN,nightstand_NOUN,bookshelf_NOUN,sofa_NOUN,stool_NOUN,chair_NOUN,bed_NOUN,table_NOUN,armchair_NOUN,cabinet_NOUN,bench_NOUN,ottoman_NOUN,wardrobe_NOUN` -->
+<!-- - ambiguitiy: *crane* -->
+<!-- ::: --> -->
 
 ---
 
@@ -183,19 +193,7 @@ Contrasts to discuss:
 
 ![](att/image_1699482332773_0.png){width="600"}
 
-*[@Stella2019Modelling]*
-
----
-
-### The Stroop Effect [@Stroop1935StudiesInterference]
-
-![](att/image_1699482680365_0.png){width="500"}
-
----
-
-### Freudian slip [@Bauer2022Introduction]
-
-"If you talk to someone about electricity, and then make them read the phrase *sham dock*, they might very well say *damn shock*, because of prior activation of related words; the Freudian slip depends upon a subject area being readily activated in the brain and brought out inadvertently, whether because of a word related in meaning or pronunciation."
+[@Stella2019Modelling]
 
 
 # Dictionaries [@Bauer2022Introduction]
@@ -221,10 +219,14 @@ Contrasts to discuss:
 
 ## From data to dictionary entries
 
-- Corpus evidence → candidate headwords and senses
-- Sense discrimination from usage patterns
-- Definition writing and usage labels (register, region, style)
-- Attested examples and cross‑references (derivatives, phraseology)
+- Corpus evidence → candidate headwords and senses 
+  - e.g., spike of tokens for *doomscrolling* in 2020–2021
+- Sense discrimination from usage patterns 
+  - e.g., *tablet* with *screen/apps* vs *stone/clay/inscription*
+- Definition writing and usage labels (register, region, style) 
+  - e.g., *ain’t* = informal; *soccer* = chiefly AmE
+- Attested examples and cross‑references (derivatives, phraseology) 
+  - e.g., earliest citation; link *attention* ↔ “pay attention”
 
 ::: {.notes}
 - 10:19–10:23
@@ -234,23 +236,18 @@ Contrasts to discuss:
 
 ## How are definitions written?
 
-- Genus–differentia vs paraphrase
-- Controlled defining vocabulary in learner’s dictionaries
-- Clarity vs coverage: trade‑offs
+- Genus–differentia 
+  - e.g., *raptor*: ‘a bird of prey’
+- Paraphrase 
+  - e.g., *whisper*: ‘to speak very quietly’
+- Controlled vocab 
+  - e.g., *ban*: ‘to say that people must not do something’
+- Clarity vs coverage 
+  - e.g., *platform* (social media): clear for learners, but omits older senses
 
-### Check: propose a defining strategy (justify; then rewrite)
-
-1. A bird category term (e.g., “raptor”) for non‑experts  
-2. “Platform” (as used in social media contexts)  
-3. “Set” (noun) — one common sense for beginners
-
-Tasks:
-- Choose strategy (genus–differentia or paraphrase) and justify with intended user.
-- Rewrite the definition using a controlled defining vocabulary (learner’s style).
-
-::: {.notes}
-- 10:23–10:27
-:::
+:::: {.notes}
+- 10:40–10:44
+::::
 
 ---
 
@@ -260,7 +257,7 @@ Tasks:
 - Impact on user tasks (history vs learning)
 - Criteria: earliest attested vs most typical/current; user intent matters
 
-::: {.columns}
+:::: {.columns}
 :::: {.column width="50%"}
 **Example: *tablet***  
 
@@ -273,11 +270,11 @@ Tasks:
 - Chronology helps trace change and citations.
 - Prototype helps comprehension and production.
 ::::
-:::
+::::
 
-::: {.notes}
-- 10:27–10:31
-:::
+:::: {.notes}
+- 10:44–10:48
+::::
 
 ---
 
@@ -285,11 +282,12 @@ Tasks:
 
 Purpose: guide choices, not police usage
 
-- Typical labels with examples:
-  - **region**: *lorry* — chiefly BrE; *soccer* — chiefly AmE
-  - **register**: *ain’t* — informal; *request* vs *ask* — formal vs neutral
-  - **field**: *suture* — medical; *lemma* — linguistics
-  - **stance**: pejorative/derogatory flags where appropriate
+Typical labels with examples:
+
+- **region**: *lorry* — chiefly BrE; *soccer* — chiefly AmE
+- **register**: *ain’t* — informal; *request* vs *ask* — formal vs neutral
+- **field**: *suture* — medical; *lemma* — linguistics
+- **stance**: pejorative/derogatory flags where appropriate
 
 Principles: base on attested use; avoid over‑labelling; use neutral wording in definitions.
 
@@ -303,10 +301,9 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 - *woke* (adjective, politicised) — labels? _______  (stance/region?)
 - *soccer* in UK newspapers — labels? _______  (region/chronology?)
 
-
-::: {.notes}
-- 10:30–10:34
-:::
+:::: {.notes}
+- 10:48–10:52
+::::
 
 ---
 
@@ -323,23 +320,24 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 4. *commit/make a crime*
 5. *take/make a decision*
 
-::: {.notes}
-- 10:34–10:38
-:::
+:::: {.notes}
+- 10:52–10:56
+::::
 
+---
 
 ## Why examples matter
 
 - Citations justify senses and usage labels
 - Curated vs auto‑extracted: precision vs coverage
 - Bias: genres, time periods, contributor communities
-  - e.g., pre‑2000 slang under‑represented in print‑heavy sources → missing senses
-  - e.g., BrE vs AmE: American news sources over‑represent “make a decision” vs BrE “take a decision”
-  - e.g., field bias: biomedical corpora inflate plural “data are” vs general usage “data is”
+  - e.g., pre‑2000 internet slang (e.g., *noob*) under‑represented in print‑heavy sources → missing senses
+  - e.g., BrE vs AmE: American news sources over‑represent *make a decision* vs BrE *take a decision*
+  - e.g., field bias: biomedical corpora inflate plural *data are* vs general usage *data is*
 
-::: {.notes}
-- 10:43–10:45
-:::
+:::: {.notes}
+- 10:56–10:59
+::::
 
 ---
 
@@ -353,7 +351,7 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 - Language questions are more often like the *jeans* question (multiple acceptable answers) than like the *drive-on-the-right* question (single legal answer).
 ::::
 :::: {.column width="50%"}
-![](att/prescriptive_1699480345055_0.jpg){width="500"}
+![](att/prescriptive_1699480345055_0.jpg)
 ::::
 :::
 
@@ -369,7 +367,7 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 
 ## Information provided in the OED
 
-![](att/image_1699480538583_0.png){width="650"}
+![](att/image_1699480538583_0.png)
 
 
 ## Selected dictionaries
@@ -378,7 +376,7 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 
 <https://www.urbandictionary.com/>
 
-![](att/urban-dictionary-neologism_1700084367030_0.png){width="500"}
+![](att/urban-dictionary-neologism_1700084367030_0.png)
 
 ---
 
@@ -386,7 +384,7 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 
 <https://www.wiktionary.org/>
 
-![](att/wiktionary_1700084621385_0.png){width="500"}
+![](att/wiktionary_1700084621385_0.png)
 
 ---
 
@@ -396,7 +394,7 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 
 <http://redac.univ-tlse2.fr/lexiques/wind.html>
 
-![](att/WIND_1700084693531_0.png){width="450"}
+![](att/WIND_1700084693531_0.png)
 
 ---
 
@@ -408,24 +406,14 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 
 ### Oxford English Dictionary (OED)
 
-![](att/image_1700085431951_0.png){width="600"}
+![](att/image_1700085431951_0.png)
 
 ---
 
 #### Advanced search interface
 
-![](att/image_1700086248403_0.png){width="600"}
+![](att/image_1700086248403_0.png)
 
----
-
-## Bridge to the empirical task
-
-- Extract post‑2000 first attestations via OED Advanced Search
-- Analyse word class, formation type, subject area in Excel
-
-::: {.notes}
-- 10:50–11:00 — BREAK 11:00–11:05; resume 11:05 (≈40 min empirical block)
-:::
 
 # Studying word-formation based on empirical data using the OED
 
