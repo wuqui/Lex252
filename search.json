@@ -252,6 +252,20 @@
     "text": "Further reading\n\n\n10:57–11:00\n\n\n\nBauer, Laurie. 2022. An Introduction to English Lexicology. Edinburgh University Press.\nLipka, Leonhard. 2002. English Lexicology: Lexical Structure, Word Semantics and Word-Formation. Tübingen: Narr.\nSchmid, Hans-Jörg. 2016. English Morphology and Word-Formation - an Introduction. 2nd ed. Berlin: Erich Schmidt Verlag.\n\n\n\nAFTER BREAK — resume at 11:00"
   },
   {
+    "objectID": "sessions/04_dictionaries/slides.html#recap",
+    "href": "sessions/04_dictionaries/slides.html#recap",
+    "title": "04 — Dictionaries: fundamentals, examples, use cases",
+    "section": "Recap",
+    "text": "Recap\n\nMorphology vs word‑formation: structure of words vs processes that create new lexemes\nInflection vs derivation: grammatical endings (e.g., walked, cats) vs new lexemes/word classes (e.g., kindness, happiness)\nMorphemic vs non‑morphemic word‑formation: derivation/compounding vs conversion, clipping, blending, back‑formation, acronyms\nTakeaway: we reasoned about words via relations and structure — not mere lists; today we link this perspective to how dictionaries model lexis\n\n\n\n10:15–10:18"
+  },
+  {
+    "objectID": "sessions/04_dictionaries/slides.html#outline",
+    "href": "sessions/04_dictionaries/slides.html#outline",
+    "title": "04 — Dictionaries: fundamentals, examples, use cases",
+    "section": "Outline",
+    "text": "Outline\n\nThe Lexicon: How does lexicology move beyond lists to structures?\nDictionaries: What do dictionaries describe and how are they used?\nEmpirical study with the OED: How can we extract and analyse neologisms?\n\n\n\n10:18–10:19"
+  },
+  {
     "objectID": "sessions/04_dictionaries/slides.html#two-senses-of-lexicon",
     "href": "sessions/04_dictionaries/slides.html#two-senses-of-lexicon",
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
@@ -277,7 +291,7 @@
     "href": "sessions/04_dictionaries/slides.html#the-mental-lexicon",
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
     "section": "The mental lexicon",
-    "text": "The mental lexicon\nA cognitive view"
+    "text": "The mental lexicon"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#what-is-a-word",
@@ -292,6 +306,48 @@
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
     "section": "Definition of dictionary",
     "text": "Definition of dictionary\n\n“The term dictionary is usually restricted to real-world dictionaries that appear in print and online.\nDictionaries provide a list of words of whatever language they deal with – in our case, English – and then give a certain amount of information about each of them.\nThey tend to have two functions, which may at times conflict:\n\nDescribe the language as it is (descriptive)\n\nProvide an influence for establishing and maintaining the standard form of the language (prescriptive)”"
+  },
+  {
+    "objectID": "sessions/04_dictionaries/slides.html#from-data-to-dictionary-entries",
+    "href": "sessions/04_dictionaries/slides.html#from-data-to-dictionary-entries",
+    "title": "04 — Dictionaries: fundamentals, examples, use cases",
+    "section": "From data to dictionary entries",
+    "text": "From data to dictionary entries\n\nCorpus evidence → candidate headwords and senses\nSense discrimination from usage patterns\nDefinition writing and usage labels (register, region, style)\nAttested examples and cross‑references (derivatives, phraseology)\n\n\n\n10:19–10:23"
+  },
+  {
+    "objectID": "sessions/04_dictionaries/slides.html#how-are-definitions-written",
+    "href": "sessions/04_dictionaries/slides.html#how-are-definitions-written",
+    "title": "04 — Dictionaries: fundamentals, examples, use cases",
+    "section": "How are definitions written?",
+    "text": "How are definitions written?\n\nGenus–differentia vs paraphrase\nControlled defining vocabulary in learner’s dictionaries\nClarity vs coverage: trade‑offs\n\nCheck: propose a defining strategy (justify; then rewrite)\n\nA bird category term (e.g., “raptor”) for non‑experts\n\n“Platform” (as used in social media contexts)\n\n“Set” (noun) — one common sense for beginners\n\nTasks: - Choose strategy (genus–differentia or paraphrase) and justify with intended user. - Rewrite the definition using a controlled defining vocabulary (learner’s style).\n\n\n10:23–10:27"
+  },
+  {
+    "objectID": "sessions/04_dictionaries/slides.html#ordering-senses",
+    "href": "sessions/04_dictionaries/slides.html#ordering-senses",
+    "title": "04 — Dictionaries: fundamentals, examples, use cases",
+    "section": "Ordering senses",
+    "text": "Ordering senses\n\nChronological (OED) vs prototypical/frequency‑first (learner’s)\nImpact on user tasks (history vs learning)\nCriteria: earliest attested vs most typical/current; user intent matters\n\n\n\nExample: tablet\n\nOED (historical principle): ‘slab/stone or clay for writing; pill’ → later ‘flat touchscreen computer’\n\nLearner’s (prototype/frequency): foregrounds ‘flat touchscreen computer’ for modern users\n\n\nConsequences\n\nChronology helps trace change and citations.\nPrototype helps comprehension and production.\n\n\n\n\n10:27–10:31"
+  },
+  {
+    "objectID": "sessions/04_dictionaries/slides.html#usage-labels",
+    "href": "sessions/04_dictionaries/slides.html#usage-labels",
+    "title": "04 — Dictionaries: fundamentals, examples, use cases",
+    "section": "Usage labels",
+    "text": "Usage labels\nPurpose: guide choices, not police usage\n\nTypical labels with examples:\n\nregion: lorry — chiefly BrE; soccer — chiefly AmE\nregister: ain’t — informal; request vs ask — formal vs neutral\nfield: suture — medical; lemma — linguistics\nstance: pejorative/derogatory flags where appropriate\n\n\nPrinciples: base on attested use; avoid over‑labelling; use neutral wording in definitions."
+  },
+  {
+    "objectID": "sessions/04_dictionaries/slides.html#phraseology-in-entries",
+    "href": "sessions/04_dictionaries/slides.html#phraseology-in-entries",
+    "title": "04 — Dictionaries: fundamentals, examples, use cases",
+    "section": "Phraseology in entries",
+    "text": "Phraseology in entries\n\nCollocations (strong tea, heavy rain), patterns (V + decision)\nMWEs: idioms, phrasal verbs, compounds\n\nWhich is the “better” collocate?\n\nheavy/strong rain\ndeeply/strongly held belief\ndo/make research\ncommit/make a crime\ntake/make a decision\n\n\n\n10:34–10:38"
+  },
+  {
+    "objectID": "sessions/04_dictionaries/slides.html#why-examples-matter",
+    "href": "sessions/04_dictionaries/slides.html#why-examples-matter",
+    "title": "04 — Dictionaries: fundamentals, examples, use cases",
+    "section": "Why examples matter",
+    "text": "Why examples matter\n\nCitations justify senses and usage labels\nCurated vs auto‑extracted: precision vs coverage\nBias: genres, time periods, contributor communities\n\ne.g., pre‑2000 slang under‑represented in print‑heavy sources → missing senses\ne.g., BrE vs AmE: American news sources over‑represent “make a decision” vs BrE “take a decision”\ne.g., field bias: biomedical corpora inflate plural “data are” vs general usage “data is”\n\n\n\n\n10:43–10:45"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#proof-of-the-existence-of-words",
@@ -313,6 +369,13 @@
     "title": "04 — Dictionaries: fundamentals, examples, use cases",
     "section": "Selected dictionaries",
     "text": "Selected dictionaries\nUrban Dictionary\nhttps://www.urbandictionary.com/"
+  },
+  {
+    "objectID": "sessions/04_dictionaries/slides.html#bridge-to-the-empirical-task",
+    "href": "sessions/04_dictionaries/slides.html#bridge-to-the-empirical-task",
+    "title": "04 — Dictionaries: fundamentals, examples, use cases",
+    "section": "Bridge to the empirical task",
+    "text": "Bridge to the empirical task\n\nExtract post‑2000 first attestations via OED Advanced Search\nAnalyse word class, formation type, subject area in Excel\n\n\n\n10:50–11:00 — BREAK 11:00–11:05; resume 11:05 (≈40 min empirical block)"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#research-questions",
