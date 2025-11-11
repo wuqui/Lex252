@@ -38,8 +38,6 @@ params:
 - 10:15–10:18
 :::
 
----
-
 ## Outline
 
 1. [The Lexicon](#the-lexicon): How does lexicology move beyond lists to structures?
@@ -69,8 +67,6 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 - Lexicologists try to find out **generalisations** and **regularities** and especially consider **relations** between elements (see chapters n and IV).  
 - Lexicology is therefore concerned with **structures**, not with a mere agglomeration of words (cf. @Jackson1988WordsTheir: 222)."  
   [@Lipka1992OutlineEnglish, p. 1]
-
----
 
 ## List vs structure: examples
 
@@ -106,7 +102,7 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 ::: {layout="[50,50]"}
 ![](att/image_1699482680365_0.png)\
 
-{{< video https://www.youtube.com/watch?v=gjesfzWozo4 >}}
+{{< video https://www.youtube.com/watch?v=gjesfzWozo4 width=500 height=300 >}}
 :::
 
 :::: {.notes}
@@ -215,8 +211,6 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
   1. **Describe** the language as it is (descriptive)  
   2. Provide an influence for establishing and maintaining the **standard** form of the language (prescriptive)"
 
----
-
 ## From data to dictionary entries
 
 - Corpus evidence → candidate headwords and senses 
@@ -232,24 +226,22 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 - 10:19–10:23
 :::
 
----
-
 ## How are definitions written?
 
 - Genus–differentia 
   - e.g., *raptor*: ‘a bird of prey’
 - Paraphrase 
   - e.g., *whisper*: ‘to speak very quietly’
-- Controlled vocab 
-  - e.g., *ban*: ‘to say that people must not do something’
+- Controlled vocab[^controlled-vocab]
+  - e.g., *ban*: 'to say that people must not do something'
 - Clarity vs coverage 
   - e.g., *platform* (social media): clear for learners, but omits older senses
+
+[^controlled-vocab]: Definitions use a restricted set of common words (typically 2,000–3,000) to avoid circular lookups; common in learner's dictionaries.
 
 :::: {.notes}
 - 10:40–10:44
 ::::
-
----
 
 ## Ordering senses
 
@@ -276,8 +268,6 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 - 10:44–10:48
 ::::
 
----
-
 ## Usage labels
 
 Purpose: guide choices, not police usage
@@ -293,7 +283,7 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 
 ---
 
-### Check: propose appropriate labels (justify with evidence)
+### Check: propose appropriate labels
 
 - *sick* (‘excellent’) — labels? _______  (region/register/stance?)
 - *they* (singular for a specific person) — labels? _______  (usage note?)
@@ -305,7 +295,18 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 - 10:48–10:52
 ::::
 
+::: {.content-visible when-meta="params.show_solutions"}
 ---
+
+#### Solution
+
+- *sick* (‘excellent’) — **register**: informal/slang; originally AmE but now widespread
+- *they* (singular for a specific person) — **usage note**: grammatical acceptability; register: formal/neutral
+- *data* as a singular mass noun — **field**: computing/technical; **register**: formal contexts favour plural, informal favours singular
+- *woke* (adjective, politicised) — **stance**: pejorative/derogatory in some contexts; **region**: originally AmE
+- *soccer* in UK newspapers — **region**: chiefly AmE (though historically BrE); **chronology**: shift from BrE to AmE usage
+:::
+
 
 ## Phraseology in entries
 
@@ -324,7 +325,17 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 - 10:52–10:56
 ::::
 
+::: {.content-visible when-meta="params.show_solutions"}
 ---
+
+#### Solution
+
+1. *heavy rain*
+2. *deeply held belief*
+3. *do research* (though *conduct research* is also common)
+4. *commit a crime* 
+5. *take/make a decision* — Both acceptable: *make a decision* (chiefly AmE), *take a decision* (chiefly BrE)
+:::
 
 ## Why examples matter
 
@@ -355,7 +366,6 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 ::::
 :::
 
----
 
 ## Proof of the existence of words
 
@@ -363,6 +373,8 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 
 1. Dictionaries **sometimes list erroneous words** that have no existence outside the dictionary (e.g. *banket*, *sardel*).  
 2. Dictionaries more often **fail to list perfectly good words** – no dictionary can list every word of English.”
+
+[@Bauer2022Introduction: 19]
 
 
 ## Information provided in the OED
