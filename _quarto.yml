@@ -21,6 +21,8 @@ website:
             href: sessions/03_morphology/index.qmd
           - text: "04 — Dictionaries: fundamentals, examples, use cases"
             href: sessions/04_dictionaries/index.qmd
+          - text: "05 — Using dictionaries and analysing data"
+            href: sessions/05_dictionaries-2/index.qmd
   page-navigation: true
   search: true
 
