@@ -14,6 +14,13 @@
     "text": "Slides\n\n\n\nOpen full screen | Download PDF"
   },
   {
+    "objectID": "sessions/05_dictionaries-2/index.html",
+    "href": "sessions/05_dictionaries-2/index.html",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "",
+    "text": "Slides\n\n\n\nOpen full screen | Download PDF"
+  },
+  {
     "objectID": "sessions/03_morphology/index.html",
     "href": "sessions/03_morphology/index.html",
     "title": "03 — Morphology and word-formation",
@@ -250,6 +257,132 @@
     "title": "03 — Morphology and word-formation",
     "section": "Further reading",
     "text": "Further reading\n\n\n10:57–11:00\n\n\n\nBauer, Laurie. 2022. An Introduction to English Lexicology. Edinburgh University Press.\nLipka, Leonhard. 2002. English Lexicology: Lexical Structure, Word Semantics and Word-Formation. Tübingen: Narr.\nSchmid, Hans-Jörg. 2016. English Morphology and Word-Formation - an Introduction. 2nd ed. Berlin: Erich Schmidt Verlag.\n\n\n\nAFTER BREAK — resume at 11:00"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#recap",
+    "href": "sessions/05_dictionaries-2/slides.html#recap",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Recap",
+    "text": "Recap\n\nRevisited why lexicology treats the lexicon as a structured network, not a flat list, using mental lexicon evidence and embedding demos.\nDistinguished dictionary functions (descriptive vs prescriptive), sense-ordering strategies, and usage labels that mediate interpretation.\nPractised translating OED search output into research questions on word classes, formation processes, and semantic domains.\nWalked through OED workflows: extracting post-2000 neologisms, exporting CSV data, and analysing them with tables and pivot charts.\n\n\n\n10:15–10:20 — Welcome back + recap of Session 04 (catch-up period: 10:15–10:45)"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#outline",
+    "href": "sessions/05_dictionaries-2/slides.html#outline",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Outline",
+    "text": "Outline\n\nMap the landscape of dictionary types (general, bilingual, specialised, diachronic vs synchronic).\nEvaluate crowdsourced vs curated platforms (Urban Dictionary, Wiktionary, OED) and their affordances.\nExplore machine-readable resources (WIND) and spreadsheet workflows for lexicological analysis.\nRun a hands-on comparison of dictionary entries to surface researchable contrasts.\nConnect dictionary outputs to linguistic research applications (historical, comparative, contemporary, methodological).\n\n\n\n10:20–10:22 — Frame session goals and transitions"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#general-purpose-dictionaries",
+    "href": "sessions/05_dictionaries-2/slides.html#general-purpose-dictionaries",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "General Purpose Dictionaries",
+    "text": "General Purpose Dictionaries\n\nProvide comprehensive linguistic information about words in a single language\n\nSpelling, pronunciation, and grammatical classification\nMultiple meanings and contextual usage examples\nEtymology and historical development notes\n\nTypically monolingual and organised alphabetically for easy reference\nValuable for morphological research because they:\n\nDocument detailed word origins and development\nShow common usage patterns and variations\nProvide historical context for word formation\n\n\n\n\n10:45–10:47 — Dictionary types overview (new content begins)"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#bilingual-and-multilingual-dictionaries",
+    "href": "sessions/05_dictionaries-2/slides.html#bilingual-and-multilingual-dictionaries",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Bilingual and Multilingual Dictionaries",
+    "text": "Bilingual and Multilingual Dictionaries\n\nFacilitate translation between two or more languages\nKey features and functions:\n\nSupport language learning and translation work\nHelp decode meanings across different languages\nIllustrate cultural and linguistic nuances\n\nImportant for morphological research by:\n\nEnabling cross-linguistic word formation studies\nRevealing patterns in comparative linguistics\nShowing how concepts transfer between languages\n\n\n\n\n10:47–10:48"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#specialized-dictionaries",
+    "href": "sessions/05_dictionaries-2/slides.html#specialized-dictionaries",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Specialized Dictionaries",
+    "text": "Specialized Dictionaries\n\nFocus on specific aspects of language or technical fields:\n\nEtymology and word origins\nPrecise pronunciation guides\nTechnical and discipline-specific terminology\nSlang and colloquial expressions\n\nParticularly valuable for:\n\nDetailed academic research in specific fields\nUnderstanding technical vocabulary development\nTracing specialised word formation patterns\n\n\n\n\n10:48–10:49"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#diachronic-and-synchronic-dictionaries",
+    "href": "sessions/05_dictionaries-2/slides.html#diachronic-and-synchronic-dictionaries",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Diachronic and Synchronic Dictionaries",
+    "text": "Diachronic and Synchronic Dictionaries\n\nDiachronic dictionaries:\n\nTrack how words change through history\nDocument evolution of meanings and forms\n\nSynchronic dictionaries:\n\nFocus on language at specific points in time\nPresent contemporary usage and meanings\nDocument current word formation patterns\n\nEssential tools for:\n\nHistorical linguistic research\nUnderstanding language evolution\nTracking word formation changes over time\n\n\n\n\n10:49–10:50"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#learners-dictionaries",
+    "href": "sessions/05_dictionaries-2/slides.html#learners-dictionaries",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Learner’s Dictionaries",
+    "text": "Learner’s Dictionaries\n\n\nSpecifically designed for language acquisition:\n\nClear, simplified definitions\nPractical, everyday usage examples\nWord frequency information\nCommon collocations and phrases\n\nAdditional features often include:\n\nGrammar notes and usage guidelines\nCultural context explanations\nLearning exercises and examples\n\nUseful for research into:\n\nCommon word usage patterns\nLanguage acquisition processes\nBasic word formation principles\n\n\n\n\n\n10:50–10:51"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#oxford-english-dictionary-oed",
+    "href": "sessions/05_dictionaries-2/slides.html#oxford-english-dictionary-oed",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Oxford English Dictionary (OED)",
+    "text": "Oxford English Dictionary (OED)\n\n\nOfficial website: https://www.oed.com/\nComprehensive historical dictionary of English by Oxford University Press\nConsidered the authoritative source on English language\nKey features:\n\nHistorical approach: traces word development chronologically\nExtensive quotations: over 3 million citations from wide-ranging sources\nComprehensive coverage: 600,000+ words and phrases across 20 volumes\nOnline since 2000; third edition in progress (electronic-only)\n\nValue for research:\n\nTraces detailed development of word forms and meanings\nProvides extensive historical context and usage patterns\nEnables in-depth morphological analysis\nDocuments linguistic patterns and changes over time\n\n\n\n\n\n10:52–10:53 — OED overview"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#wiktionary",
+    "href": "sessions/05_dictionaries-2/slides.html#wiktionary",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Wiktionary",
+    "text": "Wiktionary\n\nOfficial website: https://www.wiktionary.org/\nMultilingual, web-based collaborative dictionary\nKey features:\n\nCrowdsourced content with rapid updates\nComprehensive and flexible entries for new words\nMultiple language support with cross-references\nDetailed etymological information where available\n\nResearch applications:\n\nNeologism and language evolution studies\nCross-linguistic research opportunities\nContemporary usage patterns\nEducational tool for language learning and research\n\n\n\n\n10:53–10:54"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#urban-dictionary",
+    "href": "sessions/05_dictionaries-2/slides.html#urban-dictionary",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Urban Dictionary",
+    "text": "Urban Dictionary\n\nOfficial website: https://www.urbandictionary.com/\nCrowdsourced dictionary focusing on slang and colloquial language\nKey features:\n\nUser-generated content reflecting varied interpretations\nDynamic tracking of language evolution\nRich cultural context and references\nMultiple definitions showing usage variations\n\nResearch value:\n\nSociolinguistic studies of contemporary language\nTracking emergence and spread of new slang\nCultural analysis through language use\nUnderstanding informal word formation processes\n\n\n\n\n10:55–10:56"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#other-major-dictionaries",
+    "href": "sessions/05_dictionaries-2/slides.html#other-major-dictionaries",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Other Major Dictionaries",
+    "text": "Other Major Dictionaries\nMerriam-Webster Dictionary (https://www.merriam-webster.com/)\n\nAmerican English focus\nStrong etymology coverage\nRegular updates for contemporary usage\nValuable for understanding American English word formation\n\nCollins English Dictionary (https://dictionary.cambridge.org/)\n\nComprehensive vocabulary coverage\nStrong British English focus\nDetailed word formation information\nIncludes frequency information and usage trends"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#historical-linguistic-analysis",
+    "href": "sessions/05_dictionaries-2/slides.html#historical-linguistic-analysis",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Historical linguistic analysis",
+    "text": "Historical linguistic analysis\n\nTracking morphological changes through time\n\ne.g. comparing Old English strong verbs to Modern English irregular forms\n\nUnderstanding semantic development\n\ne.g. charting the shift of awful from ‘full of awe’ to ‘terrible’\n\nDocumenting word formation patterns\n\ne.g. analyzing the emergence of the prefix cyber- in late 20th century\n\n\n\n\nAFTER BREAK — resume at 11:05\n11:05–11:08"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#comparative-linguistics",
+    "href": "sessions/05_dictionaries-2/slides.html#comparative-linguistics",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Comparative linguistics",
+    "text": "Comparative linguistics\n\nCross-linguistic word formation studies\n\ne.g. comparing German and English compound nouns (e.g. de. Zahnarzt vs en. tooth doctor)\n\nAnalysis of borrowing patterns\n\ne.g. tracing French loanwords (e.g. cuisine, ballet) into English after the Norman Conquest\n\nUnderstanding morphological universals\n\ne.g. investigating prefixation productivity across unrelated languages (e.g. ge- in German, en- in English)\n\n\n\n\n11:08–11:10"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#contemporary-language-research",
+    "href": "sessions/05_dictionaries-2/slides.html#contemporary-language-research",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Contemporary language research",
+    "text": "Contemporary language research\n\nNeologism studies and word creation\n\ne.g. investigating the rise of selfie and meme via social media corpora\n\nSociolinguistic variation\n\ne.g. examining morphological variation in teenage text messaging (e.g. abbreviations like u for you)\n\nInternet-influenced language change\n\ne.g. analyzing adoption of acronyms (e.g. lol, brb) in spoken and written registers\n\n\n\n\n11:10–11:12"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#methodological-applications",
+    "href": "sessions/05_dictionaries-2/slides.html#methodological-applications",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Methodological applications",
+    "text": "Methodological applications\n\nDiachronic studies of word formation\n\ne.g. comparing selfie definitions in 2013 vs 2025 corpora to trace shifts from novelty to mainstream usage\n\nQuantitative analysis of lexical change over time\n\ne.g. measuring the rise of cryptocurrency entries over time\n\nCorpus-based validation of dictionary entries\n\ne.g. using the Corpus of Contemporary American English to test whether dictionary data match corpus data\n\nTracking the adoption of loanwords and neologisms\n\ne.g. tracing how hygge transitions from Danish loanword to standard entry in learner dictionaries"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#analysis-objectives",
+    "href": "sessions/05_dictionaries-2/slides.html#analysis-objectives",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Analysis objectives",
+    "text": "Analysis objectives\n\nHow many terms are marked as obsolete across the whole OED?\nWhat are the most common word classes of obsolete terms?\nWhat are the most common word-formation processes?\nWhat are the most common subjects?"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#using-the-oeds-advanced-search",
+    "href": "sessions/05_dictionaries-2/slides.html#using-the-oeds-advanced-search",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Using the OED’s Advanced Search",
+    "text": "Using the OED’s Advanced Search\n\nfind all terms that are marked as obsolete\nsort them by Date (newest first)\nexport the results as a CSV file"
+  },
+  {
+    "objectID": "sessions/05_dictionaries-2/slides.html#using-microsoft-excel",
+    "href": "sessions/05_dictionaries-2/slides.html#using-microsoft-excel",
+    "title": "05 — Using dictionaries and analysing data",
+    "section": "Using Microsoft Excel",
+    "text": "Using Microsoft Excel\n\nopen the CSV file\nsave the file as an Excel file (.xlsx extension)\nconvert the exported rows/columns to a Table\ncreate Pivot Tables to analyse the data\ncreate Pivot Charts to visualise the data\n\nModel Excel file\n\n\n11:25–11:30 — OED practice"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#recap",

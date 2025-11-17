@@ -11,8 +11,8 @@
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Dr.&nbsp;Quirin Würschinger, LMU Munich">
-  <meta name="dcterms.date" content="2025-10-28">
-  <title>Lex252 – 02 — The lexicon</title>
+  <meta name="dcterms.date" content="2025-11-18">
+  <title>Lex252 – 05 — Using dictionaries and analysing data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -153,7 +153,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">02 — The lexicon</h1>
+  <h1 class="title">05 — Using dictionaries and analysing data</h1>
   <p class="subtitle">Lexicology and Lexicography — <a href="../../index.html">Course Website</a></p>
 
 <div class="quarto-title-authors">
@@ -164,546 +164,408 @@ Dr.&nbsp;Quirin Würschinger, LMU Munich
 </div>
 </div>
 
-  <p class="date">October 28, 2025</p>
+  <p class="date">November 18, 2025</p>
 </section>
-<section id="outline" class="title-slide slide level1 center">
-<h1>Outline</h1>
+<section>
+<section id="introduction" class="title-slide slide level1 center">
+<h1>Introduction</h1>
+
+</section>
+<section id="recap" class="slide level2">
+<h2>Recap</h2>
+<ul>
+<li>Revisited why lexicology treats the lexicon as a <strong>structured network</strong>, not a flat list, using mental lexicon evidence and embedding demos.</li>
+<li>Distinguished <strong>dictionary functions</strong> (descriptive vs prescriptive), sense-ordering strategies, and usage labels that mediate interpretation.</li>
+<li>Practised translating OED search output into <strong>research questions</strong> on word classes, formation processes, and semantic domains.</li>
+<li>Walked through <strong>OED workflows</strong>: extracting post-2000 neologisms, exporting CSV data, and analysing them with tables and pivot charts.</li>
+</ul>
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
 <ol type="1">
-<li>What is a word? Criteria and problems</li>
-<li>Names and multi-word expressions</li>
-<li>Paradigms: inflection and derivation</li>
-<li>Practice: Using the OED</li>
+<li>Map the landscape of <strong>dictionary types</strong> (general, bilingual, specialised, diachronic vs synchronic).</li>
+<li>Evaluate <strong>crowdsourced vs curated</strong> platforms (Urban Dictionary, Wiktionary, OED) and their affordances.</li>
+<li>Explore <strong>machine-readable resources</strong> (WIND) and spreadsheet workflows for lexicological analysis.</li>
+<li>Run a <strong>hands-on comparison</strong> of dictionary entries to surface researchable contrasts.</li>
+<li>Connect dictionary outputs to <strong>linguistic research applications</strong> (historical, comparative, contemporary, methodological).</li>
 </ol>
-</section>
-
+</section></section>
 <section>
-<section id="criteria-for-wordness" class="title-slide slide level1 center">
-<h1>Criteria for wordness</h1>
+<section id="types-of-dictionaries" class="title-slide slide level1 center">
+<h1>Types of Dictionaries</h1>
+
 </section>
-<section id="utterance-criterion" class="slide level2">
-<h2>Utterance criterion</h2>
-<blockquote>
-<p>“A word is the smallest unit which can stand on its own as an utterance.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#/references" role="doc-biblioref" onclick="">Bauer 2022</a>: 1)</span></p>
-</blockquote>
-<div class="fragment">
+<section id="general-purpose-dictionaries" class="slide level2">
+<h2>General Purpose Dictionaries</h2>
 <ul>
-<li>but: mentioning vs use</li>
-</ul>
-<p>A: Is it <em>inadvisable</em> or <em>unadvisable</em>?</p>
-<p>B: Un.</p>
+<li>Provide <strong>comprehensive</strong> linguistic information about words in a single language
 <ul>
-<li>grammatical words as utterances (e.g.&nbsp;<em>the</em>) only in special contexts</li>
-</ul>
-</div>
-</section>
-<section id="phonological-criterion" class="slide level2">
-<h2>Phonological criterion</h2>
-<blockquote>
-<p>“A word [in isolation] has a single intonational focus point, or movement of pitch.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#/references" role="doc-biblioref" onclick="">Bauer 2022</a>: 2)</span></p>
-</blockquote>
-<div class="fragment">
-<ul>
-<li>but: sequencing and alternatives affect prosody
-<ul>
-<li><em>in the beginning</em> vs <em>first</em> vs <em>forever</em> vs <em>for ever</em></li>
+<li>Spelling, pronunciation, and grammatical classification</li>
+<li>Multiple meanings and contextual usage examples</li>
+<li>Etymology and historical development notes</li>
 </ul></li>
-<li>minimal pair in intonation: <em>record</em> (N) vs <em>record</em> (V) in isolation vs context</li>
-</ul>
-<p>Examples:</p>
+<li>Typically <strong>monolingual</strong> and organised alphabetically for easy reference</li>
+<li>Valuable for <strong>morphological research</strong> because they:
 <ul>
-<li><em>He will reˈcord the song.</em> / <em>He bought the ˈrecord.</em></li>
-</ul>
-</div>
-</section>
-<section id="semantic-criterion" class="slide level2">
-<h2>Semantic criterion</h2>
-<blockquote>
-<p>“A word has a single, unitary meaning.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#/references" role="doc-biblioref" onclick="">Bauer 2022</a>: 2)</span></p>
-</blockquote>
-<div class="fragment">
-<p>but: near-synonymous expressions can differ in meaning</p>
-<p><em>finally</em> vs <em>in the end</em> (closure vs narrative sequencing)</p>
-<p>Examples:</p>
-<ul>
-<li><em>We finally arrived after midnight.</em> / <em>In the end, we stayed home.</em></li>
-</ul>
-</div>
-</section>
-<section id="orthographic-criterion" class="slide level2">
-<h2>Orthographic criterion</h2>
-<blockquote>
-<p>“words are unitary orthographic units” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#/references" role="doc-biblioref" onclick="">Bauer 2022</a>: 2)</span></p>
-</blockquote>
-<div class="fragment">
-<ul>
-<li>but: spacing and hyphenation vary
-<ul>
-<li><em>coffee pot</em> vs <em>coffee-pot</em></li>
-<li><em>in so far as</em> vs <em>in‑so‑far‑as</em></li>
+<li>Document detailed word origins and development</li>
+<li>Show common usage patterns and variations</li>
+<li>Provide historical context for word formation</li>
 </ul></li>
-<li>diachronic change: <em>all right</em> vs <em>alright</em> (usage note in OED)</li>
 </ul>
-<p>Examples:</p>
+</section>
+<section id="bilingual-and-multilingual-dictionaries" class="slide level2">
+<h2>Bilingual and Multilingual Dictionaries</h2>
 <ul>
-<li><em>It’s all right.</em> / <em>It’s alright.</em> (nonstandard in some styles).</li>
+<li>Facilitate <strong>translation</strong> between two or more languages</li>
+<li>Key features and functions:
+<ul>
+<li>Support language learning and translation work</li>
+<li>Help decode meanings across different languages</li>
+<li>Illustrate cultural and linguistic nuances</li>
+</ul></li>
+<li>Important for morphological research by:
+<ul>
+<li>Enabling <strong>cross-linguistic</strong> word formation studies</li>
+<li>Revealing patterns in <strong>comparative linguistics</strong></li>
+<li>Showing how concepts transfer between languages</li>
+</ul></li>
 </ul>
-</div>
 </section>
-<section id="dictionary-criterion" class="slide level2">
-<h2>Dictionary criterion</h2>
-<blockquote>
-<p>“A word is listed in the dictionary.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#/references" role="doc-biblioref" onclick="">Bauer 2022</a>: 2)</span></p>
-</blockquote>
-<div class="fragment">
-<p>but: circularity; sub‑lexical units are also listed (e.g.&nbsp;prefix <em>un‑</em>)</p>
-</div>
+<section id="specialized-dictionaries" class="slide level2">
+<h2>Specialized Dictionaries</h2>
+<ul>
+<li>Focus on <strong>specific aspects</strong> of language or technical fields:
+<ul>
+<li>Etymology and word origins</li>
+<li>Precise pronunciation guides</li>
+<li>Technical and discipline-specific terminology</li>
+<li>Slang and colloquial expressions</li>
+</ul></li>
+<li>Particularly valuable for:
+<ul>
+<li>Detailed <strong>academic research</strong> in specific fields</li>
+<li>Understanding technical vocabulary development</li>
+<li>Tracing specialised word formation patterns</li>
+</ul></li>
+</ul>
 </section>
-<section id="practical-definition" class="slide level2">
-<h2>Practical definition</h2>
-<blockquote>
-<p>“We will accept the spelling conventions of English as defining words […] which has the advantage of being practical.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#/references" role="doc-biblioref" onclick="">Bauer 2022</a>: 3)</span></p>
-</blockquote>
-<p>Further reading: Haspelmath, Martin. 2023. <span>“Defining the Word.”</span> <em>WORD</em> 69 (3): 283–97. <a href="https://doi.org/10.1080/00437956.2023.2237272">https://doi.org/10.1080/00437956.2023.2237272</a>.</p>
+<section id="diachronic-and-synchronic-dictionaries" class="slide level2">
+<h2>Diachronic and Synchronic Dictionaries</h2>
+<ul>
+<li><strong>Diachronic</strong> dictionaries:
+<ul>
+<li>Track how words change <strong>through history</strong></li>
+<li>Document evolution of meanings and forms</li>
+</ul></li>
+<li><strong>Synchronic</strong> dictionaries:
+<ul>
+<li>Focus on language at <strong>specific points in time</strong></li>
+<li>Present contemporary usage and meanings</li>
+<li>Document current word formation patterns</li>
+</ul></li>
+<li>Essential tools for:
+<ul>
+<li><strong>Historical linguistic research</strong></li>
+<li>Understanding language evolution</li>
+<li>Tracking word formation changes over time</li>
+</ul></li>
+</ul>
 </section>
-<section id="criteria-cheat-sheet" class="slide level2">
-<h2>Criteria cheat sheet</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 18%">
-<col style="width: 30%">
-<col style="width: 51%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Criterion</th>
-<th style="text-align: left;">Diagnostic</th>
-<th style="text-align: left;">Quick example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Utterance</td>
-<td style="text-align: left;">standalone?</td>
-<td style="text-align: left;"><em>Un.</em> (context-dependent)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Phonology</td>
-<td style="text-align: left;">stress pattern?</td>
-<td style="text-align: left;"><em>first</em> vs <em>for ever</em></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Semantic</td>
-<td style="text-align: left;">unitary meaning?</td>
-<td style="text-align: left;"><em>finally</em> vs <em>in the end</em></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Orthography</td>
-<td style="text-align: left;">spacing/hyphens?</td>
-<td style="text-align: left;"><em>alright</em> vs <em>all right</em></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Dictionary</td>
-<td style="text-align: left;">listed?</td>
-<td style="text-align: left;"><em>un-</em> (sub-lexical but listed)</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="check-is-this-a-word" class="slide level2">
-<h2>Check: is this a word?</h2>
-<p><em>alright</em></p>
-<div class="fragment">
-<p>→ orthographic controversy; cf.&nbsp;practical definition (accept spelling conventions)</p>
-<p><em>honeybee</em> vs <em>honey bee</em></p>
-</div>
-<div class="fragment">
-<p>→ orthographic criterion; both attested; check dictionary practice</p>
+<section id="learners-dictionaries" class="slide level2">
+<h2>Learner’s Dictionaries</h2>
+<div class="small">
+<ul>
+<li>Specifically designed for <strong>language acquisition</strong>:
+<ul>
+<li>Clear, simplified definitions</li>
+<li>Practical, everyday usage examples</li>
+<li>Word frequency information</li>
+<li>Common collocations and phrases</li>
+</ul></li>
+<li>Additional features often include:
+<ul>
+<li>Grammar notes and usage guidelines</li>
+<li>Cultural context explanations</li>
+<li>Learning exercises and examples</li>
+</ul></li>
+<li>Useful for research into:
+<ul>
+<li>Common <strong>word usage patterns</strong></li>
+<li>Language acquisition processes</li>
+<li>Basic word formation principles</li>
+</ul></li>
+</ul>
 </div>
 </section></section>
 <section>
-<section id="problems-in-delineating-the-term-word" class="title-slide slide level1 center">
-<h1>Problems in delineating the term <em>word</em></h1>
-
+<section id="specific-examples-of-dictionaries" class="title-slide slide level1 center">
+<h1>Specific Examples of Dictionaries</h1>
 </section>
-<section id="names" class="slide level2">
-<h2>Names</h2>
-<div class="fragment">
-<div class="quarto-layout-panel" data-layout="[60,40]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
-<ul>
-<li>names have unique reference; they pattern differently from common nouns</li>
-<li>examples:
-<ul>
-<li><em>the Samantha</em></li>
-<li><em>This isn’t the Paris I remember.</em> (common‑noun use; compare corpus: “This isn’t the Paris of my youth”)</li>
-</ul></li>
-<li>roles as noun phrases (no modifiers): <em>the former Argentine</em></li>
-</ul>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
-<p><img data-src="img/image_1698949528283_0.png"></p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<p>When do names pattern like common nouns?</p>
-</div>
-</div>
-</section>
-<section id="multi-word-expressions-mwe" class="slide level2">
-<h2>Multi-word expressions (MWE)</h2>
-<ul>
-<li>compounds: <em>blackbird</em>, <em>coffee pot</em></li>
-<li>phrasal verbs: <em>look up</em>, <em>take off</em></li>
-<li>collocations: <em>strong tea</em>, <em>make a decision</em></li>
-<li>idioms &amp; proverbs: <em>kick the bucket</em>, <em>Too many cooks spoil the broth</em></li>
-</ul>
-</section>
-<section id="compounds" class="slide level2">
-<h2>Compounds</h2>
-<ul>
-<li><em>passion flower</em>; <em>sunflower</em>; <em>wall‑flower</em></li>
-<li>onomasiological competition: <em>honey bee</em> vs <em>honeybee</em></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="worked-example-honey-bee-vs-honeybee">Worked example: honey bee vs honeybee</h3>
-<div class="quarto-layout-panel" data-layout="[60,40]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
-<ul>
-<li>both forms occur; dictionaries may list one as headword with variant</li>
-<li>evidence to check:
-<ul>
-<li>headword spelling</li>
-<li>variant forms list</li>
-<li>example citations</li>
-</ul></li>
-<li>OED finding: <em>honeybee</em> (primary); <em>honey bee</em> (variant)</li>
-</ul>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Evidence</th>
-<th style="text-align: left;">Result</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Historical precedence</td>
-<td style="text-align: left;">separate words older</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Current usage</td>
-<td style="text-align: left;">both forms common</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</section>
-<section id="phrasal-verbs" class="slide level2">
-<h2>Phrasal verbs</h2>
-<ul>
-<li><em>He passed out.</em><br>
-</li>
-<li><em>He fainted.</em></li>
-</ul>
-<p>Examples:</p>
-<ul>
-<li><em>She looked up the word.</em> / <em>She looked the word up.</em></li>
-</ul>
-</section>
-<section id="collocations" class="slide level2">
-<h2>Collocations</h2>
-<p>Continuum:</p>
-<ul>
-<li><strong>strong</strong>: <em>kith and kin</em></li>
-<li><strong>intermediate</strong>: <em>all things considered</em>; <em>as a matter of fact</em>; <em>excuse me</em>; <em>good afternoon</em>; <em>I’m sorry to say</em>; <em>in other words</em>; <em>in the long run</em></li>
-<li><strong>weak</strong>: function‑word sequences like <em>in the</em></li>
-</ul>
-<p>Examples:</p>
-<ul>
-<li><em>take a quick photo</em> (typical) vs <em>make a quick photo</em> (less typical)</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="worked-example-collocation-strength">Worked example: collocation strength</h3>
-<div class="quarto-layout-panel" data-layout="[60,40]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
-<ul>
-<li>cues for strength:
-<ul>
-<li>fixedness</li>
-<li>semantic transparency</li>
-<li>paradigmatic alternatives</li>
-</ul></li>
-</ul>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Phrase</th>
-<th style="text-align: left;">Typical?</th>
-<th style="text-align: left;">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">take a photo</td>
-<td style="text-align: left;">yes</td>
-<td style="text-align: left;">conventional light verb</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">make a photo</td>
-<td style="text-align: left;">variable</td>
-<td style="text-align: left;">regional/genre variation</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">do a photo</td>
-<td style="text-align: left;">rare</td>
-<td style="text-align: left;">atypical in standard usage</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</section>
-<section id="idioms-proverbs" class="slide level2">
-<h2>Idioms &amp; proverbs</h2>
-<ul>
-<li><strong>Idioms</strong>: <em>He kicked the bucket.</em> (= He died)</li>
-<li><strong>Proverbs</strong>: <em>Too many cooks spoil the broth.</em> (fixed formulaic)</li>
-</ul>
-<p>Examples:</p>
-<ul>
-<li><em>She spilled the beans.</em> (= revealed the secret)</li>
-<li><em>A stitch in time saves nine.</em> (cannot reorder)</li>
-</ul>
-</section>
-<section id="worked-example-ambiguous-case" class="slide level2">
-<h2>Worked example: ambiguous case</h2>
+<section id="oxford-english-dictionary-oed" class="slide level2">
+<h2>Oxford English Dictionary (OED)</h2>
 <div class="small">
-<p><em>break down</em></p>
-<p>Form test:</p>
-<div class="fragment">
 <ul>
-<li>written as two words → phrasal verb</li>
+<li>Official website: <a href="https://www.oed.com/" class="uri">https://www.oed.com/</a></li>
+<li>Comprehensive <strong>historical dictionary</strong> of English by Oxford University Press</li>
+<li>Considered the <strong>authoritative source</strong> on English language</li>
+<li>Key features:
+<ul>
+<li><strong>Historical approach</strong>: traces word development chronologically</li>
+<li><strong>Extensive quotations</strong>: over 3 million citations from wide-ranging sources</li>
+<li><strong>Comprehensive coverage</strong>: 600,000+ words and phrases across 20 volumes</li>
+<li>Online since 2000; third edition in progress (electronic-only)</li>
+</ul></li>
+<li>Value for research:
+<ul>
+<li>Traces detailed development of word forms and meanings</li>
+<li>Provides extensive historical context and usage patterns</li>
+<li>Enables in-depth <strong>morphological analysis</strong></li>
+<li>Documents linguistic patterns and changes over time</li>
+</ul></li>
 </ul>
 </div>
-<p>Stress test:</p>
-<div class="fragment">
+</section>
+<section id="wiktionary" class="slide level2">
+<h2>Wiktionary</h2>
 <ul>
-<li>stress on particle <em>down</em> → phrasal verb</li>
-</ul>
-</div>
-<p>Meaning test:</p>
-<div class="fragment">
+<li>Official website: <a href="https://www.wiktionary.org/" class="uri">https://www.wiktionary.org/</a></li>
+<li>Multilingual, web-based <strong>collaborative dictionary</strong></li>
+<li>Key features:
 <ul>
-<li>can be literal (<em>car broke down</em>) or figurative (<em>negotiations broke down</em>) → both possible</li>
-</ul>
-</div>
-<p>Conclusion:</p>
-<div class="fragment">
+<li><strong>Crowdsourced content</strong> with rapid updates</li>
+<li>Comprehensive and flexible entries for new words</li>
+<li>Multiple language support with cross-references</li>
+<li>Detailed etymological information where available</li>
+</ul></li>
+<li>Research applications:
 <ul>
-<li>primarily phrasal verb; can form compound noun <em>breakdown</em></li>
+<li><strong>Neologism</strong> and language evolution studies</li>
+<li><strong>Cross-linguistic research</strong> opportunities</li>
+<li>Contemporary usage patterns</li>
+<li>Educational tool for language learning and research</li>
+</ul></li>
 </ul>
-</div>
-</div>
-</section>
-<section id="check-classifying-multi-word-expressions" class="slide level2">
-<h2>Check: Classifying multi-word expressions</h2>
-<p><em>take a photo</em></p>
-<div class="fragment">
-<p>→ collocation (light verb construction)</p>
-<p><em>kick the bucket</em></p>
-</div>
-<div class="fragment">
-<p>→ idiom (non-compositional)</p>
-</div>
-</section>
-<section id="paradigms" class="slide level2">
-<h2>Paradigms</h2>
 </section>
 <section class="slide level2">
 
-<h3 id="inflectional-paradigms">Inflectional paradigms</h3>
-<blockquote>
-<p>“The term ‘paradigm’ is in general usage, but its usage is often limited. Although <em>paradigm</em> can justifiably be used of any substitution class, it is most often used of substitution classes within the word. Thus the normal use for the term <em>paradigm</em> is the kind of substitution class illustrated in the following example.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#/references" role="doc-biblioref" onclick="">Bauer 2022</a>)</span></p>
-</blockquote>
-<blockquote>
-<p>(12): <em>walk</em>, <em>walks</em>, <em>walked</em>, <em>walking</em></p>
-</blockquote>
-<p>This paradigm illustrates two different kinds of word: there is a sense in which all the items are different <strong>word-forms</strong>, and a contrasting sense in which the paradigm illustrates different uses of the same word, the <strong>lexeme</strong>.”</p>
+<h3 id="wind-machine-readable-wiktionary">WIND (Machine-readable Wiktionary)</h3>
+<p><span class="citation" data-cites="Sajous2020ENGLAWI">Sajous, Calderone, and Hathout (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span></p>
+<p><a href="http://redac.univ-tlse2.fr/lexiques/wind.html" class="uri">http://redac.univ-tlse2.fr/lexiques/wind.html</a></p>
+
+<img data-src="att/WIND_1700084693531_0.png" width="450" class="r-stretch"></section>
+<section class="slide level2">
+
+<p><a href="https://1drv.ms/x/c/9a2ec97d593520f9/IQD5IDVZfckuIICaZxEAAAAAARb8555fyrlCaa947C97Owg">Excel Sheet</a></p>
+
+</section>
+<section id="urban-dictionary" class="slide level2">
+<h2>Urban Dictionary</h2>
+<ul>
+<li>Official website: <a href="https://www.urbandictionary.com/" class="uri">https://www.urbandictionary.com/</a></li>
+<li><strong>Crowdsourced dictionary</strong> focusing on <strong>slang</strong> and <strong>colloquial language</strong></li>
+<li>Key features:
+<ul>
+<li><strong>User-generated content</strong> reflecting varied interpretations</li>
+<li>Dynamic tracking of language evolution</li>
+<li>Rich cultural context and references</li>
+<li>Multiple definitions showing usage variations</li>
+</ul></li>
+<li>Research value:
+<ul>
+<li><strong>Sociolinguistic studies</strong> of contemporary language</li>
+<li>Tracking emergence and spread of new slang</li>
+<li>Cultural analysis through language use</li>
+<li>Understanding informal <strong>word formation processes</strong></li>
+</ul></li>
+</ul>
+</section>
+<section id="other-major-dictionaries" class="slide level2">
+<h2>Other Major Dictionaries</h2>
+<p><strong>Merriam-Webster Dictionary</strong> (<a href="https://www.merriam-webster.com/" class="uri">https://www.merriam-webster.com/</a>)</p>
+<ul>
+<li><strong>American English</strong> focus</li>
+<li>Strong etymology coverage</li>
+<li>Regular updates for contemporary usage</li>
+<li>Valuable for understanding American English word formation</li>
+</ul>
+<p><strong>Collins English Dictionary</strong> (<a href="https://dictionary.cambridge.org/" class="uri">https://dictionary.cambridge.org/</a>)</p>
+<ul>
+<li>Comprehensive vocabulary coverage</li>
+<li>Strong <strong>British English</strong> focus</li>
+<li>Detailed word formation information</li>
+<li>Includes frequency information and usage trends</li>
+</ul>
 </section>
 <section class="slide level2">
 
-<h3 id="derivational-paradigms">Derivational paradigms</h3>
-<p>(13)</p>
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 17%">
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 21%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;"></th>
-<th style="text-align: center;"><em>deceive</em></th>
-<th style="text-align: center;"><em>employ</em></th>
-<th style="text-align: center;"><em>proceed</em></th>
-<th style="text-align: center;"><em>theorise</em></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><strong>Verb</strong></td>
-<td style="text-align: center;"><em>deceive</em></td>
-<td style="text-align: center;"><em>employ</em></td>
-<td style="text-align: center;"><em>proceed</em></td>
-<td style="text-align: center;"><em>theorise</em></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>Noun</strong></td>
-<td style="text-align: center;"><em>deception</em></td>
-<td style="text-align: center;"><em>employer</em></td>
-<td style="text-align: center;"><em>process</em></td>
-<td style="text-align: center;"><em>theory</em></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>Adjective</strong></td>
-<td style="text-align: center;"><em>deceptive</em></td>
-<td style="text-align: center;"><em>employable</em></td>
-<td style="text-align: center;"><em>processual</em></td>
-<td style="text-align: center;"><em>theoretical</em></td>
-</tr>
-</tbody>
-</table>
-<p>Although these examples show individual word families, these series are often generalised over several word families (e.g.&nbsp;<em>theory</em> – <em>theorist</em> – <em>theorise</em> parallels <em>fantasy</em> – <em>fantasist</em> – <em>fantasise</em>).</p>
+<p><strong>Cambridge English Dictionary</strong> (<a href="https://dictionary.cambridge.org/" class="uri">https://dictionary.cambridge.org/</a>)</p>
+<ul>
+<li>Clear definitions and examples</li>
+<li>Strong <strong>learner focus</strong></li>
+<li>British English emphasis</li>
+<li>Excellent grammatical information and usage notes</li>
+</ul>
+<p><strong>Online Etymology Dictionary</strong> (<a href="https://www.etymonline.com/" class="uri">https://www.etymonline.com/</a>)</p>
+<ul>
+<li>Detailed <strong>word history</strong> tracking</li>
+<li><strong>Etymology</strong> focus</li>
+<li>Historical development emphasis</li>
+<li>Traces morphological changes over time</li>
+</ul>
+</section></section>
+<section>
+<section id="applications-in-linguistic-research" class="title-slide slide level1 center">
+<h1>Applications in Linguistic Research</h1>
+
+</section>
+<section id="historical-linguistic-analysis" class="slide level2">
+<h2>Historical linguistic analysis</h2>
+<ul>
+<li>Tracking <strong>morphological changes</strong> through time
+<ul>
+<li>e.g.&nbsp;comparing Old English strong verbs to Modern English irregular forms</li>
+</ul></li>
+<li>Understanding <strong>semantic development</strong>
+<ul>
+<li>e.g.&nbsp;charting the shift of <em>awful</em> from ‘full of awe’ to ‘terrible’</li>
+</ul></li>
+<li>Documenting <strong>word formation patterns</strong>
+<ul>
+<li>e.g.&nbsp;analyzing the emergence of the prefix <em>cyber-</em> in late 20th century</li>
+</ul></li>
+</ul>
+</section>
+<section id="comparative-linguistics" class="slide level2">
+<h2>Comparative linguistics</h2>
+<ul>
+<li><strong>Cross-linguistic</strong> word formation studies
+<ul>
+<li>e.g.&nbsp;comparing German and English compound nouns (e.g.&nbsp;de. <em>Zahnarzt</em> vs en. <em>tooth doctor</em>)</li>
+</ul></li>
+<li>Analysis of <strong>borrowing patterns</strong>
+<ul>
+<li>e.g.&nbsp;tracing French loanwords (e.g.&nbsp;<em>cuisine</em>, <em>ballet</em>) into English after the Norman Conquest</li>
+</ul></li>
+<li>Understanding <strong>morphological universals</strong>
+<ul>
+<li>e.g.&nbsp;investigating prefixation productivity across unrelated languages (e.g.&nbsp;<em>ge-</em> in German, <em>en-</em> in English)</li>
+</ul></li>
+</ul>
+</section>
+<section id="contemporary-language-research" class="slide level2">
+<h2>Contemporary language research</h2>
+<ul>
+<li><strong>Neologism</strong> studies and word creation
+<ul>
+<li>e.g.&nbsp;investigating the rise of <em>selfie</em> and <em>meme</em> via social media corpora</li>
+</ul></li>
+<li><strong>Sociolinguistic variation</strong>
+<ul>
+<li>e.g.&nbsp;examining morphological variation in teenage text messaging (e.g.&nbsp;abbreviations like <em>u</em> for you)</li>
+</ul></li>
+<li><strong>Internet-influenced</strong> language change
+<ul>
+<li>e.g.&nbsp;analyzing adoption of acronyms (e.g.&nbsp;<em>lol</em>, <em>brb</em>) in spoken and written registers</li>
+</ul></li>
+</ul>
+</section>
+<section id="methodological-applications" class="slide level2">
+<h2>Methodological applications</h2>
+<ul>
+<li><strong>Diachronic studies</strong> of word formation
+<ul>
+<li>e.g.&nbsp;comparing <em>selfie</em> definitions in 2013 vs 2025 corpora to trace shifts from novelty to mainstream usage</li>
+</ul></li>
+<li><strong>Quantitative analysis</strong> of lexical change over time
+<ul>
+<li>e.g.&nbsp;measuring the rise of <em>cryptocurrency</em> entries over time</li>
+</ul></li>
+<li><strong>Corpus-based validation</strong> of dictionary entries
+<ul>
+<li>e.g.&nbsp;using the <em>Corpus of Contemporary American English</em> to test whether dictionary data match corpus data</li>
+</ul></li>
+<li>Tracking the adoption of <strong>loanwords</strong> and <strong>neologisms</strong>
+<ul>
+<li>e.g.&nbsp;tracing how <em>hygge</em> transitions from Danish loanword to standard entry in learner dictionaries</li>
+</ul></li>
+</ul>
 </section>
 <section class="slide level2">
 
-<h3 id="inflection-vs-derivation-key-contrast">Inflection vs Derivation: key contrast</h3>
-<table class="caption-top">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Type</th>
-<th>Same lexeme?</th>
-<th>Word class change?</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Inflection</strong></td>
-<td>yes</td>
-<td>no</td>
-<td>WALK → <em>walks</em>, <em>walked</em>, <em>walking</em></td>
-</tr>
-<tr class="even">
-<td><strong>Derivation</strong></td>
-<td>no (new lexeme)</td>
-<td>often</td>
-<td>EMPLOY → <em>employer</em> (N), <em>employable</em> (Adj)</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>Identifying gaps or biases in dictionary coverage
+<ul>
+<li>e.g.&nbsp;noticing that everyday items like <em>takeaway</em> are absent from learner dictionaries</li>
+</ul></li>
+<li>Supporting <strong>computational linguistics</strong> and NLP tasks (e.g.&nbsp;lemmatisation, part-of-speech tagging)
+<ul>
+<li>e.g.&nbsp;expanding sentiment lexicons with blended forms like <em>hangry</em></li>
+</ul></li>
+<li>Informing the design of new dictionaries and lexical resources
+<ul>
+<li>e.g.&nbsp;designing a climate change glossary after analysing coverage gaps for items like <em>carbon offsetting</em></li>
+</ul></li>
+</ul>
+</section></section>
+<section id="practice-analysing-and-comparing-dictionary-entries" class="title-slide slide level1 center">
+<h1>Practice: analysing and comparing dictionary entries</h1>
+<ul>
+<li>Choose at least two terms that might be interesting for comparison.</li>
+<li>Look them up in <span class="math inline">\(\geq\)</span> 2 dictionaries from <span class="math inline">\(\geq\)</span> 2 different dictionary types.</li>
+<li>Analyse and compare the entries between the dictionaries.</li>
+<li>Can you think of related research questions?</li>
+<li>Prepare slides in <a href="https://1drv.ms/p/c/9a2ec97d593520f9/IQAPYwC-Z-mTSKIXPC2M-s87AaVTUjFevdwiVV7FhmJeYjE">this PowerPoint file</a>.</li>
+<li>Present your findings to the class.</li>
+</ul>
 </section>
-<section class="slide level2">
 
-<h3 id="visual-family-tree-derivation">Visual family tree: derivation</h3>
-<pre><code>                      EMPLOY (V)
-                    /     |      \
-                   /      |       \
-            employer  employable  employment
-              (N)       (Adj)       (N)</code></pre>
+<section>
+<section id="practise-using-the-oed" class="title-slide slide level1 center">
+<h1>Practise using the OED</h1>
+
 </section>
-<section class="slide level2">
-
-<h3 id="check-paradigms">Check: Paradigms</h3>
-<div class="small">
+<section id="analysis-objectives" class="slide level2">
+<h2>Analysis objectives</h2>
 <ol type="1">
-<li>Identify all inflected forms for the lexeme <em>walk</em><sup>v</sup></li>
+<li>How many terms are marked as <strong><em>obsolete</em></strong> across the whole OED?</li>
+<li>What are the most common <strong>word classes</strong> of obsolete terms?</li>
+<li>What are the most common <strong>word-formation processes</strong>?</li>
+<li>What are the most common <strong>subjects</strong>?</li>
 </ol>
-<div class="fragment">
+</section>
+<section id="using-the-oeds-advanced-search" class="slide level2">
+<h2>Using the OED’s Advanced Search</h2>
 <ul>
-<li><em>walks</em>: 3rd person present</li>
-<li><em>walking</em>: present participle</li>
-<li><em>walked</em>: past tense</li>
-<li><em>walked</em>: past participle</li>
-</ul>
-</div>
-<ol start="2" type="1">
-<li>Find as many derived forms as possible for the base ANALYE.</li>
-</ol>
-<div class="fragment">
-<ul>
-<li>N: <em>analysis</em>, <em>analyst</em></li>
-<li>Adj: <em>analytic</em>, <em>analytical</em></li>
-<li>Adv: <em>analytically</em></li>
-<li>V: <em>analyse</em>
-<ul>
-<li>also AmE: <em>analyze</em>, <em>analyzer</em>, <em>analyzable</em></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</section></section>
-<section>
-<section id="practice-using-the-oed-topic-objective" class="title-slide slide level1 center">
-<h1>Practice: Using the OED — Topic &amp; Objective</h1>
-<ul>
-<li>Topic: Using dictionary data to examine lexical structure and usage.</li>
-<li>Objective: Identify and describe “problematic” lexical cases via OED evidence.</li>
+<li>find all terms that are marked as <strong><em>obsolete</em></strong></li>
+<li>sort them by <code>Date (newest first)</code></li>
+<li>export the results as a <strong>CSV file</strong></li>
 </ul>
 </section>
-<section class="slide level2">
-
-<h3 id="navigation-targets-oed">Navigation targets (OED)</h3>
+<section id="using-microsoft-excel" class="slide level2">
+<h2>Using Microsoft Excel</h2>
+<ol type="1">
+<li>open the <strong>CSV file</strong></li>
+<li>save the file as an Excel file (<code>.xlsx</code> extension)</li>
+<li>convert the exported rows/columns to a <code>Table</code></li>
+<li>create <strong><code>Pivot Table</code>s</strong> to analyse the data</li>
+<li>create <strong><code>Pivot Chart</code>s</strong> to visualise the data</li>
+</ol>
+<p><a href="https://1drv.ms/x/c/9a2ec97d593520f9/EaLL88w43gZCrHEXDYO5Qa0BRPZiuRcROamaxi4AJhFTsg">Model Excel file</a></p>
+</section></section>
+<section id="summary" class="title-slide slide level1 center">
+<h1>Summary</h1>
 <ul>
-<li>Forms/Spelling (variants)</li>
-<li>Phrasal verbs / Idioms sections</li>
-<li>Examples/Citations pane</li>
+<li><strong>Dictionaries are not monolithic.</strong> Different types — general, specialised, bilingual, diachronic—serve different purposes.</li>
+<li><strong>Choose the right tool for the job.</strong> The best dictionary for your research depends on your specific questions (e.g., historical development, contemporary slang, cross-linguistic comparison).</li>
+<li><strong>Dictionaries are data.</strong> They are curated datasets that can be used for qualitative and quantitative linguistic analysis, revealing patterns in word formation, semantic change, and language use.</li>
 </ul>
 </section>
-<section class="slide level2">
 
-<h3 id="tasks">Tasks</h3>
-<p><strong>Starter headwords</strong> (choose one or explore all):</p>
-<ul>
-<li><em>alright</em> (spelling variant)</li>
-<li><em>kick the bucket</em> (idiom)</li>
-<li><em>honeybee</em> (compound with variants)</li>
-</ul>
-<p><strong>What to look for:</strong></p>
-<ul>
-<li><strong>Task A</strong> (find two problematic cases): variant spellings? usage labels? date range in citations?</li>
-<li><strong>Task B</strong> (compare entries): entry structure? cross-references? examples?</li>
-<li><strong>Task C</strong> (extract citations &amp; discuss): fixedness cues? semantic transparency? paradigmatic alternatives?</li>
-</ul>
-</section></section>
 <section id="references" class="title-slide slide level1 smaller scrollable">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-Bauer2022Introduction" class="csl-entry" role="listitem">
-Bauer, Laurie. 2022. <em>An <span>Introduction</span> to <span>English Lexicology</span></em>. Edinburgh University Press.
+<div id="ref-Sajous2020ENGLAWI" class="csl-entry" role="listitem">
+Sajous, Franck, Basilio Calderone, and Nabil Hathout. 2020. <span>“<span>ENGLAWI</span>: <span>From Human-</span> to <span>Machine-Readable Wiktionary</span>.”</span> In <em>Proceedings of the 12th <span>Language Resources</span> and <span>Evaluation Conference</span></em>, 3016–26. Marseille, France: European Language Resources Association. <a href="https://www.aclweb.org/anthology/2020.lrec-1.369">https://www.aclweb.org/anthology/2020.lrec-1.369</a>.
 </div>
 </div>
 
