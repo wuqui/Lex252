@@ -27,12 +27,13 @@ params:
 
 # Outline
 
-1. Introduction to corpus linguistics (30 min)
-2. Sketch Engine tutorial (25 min)
-3. Practice using Sketch Engine (30 min)
+1. [Introduction to corpus linguistics](#fundamentals-of-corpus-linguistics): Core concepts, methods, and applications of corpus-based research
+2. [Sketch Engine tutorial](#sketch-engine-tutorial): Hands-on introduction to key corpus analysis tools
+3. [Practice using Sketch Engine](#practice-using-sketch-engine-for-lexicology): Group work analysing lexical patterns in BNC 2014 Spoken
 
 ::: {.notes}
 - 10:15–10:17
+- Rough timing: ~30 min intro, ~25 min tutorial, ~30 min practice (flexible)
 :::
 
 # Fundamentals of corpus linguistics
@@ -60,14 +61,14 @@ What corpora have you heard of or used? (e.g. COCA, BNC, Google Books)
 
 ## Goals and approach
 
+For a clear and accessible book-length introduction to corpus linguistics, see @Stefanowitsch2020CorpusLinguistics.
+
 ::: {.incremental}
 - The primary goal of corpus linguistics is to investigate **linguistic phenomena and patterns** by examining **real-world language usage**.
 - This approach contrasts with more traditional linguistic methods that rely heavily on **introspection** and **theoretical speculation** (e.g. Chomsky).
 - Corpus linguistics has gained significant momentum in recent years, thanks to advances in **data** (e.g. social-media and web corpora) and **methods** (e.g. social-network analysis, machine learning).
 - From a *usage-based* perspective, **linguistic structure and knowledge emerge from the patterns** that speakers encounter in their experience with language.
 :::
-
-For a clear and accessible book-length introduction to corpus linguistics, see @Stefanowitsch2020CorpusLinguistics.
 
 ::: {.notes}
 - 10:22–10:25
@@ -210,6 +211,13 @@ Steps we will walk through together:
 - Highlight how metadata/text types can be used for simple lexicological comparisons between items
 :::
 
+---
+
+### Demo screencast
+
+{{< video att/freq-across-text-types.mp4 >}}
+
+
 ## Task overview
 
 Work in groups with **BNC 2014 Spoken**. There will be **three groups**, each working on a different set of lexical items but following the **same steps**. You have **about 20 minutes** for the corpus work and then **around 3 minutes per group** to report your findings.
@@ -238,7 +246,7 @@ Steps:
 2. Open the **corpus information** view and note down: approximate size, time period, what kinds of spoken data it contains, and which **text types** / metadata dimensions are available (e.g. age, gender, education).
 3. Run a **simple concordance** search for lemma *really* and then for lemma *very* (one at a time) in BNC 2014 Spoken. Skim a few lines to see how they are used.
 4. Use a **frequency or word list view** (or the frequency information in the concordance results) to compare how frequent *really* and *very* are overall.
-5. Choose **one "text type" dimension** (as defined in Sketch Engine), such as age group, education level, or gender, where you **expect differences** between *really* and *very*. Use the **frequency by text type** view in Sketch Engine to compare how frequent each item is across those groups.
+5. Choose **one “text type” dimension** (as defined in Sketch Engine), such as age group, education level, or gender, where you **expect differences** between *really* and *very*. Use the **frequency by text type** view in Sketch Engine to compare how frequent each item is across those groups.
 6. If time allows, have a quick look at a **word sketch / collocation view** for each item and see what typical collocates appear.
 
 For your report, decide what is most interesting to show (e.g. example concordance lines, overall frequencies, any noticeable text type differences, collocates) and prepare a short summary.
@@ -246,7 +254,7 @@ For your report, decide what is most interesting to show (e.g. example concordan
 
 ## Task 2: Reporting verbs — *say* vs *tell* {.small}
 
-**Question**: How are *say* and *tell* used to report speech in spoken English?
+**Question**: How are *say* and *tell* used in spoken English?
 
 Steps:
 
@@ -254,7 +262,7 @@ Steps:
 2. Look at the **corpus information** and briefly note size, period, main types of spoken interaction, and which **text types** / metadata dimensions are available (e.g. age, gender, education).
 3. Run a **simple concordance** search for lemma *say* and then for lemma *tell* (one at a time). Skim several lines for each.
 4. Use a **frequency / word list** or concordance frequency information to compare how frequent *say* and *tell* are in BNC 2014 Spoken overall.
-5. Choose **one "text type" dimension** (e.g. age, education, gender) where you **expect differences** in how *say* and *tell* are used. Use the **frequency by text type** view in Sketch Engine to compare how frequent each verb is across those groups.
+5. Choose **one “text type” dimension** (e.g. age, education, gender) where you **expect differences** in how *say* and *tell* are used. Use the **frequency by text type** view in Sketch Engine to compare how frequent each verb is across those groups.
 6. If time allows, inspect a **basic collocation / word sketch** view for *say* and *tell* to see what they typically co-occur with (e.g. pronouns, that-clauses).
 
 ## Task 3: Discourse markers — *like* vs *you know* {.small}
@@ -267,7 +275,7 @@ Steps:
 2. Use the **corpus information** to remind yourselves what kinds of spoken data are included (e.g. everyday conversations, interviews), and which **text types** / metadata dimensions you can use later (e.g. age, gender, education).
 3. Run a **simple concordance** search for *like* and then for *you know* (you may have to filter out some non-discourse uses of *like* by reading the lines carefully).
 4. Use a **frequency / word list** or frequency information from the concordance to compare how frequent *like* and *you know* are overall.
-5. Choose **one \"text type\" dimension** (e.g. age, education, gender) where you **expect differences** in how *like* and *you know* are used. Use the **text type / metadata breakdown** in Sketch Engine to compare how frequent each item is across those groups.
+5. Choose **one “text type” dimension** (e.g. age, education, gender) where you **expect differences** in how *like* and *you know* are used. Use the **text type / metadata breakdown** in Sketch Engine to compare how frequent each item is across those groups.
 6. If time allows, look at a **collocation / word sketch** view to see typical patterns (e.g. what comes before/after these items).
 
 For your report, decide what is most interesting to show (e.g. example concordance lines, overall frequencies, any noticeable text type differences, collocates) and prepare a short summary.
