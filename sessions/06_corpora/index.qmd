@@ -1,0 +1,14 @@
+---
+title: "06 — Corpora: theories, methods, and applications"
+toc: false
+---
+
+# Slides
+
+<div class="embed-slides">
+  <iframe src="slides.html" title="Session 06: Corpora: theories, methods, and applications" allowfullscreen></iframe>
+  </div>
+
+[Open full screen](slides.html) | [Download PDF](slides.pdf)
+
+

@@ -5,7 +5,7 @@
 |  3 |  4 Nov. | [Morphology and word-formation]({{< meta linkprefix >}}sessions/03_morphology/index.qmd) |
 |  4 | 11 Nov. | [Dictionaries: fundamentals, examples, use cases]({{< meta linkprefix >}}sessions/04_dictionaries/index.qmd) |
 |  5 | 18 Nov. | [Using dictionaries and analysing data]({{< meta linkprefix >}}sessions/05_dictionaries-2/index.qmd) |
-|  6 | 25 Nov. | Corpora: theories, methods, and applications |
+|  6 | 25 Nov. | [Corpora: theories, methods, and applications]({{< meta linkprefix >}}sessions/06_corpora/index.qmd) |
 |  7 |  2 Dec. | Semantics: studying meanings and functions of words |
 |  8 |  9 Dec. | Studying lexis empirically |
 |  9 | 16 Dec. | Lexical innovation: new words and meanings |

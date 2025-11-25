@@ -1,0 +1,286 @@
+---
+title: "06 — Corpora: theories, methods, and applications"
+subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
+author: "Dr. Quirin Würschinger, LMU Munich"
+date: 2025-11-25
+metadata:
+  linkprefix: ../../
+filters:
+  - ../../filters/fullcite.lua
+format:
+  clean-revealjs:
+    slide-level: 2
+    css:
+      - ../../custom.css
+    fig-cap-location: top
+    fig-align: center
+    excalidraw:
+      button: false
+      shortcut: "`"
+      theme: "light"
+revealjs-plugins:
+  - pointer
+  - excalidraw
+params:
+  show_solutions: true
+---
+
+# Outline
+
+1. Introduction to corpus linguistics (30 min)
+2. Sketch Engine tutorial (25 min)
+3. Practice using Sketch Engine (30 min)
+
+::: {.notes}
+- 10:15–10:17
+:::
+
+# Fundamentals of corpus linguistics
+
+## What is corpus linguistics about?
+
+Corpus linguistics is a **research methodology** that focuses on the **systematic study of language** using large and diverse **collections of authentic texts**, known as **corpora**.
+
+These collections of language data, either written or spoken, provide an **empirical basis** for analysing:
+
+::: {.incremental}
+- **language use** (e.g. collocational patterns such as *pretty woman*)
+- **linguistic variation** across different text types or communities (e.g. neologisms such as *smash*)
+- **language change** (e.g. *going to* future)
+:::
+
+. . .
+
+What corpora have you heard of or used? (e.g. COCA, BNC, Google Books)
+
+::: {.notes}
+- 10:17–10:22
+- warm-up: collect corpora students know; stress methodology grounded in authentic usage
+:::
+
+## Goals and approach
+
+::: {.incremental}
+- The primary goal of corpus linguistics is to investigate **linguistic phenomena and patterns** by examining **real-world language usage**.
+- This approach contrasts with more traditional linguistic methods that rely heavily on **introspection** and **theoretical speculation** (e.g. Chomsky).
+- Corpus linguistics has gained significant momentum in recent years, thanks to advances in **data** (e.g. social-media and web corpora) and **methods** (e.g. social-network analysis, machine learning).
+- From a *usage-based* perspective, **linguistic structure and knowledge emerge from the patterns** that speakers encounter in their experience with language.
+:::
+
+For a clear and accessible book-length introduction to corpus linguistics, see @Stefanowitsch2020CorpusLinguistics.
+
+::: {.notes}
+- 10:22–10:25
+- contrast with introspective methods; discuss recent advances students might know about
+:::
+
+## What is corpus linguistics good for?
+
+What advantages might corpus linguistics offer over introspective methods? Consider:
+
+- What kinds of questions can we answer with corpus data that we couldn't answer (well) otherwise?
+- What are potential limitations or challenges?
+
+::: {.notes}
+- 10:25–10:28
+- frame usage-based perspective; set up think-pair-share
+:::
+
+---
+
+### Advantages of corpus linguistics
+
+::: {.incremental .small}
+- **Authentic language data**: grounded in real-world language use, not idealised examples 
+- **Quantitative analysis**: frequency counts and statistical measures reveal patterns 
+    - e.g. *going to* vs *will* for future tense across text types
+- **Collocations and constructions**: identify form-meaning pairings in large datasets 
+    - e.g. *strong tea* vs *powerful tea*; *make a decision* vs *take a decision*
+- **Variability and context sensitivity**: examine language across genres, registers, and contexts 
+    - e.g. *purchase* vs *buy* in formal vs informal contexts
+- **Language change**: track diachronic and synchronic patterns 
+    - e.g. rise of *selfie* over time; decline of *telephone* in favour of *phone*
+- **Data-driven applications**: inform language teaching and learning materials 
+    - e.g. vocabulary lists based on corpus frequency; collocation dictionaries
+:::
+
+::: {.notes}
+- 10:28–10:35
+- reveal advantages after discussion; connect to students' ideas; link to upcoming practice task
+:::
+
+## Key concepts
+
+### Corpus types
+
+A **corpus** is a large, **structured collection of texts** that serves as the basis for **linguistic analysis**.
+
+::: {.fragment}
+What kinds of research questions could you answer with a corpus that includes many text types versus one focused on a specific domain?
+:::
+
+::: {.fragment .small}
+#### Examples
+
+- **General**: BNC, COCA, Google Books — wide variety of text types
+  - e.g. How does the frequency of *going to* vs *will* vary across different text types?
+- **Specialised**: BNC 2014 Spoken, academic journal corpora, learner corpora — specific genres or domains
+  - e.g. What collocations do learners use with *make* vs *do* in academic writing?
+:::
+
+---
+
+### Annotation
+
+**Annotation** refers to the process of adding **metadata** or **linguistic information** to a corpus, such as **part-of-speech tags**, **syntactic structure**, or **semantic roles**.
+
+::: {.fragment}
+Metadata: data **about** language use on several levels:
+
+- corpus
+    - texts: author, text type, register, topic
+        - paragraphs or utterances
+            - running words (tokens): word class, lemmatisation
+                - tokens: *walk*, *walks*, *walked*
+                - type, lexeme, lemma: WALK $^v$
+:::
+
+::: {.notes}
+- 10:35–10:38
+- quick check on corpus types; invite examples
+:::
+
+---
+
+### Core tools: concordance, collocations, frequency
+
+::: {.incremental}
+- **Concordance**: search for words, phrases, or patterns and display results **in context**
+    - e.g. examining all instances of *break down* to distinguish phrasal verb vs compound noun usage
+- **Collocation**: **co-occurrence of words** within a specific context or proximity
+    - e.g. identifying that *strong* collocates with *tea* but *powerful* does not
+- **Frequency analysis**: counting occurrences of linguistic features to identify patterns and trends
+    - e.g. comparing frequency of *selfie* vs *self-portrait* across different time periods
+:::
+
+::: {.fragment}
+What might we discover by comparing the collocations of *pretty* vs *beautiful*?
+:::
+
+::: {.notes}
+10:38–10:42
+
+- *Pretty* often collocates with more concrete, evaluative nouns (*pretty girl*, *pretty picture*, *pretty good*)
+- *Beautiful* tends to collocate with more abstract or aesthetic concepts (*beautiful music*, *beautiful mind*, *beautiful day*)
+- *Pretty* can function as an intensifier (*pretty good*, *pretty sure*) while *beautiful* typically does not
+- Register differences: *pretty* more common in spoken/informal contexts; *beautiful* more common in written/formal contexts
+- Semantic prosody: *pretty* may have more evaluative/judgmental associations; *beautiful* more aesthetic/appreciative
+:::
+
+
+# Sketch Engine tutorial
+
+<https://wuqui.github.io/SkEtut/>
+
+::: {.notes}
+- 10:47–11:12 (25 min)
+- Guide students through the tutorial website
+- Focus on key tools: concordance, collocations, word sketches, frequency analysis
+- Demonstrate basic queries and CQL if time permits
+- Answer questions as they arise
+:::
+
+
+# Practice: using Sketch Engine for lexicology
+
+## Example analysis in BNC 2014 Spoken {.small}
+
+Steps we will walk through together:
+
+::: {.incremental}
+- Open **BNC 2014 Spoken** and explore the **corpus information** (size, time period, kinds of spoken data, available **text types** / metadata such as age, gender, education).
+- Run **simple concordances** for two items (e.g. *yeah* vs *yes*) and look at a few lines for each to see how they are used.
+- Check **overall frequency** for both items and then use **frequency by text type** to see whether their usage differs across text type groups.
+- If time allows, briefly look at a **word sketch / collocation view** for each item to see typical lexical partners.
+:::
+
+::: {.notes}
+- 11:12–11:18 Demo of the full workflow on one example pair (e.g. *yeah* vs *yes*)
+- Model how to move from concordance → frequency → frequency by text type → collocations
+- Highlight how metadata/text types can be used for simple lexicological comparisons between items
+:::
+
+## Task overview
+
+Work in groups with **BNC 2014 Spoken**. There will be **three groups**, each working on a different set of lexical items but following the **same steps**. You have **about 20 minutes** for the corpus work and then **around 3 minutes per group** to report your findings.
+
+During the work phase, each group should:
+
+- explore basic **corpus information** for BNC 2014 Spoken, including which **text types** / metadata categories are available (e.g. age, gender, education)
+- run at least one **simple concordance query**
+- inspect **basic frequency** (and, if time, simple collocation/word sketch information)
+- add notes directly to the [shared PowerPoint file](https://1drv.ms/p/c/9a2ec97d593520f9/IQA8TwK88pHzSqdixkrzif_XAZzB0bvMxIZ-kW0j0fhK4uc) that you will use for your report
+
+::: {.notes}
+- 11:18–11:38
+- Groups work on their assigned tasks with BNC 2014 Spoken
+- Circulate among groups; remind them to record key findings in the shared PowerPoint
+- Leave a few minutes at the end for brief report-backs and discussion
+:::
+
+## Task 1: Intensifiers — *really* vs *very* {.small}
+
+**Question**: How are *really* and *very* used as intensifiers in spoken English?
+
+Steps:
+
+1. In Sketch Engine, select the corpus **BNC 2014 Spoken**.
+2. Open the **corpus information** view and note down: approximate size, time period, what kinds of spoken data it contains, and which **text types** / metadata dimensions are available (e.g. age, gender, education).
+3. Run a **simple concordance** search for lemma *really* and then for lemma *very* (one at a time) in BNC 2014 Spoken. Skim a few lines to see how they are used.
+4. Use a **frequency or word list view** (or the frequency information in the concordance results) to compare how frequent *really* and *very* are overall.
+5. Choose **one "text type" dimension** (as defined in Sketch Engine), such as age group, education level, or gender, where you **expect differences** between *really* and *very*. Use the **frequency by text type** view in Sketch Engine to compare how frequent each item is across those groups.
+6. If time allows, have a quick look at a **word sketch / collocation view** for each item and see what typical collocates appear.
+
+For your report, decide what is most interesting to show (e.g. example concordance lines, overall frequencies, any noticeable text type differences, collocates) and prepare a short summary.
+
+
+## Task 2: Reporting verbs — *say* vs *tell* {.small}
+
+**Question**: How are *say* and *tell* used to report speech in spoken English?
+
+Steps:
+
+1. In Sketch Engine, select **BNC 2014 Spoken** (same corpus as Task 1).
+2. Look at the **corpus information** and briefly note size, period, main types of spoken interaction, and which **text types** / metadata dimensions are available (e.g. age, gender, education).
+3. Run a **simple concordance** search for lemma *say* and then for lemma *tell* (one at a time). Skim several lines for each.
+4. Use a **frequency / word list** or concordance frequency information to compare how frequent *say* and *tell* are in BNC 2014 Spoken overall.
+5. Choose **one "text type" dimension** (e.g. age, education, gender) where you **expect differences** in how *say* and *tell* are used. Use the **frequency by text type** view in Sketch Engine to compare how frequent each verb is across those groups.
+6. If time allows, inspect a **basic collocation / word sketch** view for *say* and *tell* to see what they typically co-occur with (e.g. pronouns, that-clauses).
+
+## Task 3: Discourse markers — *like* vs *you know* {.small}
+
+**Question**: How are *like* and *you know* used as discourse markers in spoken English?
+
+Steps:
+
+1. In Sketch Engine, select **BNC 2014 Spoken**.
+2. Use the **corpus information** to remind yourselves what kinds of spoken data are included (e.g. everyday conversations, interviews), and which **text types** / metadata dimensions you can use later (e.g. age, gender, education).
+3. Run a **simple concordance** search for *like* and then for *you know* (you may have to filter out some non-discourse uses of *like* by reading the lines carefully).
+4. Use a **frequency / word list** or frequency information from the concordance to compare how frequent *like* and *you know* are overall.
+5. Choose **one \"text type\" dimension** (e.g. age, education, gender) where you **expect differences** in how *like* and *you know* are used. Use the **text type / metadata breakdown** in Sketch Engine to compare how frequent each item is across those groups.
+6. If time allows, look at a **collocation / word sketch** view to see typical patterns (e.g. what comes before/after these items).
+
+For your report, decide what is most interesting to show (e.g. example concordance lines, overall frequencies, any noticeable text type differences, collocates) and prepare a short summary.
+
+
+# References
+
+:::: {#refs}
+::::
+
+::: {.notes}
+- 11:38–11:45 (wrap-up)
+- Collect key insights from group reports and connect back to key concepts
+- Highlight how corpus tools supported lexicological analysis
+- Flag any follow-up questions or readings (e.g. Stefanowitsch 2020)
+:::

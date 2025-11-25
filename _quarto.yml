@@ -23,6 +23,8 @@ website:
             href: sessions/04_dictionaries/index.qmd
           - text: "05 — Using dictionaries and analysing data"
             href: sessions/05_dictionaries-2/index.qmd
+          - text: "06 — Corpora: theories, methods, and applications"
+            href: sessions/06_corpora/index.qmd
   page-navigation: true
   search: true
 
