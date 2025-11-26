@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dr.&nbsp;Quirin Würschinger, LMU Munich">
 <meta name="dcterms.date" content="2025-11-25">
 
 <title>06 — Corpora: theories, methods, and applications – Lex252</title>
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -43,6 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-8fd1faf6fd93e4e6d207ae0f9db51d78.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/quarto-auto-dark-mode-1.0.0/auto-dark-mode.css" rel="stylesheet">
+<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,11 +94,40 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../custom.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../document.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -107,19 +159,19 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/03_morphology/index.html">
- <span class="dropdown-text">03 — Morphology and word-formation</span></a>
+ <span class="dropdown-text">03 — Morphology</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/04_dictionaries/index.html">
- <span class="dropdown-text">04 — Dictionaries: fundamentals, examples, use cases</span></a>
+ <span class="dropdown-text">04 — Dictionaries</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/05_dictionaries-2/index.html">
- <span class="dropdown-text">05 — Using dictionaries and analysing data</span></a>
+ <span class="dropdown-text">05 — Using dictionaries</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/06_corpora/index.html">
- <span class="dropdown-text">06 — Corpora: theories, methods, and applications</span></a>
+ <span class="dropdown-text">06 — Corpora</span></a>
   </li>  
     </ul>
   </li>
@@ -134,19 +186,62 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#outline" id="toc-outline" class="nav-link active" data-scroll-target="#outline">Outline</a></li>
+  <li><a href="#fundamentals-of-corpus-linguistics" id="toc-fundamentals-of-corpus-linguistics" class="nav-link" data-scroll-target="#fundamentals-of-corpus-linguistics">Fundamentals of corpus linguistics</a>
+  <ul class="collapse">
+  <li><a href="#what-is-corpus-linguistics-about" id="toc-what-is-corpus-linguistics-about" class="nav-link" data-scroll-target="#what-is-corpus-linguistics-about">What is corpus linguistics about?</a></li>
+  <li><a href="#goals-and-approach" id="toc-goals-and-approach" class="nav-link" data-scroll-target="#goals-and-approach">Goals and approach</a></li>
+  <li><a href="#what-is-corpus-linguistics-good-for" id="toc-what-is-corpus-linguistics-good-for" class="nav-link" data-scroll-target="#what-is-corpus-linguistics-good-for">What is corpus linguistics good for?</a>
+  <ul class="collapse">
+  <li><a href="#advantages-of-corpus-linguistics" id="toc-advantages-of-corpus-linguistics" class="nav-link" data-scroll-target="#advantages-of-corpus-linguistics">Advantages of corpus linguistics</a></li>
+  </ul></li>
+  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key concepts</a>
+  <ul class="collapse">
+  <li><a href="#corpus-types" id="toc-corpus-types" class="nav-link" data-scroll-target="#corpus-types">Corpus types</a></li>
+  <li><a href="#annotation" id="toc-annotation" class="nav-link" data-scroll-target="#annotation">Annotation</a></li>
+  <li><a href="#core-tools-concordance-collocations-frequency" id="toc-core-tools-concordance-collocations-frequency" class="nav-link" data-scroll-target="#core-tools-concordance-collocations-frequency">Core tools: concordance, collocations, frequency</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sketch-engine-tutorial" id="toc-sketch-engine-tutorial" class="nav-link" data-scroll-target="#sketch-engine-tutorial">Sketch Engine tutorial</a></li>
+  <li><a href="#practice-using-sketch-engine-for-lexicology" id="toc-practice-using-sketch-engine-for-lexicology" class="nav-link" data-scroll-target="#practice-using-sketch-engine-for-lexicology">Practice: using Sketch Engine for lexicology</a>
+  <ul class="collapse">
+  <li><a href="#example-analysis-in-bnc-2014-spoken" id="toc-example-analysis-in-bnc-2014-spoken" class="nav-link" data-scroll-target="#example-analysis-in-bnc-2014-spoken">Example analysis in BNC 2014 Spoken</a>
+  <ul class="collapse">
+  <li><a href="#demo-screencast" id="toc-demo-screencast" class="nav-link" data-scroll-target="#demo-screencast">Demo screencast</a></li>
+  </ul></li>
+  <li><a href="#task-overview" id="toc-task-overview" class="nav-link" data-scroll-target="#task-overview">Task overview</a></li>
+  <li><a href="#task-1-intensifiers-really-vs-very" id="toc-task-1-intensifiers-really-vs-very" class="nav-link" data-scroll-target="#task-1-intensifiers-really-vs-very">Task 1: Intensifiers — <em>really</em> vs <em>very</em></a></li>
+  <li><a href="#task-2-reporting-verbs-say-vs-tell" id="toc-task-2-reporting-verbs-say-vs-tell" class="nav-link" data-scroll-target="#task-2-reporting-verbs-say-vs-tell">Task 2: Reporting verbs — <em>say</em> vs <em>tell</em></a></li>
+  <li><a href="#task-3-discourse-markers-like-vs-you-know" id="toc-task-3-discourse-markers-like-vs-you-know" class="nav-link" data-scroll-target="#task-3-discourse-markers-like-vs-you-know">Task 3: Discourse markers — <em>like</em> vs <em>you know</em></a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">06 — Corpora: theories, methods, and applications</h1>
+<p class="subtitle lead">Lexicology and Lexicography</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Quirin Würschinger, LMU Munich </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -163,12 +258,231 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="slides" class="level1">
-<h1>Slides</h1>
-<div class="embed-slides">
-<iframe src="slides.html" title="Session 06: Corpora: theories, methods, and applications" allowfullscreen=""></iframe>
+<p><a href="slides.html" class="btn btn-primary">Open slides version</a></p>
+<section id="outline" class="level1">
+<h1>Outline</h1>
+<ol type="1">
+<li><a href="#fundamentals-of-corpus-linguistics">Introduction to corpus linguistics</a>: Core concepts, methods, and applications of corpus-based research</li>
+<li><a href="#sketch-engine-tutorial">Sketch Engine tutorial</a>: Hands-on introduction to key corpus analysis tools</li>
+<li><a href="#practice-using-sketch-engine-for-lexicology">Practice using Sketch Engine</a>: Group work analysing lexical patterns in BNC 2014 Spoken</li>
+</ol>
+</section>
+<section id="fundamentals-of-corpus-linguistics" class="level1">
+<h1>Fundamentals of corpus linguistics</h1>
+<section id="what-is-corpus-linguistics-about" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-corpus-linguistics-about">What is corpus linguistics about?</h2>
+<p>Corpus linguistics is a <strong>research methodology</strong> that focuses on the <strong>systematic study of language</strong> using large and diverse <strong>collections of authentic texts</strong>, known as <strong>corpora</strong>.</p>
+<p>These collections of language data, either written or spoken, provide an <strong>empirical basis</strong> for analysing:</p>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>language use</strong> (e.g.&nbsp;collocational patterns such as <em>pretty woman</em>)</li>
+<li><strong>linguistic variation</strong> across different text types or communities (e.g.&nbsp;neologisms such as <em>smash</em>)</li>
+<li><strong>language change</strong> (e.g.&nbsp;<em>going to</em> future)</li>
+</ul>
 </div>
-<p><a href="slides.html">Open full screen</a> | <a href="slides.pdf">Download PDF</a></p>
+<p>What corpora have you heard of or used? (e.g.&nbsp;COCA, BNC, Google Books)</p>
+</section>
+<section id="goals-and-approach" class="level2">
+<h2 class="anchored" data-anchor-id="goals-and-approach">Goals and approach</h2>
+<p>For a clear and accessible book-length introduction to corpus linguistics, see <span class="citation" data-cites="Stefanowitsch2020CorpusLinguistics">Stefanowitsch (<a href="#ref-Stefanowitsch2020CorpusLinguistics" role="doc-biblioref">2020</a>)</span>.</p>
+<div class="incremental">
+<ul class="incremental">
+<li>The primary goal of corpus linguistics is to investigate <strong>linguistic phenomena and patterns</strong> by examining <strong>real-world language usage</strong>.</li>
+<li>This approach contrasts with more traditional linguistic methods that rely heavily on <strong>introspection</strong> and <strong>theoretical speculation</strong> (e.g.&nbsp;Chomsky).</li>
+<li>Corpus linguistics has gained significant momentum in recent years, thanks to advances in <strong>data</strong> (e.g.&nbsp;social-media and web corpora) and <strong>methods</strong> (e.g.&nbsp;social-network analysis, machine learning).</li>
+<li>From a <em>usage-based</em> perspective, <strong>linguistic structure and knowledge emerge from the patterns</strong> that speakers encounter in their experience with language.</li>
+</ul>
+</div>
+</section>
+<section id="what-is-corpus-linguistics-good-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-corpus-linguistics-good-for">What is corpus linguistics good for?</h2>
+<p>What advantages might corpus linguistics offer over introspective methods? Consider:</p>
+<ul>
+<li>What kinds of questions can we answer with corpus data that we couldn’t answer (well) otherwise?</li>
+<li>What are potential limitations or challenges?</li>
+</ul>
+<section id="advantages-of-corpus-linguistics" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-of-corpus-linguistics">Advantages of corpus linguistics</h3>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Authentic language data</strong>: grounded in real-world language use, not idealised examples</li>
+<li><strong>Quantitative analysis</strong>: frequency counts and statistical measures reveal patterns
+<ul class="incremental">
+<li>e.g.&nbsp;<em>going to</em> vs <em>will</em> for future tense across text types</li>
+</ul></li>
+<li><strong>Collocations and constructions</strong>: identify form-meaning pairings in large datasets
+<ul class="incremental">
+<li>e.g.&nbsp;<em>strong tea</em> vs <em>powerful tea</em>; <em>make a decision</em> vs <em>take a decision</em></li>
+</ul></li>
+<li><strong>Variability and context sensitivity</strong>: examine language across genres, registers, and contexts
+<ul class="incremental">
+<li>e.g.&nbsp;<em>purchase</em> vs <em>buy</em> in formal vs informal contexts</li>
+</ul></li>
+<li><strong>Language change</strong>: track diachronic and synchronic patterns
+<ul class="incremental">
+<li>e.g.&nbsp;rise of <em>selfie</em> over time; decline of <em>telephone</em> in favour of <em>phone</em></li>
+</ul></li>
+<li><strong>Data-driven applications</strong>: inform language teaching and learning materials
+<ul class="incremental">
+<li>e.g.&nbsp;vocabulary lists based on corpus frequency; collocation dictionaries</li>
+</ul></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="key-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="key-concepts">Key concepts</h2>
+<section id="corpus-types" class="level3">
+<h3 class="anchored" data-anchor-id="corpus-types">Corpus types</h3>
+<p>A <strong>corpus</strong> is a large, <strong>structured collection of texts</strong> that serves as the basis for <strong>linguistic analysis</strong>.</p>
+<div class="fragment">
+<p>What kinds of research questions could you answer with a corpus that includes many text types versus one focused on a specific domain?</p>
+</div>
+<div class="fragment">
+<section id="examples" class="level4">
+<h4 class="anchored" data-anchor-id="examples">Examples</h4>
+<ul>
+<li><strong>General</strong>: BNC, COCA, Google Books — wide variety of text types
+<ul>
+<li>e.g.&nbsp;How does the frequency of <em>going to</em> vs <em>will</em> vary across different text types?</li>
+</ul></li>
+<li><strong>Specialised</strong>: BNC 2014 Spoken, academic journal corpora, learner corpora — specific genres or domains
+<ul>
+<li>e.g.&nbsp;What collocations do learners use with <em>make</em> vs <em>do</em> in academic writing?</li>
+</ul></li>
+</ul>
+</section>
+</div>
+</section>
+<section id="annotation" class="level3">
+<h3 class="anchored" data-anchor-id="annotation">Annotation</h3>
+<p><strong>Annotation</strong> refers to the process of adding <strong>metadata</strong> or <strong>linguistic information</strong> to a corpus, such as <strong>part-of-speech tags</strong>, <strong>syntactic structure</strong>, or <strong>semantic roles</strong>.</p>
+<div class="fragment">
+<p>Metadata: data <strong>about</strong> language use on several levels:</p>
+<ul>
+<li>corpus
+<ul>
+<li>texts: author, text type, register, topic
+<ul>
+<li>paragraphs or utterances
+<ul>
+<li>running words (tokens): word class, lemmatisation
+<ul>
+<li>tokens: <em>walk</em>, <em>walks</em>, <em>walked</em></li>
+<li>type, lexeme, lemma: WALK <span class="math inline">\(^v\)</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="core-tools-concordance-collocations-frequency" class="level3">
+<h3 class="anchored" data-anchor-id="core-tools-concordance-collocations-frequency">Core tools: concordance, collocations, frequency</h3>
+<div class="incremental">
+<ul class="incremental">
+<li><strong>Concordance</strong>: search for words, phrases, or patterns and display results <strong>in context</strong>
+<ul class="incremental">
+<li>e.g.&nbsp;examining all instances of <em>break down</em> to distinguish phrasal verb vs compound noun usage</li>
+</ul></li>
+<li><strong>Collocation</strong>: <strong>co-occurrence of words</strong> within a specific context or proximity
+<ul class="incremental">
+<li>e.g.&nbsp;identifying that <em>strong</em> collocates with <em>tea</em> but <em>powerful</em> does not</li>
+</ul></li>
+<li><strong>Frequency analysis</strong>: counting occurrences of linguistic features to identify patterns and trends
+<ul class="incremental">
+<li>e.g.&nbsp;comparing frequency of <em>selfie</em> vs <em>self-portrait</em> across different time periods</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p>What might we discover by comparing the collocations of <em>pretty</em> vs <em>beautiful</em>?</p>
+</div>
+</section>
+</section>
+</section>
+<section id="sketch-engine-tutorial" class="level1">
+<h1>Sketch Engine tutorial</h1>
+<p><a href="https://wuqui.github.io/SkEtut/" class="uri">https://wuqui.github.io/SkEtut/</a></p>
+</section>
+<section id="practice-using-sketch-engine-for-lexicology" class="level1">
+<h1>Practice: using Sketch Engine for lexicology</h1>
+<section id="example-analysis-in-bnc-2014-spoken" class="level2">
+<h2 class="anchored" data-anchor-id="example-analysis-in-bnc-2014-spoken">Example analysis in BNC 2014 Spoken</h2>
+<p>Steps we will walk through together:</p>
+<div class="incremental">
+<ul class="incremental">
+<li>Open <strong>BNC 2014 Spoken</strong> and explore the <strong>corpus information</strong> (size, time period, kinds of spoken data, available <strong>text types</strong> / metadata such as age, gender, education).</li>
+<li>Run <strong>simple concordances</strong> for two items (e.g.&nbsp;<em>yeah</em> vs <em>yes</em>) and look at a few lines for each to see how they are used.</li>
+<li>Check <strong>overall frequency</strong> for both items and then use <strong>frequency by text type</strong> to see whether their usage differs across text type groups.</li>
+<li>If time allows, briefly look at a <strong>word sketch / collocation view</strong> for each item to see typical lexical partners.</li>
+</ul>
+</div>
+<section id="demo-screencast" class="level3">
+<h3 class="anchored" data-anchor-id="demo-screencast">Demo screencast</h3>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="att/freq-across-text-types.mp4"></video></div>
+</section>
+</section>
+<section id="task-overview" class="level2">
+<h2 class="anchored" data-anchor-id="task-overview">Task overview</h2>
+<p>Work in groups with <strong>BNC 2014 Spoken</strong>. There will be <strong>three groups</strong>, each working on a different set of lexical items but following the <strong>same steps</strong>. You have <strong>about 20 minutes</strong> for the corpus work and then <strong>around 3 minutes per group</strong> to report your findings.</p>
+<p>During the work phase, each group should:</p>
+<ul>
+<li>explore basic <strong>corpus information</strong> for BNC 2014 Spoken, including which <strong>text types</strong> / metadata categories are available (e.g.&nbsp;age, gender, education)</li>
+<li>run at least one <strong>simple concordance query</strong></li>
+<li>inspect <strong>basic frequency</strong> (and, if time, simple collocation/word sketch information)</li>
+<li>add notes directly to the <a href="https://1drv.ms/p/c/9a2ec97d593520f9/IQA8TwK88pHzSqdixkrzif_XAZzB0bvMxIZ-kW0j0fhK4uc">shared PowerPoint file</a> that you will use for your report</li>
+</ul>
+</section>
+<section id="task-1-intensifiers-really-vs-very" class="level2">
+<h2 class="anchored" data-anchor-id="task-1-intensifiers-really-vs-very">Task 1: Intensifiers — <em>really</em> vs <em>very</em></h2>
+<p><strong>Question</strong>: How are <em>really</em> and <em>very</em> used as intensifiers in spoken English?</p>
+<p>Steps:</p>
+<ol type="1">
+<li>In Sketch Engine, select the corpus <strong>BNC 2014 Spoken</strong>.</li>
+<li>Open the <strong>corpus information</strong> view and note down: approximate size, time period, what kinds of spoken data it contains, and which <strong>text types</strong> / metadata dimensions are available (e.g.&nbsp;age, gender, education).</li>
+<li>Run a <strong>simple concordance</strong> search for lemma <em>really</em> and then for lemma <em>very</em> (one at a time) in BNC 2014 Spoken. Skim a few lines to see how they are used.</li>
+<li>Use a <strong>frequency or word list view</strong> (or the frequency information in the concordance results) to compare how frequent <em>really</em> and <em>very</em> are overall.</li>
+<li>Choose <strong>one “text type” dimension</strong> (as defined in Sketch Engine), such as age group, education level, or gender, where you <strong>expect differences</strong> between <em>really</em> and <em>very</em>. Use the <strong>frequency by text type</strong> view in Sketch Engine to compare how frequent each item is across those groups.</li>
+<li>If time allows, have a quick look at a <strong>word sketch / collocation view</strong> for each item and see what typical collocates appear.</li>
+</ol>
+<p>For your report, decide what is most interesting to show (e.g.&nbsp;example concordance lines, overall frequencies, any noticeable text type differences, collocates) and prepare a short summary.</p>
+</section>
+<section id="task-2-reporting-verbs-say-vs-tell" class="level2">
+<h2 class="anchored" data-anchor-id="task-2-reporting-verbs-say-vs-tell">Task 2: Reporting verbs — <em>say</em> vs <em>tell</em></h2>
+<p><strong>Question</strong>: How are <em>say</em> and <em>tell</em> used in spoken English?</p>
+<p>Steps:</p>
+<ol type="1">
+<li>In Sketch Engine, select <strong>BNC 2014 Spoken</strong> (same corpus as Task 1).</li>
+<li>Look at the <strong>corpus information</strong> and briefly note size, period, main types of spoken interaction, and which <strong>text types</strong> / metadata dimensions are available (e.g.&nbsp;age, gender, education).</li>
+<li>Run a <strong>simple concordance</strong> search for lemma <em>say</em> and then for lemma <em>tell</em> (one at a time). Skim several lines for each.</li>
+<li>Use a <strong>frequency / word list</strong> or concordance frequency information to compare how frequent <em>say</em> and <em>tell</em> are in BNC 2014 Spoken overall.</li>
+<li>Choose <strong>one “text type” dimension</strong> (e.g.&nbsp;age, education, gender) where you <strong>expect differences</strong> in how <em>say</em> and <em>tell</em> are used. Use the <strong>frequency by text type</strong> view in Sketch Engine to compare how frequent each verb is across those groups.</li>
+<li>If time allows, inspect a <strong>basic collocation / word sketch</strong> view for <em>say</em> and <em>tell</em> to see what they typically co-occur with (e.g.&nbsp;pronouns, that-clauses).</li>
+</ol>
+</section>
+<section id="task-3-discourse-markers-like-vs-you-know" class="level2">
+<h2 class="anchored" data-anchor-id="task-3-discourse-markers-like-vs-you-know">Task 3: Discourse markers — <em>like</em> vs <em>you know</em></h2>
+<p><strong>Question</strong>: How are <em>like</em> and <em>you know</em> used as discourse markers in spoken English?</p>
+<p>Steps:</p>
+<ol type="1">
+<li>In Sketch Engine, select <strong>BNC 2014 Spoken</strong>.</li>
+<li>Use the <strong>corpus information</strong> to remind yourselves what kinds of spoken data are included (e.g.&nbsp;everyday conversations, interviews), and which <strong>text types</strong> / metadata dimensions you can use later (e.g.&nbsp;age, gender, education).</li>
+<li>Run a <strong>simple concordance</strong> search for <em>like</em> and then for <em>you know</em> (you may have to filter out some non-discourse uses of <em>like</em> by reading the lines carefully).</li>
+<li>Use a <strong>frequency / word list</strong> or frequency information from the concordance to compare how frequent <em>like</em> and <em>you know</em> are overall.</li>
+<li>Choose <strong>one “text type” dimension</strong> (e.g.&nbsp;age, education, gender) where you <strong>expect differences</strong> in how <em>like</em> and <em>you know</em> are used. Use the <strong>text type / metadata breakdown</strong> in Sketch Engine to compare how frequent each item is across those groups.</li>
+<li>If time allows, look at a <strong>collocation / word sketch</strong> view to see typical patterns (e.g.&nbsp;what comes before/after these items).</li>
+</ol>
+<p>For your report, decide what is most interesting to show (e.g.&nbsp;example concordance lines, overall frequencies, any noticeable text type differences, collocates) and prepare a short summary.</p>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Stefanowitsch2020CorpusLinguistics" class="csl-entry" role="listitem">
+Stefanowitsch, Anatol. 2020. <em>Corpus Linguistics</em>. Berlin: Language Science Press. <a href="https://doi.org/10.5281/zenodo.3735822">https://doi.org/10.5281/zenodo.3735822</a>.
+</div>
+</div>
 
 
 </section>
@@ -575,6 +889,7 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

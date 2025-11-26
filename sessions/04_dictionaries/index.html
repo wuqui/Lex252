@@ -6,7 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-25">
+<meta name="author" content="Dr.&nbsp;Quirin Würschinger, LMU Munich">
+<meta name="dcterms.date" content="2025-11-11">
 
 <title>04 — Dictionaries: fundamentals, examples, use cases – Lex252</title>
 <style>
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,10 +93,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../custom.css">
+<link rel="stylesheet" href="../../document.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -107,19 +128,19 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/03_morphology/index.html">
- <span class="dropdown-text">03 — Morphology and word-formation</span></a>
+ <span class="dropdown-text">03 — Morphology</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/04_dictionaries/index.html">
- <span class="dropdown-text">04 — Dictionaries: fundamentals, examples, use cases</span></a>
+ <span class="dropdown-text">04 — Dictionaries</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/05_dictionaries-2/index.html">
- <span class="dropdown-text">05 — Using dictionaries and analysing data</span></a>
+ <span class="dropdown-text">05 — Using dictionaries</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/06_corpora/index.html">
- <span class="dropdown-text">06 — Corpora: theories, methods, and applications</span></a>
+ <span class="dropdown-text">06 — Corpora</span></a>
   </li>  
     </ul>
   </li>
@@ -134,24 +155,100 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap">Recap</a></li>
+  <li><a href="#outline" id="toc-outline" class="nav-link" data-scroll-target="#outline">Outline</a></li>
+  </ul></li>
+  <li><a href="#the-lexicon" id="toc-the-lexicon" class="nav-link" data-scroll-target="#the-lexicon">The Lexicon</a>
+  <ul class="collapse">
+  <li><a href="#two-senses-of-lexicon" id="toc-two-senses-of-lexicon" class="nav-link" data-scroll-target="#two-senses-of-lexicon">Two senses of <em>lexicon</em></a></li>
+  <li><a href="#objective-of-lexicology" id="toc-objective-of-lexicology" class="nav-link" data-scroll-target="#objective-of-lexicology">Objective of lexicology</a></li>
+  <li><a href="#list-vs-structure-examples" id="toc-list-vs-structure-examples" class="nav-link" data-scroll-target="#list-vs-structure-examples">List vs structure: examples</a></li>
+  <li><a href="#definition-bauer2022introduction" id="toc-definition-bauer2022introduction" class="nav-link" data-scroll-target="#definition-bauer2022introduction">Definition <span class="citation" data-cites="Bauer2022Introduction">(Bauer 2022)</span></a></li>
+  <li><a href="#the-mental-lexicon" id="toc-the-mental-lexicon" class="nav-link" data-scroll-target="#the-mental-lexicon">The Mental Lexicon</a>
+  <ul class="collapse">
+  <li><a href="#the-stroop-effect-stroop1935studiesinterference" id="toc-the-stroop-effect-stroop1935studiesinterference" class="nav-link" data-scroll-target="#the-stroop-effect-stroop1935studiesinterference">The Stroop Effect <span class="citation" data-cites="Stroop1935StudiesInterference">(Stroop 1935)</span></a></li>
+  <li><a href="#freudian-slip-bauer2022introduction" id="toc-freudian-slip-bauer2022introduction" class="nav-link" data-scroll-target="#freudian-slip-bauer2022introduction">Freudian slip <span class="citation" data-cites="Bauer2022Introduction">(Bauer 2022)</span></a></li>
+  <li><a href="#evidence-for-a-mental-lexicon" id="toc-evidence-for-a-mental-lexicon" class="nav-link" data-scroll-target="#evidence-for-a-mental-lexicon">Evidence for a mental lexicon</a></li>
+  <li><a href="#cognitive-linguistic-models-of-the-lexicon" id="toc-cognitive-linguistic-models-of-the-lexicon" class="nav-link" data-scroll-target="#cognitive-linguistic-models-of-the-lexicon">Cognitive-linguistic models of the lexicon</a></li>
+  <li><a href="#word-embeddings-bandyopadhyay2022interactive" id="toc-word-embeddings-bandyopadhyay2022interactive" class="nav-link" data-scroll-target="#word-embeddings-bandyopadhyay2022interactive">Word embeddings <span class="citation" data-cites="Bandyopadhyay2022Interactive">(Bandyopadhyay et al. 2022)</span></a></li>
+  <li><a href="#exercise-word-embeddings" id="toc-exercise-word-embeddings" class="nav-link" data-scroll-target="#exercise-word-embeddings">Exercise: word embeddings</a></li>
+  <li><a href="#associations-in-the-lexicon" id="toc-associations-in-the-lexicon" class="nav-link" data-scroll-target="#associations-in-the-lexicon">Associations in the lexicon</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#dictionaries-bauer2022introduction" id="toc-dictionaries-bauer2022introduction" class="nav-link" data-scroll-target="#dictionaries-bauer2022introduction">Dictionaries <span class="citation" data-cites="Bauer2022Introduction">(Bauer 2022)</span></a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-word" id="toc-what-is-a-word" class="nav-link" data-scroll-target="#what-is-a-word">What is a <em>word</em>?</a></li>
+  <li><a href="#definition-of-dictionary" id="toc-definition-of-dictionary" class="nav-link" data-scroll-target="#definition-of-dictionary">Definition of <em>dictionary</em></a></li>
+  <li><a href="#from-data-to-dictionary-entries" id="toc-from-data-to-dictionary-entries" class="nav-link" data-scroll-target="#from-data-to-dictionary-entries">From data to dictionary entries</a></li>
+  <li><a href="#how-are-definitions-written" id="toc-how-are-definitions-written" class="nav-link" data-scroll-target="#how-are-definitions-written">How are definitions written?</a></li>
+  <li><a href="#ordering-senses" id="toc-ordering-senses" class="nav-link" data-scroll-target="#ordering-senses">Ordering senses</a></li>
+  <li><a href="#usage-labels" id="toc-usage-labels" class="nav-link" data-scroll-target="#usage-labels">Usage labels</a>
+  <ul class="collapse">
+  <li><a href="#check-propose-appropriate-labels" id="toc-check-propose-appropriate-labels" class="nav-link" data-scroll-target="#check-propose-appropriate-labels">Check: propose appropriate labels</a></li>
+  </ul></li>
+  <li><a href="#phraseology-in-entries" id="toc-phraseology-in-entries" class="nav-link" data-scroll-target="#phraseology-in-entries">Phraseology in entries</a>
+  <ul class="collapse">
+  <li><a href="#which-is-the-better-collocate" id="toc-which-is-the-better-collocate" class="nav-link" data-scroll-target="#which-is-the-better-collocate">Which is the “better” collocate?</a></li>
+  </ul></li>
+  <li><a href="#why-examples-matter" id="toc-why-examples-matter" class="nav-link" data-scroll-target="#why-examples-matter">Why examples matter</a>
+  <ul class="collapse">
+  <li><a href="#descriptivism-vs-prescriptivism" id="toc-descriptivism-vs-prescriptivism" class="nav-link" data-scroll-target="#descriptivism-vs-prescriptivism">Descriptivism vs prescriptivism</a></li>
+  </ul></li>
+  <li><a href="#proof-of-the-existence-of-words" id="toc-proof-of-the-existence-of-words" class="nav-link" data-scroll-target="#proof-of-the-existence-of-words">Proof of the existence of words</a></li>
+  <li><a href="#information-provided-in-the-oed" id="toc-information-provided-in-the-oed" class="nav-link" data-scroll-target="#information-provided-in-the-oed">Information provided in the OED</a></li>
+  <li><a href="#selected-dictionaries" id="toc-selected-dictionaries" class="nav-link" data-scroll-target="#selected-dictionaries">Selected dictionaries</a>
+  <ul class="collapse">
+  <li><a href="#urban-dictionary" id="toc-urban-dictionary" class="nav-link" data-scroll-target="#urban-dictionary">Urban Dictionary</a></li>
+  <li><a href="#wiktionary" id="toc-wiktionary" class="nav-link" data-scroll-target="#wiktionary">Wiktionary</a></li>
+  <li><a href="#oxford-english-dictionary-oed" id="toc-oxford-english-dictionary-oed" class="nav-link" data-scroll-target="#oxford-english-dictionary-oed">Oxford English Dictionary (OED)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#studying-word-formation-based-on-empirical-data-using-the-oed" id="toc-studying-word-formation-based-on-empirical-data-using-the-oed" class="nav-link" data-scroll-target="#studying-word-formation-based-on-empirical-data-using-the-oed">Studying word-formation based on empirical data using the OED</a>
+  <ul class="collapse">
+  <li><a href="#research-questions" id="toc-research-questions" class="nav-link" data-scroll-target="#research-questions">Research questions</a></li>
+  <li><a href="#extracting-neologisms-from-the-oed" id="toc-extracting-neologisms-from-the-oed" class="nav-link" data-scroll-target="#extracting-neologisms-from-the-oed">Extracting neologisms from the OED</a></li>
+  <li><a href="#analyzing-the-data-in-microsoft-excel" id="toc-analyzing-the-data-in-microsoft-excel" class="nav-link" data-scroll-target="#analyzing-the-data-in-microsoft-excel">Analyzing the data in Microsoft Excel</a>
+  <ul class="collapse">
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data preparation</a></li>
+  <li><a href="#table" id="toc-table" class="nav-link" data-scroll-target="#table"><code>Table</code></a></li>
+  <li><a href="#pivot-table" id="toc-pivot-table" class="nav-link" data-scroll-target="#pivot-table"><code>Pivot Table</code></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">04 — Dictionaries: fundamentals, examples, use cases</h1>
+<p class="subtitle lead">Lexicology and Lexicography</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Quirin Würschinger, LMU Munich </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 25, 2025</p>
+      <p class="date">November 11, 2025</p>
     </div>
   </div>
   
@@ -163,17 +260,501 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="slides" class="level1">
-<h1>Slides</h1>
-<div class="embed-slides">
-<iframe src="slides.html" title="Session 04: Dictionaries: fundamentals, examples, use cases" allowfullscreen=""></iframe>
+<p><a href="slides.html" class="btn btn-primary">Open slides version</a></p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<section id="recap" class="level2">
+<h2 class="anchored" data-anchor-id="recap">Recap</h2>
+<ul>
+<li><strong>Morphology vs word‑formation</strong>: structure of words vs processes that create new lexemes</li>
+<li><strong>Inflection vs derivation</strong>: grammatical endings (e.g., <em>walked</em>, <em>cats</em>) vs new lexemes/word classes (e.g., <em>kindness</em>, <em>happiness</em>)</li>
+<li><strong>Morphemic vs non‑morphemic word‑formation</strong>: derivation/compounding vs conversion, clipping, blending, back‑formation, acronyms</li>
+<li><strong>Takeaway</strong>: we reasoned about words via relations and structure — not mere lists; today we link this perspective to how dictionaries model lexis</li>
+</ul>
+</section>
+<section id="outline" class="level2">
+<h2 class="anchored" data-anchor-id="outline">Outline</h2>
+<ol type="1">
+<li><a href="#the-lexicon">The Lexicon</a>: How does lexicology move beyond lists to structures?</li>
+<li><a href="#dictionaries-bauer2022introduction">Dictionaries</a>: What do dictionaries describe and how are they used?</li>
+<li><a href="#studying-word-formation-based-on-empirical-data-using-the-oed">Empirical study with the OED</a>: How can we extract and analyse neologisms?</li>
+</ol>
+</section>
+</section>
+<section id="the-lexicon" class="level1">
+<h1>The Lexicon</h1>
+<section id="two-senses-of-lexicon" class="level2">
+<h2 class="anchored" data-anchor-id="two-senses-of-lexicon">Two senses of <em>lexicon</em></h2>
+<p><span class="citation" data-cites="Lipka1992OutlineEnglish">Lipka (<a href="#ref-Lipka1992OutlineEnglish" role="doc-biblioref">1992</a>)</span>, p.&nbsp;11</p>
+<p>“In the following, I will use <em>lexicon</em> in two senses that are not always sharply distinguished:</p>
+<ol type="a">
+<li>for a <strong>metalinguistic level</strong>, or a sub-component in a linguistic model; and<br>
+</li>
+<li>in the <strong>sense of vocabulary</strong> as seen from a systematic, synchronic point of view.”</li>
+</ol>
+</section>
+<section id="objective-of-lexicology" class="level2">
+<h2 class="anchored" data-anchor-id="objective-of-lexicology">Objective of lexicology</h2>
+<ul>
+<li>“What is most important, however, is that in lexicology the stock of words or lexical items is not simply regarded as a <strong>list of isolated elements</strong>.<br>
+</li>
+<li>Lexicologists try to find out <strong>generalisations</strong> and <strong>regularities</strong> and especially consider <strong>relations</strong> between elements (see chapters n and IV).<br>
+</li>
+<li>Lexicology is therefore concerned with <strong>structures</strong>, not with a mere agglomeration of words (cf. <span class="citation" data-cites="Jackson1988WordsTheir">Jackson (<a href="#ref-Jackson1988WordsTheir" role="doc-biblioref">1988</a>)</span>: 222).”<br>
+<span class="citation" data-cites="Lipka1992OutlineEnglish">(<a href="#ref-Lipka1992OutlineEnglish" role="doc-biblioref">Lipka 1992, 1</a>)</span></li>
+</ul>
+</section>
+<section id="list-vs-structure-examples" class="level2">
+<h2 class="anchored" data-anchor-id="list-vs-structure-examples">List vs structure: examples</h2>
+<p><strong>List</strong> view: “Words in English cooking”</p>
+<ul>
+<li><em>butter</em>, <em>salt</em>, <em>pepper</em>, <em>pan</em>, <em>fry</em></li>
+</ul>
+<p><strong>Structure</strong> view (relations):</p>
+<ul>
+<li>collocation: <em>strong tea</em> vs.&nbsp;?<em>powerful tea</em><br>
+</li>
+<li>substitution:
+<ul>
+<li><em>cat</em> → <em>dog</em> (same slot),</li>
+<li><em>fry</em> → <em>sauté</em> (near-synonym)</li>
+</ul></li>
+</ul>
+</section>
+<section id="definition-bauer2022introduction" class="level2">
+<h2 class="anchored" data-anchor-id="definition-bauer2022introduction">Definition <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>)</span></h2>
+<ul>
+<li>“The lexicon is what linguists call the dictionary that is assumed to be <strong>in people’s heads</strong>, or the linguist’s best approximation to that.<br>
+</li>
+<li>It is fundamentally a <em>psychological entity</em>, and its contents cannot be observed directly but must be deduced from speakers’ and hearers’ <strong>behaviour</strong>.<br>
+</li>
+<li>Two fundamental approaches:
+<ol type="1">
+<li><strong>Home of the lawless</strong> <span class="citation" data-cites="DiSciullo1987Definition">(<a href="#ref-DiSciullo1987Definition" role="doc-biblioref">Di Sciullo and Williams 1987</a>)</span> – lexicon contains whatever cannot be predicted by general rule.<br>
+</li>
+<li>Wider approach – lexicon contains anything to do with the <strong>structure of words</strong>, whether lawless or not.”</li>
+</ol></li>
+</ul>
+</section>
+<section id="the-mental-lexicon" class="level2">
+<h2 class="anchored" data-anchor-id="the-mental-lexicon">The Mental Lexicon</h2>
+<section id="the-stroop-effect-stroop1935studiesinterference" class="level3">
+<h3 class="anchored" data-anchor-id="the-stroop-effect-stroop1935studiesinterference">The Stroop Effect <span class="citation" data-cites="Stroop1935StudiesInterference">(<a href="#ref-Stroop1935StudiesInterference" role="doc-biblioref">Stroop 1935</a>)</span></h3>
+<div class="quarto-layout-panel" data-layout="[50,50]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><img src="att/image_1699482680365_0.png" class="img-fluid"><br>
+</p>
 </div>
-<p><a href="slides.html">Open full screen</a> | <a href="slides.pdf">Download PDF</a></p>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/gjesfzWozo4" width="500" height="300" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div>
+</div>
+</div>
+</section>
+<section id="freudian-slip-bauer2022introduction" class="level3">
+<h3 class="anchored" data-anchor-id="freudian-slip-bauer2022introduction">Freudian slip <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>)</span></h3>
+<p>“If you talk to someone about electricity, and then make them read the phrase <em>sham dock</em>, they might very well say <em>damn shock</em>, because of prior activation of related words; the Freudian slip depends upon a subject area being readily activated in the brain and brought out inadvertently, whether because of a word related in meaning or pronunciation.”</p>
+</section>
+<section id="evidence-for-a-mental-lexicon" class="level3">
+<h3 class="anchored" data-anchor-id="evidence-for-a-mental-lexicon">Evidence for a mental lexicon</h3>
+<ul>
+<li>Slips and blends; priming effects; Stroop interference
+<ul>
+<li>e.g., <em>RED</em> printed in blue slows colour naming</li>
+</ul></li>
+<li>Reaction-time studies (lexical decision, frequency effects)
+<ul>
+<li>e.g., faster decisions for frequent <em>time</em> than rare <em>furlough</em><sup>v</sup></li>
+</ul></li>
+<li>Network structure: degree, clustering, multiplex links
+<ul>
+<li>e.g., <em>dog</em> linked to <em>cat</em> (semantic) and <em>log</em> (phonological)</li>
+</ul></li>
+</ul>
+</section>
+<section id="cognitive-linguistic-models-of-the-lexicon" class="level3">
+<h3 class="anchored" data-anchor-id="cognitive-linguistic-models-of-the-lexicon">Cognitive-linguistic models of the lexicon</h3>
+<div class="quarto-layout-panel" data-layout="[40,60]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<p><img src="att/image_1698948775221_0.png" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: center;">
+<p><img src="att/image_1698948757878_0.png" class="img-fluid" width="700"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="word-embeddings-bandyopadhyay2022interactive" class="level3">
+<h3 class="anchored" data-anchor-id="word-embeddings-bandyopadhyay2022interactive">Word embeddings <span class="citation" data-cites="Bandyopadhyay2022Interactive">(<a href="#ref-Bandyopadhyay2022Interactive" role="doc-biblioref">Bandyopadhyay et al. 2022</a>)</span></h3>
+<div class="quarto-layout-panel" data-layout="[50,50]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="att/image_1698966813935_0.png" class="img-fluid" width="600"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><a href="https://projector.tensorflow.org/" class="uri">https://projector.tensorflow.org/</a></figcaption>
+<p><img src="att/image_1700082493780_0.png" class="img-fluid figure-img" width="500"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="exercise-word-embeddings" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-word-embeddings">Exercise: word embeddings</h3>
+<div>
+<p><a href="http://vectors.nlpl.eu/explore/embeddings/en/" class="uri">http://vectors.nlpl.eu/explore/embeddings/en/</a></p>
+<ol type="1">
+<li>Explore synonyms and antonyms (Similar words)
+<ul>
+<li>Enter a seed word (e.g., <code>happy_ADJ</code>).</li>
+<li>Inspect the 5 nearest neighbours.</li>
+<li>Compare with an antonym (e.g., <code>sad_ADJ</code>).</li>
+</ul></li>
+<li>Visualise semantic clusters (Visualization)
+<ul>
+<li>Choose two related groups (e.g., animals vs furniture).</li>
+<li>Plot in vector space; describe visible groupings.</li>
+</ul></li>
+<li>Word analogies (Calculator)
+<ul>
+<li>Try analogies, e.g., <code>male_ADJ : doctor_NOUN = female_ADJ : ?</code>.</li>
+<li>Test several analogies; note successes and failures.</li>
+</ul></li>
+<li>Investigate ambiguity
+<ul>
+<li>Pick a polysemous word (e.g., <em>bank</em>).</li>
+<li>Analyse how neighbours reflect different senses.</li>
+</ul></li>
+</ol>
+</div>
+<!-- <!-- ::: {.notes} -->
+<!-- - 10:37–10:41 -->
+<!-- - animals: `gorilla_NOUN,goat_NOUN,elephant_NOUN,cow_NOUN,dog_NOUN,hawk_NOUN,cat_NOUN,mouse_NOUN,baboon_NOUN,tiger_NOUN,fly_NOUN,hamster_NOUN` -->
+<!-- - furniture: `dresser_NOUN,desk_NOUN,nightstand_NOUN,bookshelf_NOUN,sofa_NOUN,stool_NOUN,chair_NOUN,bed_NOUN,table_NOUN,armchair_NOUN,cabinet_NOUN,bench_NOUN,ottoman_NOUN,wardrobe_NOUN` -->
+<!-- - ambiguitiy: *crane* -->
+<!-- ::: -->
+<p>–&gt;</p>
+</section>
+<section id="associations-in-the-lexicon" class="level3">
+<h3 class="anchored" data-anchor-id="associations-in-the-lexicon">Associations in the lexicon</h3>
+<p><img src="att/image_1699482332773_0.png" class="img-fluid" width="600"></p>
+<p><span class="citation" data-cites="Stella2019Modelling">(<a href="#ref-Stella2019Modelling" role="doc-biblioref">Stella 2019</a>)</span></p>
+</section>
+</section>
+</section>
+<section id="dictionaries-bauer2022introduction" class="level1">
+<h1>Dictionaries <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>)</span></h1>
+<section id="what-is-a-word" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-word">What is a <em>word</em>?</h2>
+<ul>
+<li>“A word is listed in the dictionary.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022, 2</a>)</span> But:
+<ul>
+<li>circular reasoning – words are listed <em>because</em> they are words<br>
+</li>
+<li>dictionaries also list smaller units (e.g.&nbsp;prefix <em>un-</em>)</li>
+</ul></li>
+<li>“[…] in general we will accept the spelling conventions of English as defining words. This may not be terribly scientific, but it has the advantage of being practical.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022, 3</a>)</span></li>
+</ul>
+</section>
+<section id="definition-of-dictionary" class="level2">
+<h2 class="anchored" data-anchor-id="definition-of-dictionary">Definition of <em>dictionary</em></h2>
+<ul>
+<li>“The term <em>dictionary</em> is usually restricted to real-world dictionaries that appear in print and online.</li>
+<li>Dictionaries provide a list of words of whatever language they deal with – in our case, English – and then give a certain amount of information about each of them.</li>
+<li>They tend to have two functions, which may at times conflict:
+<ol type="1">
+<li><strong>Describe</strong> the language as it is (descriptive)<br>
+</li>
+<li>Provide an influence for establishing and maintaining the <strong>standard</strong> form of the language (prescriptive)”</li>
+</ol></li>
+</ul>
+</section>
+<section id="from-data-to-dictionary-entries" class="level2">
+<h2 class="anchored" data-anchor-id="from-data-to-dictionary-entries">From data to dictionary entries</h2>
+<ul>
+<li>Corpus evidence → candidate headwords and senses
+<ul>
+<li>e.g., spike of tokens for <em>doomscrolling</em> in 2020–2021</li>
+</ul></li>
+<li>Sense discrimination from usage patterns
+<ul>
+<li>e.g., <em>tablet</em> with <em>screen/apps</em> vs <em>stone/clay/inscription</em></li>
+</ul></li>
+<li>Definition writing and usage labels (register, region, style)
+<ul>
+<li>e.g., <em>ain’t</em> = informal; <em>soccer</em> = chiefly AmE</li>
+</ul></li>
+<li>Attested examples and cross‑references (derivatives, phraseology)
+<ul>
+<li>e.g., earliest citation; link <em>attention</em> ↔︎ “pay attention”</li>
+</ul></li>
+</ul>
+</section>
+<section id="how-are-definitions-written" class="level2">
+<h2 class="anchored" data-anchor-id="how-are-definitions-written">How are definitions written?</h2>
+<ul>
+<li>Genus–differentia
+<ul>
+<li>e.g., <em>raptor</em>: ‘a bird of prey’</li>
+</ul></li>
+<li>Paraphrase
+<ul>
+<li>e.g., <em>whisper</em>: ‘to speak very quietly’</li>
+</ul></li>
+<li>Controlled vocab<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+<ul>
+<li>e.g., <em>ban</em>: ‘to say that people must not do something’</li>
+</ul></li>
+<li>Clarity vs coverage
+<ul>
+<li>e.g., <em>platform</em> (social media): clear for learners, but omits older senses</li>
+</ul></li>
+</ul>
+</section>
+<section id="ordering-senses" class="level2">
+<h2 class="anchored" data-anchor-id="ordering-senses">Ordering senses</h2>
+<ul>
+<li>Chronological (OED) vs prototypical/frequency‑first (learner’s)</li>
+<li>Impact on user tasks (history vs learning)</li>
+<li>Criteria: earliest attested vs most typical/current; user intent matters</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Example: <em>tablet</em></strong></p>
+<ul>
+<li>OED (historical principle): ‘slab/stone or clay for writing; pill’ → later ‘flat touchscreen computer’<br>
+</li>
+<li>Learner’s (prototype/frequency): foregrounds ‘flat touchscreen computer’ for modern users</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Consequences</strong></p>
+<ul>
+<li>Chronology helps trace change and citations.</li>
+<li>Prototype helps comprehension and production.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="usage-labels" class="level2">
+<h2 class="anchored" data-anchor-id="usage-labels">Usage labels</h2>
+<p>Purpose: guide choices, not police usage</p>
+<p>Typical labels with examples:</p>
+<ul>
+<li><strong>region</strong>: <em>lorry</em> — chiefly BrE; <em>soccer</em> — chiefly AmE</li>
+<li><strong>register</strong>: <em>ain’t</em> — informal; <em>request</em> vs <em>ask</em> — formal vs neutral</li>
+<li><strong>field</strong>: <em>suture</em> — medical; <em>lemma</em> — linguistics</li>
+<li><strong>stance</strong>: pejorative/derogatory flags where appropriate</li>
+</ul>
+<p>Principles: base on attested use; avoid over‑labelling; use neutral wording in definitions.</p>
+<section id="check-propose-appropriate-labels" class="level3">
+<h3 class="anchored" data-anchor-id="check-propose-appropriate-labels">Check: propose appropriate labels</h3>
+<ul>
+<li><em>sick</em> (‘excellent’) — labels? _______ (region/register/stance?)</li>
+<li><em>they</em> (singular for a specific person) — labels? _______ (usage note?)</li>
+<li><em>data</em> as a singular mass noun — labels? _______ (field/register?)</li>
+<li><em>woke</em> (adjective, politicised) — labels? _______ (stance/region?)</li>
+<li><em>soccer</em> in UK newspapers — labels? _______ (region/chronology?)</li>
+</ul>
+<section id="solution" class="level4">
+<h4 class="anchored" data-anchor-id="solution">Solution</h4>
+<ul>
+<li><em>sick</em> (‘excellent’) — <strong>register</strong>: informal/slang; originally AmE but now widespread</li>
+<li><em>they</em> (singular for a specific person) — <strong>usage note</strong>: grammatical acceptability; register: formal/neutral</li>
+<li><em>data</em> as a singular mass noun — <strong>field</strong>: computing/technical; <strong>register</strong>: formal contexts favour plural, informal favours singular</li>
+<li><em>woke</em> (adjective, politicised) — <strong>stance</strong>: pejorative/derogatory in some contexts; <strong>region</strong>: originally AmE</li>
+<li><em>soccer</em> in UK newspapers — <strong>region</strong>: chiefly AmE (though historically BrE); <strong>chronology</strong>: shift from BrE to AmE usage</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="phraseology-in-entries" class="level2">
+<h2 class="anchored" data-anchor-id="phraseology-in-entries">Phraseology in entries</h2>
+<ul>
+<li>Collocations (<em>strong tea</em>, <em>heavy rain</em>), patterns (V + <em>decision</em>)</li>
+<li>MWEs: idioms, phrasal verbs, compounds</li>
+</ul>
+<section id="which-is-the-better-collocate" class="level3">
+<h3 class="anchored" data-anchor-id="which-is-the-better-collocate">Which is the “better” collocate?</h3>
+<ol type="1">
+<li><em>heavy/strong rain</em></li>
+<li><em>deeply/strongly held belief</em></li>
+<li><em>do/make research</em></li>
+<li><em>commit/make a crime</em></li>
+<li><em>take/make a decision</em></li>
+</ol>
+<section id="solution-1" class="level4">
+<h4 class="anchored" data-anchor-id="solution-1">Solution</h4>
+<ol type="1">
+<li><em>heavy rain</em></li>
+<li><em>deeply held belief</em></li>
+<li><em>do research</em> (though <em>conduct research</em> is also common)</li>
+<li><em>commit a crime</em></li>
+<li><em>take/make a decision</em> — Both acceptable: <em>make a decision</em> (chiefly AmE), <em>take a decision</em> (chiefly BrE)</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="why-examples-matter" class="level2">
+<h2 class="anchored" data-anchor-id="why-examples-matter">Why examples matter</h2>
+<ul>
+<li>Citations justify senses and usage labels</li>
+<li>Curated vs auto‑extracted: precision vs coverage</li>
+<li>Bias: genres, time periods, contributor communities
+<ul>
+<li>e.g., pre‑2000 internet slang (e.g., <em>noob</em>) under‑represented in print‑heavy sources → missing senses</li>
+<li>e.g., BrE vs AmE: American news sources over‑represent <em>make a decision</em> vs BrE <em>take a decision</em></li>
+<li>e.g., field bias: biomedical corpora inflate plural <em>data are</em> vs general usage <em>data is</em></li>
+</ul></li>
+</ul>
+<section id="descriptivism-vs-prescriptivism" class="level3">
+<h3 class="anchored" data-anchor-id="descriptivism-vs-prescriptivism">Descriptivism vs prescriptivism</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="citation" data-cites="Bauer2022Introduction">Bauer (<a href="#ref-Bauer2022Introduction" role="doc-biblioref">2022</a>)</span>: 18</p>
+<ul>
+<li>“If we assume that one of <em>’kilometre</em> and <em>ki’lometre</em> is right (and the other therefore wrong), we assume that there is a <strong>unique solution</strong> to this question of English usage …”</li>
+<li>Language questions are more often like the <em>jeans</em> question (multiple acceptable answers) than like the <em>drive-on-the-right</em> question (single legal answer).</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img src="att/prescriptive_1699480345055_0.jpg" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="proof-of-the-existence-of-words" class="level2">
+<h2 class="anchored" data-anchor-id="proof-of-the-existence-of-words">Proof of the existence of words</h2>
+<p>“First of all, dictionaries provide evidence of the existence of a word. The fact that a word is listed in a dictionary at all is taken to prove that there is such a word. This can be misleading in two ways:</p>
+<ol type="1">
+<li>Dictionaries <strong>sometimes list erroneous words</strong> that have no existence outside the dictionary (e.g.&nbsp;<em>banket</em>, <em>sardel</em>).<br>
+</li>
+<li>Dictionaries more often <strong>fail to list perfectly good words</strong> – no dictionary can list every word of English.”</li>
+</ol>
+<p><span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>: 19)</span></p>
+</section>
+<section id="information-provided-in-the-oed" class="level2">
+<h2 class="anchored" data-anchor-id="information-provided-in-the-oed">Information provided in the OED</h2>
+<p><img src="att/image_1699480538583_0.png" class="img-fluid"></p>
+</section>
+<section id="selected-dictionaries" class="level2">
+<h2 class="anchored" data-anchor-id="selected-dictionaries">Selected dictionaries</h2>
+<section id="urban-dictionary" class="level3">
+<h3 class="anchored" data-anchor-id="urban-dictionary">Urban Dictionary</h3>
+<p><a href="https://www.urbandictionary.com/" class="uri">https://www.urbandictionary.com/</a></p>
+<p><img src="att/urban-dictionary-neologism_1700084367030_0.png" class="img-fluid"></p>
+</section>
+<section id="wiktionary" class="level3">
+<h3 class="anchored" data-anchor-id="wiktionary">Wiktionary</h3>
+<p><a href="https://www.wiktionary.org/" class="uri">https://www.wiktionary.org/</a></p>
+<p><img src="att/wiktionary_1700084621385_0.png" class="img-fluid"></p>
+<section id="wind-machine-readable-wiktionary" class="level4">
+<h4 class="anchored" data-anchor-id="wind-machine-readable-wiktionary">WIND (Machine-readable Wiktionary)</h4>
+<p><span class="citation" data-cites="Sajous2020ENGLAWI">Sajous, Calderone, and Hathout (<a href="#ref-Sajous2020ENGLAWI" role="doc-biblioref">2020</a>)</span></p>
+<p><a href="http://redac.univ-tlse2.fr/lexiques/wind.html" class="uri">http://redac.univ-tlse2.fr/lexiques/wind.html</a></p>
+<p><img src="att/WIND_1700084693531_0.png" class="img-fluid"></p>
+<p><img src="att/wind-excel.png" class="img-fluid"></p>
+<p><a href="https://1drv.ms/x/c/9a2ec97d593520f9/EfkgNVl9yS4ggJpnEQAAAAABFvznnl_KuUJpr3jsL3s7CA">Excel Sheet</a></p>
+</section>
+</section>
+<section id="oxford-english-dictionary-oed" class="level3">
+<h3 class="anchored" data-anchor-id="oxford-english-dictionary-oed">Oxford English Dictionary (OED)</h3>
+<p><img src="att/image_1700085431951_0.png" class="img-fluid"></p>
+<section id="advanced-search-interface" class="level4">
+<h4 class="anchored" data-anchor-id="advanced-search-interface">Advanced search interface</h4>
+<p><img src="att/image_1700086248403_0.png" class="img-fluid"></p>
+</section>
+</section>
+</section>
+</section>
+<section id="studying-word-formation-based-on-empirical-data-using-the-oed" class="level1">
+<h1>Studying word-formation based on empirical data using the OED</h1>
+<section id="research-questions" class="level2">
+<h2 class="anchored" data-anchor-id="research-questions">Research questions</h2>
+<ol type="1">
+<li>Which neologisms have entered the OED since 2000?</li>
+<li>What are the most common word classes among these recent neologisms?</li>
+<li>What are the most common word-formation processes?</li>
+<li>Which semantic domains are most common?</li>
+<li>Since when have these neologisms been in use?</li>
+</ol>
+</section>
+<section id="extracting-neologisms-from-the-oed" class="level2">
+<h2 class="anchored" data-anchor-id="extracting-neologisms-from-the-oed">Extracting neologisms from the OED</h2>
+<p>Using OED’s Advanced Search functionality, we can extract neologisms – words that have only been used since the year 2000 – from the OED.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><a href="https://www.oed.com/search/advanced/Entries?textTermOpt0=WordPhrase&amp;dateOfUseFirstUse=true&amp;dateOfUseFrom=2000&amp;page=1&amp;sortOption=Frequency">Search URL</a></figcaption>
+<p><img src="att/oed-advanced-search.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="analyzing-the-data-in-microsoft-excel" class="level2">
+<h2 class="anchored" data-anchor-id="analyzing-the-data-in-microsoft-excel">Analyzing the data in Microsoft Excel</h2>
+<p>model Excel sheet: <a href="https://1drv.ms/x/c/9a2ec97d593520f9/EbTMdPaevpFJqGqbQT43l3YBf2Pg02PJ8On1XOLh1JiBcA">URL</a></p>
+<section id="data-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="data-preparation">Data preparation</h3>
+<ol type="1">
+<li>Open a blank Excel sheet.</li>
+<li>Click <code>import</code> and <code>CSV file</code>.</li>
+<li>Select file origin encoding to <code>Unicode (UTF-8)</code>.</li>
+<li>Specify that the data are <strong>delimited by commas</strong> (<code>csv</code>) as column separator.</li>
+<li>Convert the region containing the data to a <code>Table</code>.</li>
+<li>Insert one <code>Pivot Table</code> (and <code>Pivot Chart</code>) for each research question.</li>
+</ol>
+</section>
+<section id="table" class="level3">
+<h3 class="anchored" data-anchor-id="table"><code>Table</code></h3>
+<p><img src="att/excel-table.png" class="img-fluid"></p>
+</section>
+<section id="pivot-table" class="level3">
+<h3 class="anchored" data-anchor-id="pivot-table"><code>Pivot Table</code></h3>
+<p><img src="att/excel-pivot-table.png" class="img-fluid"></p>
+</section>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Bandyopadhyay2022Interactive" class="csl-entry" role="listitem">
+Bandyopadhyay, Saptarashmi, Jason Xu, Neel Pawar, and David Touretzky. 2022. <span>“Interactive <span>Visualizations</span> of <span>Word Embeddings</span> for <span>K-12 Students</span>.”</span> <em>Proceedings of the AAAI Conference on Artificial Intelligence</em> 36 (11): 12713–20. <a href="https://doi.org/10.1609/aaai.v36i11.21548">https://doi.org/10.1609/aaai.v36i11.21548</a>.
+</div>
+<div id="ref-Bauer2022Introduction" class="csl-entry" role="listitem">
+Bauer, Laurie. 2022. <em>An <span>Introduction</span> to <span>English Lexicology</span></em>. Edinburgh University Press.
+</div>
+<div id="ref-DiSciullo1987Definition" class="csl-entry" role="listitem">
+Di Sciullo, Anna Maria, and Edwin Williams. 1987. <em>On the Definition of Word</em>. Linguistic Inquiry Monographs 14. Cambridge, Massachusetts: MIT Press.
+</div>
+<div id="ref-Jackson1988WordsTheir" class="csl-entry" role="listitem">
+Jackson, Howard. 1988. <em>Words and Their Meaning</em>. 1st ed. Learning about Language. London: Longman.
+</div>
+<div id="ref-Lipka1992OutlineEnglish" class="csl-entry" role="listitem">
+Lipka, Leonhard. 1992. <em>An Outline of <span>English</span> Lexicology</em>. Forschung Und Studium Anglistik. Tübingen: Niemeyer.
+</div>
+<div id="ref-Sajous2020ENGLAWI" class="csl-entry" role="listitem">
+Sajous, Franck, Basilio Calderone, and Nabil Hathout. 2020. <span>“<span>ENGLAWI</span>: <span>From Human-</span> to <span>Machine-Readable Wiktionary</span>.”</span> In <em>Proceedings of the 12th <span>Language Resources</span> and <span>Evaluation Conference</span></em>, 3016–26. Marseille, France: European Language Resources Association. <a href="https://www.aclweb.org/anthology/2020.lrec-1.369">https://www.aclweb.org/anthology/2020.lrec-1.369</a>.
+</div>
+<div id="ref-Stella2019Modelling" class="csl-entry" role="listitem">
+Stella, Massimo. 2019. <span>“Modelling <span>Early Word Acquisition</span> Through <span>Multiplex Lexical Networks</span> and <span>Machine Learning</span>.”</span> <em>Big Data and Cognitive Computing</em> 3 (1): 10. <a href="https://doi.org/10.3390/bdcc3010010">https://doi.org/10.3390/bdcc3010010</a>.
+</div>
+<div id="ref-Stroop1935StudiesInterference" class="csl-entry" role="listitem">
+Stroop, J. Ridley. 1935. <span>“Studies of Interference in Serial Verbal Reactions.”</span> <em>Journal of Experimental Psychology</em> 18 (6): 643–62.
+</div>
+</div>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Definitions use a restricted set of common words (typically 2,000–3,000) to avoid circular lookups; common in learner’s dictionaries.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

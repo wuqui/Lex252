@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-25">
+<meta name="author" content="Dr.&nbsp;Quirin Würschinger, LMU Munich">
+<meta name="dcterms.date" content="2025-10-28">
 
-<title>02 — Words, dictionaries, and the lexicon – Lex252</title>
+<title>02 — The lexicon – Lex252</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,10 +93,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../custom.css">
+<link rel="stylesheet" href="../../document.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -107,19 +128,19 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/03_morphology/index.html">
- <span class="dropdown-text">03 — Morphology and word-formation</span></a>
+ <span class="dropdown-text">03 — Morphology</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/04_dictionaries/index.html">
- <span class="dropdown-text">04 — Dictionaries: fundamentals, examples, use cases</span></a>
+ <span class="dropdown-text">04 — Dictionaries</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/05_dictionaries-2/index.html">
- <span class="dropdown-text">05 — Using dictionaries and analysing data</span></a>
+ <span class="dropdown-text">05 — Using dictionaries</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/06_corpora/index.html">
- <span class="dropdown-text">06 — Corpora: theories, methods, and applications</span></a>
+ <span class="dropdown-text">06 — Corpora</span></a>
   </li>  
     </ul>
   </li>
@@ -134,24 +155,81 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#outline" id="toc-outline" class="nav-link active" data-scroll-target="#outline">Outline</a></li>
+  <li><a href="#criteria-for-wordness" id="toc-criteria-for-wordness" class="nav-link" data-scroll-target="#criteria-for-wordness">Criteria for wordness</a>
+  <ul class="collapse">
+  <li><a href="#utterance-criterion" id="toc-utterance-criterion" class="nav-link" data-scroll-target="#utterance-criterion">Utterance criterion</a></li>
+  <li><a href="#phonological-criterion" id="toc-phonological-criterion" class="nav-link" data-scroll-target="#phonological-criterion">Phonological criterion</a></li>
+  <li><a href="#semantic-criterion" id="toc-semantic-criterion" class="nav-link" data-scroll-target="#semantic-criterion">Semantic criterion</a></li>
+  <li><a href="#orthographic-criterion" id="toc-orthographic-criterion" class="nav-link" data-scroll-target="#orthographic-criterion">Orthographic criterion</a></li>
+  <li><a href="#dictionary-criterion" id="toc-dictionary-criterion" class="nav-link" data-scroll-target="#dictionary-criterion">Dictionary criterion</a></li>
+  <li><a href="#practical-definition" id="toc-practical-definition" class="nav-link" data-scroll-target="#practical-definition">Practical definition</a></li>
+  <li><a href="#criteria-cheat-sheet" id="toc-criteria-cheat-sheet" class="nav-link" data-scroll-target="#criteria-cheat-sheet">Criteria cheat sheet</a></li>
+  <li><a href="#check-is-this-a-word" id="toc-check-is-this-a-word" class="nav-link" data-scroll-target="#check-is-this-a-word">Check: is this a word?</a></li>
+  </ul></li>
+  <li><a href="#problems-in-delineating-the-term-word" id="toc-problems-in-delineating-the-term-word" class="nav-link" data-scroll-target="#problems-in-delineating-the-term-word">Problems in delineating the term <em>word</em></a>
+  <ul class="collapse">
+  <li><a href="#names" id="toc-names" class="nav-link" data-scroll-target="#names">Names</a></li>
+  <li><a href="#multi-word-expressions-mwe" id="toc-multi-word-expressions-mwe" class="nav-link" data-scroll-target="#multi-word-expressions-mwe">Multi-word expressions (MWE)</a></li>
+  <li><a href="#compounds" id="toc-compounds" class="nav-link" data-scroll-target="#compounds">Compounds</a>
+  <ul class="collapse">
+  <li><a href="#worked-example-honey-bee-vs-honeybee" id="toc-worked-example-honey-bee-vs-honeybee" class="nav-link" data-scroll-target="#worked-example-honey-bee-vs-honeybee">Worked example: honey bee vs honeybee</a></li>
+  </ul></li>
+  <li><a href="#phrasal-verbs" id="toc-phrasal-verbs" class="nav-link" data-scroll-target="#phrasal-verbs">Phrasal verbs</a></li>
+  <li><a href="#collocations" id="toc-collocations" class="nav-link" data-scroll-target="#collocations">Collocations</a>
+  <ul class="collapse">
+  <li><a href="#worked-example-collocation-strength" id="toc-worked-example-collocation-strength" class="nav-link" data-scroll-target="#worked-example-collocation-strength">Worked example: collocation strength</a></li>
+  </ul></li>
+  <li><a href="#idioms-proverbs" id="toc-idioms-proverbs" class="nav-link" data-scroll-target="#idioms-proverbs">Idioms &amp; proverbs</a></li>
+  <li><a href="#worked-example-ambiguous-case" id="toc-worked-example-ambiguous-case" class="nav-link" data-scroll-target="#worked-example-ambiguous-case">Worked example: ambiguous case</a></li>
+  <li><a href="#check-classifying-multi-word-expressions" id="toc-check-classifying-multi-word-expressions" class="nav-link" data-scroll-target="#check-classifying-multi-word-expressions">Check: Classifying multi-word expressions</a></li>
+  <li><a href="#paradigms" id="toc-paradigms" class="nav-link" data-scroll-target="#paradigms">Paradigms</a>
+  <ul class="collapse">
+  <li><a href="#inflectional-paradigms" id="toc-inflectional-paradigms" class="nav-link" data-scroll-target="#inflectional-paradigms">Inflectional paradigms</a></li>
+  <li><a href="#derivational-paradigms" id="toc-derivational-paradigms" class="nav-link" data-scroll-target="#derivational-paradigms">Derivational paradigms</a></li>
+  <li><a href="#inflection-vs-derivation-key-contrast" id="toc-inflection-vs-derivation-key-contrast" class="nav-link" data-scroll-target="#inflection-vs-derivation-key-contrast">Inflection vs Derivation: key contrast</a></li>
+  <li><a href="#visual-family-tree-derivation" id="toc-visual-family-tree-derivation" class="nav-link" data-scroll-target="#visual-family-tree-derivation">Visual family tree: derivation</a></li>
+  <li><a href="#check-paradigms" id="toc-check-paradigms" class="nav-link" data-scroll-target="#check-paradigms">Check: Paradigms</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#practice-using-the-oed-topic-objective" id="toc-practice-using-the-oed-topic-objective" class="nav-link" data-scroll-target="#practice-using-the-oed-topic-objective">Practice: Using the OED — Topic &amp; Objective</a>
+  <ul class="collapse">
+  <li><a href="#navigation-targets-oed" id="toc-navigation-targets-oed" class="nav-link" data-scroll-target="#navigation-targets-oed">Navigation targets (OED)</a></li>
+  <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks">Tasks</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">02 — Words, dictionaries, and the lexicon</h1>
+<h1 class="title">02 — The lexicon</h1>
+<p class="subtitle lead">Lexicology and Lexicography</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Quirin Würschinger, LMU Munich </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 25, 2025</p>
+      <p class="date">October 28, 2025</p>
     </div>
   </div>
   
@@ -163,12 +241,513 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="slides" class="level1">
-<h1>Slides</h1>
-<div class="embed-slides">
-<iframe src="slides.html" title="Session 02: Words, dictionaries, and the lexicon" allowfullscreen=""></iframe>
+<p><a href="slides.html" class="btn btn-primary">Open slides version</a></p>
+<section id="outline" class="level1">
+<h1>Outline</h1>
+<ol type="1">
+<li>What is a word? Criteria and problems</li>
+<li>Names and multi-word expressions</li>
+<li>Paradigms: inflection and derivation</li>
+<li>Practice: Using the OED</li>
+</ol>
+</section>
+<section id="criteria-for-wordness" class="level1">
+<h1>Criteria for wordness</h1>
+<section id="utterance-criterion" class="level2">
+<h2 class="anchored" data-anchor-id="utterance-criterion">Utterance criterion</h2>
+<blockquote class="blockquote">
+<p>“A word is the smallest unit which can stand on its own as an utterance.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>: 1)</span></p>
+</blockquote>
+<ul>
+<li>but: mentioning vs use</li>
+</ul>
+<p>A: Is it <em>inadvisable</em> or <em>unadvisable</em>?</p>
+<p>B: Un.</p>
+<ul>
+<li>grammatical words as utterances (e.g.&nbsp;<em>the</em>) only in special contexts</li>
+</ul>
+</section>
+<section id="phonological-criterion" class="level2">
+<h2 class="anchored" data-anchor-id="phonological-criterion">Phonological criterion</h2>
+<blockquote class="blockquote">
+<p>“A word [in isolation] has a single intonational focus point, or movement of pitch.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>: 2)</span></p>
+</blockquote>
+<ul>
+<li>but: sequencing and alternatives affect prosody
+<ul>
+<li><em>in the beginning</em> vs <em>first</em> vs <em>forever</em> vs <em>for ever</em></li>
+</ul></li>
+<li>minimal pair in intonation: <em>record</em> (N) vs <em>record</em> (V) in isolation vs context</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><em>He will reˈcord the song.</em> / <em>He bought the ˈrecord.</em></li>
+</ul>
+</section>
+<section id="semantic-criterion" class="level2">
+<h2 class="anchored" data-anchor-id="semantic-criterion">Semantic criterion</h2>
+<blockquote class="blockquote">
+<p>“A word has a single, unitary meaning.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>: 2)</span></p>
+</blockquote>
+<p>but: near-synonymous expressions can differ in meaning</p>
+<p><em>finally</em> vs <em>in the end</em> (closure vs narrative sequencing)</p>
+<p>Examples:</p>
+<ul>
+<li><em>We finally arrived after midnight.</em> / <em>In the end, we stayed home.</em></li>
+</ul>
+</section>
+<section id="orthographic-criterion" class="level2">
+<h2 class="anchored" data-anchor-id="orthographic-criterion">Orthographic criterion</h2>
+<blockquote class="blockquote">
+<p>“words are unitary orthographic units” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>: 2)</span></p>
+</blockquote>
+<ul>
+<li>but: spacing and hyphenation vary
+<ul>
+<li><em>coffee pot</em> vs <em>coffee-pot</em></li>
+<li><em>in so far as</em> vs <em>in‑so‑far‑as</em></li>
+</ul></li>
+<li>diachronic change: <em>all right</em> vs <em>alright</em> (usage note in OED)</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><em>It’s all right.</em> / <em>It’s alright.</em> (nonstandard in some styles).</li>
+</ul>
+</section>
+<section id="dictionary-criterion" class="level2">
+<h2 class="anchored" data-anchor-id="dictionary-criterion">Dictionary criterion</h2>
+<blockquote class="blockquote">
+<p>“A word is listed in the dictionary.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>: 2)</span></p>
+</blockquote>
+<p>but: circularity; sub‑lexical units are also listed (e.g.&nbsp;prefix <em>un‑</em>)</p>
+</section>
+<section id="practical-definition" class="level2">
+<h2 class="anchored" data-anchor-id="practical-definition">Practical definition</h2>
+<blockquote class="blockquote">
+<p>“We will accept the spelling conventions of English as defining words […] which has the advantage of being practical.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>: 3)</span></p>
+</blockquote>
+<p>Further reading: Haspelmath, Martin. 2023. <span>“Defining the Word.”</span> <em>WORD</em> 69 (3): 283–97. <a href="https://doi.org/10.1080/00437956.2023.2237272">https://doi.org/10.1080/00437956.2023.2237272</a>.</p>
+</section>
+<section id="criteria-cheat-sheet" class="level2">
+<h2 class="anchored" data-anchor-id="criteria-cheat-sheet">Criteria cheat sheet</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 30%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Criterion</th>
+<th style="text-align: left;">Diagnostic</th>
+<th style="text-align: left;">Quick example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Utterance</td>
+<td style="text-align: left;">standalone?</td>
+<td style="text-align: left;"><em>Un.</em> (context-dependent)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Phonology</td>
+<td style="text-align: left;">stress pattern?</td>
+<td style="text-align: left;"><em>first</em> vs <em>for ever</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Semantic</td>
+<td style="text-align: left;">unitary meaning?</td>
+<td style="text-align: left;"><em>finally</em> vs <em>in the end</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Orthography</td>
+<td style="text-align: left;">spacing/hyphens?</td>
+<td style="text-align: left;"><em>alright</em> vs <em>all right</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dictionary</td>
+<td style="text-align: left;">listed?</td>
+<td style="text-align: left;"><em>un-</em> (sub-lexical but listed)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="check-is-this-a-word" class="level2">
+<h2 class="anchored" data-anchor-id="check-is-this-a-word">Check: is this a word?</h2>
+<p><em>alright</em></p>
+<p>→ orthographic controversy; cf.&nbsp;practical definition (accept spelling conventions)</p>
+<p><em>honeybee</em> vs <em>honey bee</em></p>
+<p>→ orthographic criterion; both attested; check dictionary practice</p>
+</section>
+</section>
+<section id="problems-in-delineating-the-term-word" class="level1">
+<h1>Problems in delineating the term <em>word</em></h1>
+<section id="names" class="level2">
+<h2 class="anchored" data-anchor-id="names">Names</h2>
+<div class="quarto-layout-panel" data-layout="[60,40]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
+<ul>
+<li>names have unique reference; they pattern differently from common nouns</li>
+<li>examples:
+<ul>
+<li><em>the Samantha</em></li>
+<li><em>This isn’t the Paris I remember.</em> (common‑noun use; compare corpus: “This isn’t the Paris of my youth”)</li>
+</ul></li>
+<li>roles as noun phrases (no modifiers): <em>the former Argentine</em></li>
+</ul>
 </div>
-<p><a href="slides.html">Open full screen</a> | <a href="slides.pdf">Download PDF</a></p>
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<p><img src="img/image_1698949528283_0.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>When do names pattern like common nouns?</p>
+</div>
+</section>
+<section id="multi-word-expressions-mwe" class="level2">
+<h2 class="anchored" data-anchor-id="multi-word-expressions-mwe">Multi-word expressions (MWE)</h2>
+<ul>
+<li>compounds: <em>blackbird</em>, <em>coffee pot</em></li>
+<li>phrasal verbs: <em>look up</em>, <em>take off</em></li>
+<li>collocations: <em>strong tea</em>, <em>make a decision</em></li>
+<li>idioms &amp; proverbs: <em>kick the bucket</em>, <em>Too many cooks spoil the broth</em></li>
+</ul>
+</section>
+<section id="compounds" class="level2">
+<h2 class="anchored" data-anchor-id="compounds">Compounds</h2>
+<ul>
+<li><em>passion flower</em>; <em>sunflower</em>; <em>wall‑flower</em></li>
+<li>onomasiological competition: <em>honey bee</em> vs <em>honeybee</em></li>
+</ul>
+<section id="worked-example-honey-bee-vs-honeybee" class="level3">
+<h3 class="anchored" data-anchor-id="worked-example-honey-bee-vs-honeybee">Worked example: honey bee vs honeybee</h3>
+<div class="quarto-layout-panel" data-layout="[60,40]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
+<ul>
+<li>both forms occur; dictionaries may list one as headword with variant</li>
+<li>evidence to check:
+<ul>
+<li>headword spelling</li>
+<li>variant forms list</li>
+<li>example citations</li>
+</ul></li>
+<li>OED finding: <em>honeybee</em> (primary); <em>honey bee</em> (variant)</li>
+</ul>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Evidence</th>
+<th style="text-align: left;">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Historical precedence</td>
+<td style="text-align: left;">separate words older</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Current usage</td>
+<td style="text-align: left;">both forms common</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="phrasal-verbs" class="level2">
+<h2 class="anchored" data-anchor-id="phrasal-verbs">Phrasal verbs</h2>
+<ul>
+<li><em>He passed out.</em><br>
+</li>
+<li><em>He fainted.</em></li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><em>She looked up the word.</em> / <em>She looked the word up.</em></li>
+</ul>
+</section>
+<section id="collocations" class="level2">
+<h2 class="anchored" data-anchor-id="collocations">Collocations</h2>
+<p>Continuum:</p>
+<ul>
+<li><strong>strong</strong>: <em>kith and kin</em></li>
+<li><strong>intermediate</strong>: <em>all things considered</em>; <em>as a matter of fact</em>; <em>excuse me</em>; <em>good afternoon</em>; <em>I’m sorry to say</em>; <em>in other words</em>; <em>in the long run</em></li>
+<li><strong>weak</strong>: function‑word sequences like <em>in the</em></li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><em>take a quick photo</em> (typical) vs <em>make a quick photo</em> (less typical)</li>
+</ul>
+<section id="worked-example-collocation-strength" class="level3">
+<h3 class="anchored" data-anchor-id="worked-example-collocation-strength">Worked example: collocation strength</h3>
+<div class="quarto-layout-panel" data-layout="[60,40]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
+<ul>
+<li>cues for strength:
+<ul>
+<li>fixedness</li>
+<li>semantic transparency</li>
+<li>paradigmatic alternatives</li>
+</ul></li>
+</ul>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Phrase</th>
+<th style="text-align: left;">Typical?</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">take a photo</td>
+<td style="text-align: left;">yes</td>
+<td style="text-align: left;">conventional light verb</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">make a photo</td>
+<td style="text-align: left;">variable</td>
+<td style="text-align: left;">regional/genre variation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">do a photo</td>
+<td style="text-align: left;">rare</td>
+<td style="text-align: left;">atypical in standard usage</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="idioms-proverbs" class="level2">
+<h2 class="anchored" data-anchor-id="idioms-proverbs">Idioms &amp; proverbs</h2>
+<ul>
+<li><strong>Idioms</strong>: <em>He kicked the bucket.</em> (= He died)</li>
+<li><strong>Proverbs</strong>: <em>Too many cooks spoil the broth.</em> (fixed formulaic)</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><em>She spilled the beans.</em> (= revealed the secret)</li>
+<li><em>A stitch in time saves nine.</em> (cannot reorder)</li>
+</ul>
+</section>
+<section id="worked-example-ambiguous-case" class="level2">
+<h2 class="anchored" data-anchor-id="worked-example-ambiguous-case">Worked example: ambiguous case</h2>
+<div>
+<p><em>break down</em></p>
+<p>Form test:</p>
+<div class="fragment">
+<ul>
+<li>written as two words → phrasal verb</li>
+</ul>
+</div>
+<p>Stress test:</p>
+<div class="fragment">
+<ul>
+<li>stress on particle <em>down</em> → phrasal verb</li>
+</ul>
+</div>
+<p>Meaning test:</p>
+<div class="fragment">
+<ul>
+<li>can be literal (<em>car broke down</em>) or figurative (<em>negotiations broke down</em>) → both possible</li>
+</ul>
+</div>
+<p>Conclusion:</p>
+<div class="fragment">
+<ul>
+<li>primarily phrasal verb; can form compound noun <em>breakdown</em></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="check-classifying-multi-word-expressions" class="level2">
+<h2 class="anchored" data-anchor-id="check-classifying-multi-word-expressions">Check: Classifying multi-word expressions</h2>
+<p><em>take a photo</em></p>
+<p>→ collocation (light verb construction)</p>
+<p><em>kick the bucket</em></p>
+<p>→ idiom (non-compositional)</p>
+</section>
+<section id="paradigms" class="level2">
+<h2 class="anchored" data-anchor-id="paradigms">Paradigms</h2>
+<section id="inflectional-paradigms" class="level3">
+<h3 class="anchored" data-anchor-id="inflectional-paradigms">Inflectional paradigms</h3>
+<blockquote class="blockquote">
+<p>“The term ‘paradigm’ is in general usage, but its usage is often limited. Although <em>paradigm</em> can justifiably be used of any substitution class, it is most often used of substitution classes within the word. Thus the normal use for the term <em>paradigm</em> is the kind of substitution class illustrated in the following example.” <span class="citation" data-cites="Bauer2022Introduction">(<a href="#ref-Bauer2022Introduction" role="doc-biblioref">Bauer 2022</a>)</span></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>(12): <em>walk</em>, <em>walks</em>, <em>walked</em>, <em>walking</em></p>
+</blockquote>
+<p>This paradigm illustrates two different kinds of word: there is a sense in which all the items are different <strong>word-forms</strong>, and a contrasting sense in which the paradigm illustrates different uses of the same word, the <strong>lexeme</strong>.”</p>
+</section>
+<section id="derivational-paradigms" class="level3">
+<h3 class="anchored" data-anchor-id="derivational-paradigms">Derivational paradigms</h3>
+<p>(13)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 17%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><em>deceive</em></th>
+<th style="text-align: center;"><em>employ</em></th>
+<th style="text-align: center;"><em>proceed</em></th>
+<th style="text-align: center;"><em>theorise</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Verb</strong></td>
+<td style="text-align: center;"><em>deceive</em></td>
+<td style="text-align: center;"><em>employ</em></td>
+<td style="text-align: center;"><em>proceed</em></td>
+<td style="text-align: center;"><em>theorise</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Noun</strong></td>
+<td style="text-align: center;"><em>deception</em></td>
+<td style="text-align: center;"><em>employer</em></td>
+<td style="text-align: center;"><em>process</em></td>
+<td style="text-align: center;"><em>theory</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Adjective</strong></td>
+<td style="text-align: center;"><em>deceptive</em></td>
+<td style="text-align: center;"><em>employable</em></td>
+<td style="text-align: center;"><em>processual</em></td>
+<td style="text-align: center;"><em>theoretical</em></td>
+</tr>
+</tbody>
+</table>
+<p>Although these examples show individual word families, these series are often generalised over several word families (e.g.&nbsp;<em>theory</em> – <em>theorist</em> – <em>theorise</em> parallels <em>fantasy</em> – <em>fantasist</em> – <em>fantasise</em>).</p>
+</section>
+<section id="inflection-vs-derivation-key-contrast" class="level3">
+<h3 class="anchored" data-anchor-id="inflection-vs-derivation-key-contrast">Inflection vs Derivation: key contrast</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Same lexeme?</th>
+<th>Word class change?</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Inflection</strong></td>
+<td>yes</td>
+<td>no</td>
+<td>WALK → <em>walks</em>, <em>walked</em>, <em>walking</em></td>
+</tr>
+<tr class="even">
+<td><strong>Derivation</strong></td>
+<td>no (new lexeme)</td>
+<td>often</td>
+<td>EMPLOY → <em>employer</em> (N), <em>employable</em> (Adj)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="visual-family-tree-derivation" class="level3">
+<h3 class="anchored" data-anchor-id="visual-family-tree-derivation">Visual family tree: derivation</h3>
+<pre><code>                      EMPLOY (V)
+                    /     |      \
+                   /      |       \
+            employer  employable  employment
+              (N)       (Adj)       (N)</code></pre>
+</section>
+<section id="check-paradigms" class="level3">
+<h3 class="anchored" data-anchor-id="check-paradigms">Check: Paradigms</h3>
+<div>
+<ol type="1">
+<li>Identify all inflected forms for the lexeme <em>walk</em><sup>v</sup></li>
+</ol>
+<div class="fragment">
+<ul>
+<li><em>walks</em>: 3rd person present</li>
+<li><em>walking</em>: present participle</li>
+<li><em>walked</em>: past tense</li>
+<li><em>walked</em>: past participle</li>
+</ul>
+</div>
+<ol start="2" type="1">
+<li>Find as many derived forms as possible for the base ANALYE.</li>
+</ol>
+<div class="fragment">
+<ul>
+<li>N: <em>analysis</em>, <em>analyst</em></li>
+<li>Adj: <em>analytic</em>, <em>analytical</em></li>
+<li>Adv: <em>analytically</em></li>
+<li>V: <em>analyse</em>
+<ul>
+<li>also AmE: <em>analyze</em>, <em>analyzer</em>, <em>analyzable</em></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="practice-using-the-oed-topic-objective" class="level1">
+<h1>Practice: Using the OED — Topic &amp; Objective</h1>
+<ul>
+<li>Topic: Using dictionary data to examine lexical structure and usage.</li>
+<li>Objective: Identify and describe “problematic” lexical cases via OED evidence.</li>
+</ul>
+<section id="navigation-targets-oed" class="level3">
+<h3 class="anchored" data-anchor-id="navigation-targets-oed">Navigation targets (OED)</h3>
+<ul>
+<li>Forms/Spelling (variants)</li>
+<li>Phrasal verbs / Idioms sections</li>
+<li>Examples/Citations pane</li>
+</ul>
+</section>
+<section id="tasks" class="level3">
+<h3 class="anchored" data-anchor-id="tasks">Tasks</h3>
+<p><strong>Starter headwords</strong> (choose one or explore all):</p>
+<ul>
+<li><em>alright</em> (spelling variant)</li>
+<li><em>kick the bucket</em> (idiom)</li>
+<li><em>honeybee</em> (compound with variants)</li>
+</ul>
+<p><strong>What to look for:</strong></p>
+<ul>
+<li><strong>Task A</strong> (find two problematic cases): variant spellings? usage labels? date range in citations?</li>
+<li><strong>Task B</strong> (compare entries): entry structure? cross-references? examples?</li>
+<li><strong>Task C</strong> (extract citations &amp; discuss): fixedness cues? semantic transparency? paradigmatic alternatives?</li>
+</ul>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Bauer2022Introduction" class="csl-entry" role="listitem">
+Bauer, Laurie. 2022. <em>An <span>Introduction</span> to <span>English Lexicology</span></em>. Edinburgh University Press.
+</div>
+</div>
 
 
 </section>

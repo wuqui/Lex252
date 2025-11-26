@@ -6,7 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-25">
+<meta name="author" content="Dr.&nbsp;Quirin Würschinger, LMU Munich">
+<meta name="dcterms.date" content="2025-11-18">
 
 <title>05 — Using dictionaries and analysing data – Lex252</title>
 <style>
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -71,11 +92,40 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../custom.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../document.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -107,19 +157,19 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/03_morphology/index.html">
- <span class="dropdown-text">03 — Morphology and word-formation</span></a>
+ <span class="dropdown-text">03 — Morphology</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/04_dictionaries/index.html">
- <span class="dropdown-text">04 — Dictionaries: fundamentals, examples, use cases</span></a>
+ <span class="dropdown-text">04 — Dictionaries</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/05_dictionaries-2/index.html">
- <span class="dropdown-text">05 — Using dictionaries and analysing data</span></a>
+ <span class="dropdown-text">05 — Using dictionaries</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/06_corpora/index.html">
- <span class="dropdown-text">06 — Corpora: theories, methods, and applications</span></a>
+ <span class="dropdown-text">06 — Corpora</span></a>
   </li>  
     </ul>
   </li>
@@ -134,24 +184,77 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap">Recap</a></li>
+  <li><a href="#outline" id="toc-outline" class="nav-link" data-scroll-target="#outline">Outline</a></li>
+  </ul></li>
+  <li><a href="#types-of-dictionaries" id="toc-types-of-dictionaries" class="nav-link" data-scroll-target="#types-of-dictionaries">Types of Dictionaries</a>
+  <ul class="collapse">
+  <li><a href="#general-purpose-dictionaries" id="toc-general-purpose-dictionaries" class="nav-link" data-scroll-target="#general-purpose-dictionaries">General Purpose Dictionaries</a></li>
+  <li><a href="#bilingual-and-multilingual-dictionaries" id="toc-bilingual-and-multilingual-dictionaries" class="nav-link" data-scroll-target="#bilingual-and-multilingual-dictionaries">Bilingual and Multilingual Dictionaries</a></li>
+  <li><a href="#specialized-dictionaries" id="toc-specialized-dictionaries" class="nav-link" data-scroll-target="#specialized-dictionaries">Specialized Dictionaries</a></li>
+  <li><a href="#diachronic-and-synchronic-dictionaries" id="toc-diachronic-and-synchronic-dictionaries" class="nav-link" data-scroll-target="#diachronic-and-synchronic-dictionaries">Diachronic and Synchronic Dictionaries</a></li>
+  <li><a href="#learners-dictionaries" id="toc-learners-dictionaries" class="nav-link" data-scroll-target="#learners-dictionaries">Learner’s Dictionaries</a></li>
+  </ul></li>
+  <li><a href="#specific-examples-of-dictionaries" id="toc-specific-examples-of-dictionaries" class="nav-link" data-scroll-target="#specific-examples-of-dictionaries">Specific Examples of Dictionaries</a>
+  <ul class="collapse">
+  <li><a href="#oxford-english-dictionary-oed" id="toc-oxford-english-dictionary-oed" class="nav-link" data-scroll-target="#oxford-english-dictionary-oed">Oxford English Dictionary (OED)</a></li>
+  <li><a href="#wiktionary" id="toc-wiktionary" class="nav-link" data-scroll-target="#wiktionary">Wiktionary</a>
+  <ul class="collapse">
+  <li><a href="#wind-machine-readable-wiktionary" id="toc-wind-machine-readable-wiktionary" class="nav-link" data-scroll-target="#wind-machine-readable-wiktionary">WIND (Machine-readable Wiktionary)</a></li>
+  </ul></li>
+  <li><a href="#urban-dictionary" id="toc-urban-dictionary" class="nav-link" data-scroll-target="#urban-dictionary">Urban Dictionary</a></li>
+  <li><a href="#other-major-dictionaries" id="toc-other-major-dictionaries" class="nav-link" data-scroll-target="#other-major-dictionaries">Other Major Dictionaries</a></li>
+  </ul></li>
+  <li><a href="#applications-in-linguistic-research" id="toc-applications-in-linguistic-research" class="nav-link" data-scroll-target="#applications-in-linguistic-research">Applications in Linguistic Research</a>
+  <ul class="collapse">
+  <li><a href="#historical-linguistic-analysis" id="toc-historical-linguistic-analysis" class="nav-link" data-scroll-target="#historical-linguistic-analysis">Historical linguistic analysis</a></li>
+  <li><a href="#comparative-linguistics" id="toc-comparative-linguistics" class="nav-link" data-scroll-target="#comparative-linguistics">Comparative linguistics</a></li>
+  <li><a href="#contemporary-language-research" id="toc-contemporary-language-research" class="nav-link" data-scroll-target="#contemporary-language-research">Contemporary language research</a></li>
+  <li><a href="#methodological-applications" id="toc-methodological-applications" class="nav-link" data-scroll-target="#methodological-applications">Methodological applications</a></li>
+  </ul></li>
+  <li><a href="#practice-analysing-and-comparing-dictionary-entries" id="toc-practice-analysing-and-comparing-dictionary-entries" class="nav-link" data-scroll-target="#practice-analysing-and-comparing-dictionary-entries">Practice: analysing and comparing dictionary entries</a></li>
+  <li><a href="#practise-using-the-oed" id="toc-practise-using-the-oed" class="nav-link" data-scroll-target="#practise-using-the-oed">Practise using the OED</a>
+  <ul class="collapse">
+  <li><a href="#analysis-objectives" id="toc-analysis-objectives" class="nav-link" data-scroll-target="#analysis-objectives">Analysis objectives</a></li>
+  <li><a href="#using-the-oeds-advanced-search" id="toc-using-the-oeds-advanced-search" class="nav-link" data-scroll-target="#using-the-oeds-advanced-search">Using the OED’s Advanced Search</a></li>
+  <li><a href="#using-microsoft-excel" id="toc-using-microsoft-excel" class="nav-link" data-scroll-target="#using-microsoft-excel">Using Microsoft Excel</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">05 — Using dictionaries and analysing data</h1>
+<p class="subtitle lead">Lexicology and Lexicography</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Quirin Würschinger, LMU Munich </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 25, 2025</p>
+      <p class="date">November 18, 2025</p>
     </div>
   </div>
   
@@ -163,12 +266,388 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="slides" class="level1">
-<h1>Slides</h1>
-<div class="embed-slides">
-<iframe src="slides.html" title="Session 05: Using dictionaries and analysing data" allowfullscreen=""></iframe>
+<p><a href="slides.html" class="btn btn-primary">Open slides version</a></p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<section id="recap" class="level2">
+<h2 class="anchored" data-anchor-id="recap">Recap</h2>
+<ul>
+<li>Revisited why lexicology treats the lexicon as a <strong>structured network</strong>, not a flat list, using mental lexicon evidence and embedding demos.</li>
+<li>Distinguished <strong>dictionary functions</strong> (descriptive vs prescriptive), sense-ordering strategies, and usage labels that mediate interpretation.</li>
+<li>Practised translating OED search output into <strong>research questions</strong> on word classes, formation processes, and semantic domains.</li>
+<li>Walked through <strong>OED workflows</strong>: extracting post-2000 neologisms, exporting CSV data, and analysing them with tables and pivot charts.</li>
+</ul>
+</section>
+<section id="outline" class="level2">
+<h2 class="anchored" data-anchor-id="outline">Outline</h2>
+<ol type="1">
+<li>Map the landscape of <strong>dictionary types</strong> (general, bilingual, specialised, diachronic vs synchronic).</li>
+<li>Evaluate <strong>crowdsourced vs curated</strong> platforms (Urban Dictionary, Wiktionary, OED) and their affordances.</li>
+<li>Explore <strong>machine-readable resources</strong> (WIND) and spreadsheet workflows for lexicological analysis.</li>
+<li>Run a <strong>hands-on comparison</strong> of dictionary entries to surface researchable contrasts.</li>
+<li>Connect dictionary outputs to <strong>linguistic research applications</strong> (historical, comparative, contemporary, methodological).</li>
+</ol>
+</section>
+</section>
+<section id="types-of-dictionaries" class="level1">
+<h1>Types of Dictionaries</h1>
+<section id="general-purpose-dictionaries" class="level2">
+<h2 class="anchored" data-anchor-id="general-purpose-dictionaries">General Purpose Dictionaries</h2>
+<ul>
+<li>Provide <strong>comprehensive</strong> linguistic information about words in a single language
+<ul>
+<li>Spelling, pronunciation, and grammatical classification</li>
+<li>Multiple meanings and contextual usage examples</li>
+<li>Etymology and historical development notes</li>
+</ul></li>
+<li>Typically <strong>monolingual</strong> and organised alphabetically for easy reference</li>
+<li>Valuable for <strong>morphological research</strong> because they:
+<ul>
+<li>Document detailed word origins and development</li>
+<li>Show common usage patterns and variations</li>
+<li>Provide historical context for word formation</li>
+</ul></li>
+</ul>
+</section>
+<section id="bilingual-and-multilingual-dictionaries" class="level2">
+<h2 class="anchored" data-anchor-id="bilingual-and-multilingual-dictionaries">Bilingual and Multilingual Dictionaries</h2>
+<ul>
+<li>Facilitate <strong>translation</strong> between two or more languages</li>
+<li>Key features and functions:
+<ul>
+<li>Support language learning and translation work</li>
+<li>Help decode meanings across different languages</li>
+<li>Illustrate cultural and linguistic nuances</li>
+</ul></li>
+<li>Important for morphological research by:
+<ul>
+<li>Enabling <strong>cross-linguistic</strong> word formation studies</li>
+<li>Revealing patterns in <strong>comparative linguistics</strong></li>
+<li>Showing how concepts transfer between languages</li>
+</ul></li>
+</ul>
+</section>
+<section id="specialized-dictionaries" class="level2">
+<h2 class="anchored" data-anchor-id="specialized-dictionaries">Specialized Dictionaries</h2>
+<ul>
+<li>Focus on <strong>specific aspects</strong> of language or technical fields:
+<ul>
+<li>Etymology and word origins</li>
+<li>Precise pronunciation guides</li>
+<li>Technical and discipline-specific terminology</li>
+<li>Slang and colloquial expressions</li>
+</ul></li>
+<li>Particularly valuable for:
+<ul>
+<li>Detailed <strong>academic research</strong> in specific fields</li>
+<li>Understanding technical vocabulary development</li>
+<li>Tracing specialised word formation patterns</li>
+</ul></li>
+</ul>
+</section>
+<section id="diachronic-and-synchronic-dictionaries" class="level2">
+<h2 class="anchored" data-anchor-id="diachronic-and-synchronic-dictionaries">Diachronic and Synchronic Dictionaries</h2>
+<ul>
+<li><strong>Diachronic</strong> dictionaries:
+<ul>
+<li>Track how words change <strong>through history</strong></li>
+<li>Document evolution of meanings and forms</li>
+</ul></li>
+<li><strong>Synchronic</strong> dictionaries:
+<ul>
+<li>Focus on language at <strong>specific points in time</strong></li>
+<li>Present contemporary usage and meanings</li>
+<li>Document current word formation patterns</li>
+</ul></li>
+<li>Essential tools for:
+<ul>
+<li><strong>Historical linguistic research</strong></li>
+<li>Understanding language evolution</li>
+<li>Tracking word formation changes over time</li>
+</ul></li>
+</ul>
+</section>
+<section id="learners-dictionaries" class="level2">
+<h2 class="anchored" data-anchor-id="learners-dictionaries">Learner’s Dictionaries</h2>
+<div>
+<ul>
+<li>Specifically designed for <strong>language acquisition</strong>:
+<ul>
+<li>Clear, simplified definitions</li>
+<li>Practical, everyday usage examples</li>
+<li>Word frequency information</li>
+<li>Common collocations and phrases</li>
+</ul></li>
+<li>Additional features often include:
+<ul>
+<li>Grammar notes and usage guidelines</li>
+<li>Cultural context explanations</li>
+<li>Learning exercises and examples</li>
+</ul></li>
+<li>Useful for research into:
+<ul>
+<li>Common <strong>word usage patterns</strong></li>
+<li>Language acquisition processes</li>
+<li>Basic word formation principles</li>
+</ul></li>
+</ul>
 </div>
-<p><a href="slides.html">Open full screen</a> | <a href="slides.pdf">Download PDF</a></p>
+</section>
+</section>
+<section id="specific-examples-of-dictionaries" class="level1">
+<h1>Specific Examples of Dictionaries</h1>
+<section id="oxford-english-dictionary-oed" class="level2">
+<h2 class="anchored" data-anchor-id="oxford-english-dictionary-oed">Oxford English Dictionary (OED)</h2>
+<div>
+<ul>
+<li>Official website: <a href="https://www.oed.com/" class="uri">https://www.oed.com/</a></li>
+<li>Comprehensive <strong>historical dictionary</strong> of English by Oxford University Press</li>
+<li>Considered the <strong>authoritative source</strong> on English language</li>
+<li>Key features:
+<ul>
+<li><strong>Historical approach</strong>: traces word development chronologically</li>
+<li><strong>Extensive quotations</strong>: over 3 million citations from wide-ranging sources</li>
+<li><strong>Comprehensive coverage</strong>: 600,000+ words and phrases across 20 volumes</li>
+<li>Online since 2000; third edition in progress (electronic-only)</li>
+</ul></li>
+<li>Value for research:
+<ul>
+<li>Traces detailed development of word forms and meanings</li>
+<li>Provides extensive historical context and usage patterns</li>
+<li>Enables in-depth <strong>morphological analysis</strong></li>
+<li>Documents linguistic patterns and changes over time</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="wiktionary" class="level2">
+<h2 class="anchored" data-anchor-id="wiktionary">Wiktionary</h2>
+<ul>
+<li>Official website: <a href="https://www.wiktionary.org/" class="uri">https://www.wiktionary.org/</a></li>
+<li>Multilingual, web-based <strong>collaborative dictionary</strong></li>
+<li>Key features:
+<ul>
+<li><strong>Crowdsourced content</strong> with rapid updates</li>
+<li>Comprehensive and flexible entries for new words</li>
+<li>Multiple language support with cross-references</li>
+<li>Detailed etymological information where available</li>
+</ul></li>
+<li>Research applications:
+<ul>
+<li><strong>Neologism</strong> and language evolution studies</li>
+<li><strong>Cross-linguistic research</strong> opportunities</li>
+<li>Contemporary usage patterns</li>
+<li>Educational tool for language learning and research</li>
+</ul></li>
+</ul>
+<section id="wind-machine-readable-wiktionary" class="level3">
+<h3 class="anchored" data-anchor-id="wind-machine-readable-wiktionary">WIND (Machine-readable Wiktionary)</h3>
+<p><span class="citation" data-cites="Sajous2020ENGLAWI">Sajous, Calderone, and Hathout (<a href="#ref-Sajous2020ENGLAWI" role="doc-biblioref">2020</a>)</span></p>
+<p><a href="http://redac.univ-tlse2.fr/lexiques/wind.html" class="uri">http://redac.univ-tlse2.fr/lexiques/wind.html</a></p>
+<p><img src="att/WIND_1700084693531_0.png" class="img-fluid" width="450"></p>
+<p><a href="https://1drv.ms/x/c/9a2ec97d593520f9/IQD5IDVZfckuIICaZxEAAAAAARb8555fyrlCaa947C97Owg">Excel Sheet</a></p>
+<p><img src="att/wind.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="urban-dictionary" class="level2">
+<h2 class="anchored" data-anchor-id="urban-dictionary">Urban Dictionary</h2>
+<ul>
+<li>Official website: <a href="https://www.urbandictionary.com/" class="uri">https://www.urbandictionary.com/</a></li>
+<li><strong>Crowdsourced dictionary</strong> focusing on <strong>slang</strong> and <strong>colloquial language</strong></li>
+<li>Key features:
+<ul>
+<li><strong>User-generated content</strong> reflecting varied interpretations</li>
+<li>Dynamic tracking of language evolution</li>
+<li>Rich cultural context and references</li>
+<li>Multiple definitions showing usage variations</li>
+</ul></li>
+<li>Research value:
+<ul>
+<li><strong>Sociolinguistic studies</strong> of contemporary language</li>
+<li>Tracking emergence and spread of new slang</li>
+<li>Cultural analysis through language use</li>
+<li>Understanding informal <strong>word formation processes</strong></li>
+</ul></li>
+</ul>
+</section>
+<section id="other-major-dictionaries" class="level2">
+<h2 class="anchored" data-anchor-id="other-major-dictionaries">Other Major Dictionaries</h2>
+<p><strong>Merriam-Webster Dictionary</strong> (<a href="https://www.merriam-webster.com/" class="uri">https://www.merriam-webster.com/</a>)</p>
+<ul>
+<li><strong>American English</strong> focus</li>
+<li>Strong etymology coverage</li>
+<li>Regular updates for contemporary usage</li>
+<li>Valuable for understanding American English word formation</li>
+</ul>
+<p><strong>Collins English Dictionary</strong> (<a href="https://dictionary.cambridge.org/" class="uri">https://dictionary.cambridge.org/</a>)</p>
+<ul>
+<li>Comprehensive vocabulary coverage</li>
+<li>Strong <strong>British English</strong> focus</li>
+<li>Detailed word formation information</li>
+<li>Includes frequency information and usage trends</li>
+</ul>
+<p><strong>Cambridge English Dictionary</strong> (<a href="https://dictionary.cambridge.org/" class="uri">https://dictionary.cambridge.org/</a>)</p>
+<ul>
+<li>Clear definitions and examples</li>
+<li>Strong <strong>learner focus</strong></li>
+<li>British English emphasis</li>
+<li>Excellent grammatical information and usage notes</li>
+</ul>
+<p><strong>Online Etymology Dictionary</strong> (<a href="https://www.etymonline.com/" class="uri">https://www.etymonline.com/</a>)</p>
+<ul>
+<li>Detailed <strong>word history</strong> tracking</li>
+<li><strong>Etymology</strong> focus</li>
+<li>Historical development emphasis</li>
+<li>Traces morphological changes over time</li>
+</ul>
+</section>
+</section>
+<section id="applications-in-linguistic-research" class="level1">
+<h1>Applications in Linguistic Research</h1>
+<section id="historical-linguistic-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="historical-linguistic-analysis">Historical linguistic analysis</h2>
+<ul>
+<li>Tracking <strong>morphological changes</strong> through time
+<ul>
+<li>e.g.&nbsp;comparing Old English strong verbs to Modern English irregular forms</li>
+</ul></li>
+<li>Understanding <strong>semantic development</strong>
+<ul>
+<li>e.g.&nbsp;charting the shift of <em>awful</em> from ‘full of awe’ to ‘terrible’</li>
+</ul></li>
+<li>Documenting <strong>word formation patterns</strong>
+<ul>
+<li>e.g.&nbsp;analyzing the emergence of the prefix <em>cyber-</em> in late 20th century</li>
+</ul></li>
+</ul>
+</section>
+<section id="comparative-linguistics" class="level2">
+<h2 class="anchored" data-anchor-id="comparative-linguistics">Comparative linguistics</h2>
+<ul>
+<li><strong>Cross-linguistic</strong> word formation studies
+<ul>
+<li>e.g.&nbsp;comparing German and English compound nouns (e.g.&nbsp;de. <em>Zahnarzt</em> vs en. <em>tooth doctor</em>)</li>
+</ul></li>
+<li>Analysis of <strong>borrowing patterns</strong>
+<ul>
+<li>e.g.&nbsp;tracing French loanwords (e.g.&nbsp;<em>cuisine</em>, <em>ballet</em>) into English after the Norman Conquest</li>
+</ul></li>
+<li>Understanding <strong>morphological universals</strong>
+<ul>
+<li>e.g.&nbsp;investigating prefixation productivity across unrelated languages (e.g.&nbsp;<em>ge-</em> in German, <em>en-</em> in English)</li>
+</ul></li>
+</ul>
+</section>
+<section id="contemporary-language-research" class="level2">
+<h2 class="anchored" data-anchor-id="contemporary-language-research">Contemporary language research</h2>
+<ul>
+<li><strong>Neologism</strong> studies and word creation
+<ul>
+<li>e.g.&nbsp;investigating the rise of <em>selfie</em> and <em>meme</em> via social media corpora</li>
+</ul></li>
+<li><strong>Sociolinguistic variation</strong>
+<ul>
+<li>e.g.&nbsp;examining morphological variation in teenage text messaging (e.g.&nbsp;abbreviations like <em>u</em> for you)</li>
+</ul></li>
+<li><strong>Internet-influenced</strong> language change
+<ul>
+<li>e.g.&nbsp;analyzing adoption of acronyms (e.g.&nbsp;<em>lol</em>, <em>brb</em>) in spoken and written registers</li>
+</ul></li>
+</ul>
+</section>
+<section id="methodological-applications" class="level2">
+<h2 class="anchored" data-anchor-id="methodological-applications">Methodological applications</h2>
+<ul>
+<li><strong>Diachronic studies</strong> of word formation
+<ul>
+<li>e.g.&nbsp;comparing <em>selfie</em> definitions in 2013 vs 2025 corpora to trace shifts from novelty to mainstream usage</li>
+</ul></li>
+<li><strong>Quantitative analysis</strong> of lexical change over time
+<ul>
+<li>e.g.&nbsp;measuring the rise of <em>cryptocurrency</em> entries over time</li>
+</ul></li>
+<li><strong>Corpus-based validation</strong> of dictionary entries
+<ul>
+<li>e.g.&nbsp;using the <em>Corpus of Contemporary American English</em> to test whether dictionary data match corpus data</li>
+</ul></li>
+<li>Tracking the adoption of <strong>loanwords</strong> and <strong>neologisms</strong>
+<ul>
+<li>e.g.&nbsp;tracing how <em>hygge</em> transitions from Danish loanword to standard entry in learner dictionaries</li>
+</ul></li>
+</ul>
+<ul>
+<li>Identifying gaps or biases in dictionary coverage
+<ul>
+<li>e.g.&nbsp;noticing that everyday items like <em>takeaway</em> are absent from learner dictionaries</li>
+</ul></li>
+<li>Supporting <strong>computational linguistics</strong> and NLP tasks (e.g.&nbsp;lemmatisation, part-of-speech tagging)
+<ul>
+<li>e.g.&nbsp;expanding sentiment lexicons with blended forms like <em>hangry</em></li>
+</ul></li>
+<li>Informing the design of new dictionaries and lexical resources
+<ul>
+<li>e.g.&nbsp;designing a climate change glossary after analysing coverage gaps for items like <em>carbon offsetting</em></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="practice-analysing-and-comparing-dictionary-entries" class="level1">
+<h1>Practice: analysing and comparing dictionary entries</h1>
+<ul>
+<li>Choose at least two terms that might be interesting for comparison.</li>
+<li>Look them up in <span class="math inline">\(\geq\)</span> 2 dictionaries from <span class="math inline">\(\geq\)</span> 2 different dictionary types.</li>
+<li>Analyse and compare the entries between the dictionaries.</li>
+<li>Can you think of related research questions?</li>
+<li>Prepare slides in <a href="https://1drv.ms/p/c/9a2ec97d593520f9/IQAPYwC-Z-mTSKIXPC2M-s87AaVTUjFevdwiVV7FhmJeYjE">this PowerPoint file</a>.</li>
+<li>Present your findings to the class.</li>
+</ul>
+</section>
+<section id="practise-using-the-oed" class="level1">
+<h1>Practise using the OED</h1>
+<section id="analysis-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-objectives">Analysis objectives</h2>
+<ol type="1">
+<li>How many terms are marked as <strong><em>obsolete</em></strong> across the whole OED?</li>
+<li>What are the most common <strong>word classes</strong> of obsolete terms?</li>
+<li>What are the most common <strong>word-formation processes</strong>?</li>
+<li>What are the most common <strong>subjects</strong>?</li>
+</ol>
+</section>
+<section id="using-the-oeds-advanced-search" class="level2">
+<h2 class="anchored" data-anchor-id="using-the-oeds-advanced-search">Using the OED’s Advanced Search</h2>
+<ul>
+<li>find all terms that are marked as <strong><em>obsolete</em></strong></li>
+<li>sort them by <code>Date (newest first)</code></li>
+<li>export the results as a <strong>CSV file</strong></li>
+</ul>
+</section>
+<section id="using-microsoft-excel" class="level2">
+<h2 class="anchored" data-anchor-id="using-microsoft-excel">Using Microsoft Excel</h2>
+<ol type="1">
+<li>open the <strong>CSV file</strong></li>
+<li>save the file as an Excel file (<code>.xlsx</code> extension)</li>
+<li>convert the exported rows/columns to a <code>Table</code></li>
+<li>create <strong><code>Pivot Table</code>s</strong> to analyse the data</li>
+<li>create <strong><code>Pivot Chart</code>s</strong> to visualise the data</li>
+</ol>
+<p><a href="https://1drv.ms/x/c/9a2ec97d593520f9/EaLL88w43gZCrHEXDYO5Qa0BRPZiuRcROamaxi4AJhFTsg">Model Excel file</a></p>
+</section>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<ul>
+<li><strong>Dictionaries are not monolithic.</strong> Different types — general, specialised, bilingual, diachronic—serve different purposes.</li>
+<li><strong>Choose the right tool for the job.</strong> The best dictionary for your research depends on your specific questions (e.g., historical development, contemporary slang, cross-linguistic comparison).</li>
+<li><strong>Dictionaries are data.</strong> They are curated datasets that can be used for qualitative and quantitative linguistic analysis, revealing patterns in word formation, semantic change, and language use.</li>
+</ul>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Sajous2020ENGLAWI" class="csl-entry" role="listitem">
+Sajous, Franck, Basilio Calderone, and Nabil Hathout. 2020. <span>“<span>ENGLAWI</span>: <span>From Human-</span> to <span>Machine-Readable Wiktionary</span>.”</span> In <em>Proceedings of the 12th <span>Language Resources</span> and <span>Evaluation Conference</span></em>, 3016–26. Marseille, France: European Language Resources Association. <a href="https://www.aclweb.org/anthology/2020.lrec-1.369">https://www.aclweb.org/anthology/2020.lrec-1.369</a>.
+</div>
+</div>
 
 
 </section>

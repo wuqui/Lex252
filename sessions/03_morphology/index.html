@@ -6,7 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-25">
+<meta name="author" content="Dr.&nbsp;Quirin Würschinger, LMU Munich">
+<meta name="dcterms.date" content="2025-11-04">
 
 <title>03 — Morphology and word-formation – Lex252</title>
 <style>
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,10 +93,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../custom.css">
+<link rel="stylesheet" href="../../document.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -107,19 +128,19 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/03_morphology/index.html">
- <span class="dropdown-text">03 — Morphology and word-formation</span></a>
+ <span class="dropdown-text">03 — Morphology</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/04_dictionaries/index.html">
- <span class="dropdown-text">04 — Dictionaries: fundamentals, examples, use cases</span></a>
+ <span class="dropdown-text">04 — Dictionaries</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/05_dictionaries-2/index.html">
- <span class="dropdown-text">05 — Using dictionaries and analysing data</span></a>
+ <span class="dropdown-text">05 — Using dictionaries</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../sessions/06_corpora/index.html">
- <span class="dropdown-text">06 — Corpora: theories, methods, and applications</span></a>
+ <span class="dropdown-text">06 — Corpora</span></a>
   </li>  
     </ul>
   </li>
@@ -134,24 +155,70 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#outline" id="toc-outline" class="nav-link active" data-scroll-target="#outline">Outline</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#lexical-innovation" id="toc-lexical-innovation" class="nav-link" data-scroll-target="#lexical-innovation">Lexical innovation</a></li>
+  <li><a href="#morphology-vs-word-formation" id="toc-morphology-vs-word-formation" class="nav-link" data-scroll-target="#morphology-vs-word-formation">Morphology vs word-formation</a></li>
+  </ul></li>
+  <li><a href="#inflection-in-present-day-english" id="toc-inflection-in-present-day-english" class="nav-link" data-scroll-target="#inflection-in-present-day-english">Inflection in Present-Day English</a></li>
+  <li><a href="#morphemic-word-formation-processes" id="toc-morphemic-word-formation-processes" class="nav-link" data-scroll-target="#morphemic-word-formation-processes">Morphemic word-formation processes</a>
+  <ul class="collapse">
+  <li><a href="#morphological-building-blocks" id="toc-morphological-building-blocks" class="nav-link" data-scroll-target="#morphological-building-blocks">Morphological building blocks</a></li>
+  <li><a href="#overview-of-morphemic-word-formation-processes" id="toc-overview-of-morphemic-word-formation-processes" class="nav-link" data-scroll-target="#overview-of-morphemic-word-formation-processes">Overview of morphemic word-formation processes</a></li>
+  <li><a href="#exercise-conducting-a-morphological-analysis" id="toc-exercise-conducting-a-morphological-analysis" class="nav-link" data-scroll-target="#exercise-conducting-a-morphological-analysis">Exercise: conducting a morphological analysis</a></li>
+  </ul></li>
+  <li><a href="#non-morphemic-word-formation" id="toc-non-morphemic-word-formation" class="nav-link" data-scroll-target="#non-morphemic-word-formation">Non-morphemic word-formation</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#zero-derivation-conversion-vs-derivation" id="toc-zero-derivation-conversion-vs-derivation" class="nav-link" data-scroll-target="#zero-derivation-conversion-vs-derivation">Zero-derivation / conversion vs derivation</a></li>
+  <li><a href="#compounding-vs-blending" id="toc-compounding-vs-blending" class="nav-link" data-scroll-target="#compounding-vs-blending">Compounding vs blending</a>
+  <ul class="collapse">
+  <li><a href="#compound-types" id="toc-compound-types" class="nav-link" data-scroll-target="#compound-types">Compound types</a></li>
+  <li><a href="#formal-properties-of-blends" id="toc-formal-properties-of-blends" class="nav-link" data-scroll-target="#formal-properties-of-blends">Formal properties of blends</a></li>
+  <li><a href="#semantic-properties-of-blends" id="toc-semantic-properties-of-blends" class="nav-link" data-scroll-target="#semantic-properties-of-blends">Semantic properties of blends</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#quiz-classify-word-formation-processes" id="toc-quiz-classify-word-formation-processes" class="nav-link" data-scroll-target="#quiz-classify-word-formation-processes">Quiz: classify word-formation processes</a>
+  <ul class="collapse">
+  <li><a href="#interactive-version" id="toc-interactive-version" class="nav-link" data-scroll-target="#interactive-version">Interactive version</a></li>
+  <li><a href="#reference-answers" id="toc-reference-answers" class="nav-link" data-scroll-target="#reference-answers">Reference answers</a></li>
+  <li><a href="#morphemic-vs-non-morphemic-wf-summary" id="toc-morphemic-vs-non-morphemic-wf-summary" class="nav-link" data-scroll-target="#morphemic-vs-non-morphemic-wf-summary">Morphemic vs non-morphemic WF – summary</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">03 — Morphology and word-formation</h1>
+<p class="subtitle lead">Lexicology and Lexicography</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Quirin Würschinger, LMU Munich </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 25, 2025</p>
+      <p class="date">November 4, 2025</p>
     </div>
   </div>
   
@@ -163,12 +230,265 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="slides" class="level1">
-<h1>Slides</h1>
-<div class="embed-slides">
-<iframe src="slides.html" title="Session 03: Morphology and word-formation" allowfullscreen=""></iframe>
+<p><a href="slides.html" class="btn btn-primary">Open slides version</a></p>
+<section id="outline" class="level1">
+<h1>Outline</h1>
+<ol type="1">
+<li><a href="#lexical-innovation"><strong>Lexical innovation</strong></a>: How do new words arise and what are the key types?</li>
+<li><a href="#morphology-vs-word-formation"><strong>Morphology vs word-formation</strong></a>: What’s the distinction and scope?</li>
+<li><a href="#inflection-in-present-day-english"><strong>Inflection in Present-Day English</strong></a>: What inflectional morphemes exist?</li>
+<li><a href="#morphological-building-blocks"><strong>Morphological building blocks</strong></a>: What are morphemes and their categories?</li>
+<li><a href="#morphemic-word-formation-processes"><strong>Morphemic processes</strong></a>: How do derivation and compounding work?</li>
+<li><a href="#non-morphemic-word-formation"><strong>Non-morphemic processes</strong></a>: What are conversion, clipping, blending, back-formation, and acronyms?</li>
+<li><a href="#practice"><strong>Practice</strong></a>: How can we analyse word structure?</li>
+</ol>
+</section>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<section id="lexical-innovation" class="level2">
+<h2 class="anchored" data-anchor-id="lexical-innovation">Lexical innovation</h2>
+<p>How do new words arise?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><span class="citation" data-cites="Kerremans2015Web">Kerremans (<a href="#ref-Kerremans2015Web" role="doc-biblioref">2015</a>)</span></figcaption>
+<p><img src="att/image_1701358282980_0.png" class="img-fluid figure-img" width="600"></p>
+</figure>
 </div>
-<p><a href="slides.html">Open full screen</a> | <a href="slides.pdf">Download PDF</a></p>
+</section>
+<section id="morphology-vs-word-formation" class="level2">
+<h2 class="anchored" data-anchor-id="morphology-vs-word-formation">Morphology vs word-formation</h2>
+<p>What is the difference between morphology and word-formation?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><span class="citation" data-cites="Schmid2016EnglishMorphology">Schmid (<a href="#ref-Schmid2016EnglishMorphology" role="doc-biblioref">2016</a>)</span></figcaption>
+<p><img src="att/Schmid2016-morphology-vs-word-formation_1698949643850_0.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="inflection-in-present-day-english" class="level1">
+<h1>Inflection in Present-Day English</h1>
+<p>Which inflectional morphemes exist in Present-Day English?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><span class="citation" data-cites="Schmid2016EnglishMorphology">Schmid (<a href="#ref-Schmid2016EnglishMorphology" role="doc-biblioref">2016</a>)</span></figcaption>
+<p><img src="att/image_1701359043921_0.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</section>
+<section id="morphemic-word-formation-processes" class="level1">
+<h1>Morphemic word-formation processes</h1>
+<section id="morphological-building-blocks" class="level2">
+<h2 class="anchored" data-anchor-id="morphological-building-blocks">Morphological building blocks</h2>
+<p>Which types of morphemes are there and how do they differ?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><span class="citation" data-cites="Schmid2016EnglishMorphology">Schmid (<a href="#ref-Schmid2016EnglishMorphology" role="doc-biblioref">2016</a>)</span></figcaption>
+<p><img src="att/morpheme-types_1701359224211_0.png" height="500" class="figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="overview-of-morphemic-word-formation-processes" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-morphemic-word-formation-processes">Overview of morphemic word-formation processes</h2>
+<p>Which morphemic word-formation processes are there?</p>
+<p><img src="att/image_1698966977051_0.png" height="500"></p>
+</section>
+<section id="exercise-conducting-a-morphological-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-conducting-a-morphological-analysis">Exercise: conducting a morphological analysis</h2>
+<p>Provide a full morphological analysis for the word <em>misrepresentations</em>.</p>
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg style="width:800px;height:auto" width="72.343735mm" height="38.741531mm" viewbox="0 0 72.343735 38.741531" version="1.1" id="svg1" inkscape:version="1.4.2 (ebf0e940, 2025-05-08)" sodipodi:docname="misrepresenations.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:zoom="3.7453404" inkscape:cx="335.08303" inkscape:cy="172.74798" inkscape:window-width="1920" inkscape:window-height="1147" inkscape:window-x="0" inkscape:window-y="25" inkscape:window-maximized="0" inkscape:current-layer="layer12"></sodipodi:namedview>
+  <defs id="defs1"></defs>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" style="display:inline" transform="translate(-54.155317,-21.697294)" class="fragment" data-fragment-index="0">
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="94.167282" y="23.585823" id="text1"><tspan sodipodi:role="line" id="tspan1" style="stroke-width:0.264583" x="94.167282" y="23.585823">misrepresentations</tspan></text>
+  </g>
+  <g inkscape:groupmode="layer" id="layer4" inkscape:label="Layer 2" style="display:inline" transform="translate(-54.155317,-21.697294)" class="fragment" data-fragment-index="1">
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="114.83529" y="22.882753" id="text9"><tspan sodipodi:role="line" id="tspan9" style="stroke-width:0.264583" x="114.83529" y="22.882753">n</tspan></text>
+    <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 101.88847,24.508633 90.025568,31.975636" id="path3" inkscape:connector-type="polyline" inkscape:connector-curvature="0"></path>
+    <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 103.93587,24.508633 11.5016,7.82831" id="path4" inkscape:connector-type="polyline" inkscape:connector-curvature="0"></path>
+  </g>
+  <g inkscape:groupmode="layer" id="layer5" inkscape:label="Layer 3" style="display:inline" transform="translate(-54.155317,-21.697294)" class="fragment" data-fragment-index="2">
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="100.86477" y="33.661736" id="text10"><tspan sodipodi:role="line" id="tspan10" style="stroke-width:0.264583" x="100.86477" y="33.661736">n</tspan></text>
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="81.225304" y="34.498569" id="text2"><tspan sodipodi:role="line" id="tspan2" style="stroke-width:0.264583" x="81.225304" y="34.498569">misrepresentation</tspan></text>
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="116.34074" y="34.143475" id="text3"><tspan sodipodi:role="line" id="tspan3" style="stroke-width:0.264583" x="116.34074" y="34.143475">{s}</tspan></text>
+  </g>
+  <g inkscape:groupmode="layer" id="layer6" inkscape:label="Layer 4" style="display:inline" transform="translate(-54.155317,-21.697294)" class="fragment" data-fragment-index="3">
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="116.89549" y="28.181917" id="text8"><tspan sodipodi:role="line" id="tspan8" style="stroke-width:0.264583" x="116.89549" y="28.181917">inflection</tspan></text>
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="119.95238" y="35.745529" id="text23"><tspan sodipodi:role="line" id="tspan23" style="stroke-width:0.264583" x="119.95238" y="35.745529">gr.bd</tspan></text>
+  </g>
+  <g inkscape:groupmode="layer" id="layer7" inkscape:label="Layer 5" style="display:inline" transform="translate(-54.155317,-21.697294)" class="fragment" data-fragment-index="4">
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="72.080673" y="45.765503" id="text4"><tspan sodipodi:role="line" id="tspan4" style="stroke-width:0.264583" x="72.080673" y="45.765503">misrepresent</tspan></text>
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="97.191483" y="45.645069" id="text5"><tspan sodipodi:role="line" id="tspan5" style="stroke-width:0.264583" x="97.191483" y="45.645069">{ation}</tspan></text>
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="86.292061" y="44.741802" id="text11"><tspan sodipodi:role="line" id="tspan11" style="stroke-width:0.264583" x="86.292061" y="44.741802">v</tspan></text>
+    <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 89.664261,35.709137 -8.91223,7.165917" id="path19" inkscape:connector-type="polyline" inkscape:connector-curvature="0"></path>
+    <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 91.229922,35.769356 8.912228,6.985262" id="path20" inkscape:connector-type="polyline" inkscape:connector-curvature="0"></path>
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="104.90535" y="47.401676" id="text22"><tspan sodipodi:role="line" id="tspan22" style="stroke-width:0.264583" x="104.90535" y="47.401676">lx.bd</tspan></text>
+  </g>
+  <g inkscape:groupmode="layer" id="layer8" inkscape:label="Layer 6" style="display:inline" transform="translate(-54.155317,-21.697294)" class="fragment" data-fragment-index="5">
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="67.315552" y="37.934864" id="text15"><tspan sodipodi:role="line" id="tspan15" style="stroke-width:0.264583" x="67.315552" y="37.934864">derivation/</tspan><tspan sodipodi:role="line" style="stroke-width:0.264583" x="67.315552" y="40.5807" id="tspan16">suffixation</tspan></text>
+  </g>
+  <g inkscape:groupmode="layer" id="layer9" inkscape:label="Layer 7" style="display:inline" transform="translate(-54.155317,-21.697294)" class="fragment" data-fragment-index="6">
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="61.422131" y="58.471455" id="text6"><tspan sodipodi:role="line" id="tspan6" style="stroke-width:0.264583" x="61.422131" y="58.471455">{mis}</tspan></text>
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="80.450951" y="58.290802" id="text7"><tspan sodipodi:role="line" id="tspan7" style="stroke-width:0.264583" x="80.450951" y="58.290802">{represent}</tspan></text>
+    <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 77.078746,47.150514 66.661071,55.340133" id="path21" inkscape:connector-type="polyline" inkscape:connector-curvature="0"></path>
+    <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 79.668112,47.090298 6.4433,8.249835" id="path22" inkscape:connector-type="polyline" inkscape:connector-curvature="0"></path>
+  </g>
+  <g inkscape:groupmode="layer" id="layer10" inkscape:label="Layer 8" style="display:inline" transform="translate(-54.155317,-21.697294)" class="fragment" data-fragment-index="7">
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="93.266907" y="56.664921" id="text12"><tspan sodipodi:role="line" id="tspan12" style="stroke-width:0.264583" x="93.266907" y="56.664921">v</tspan></text>
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="93.347969" y="59.979237" id="text13"><tspan sodipodi:role="line" id="tspan13" style="stroke-width:0.264583" x="93.347969" y="59.979237">lx.fr</tspan></text>
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke-width:0.264583" x="67.331558" y="60.408852" id="text14"><tspan sodipodi:role="line" id="tspan14" style="stroke-width:0.264583" x="67.331558" y="60.408852">lx.bd</tspan></text>
+  </g>
+  <g inkscape:groupmode="layer" id="layer12" inkscape:label="Layer 9" style="display:inline" transform="translate(-54.155317,-21.697294)" class="fragment" data-fragment-index="8">
+    <text space="preserve" style="font-size:2.11667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#0000ff;stroke-width:0.264583" x="54.038528" y="49.234951" id="text17"><tspan sodipodi:role="line" style="stroke-width:0.264583" x="54.038528" y="49.234951" id="tspan18">derivation/</tspan><tspan sodipodi:role="line" style="stroke-width:0.264583" x="54.038528" y="51.880787" id="tspan19">prefixation</tspan></text>
+  </g>
+</svg>
+
+</section>
+</section>
+<section id="non-morphemic-word-formation" class="level1">
+<h1>Non-morphemic word-formation</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Which non-morphemic word-formation processes are there?</p>
+<div class="fragment">
+<p><img src="att/image_1698950159306_0.png" class="img-fluid"></p>
+</div>
+</section>
+<section id="zero-derivation-conversion-vs-derivation" class="level2">
+<h2 class="anchored" data-anchor-id="zero-derivation-conversion-vs-derivation">Zero-derivation / conversion vs derivation</h2>
+<p>What is the difference between zero-derivation and conversion?</p>
+<div class="fragment">
+<p><img src="att/image_1701360305725_0.png" class="img-fluid"></p>
+</div>
+</section>
+<section id="compounding-vs-blending" class="level2">
+<h2 class="anchored" data-anchor-id="compounding-vs-blending">Compounding vs blending</h2>
+<section id="compound-types" class="level3">
+<h3 class="anchored" data-anchor-id="compound-types">Compound types</h3>
+<p><img src="att/compound-types.png" class="img-fluid"></p>
+</section>
+<section id="formal-properties-of-blends" class="level3">
+<h3 class="anchored" data-anchor-id="formal-properties-of-blends">Formal properties of blends</h3>
+<p><em>swooshtika</em> – derogatory reference to Nike logo</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><span class="citation" data-cites="Kemmer2003Schemas">Kemmer (<a href="#ref-Kemmer2003Schemas" role="doc-biblioref">2003</a>)</span></figcaption>
+<p><img src="att/image_1701360686986_0.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+</section>
+<section id="semantic-properties-of-blends" class="level3">
+<h3 class="anchored" data-anchor-id="semantic-properties-of-blends">Semantic properties of blends</h3>
+<p><em>glitterati</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><span class="citation" data-cites="Kemmer2003Schemas">Kemmer (<a href="#ref-Kemmer2003Schemas" role="doc-biblioref">2003</a>)</span></figcaption>
+<p><img src="att/image_1701359909256_0.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+</section>
+</section>
+</section>
+<section id="quiz-classify-word-formation-processes" class="level1">
+<h1>Quiz: classify word-formation processes</h1>
+<section id="interactive-version" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-version">Interactive version</h2>
+<div style="width:100%;display:flex;flex-direction:column;gap:8px;min-height:635px;"><iframe src="https://wayground.com/embed/quiz/6908f6e48c4e852bd4f3d005" title=" - Wayground" style="flex:1;" frameborder="0" allowfullscreen=""></iframe><a href="https://wayground.com/admin?source=embedFrame" target="_blank">Interactive version on Wayground.</a></div>
+</section>
+<section id="reference-answers" class="level2">
+<h2 class="anchored" data-anchor-id="reference-answers">Reference answers</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Word</th>
+<th>Process/type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>friendship</em></td>
+<td>derivation</td>
+</tr>
+<tr class="even">
+<td><em>distasteful</em></td>
+<td>derivation (prefix + suffix)</td>
+</tr>
+<tr class="odd">
+<td><em>washing machine</em></td>
+<td>compounding (endocentric)</td>
+</tr>
+<tr class="even">
+<td><em>redneck</em></td>
+<td>compounding (exocentric)</td>
+</tr>
+<tr class="odd">
+<td><em>singer-songwriter</em></td>
+<td>compounding (copulative)</td>
+</tr>
+<tr class="even">
+<td><em>paperback</em></td>
+<td>compounding (endocentric)</td>
+</tr>
+<tr class="odd">
+<td><em>cook</em> (N) ← <em>cook</em> (V)</td>
+<td>conversion</td>
+</tr>
+<tr class="even">
+<td><em>to Google</em> (V)</td>
+<td>conversion</td>
+</tr>
+<tr class="odd">
+<td><em>fridge</em></td>
+<td>clipping</td>
+</tr>
+<tr class="even">
+<td><em>Brangelina</em></td>
+<td>blending</td>
+</tr>
+<tr class="odd">
+<td><em>swooshtika</em></td>
+<td>blending</td>
+</tr>
+<tr class="even">
+<td><em>sightsee</em></td>
+<td>back-formation</td>
+</tr>
+<tr class="odd">
+<td><em>LOL</em></td>
+<td>acronym/initialism</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="morphemic-vs-non-morphemic-wf-summary" class="level2">
+<h2 class="anchored" data-anchor-id="morphemic-vs-non-morphemic-wf-summary">Morphemic vs non-morphemic WF – summary</h2>
+<p><img src="att/image_1701360349164_0.png" class="img-fluid" width="600"></p>
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further reading</h2>
+<ul>
+<li>Bauer, Laurie. 2022. <em>An <span>Introduction</span> to <span>English Lexicology</span></em>. Edinburgh University Press.</li>
+<li>Lipka, Leonhard. 2002. <em>English Lexicology: <span>Lexical</span> Structure, Word Semantics and Word-Formation</em>. Tübingen: Narr.</li>
+<li>Schmid, Hans-Jörg. 2016. <em>English Morphology and Word-Formation - an Introduction</em>. 2nd ed. Berlin: Erich Schmidt Verlag.</li>
+</ul>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Kemmer2003Schemas" class="csl-entry" role="listitem">
+Kemmer, Suzanne. 2003. <span>“Schemas and Lexical Blends.”</span> In <em>Motivation in Language: <span>Studies</span> in Honor of <span>Günther Radden</span></em>, edited by Günther Radden and Hubert Cuyckens, 69–97. J. Benjamins Pub. Co.
+</div>
+<div id="ref-Kerremans2015Web" class="csl-entry" role="listitem">
+Kerremans, Daphné. 2015. <em>A <span>Web</span> of <span>New Words</span></em>. Bern: Peter Lang. <a href="https://doi.org/10.3726/978-3-653-04788-2">https://doi.org/10.3726/978-3-653-04788-2</a>.
+</div>
+<div id="ref-Schmid2016EnglishMorphology" class="csl-entry" role="listitem">
+Schmid, Hans-Jörg. 2016. <em>English Morphology and Word-Formation - an Introduction</em>. 2nd ed. Berlin: Erich Schmidt Verlag.
+</div>
+</div>
 
 
 </section>
