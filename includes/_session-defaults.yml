@@ -1,0 +1,36 @@
+# Session Template for Multi-Format Sessions
+# 
+# Most settings are inherited from project defaults in _quarto.yml:
+# - slide-level: 2
+# - excalidraw settings
+# - revealjs-plugins
+# - fig-cap-location and fig-align
+#
+# Session files only need to specify:
+# - Session-specific metadata (title, subtitle, author, date)
+# - Overrides for session-specific paths (linkprefix, css, output-file)
+# - Multi-format filter (strip-revealjs-html.lua)
+# - format-links: false (to disable auto format links)
+# - Session-specific params
+
+---
+title: "NN — Session Title"
+subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
+author: "Dr. Quirin Würschinger, LMU Munich"
+date: YYYY-MM-DD
+metadata:
+  linkprefix: ../../
+filters:
+  - ../../filters/strip-revealjs-html.lua
+format:
+  html:
+    output-file: index.html
+  clean-revealjs:
+    output-file: slides.html
+    css:
+      - ../../slides.css
+format-links: false
+params:
+  show_solutions: true
+---
+

@@ -14,17 +14,17 @@ website:
       - text: "Sessions"
         menu:
           - text: "01 — Introduction"
-            href: sessions/01_intro/index.qmd
+            href: sessions/01_intro/01_intro.qmd
           - text: "02 — The lexicon"
-            href: sessions/02_lexicon/index.qmd
-          - text: "03 — Morphology and word-formation"
-            href: sessions/03_morphology/index.qmd
-          - text: "04 — Dictionaries: fundamentals, examples, use cases"
-            href: sessions/04_dictionaries/index.qmd
-          - text: "05 — Using dictionaries and analysing data"
-            href: sessions/05_dictionaries-2/index.qmd
-          - text: "06 — Corpora: theories, methods, and applications"
-            href: sessions/06_corpora/index.qmd
+            href: sessions/02_lexicon/02_lexicon.qmd
+          - text: "03 — Morphology"
+            href: sessions/03_morphology/03_morphology.qmd
+          - text: "04 — Dictionaries"
+            href: sessions/04_dictionaries/04_dictionaries.qmd
+          - text: "05 — Using dictionaries"
+            href: sessions/05_dictionaries-2/05_dictionaries-2.qmd
+          - text: "06 — Corpora"
+            href: sessions/06_corpora/06_corpora.qmd
   page-navigation: true
   search: true
 
@@ -32,13 +32,27 @@ format:
   html:
     theme: light
     toc: true
-    css: custom.css
+    css: document.css
     fig-cap-location: top
     fig-align: center
+  clean-revealjs:
+    slide-level: 2
+    css:
+      - slides.css
+    fig-cap-location: top
+    fig-align: center
+    excalidraw:
+      button: false
+      shortcut: "`"
+      theme: "light"
 
 filters:
   - auto-dark
   - filters/fullcite.lua
+
+revealjs-plugins:
+  - pointer
+  - excalidraw
 
 bibliography: references.bib
 

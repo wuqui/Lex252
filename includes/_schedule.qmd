@@ -1,11 +1,11 @@
 |    | Date    | Topic |
 |---:|--------:|---|
-|  1 | 21 Oct. | [Organisation and introduction]({{< meta linkprefix >}}sessions/01_intro/index.qmd) |
-|  2 | 28 Oct. | [Words, dictionaries, and the lexicon]({{< meta linkprefix >}}sessions/02_lexicon/index.qmd) |
-|  3 |  4 Nov. | [Morphology and word-formation]({{< meta linkprefix >}}sessions/03_morphology/index.qmd) |
-|  4 | 11 Nov. | [Dictionaries: fundamentals, examples, use cases]({{< meta linkprefix >}}sessions/04_dictionaries/index.qmd) |
-|  5 | 18 Nov. | [Using dictionaries and analysing data]({{< meta linkprefix >}}sessions/05_dictionaries-2/index.qmd) |
-|  6 | 25 Nov. | [Corpora: theories, methods, and applications]({{< meta linkprefix >}}sessions/06_corpora/index.qmd) |
+|  1 | 21 Oct. | [Organisation and introduction]({{< meta linkprefix >}}sessions/01_intro/01_intro.qmd) |
+|  2 | 28 Oct. | [Words, dictionaries, and the lexicon]({{< meta linkprefix >}}sessions/02_lexicon/02_lexicon.qmd) |
+|  3 |  4 Nov. | [Morphology and word-formation]({{< meta linkprefix >}}sessions/03_morphology/03_morphology.qmd) |
+|  4 | 11 Nov. | [Dictionaries: fundamentals, examples, use cases]({{< meta linkprefix >}}sessions/04_dictionaries/04_dictionaries.qmd) |
+|  5 | 18 Nov. | [Using dictionaries and analysing data]({{< meta linkprefix >}}sessions/05_dictionaries-2/05_dictionaries-2.qmd) |
+|  6 | 25 Nov. | [Corpora: theories, methods, and applications]({{< meta linkprefix >}}sessions/06_corpora/06_corpora.qmd) |
 |  7 |  2 Dec. | Semantics: studying meanings and functions of words |
 |  8 |  9 Dec. | Studying lexis empirically |
 |  9 | 16 Dec. | Lexical innovation: new words and meanings |

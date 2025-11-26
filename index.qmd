@@ -1,6 +1,7 @@
 ---
 title: "Lexicology and Lexicography"
 author: "Dr. Quirin Würschinger, LMU Munich"
+format: html
 toc: true
 nocite: |
   @*

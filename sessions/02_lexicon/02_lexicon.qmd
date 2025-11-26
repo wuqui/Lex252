@@ -5,22 +5,23 @@ author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-10-28
 metadata:
   linkprefix: ../../
+filters:
+  - ../../filters/strip-revealjs-html.lua
 format:
+  html:
+    output-file: index.html
   clean-revealjs:
-    slide-level: 2
-    css: ../../custom.css
-    fig-cap-location: top
-    fig-align: center
-    excalidraw:
-      button: false
-      shortcut: "`"
-      theme: "light"
-revealjs-plugins:
-  - pointer
-  - excalidraw
+    output-file: slides.html
+    css:
+      - ../../slides.css
+format-links: false
 params:
   show_solutions: true
 ---
+
+::: {.content-hidden when-format="revealjs"}
+[Open slides version](slides.html){.btn .btn-primary}
+:::
 
 # Outline
 
