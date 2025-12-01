@@ -25,6 +25,8 @@ website:
             href: sessions/05_dictionaries-2/05_dictionaries-2.qmd
           - text: "06 — Corpora"
             href: sessions/06_corpora/06_corpora.qmd
+          - text: "07 — Semantics"
+            href: sessions/07_semantics/07_semantics.qmd
   page-navigation: true
   search: true
 

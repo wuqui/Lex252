@@ -1,5 +1,5 @@
 ---
-title: "04 — Dictionaries: fundamentals, examples, use cases"
+title: "4 — Dictionaries: fundamentals, examples, use cases"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-11-11
@@ -174,12 +174,12 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
     - Analyse how neighbours reflect different senses.
 :::
 
-<!-- <!-- ::: {.notes} -->
-<!-- - 10:37–10:41 -->
-<!-- - animals: `gorilla_NOUN,goat_NOUN,elephant_NOUN,cow_NOUN,dog_NOUN,hawk_NOUN,cat_NOUN,mouse_NOUN,baboon_NOUN,tiger_NOUN,fly_NOUN,hamster_NOUN` -->
-<!-- - furniture: `dresser_NOUN,desk_NOUN,nightstand_NOUN,bookshelf_NOUN,sofa_NOUN,stool_NOUN,chair_NOUN,bed_NOUN,table_NOUN,armchair_NOUN,cabinet_NOUN,bench_NOUN,ottoman_NOUN,wardrobe_NOUN` -->
-<!-- - ambiguitiy: *crane* -->
-<!-- ::: --> -->
+::: {.notes} -->
+- 10:37–10:41
+- animals: `gorilla_NOUN,goat_NOUN,elephant_NOUN,cow_NOUN,dog_NOUN,hawk_NOUN,cat_NOUN,mouse_NOUN,baboon_NOUN,tiger_NOUN,fly_NOUN,hamster_NOUN`
+- furniture: `dresser_NOUN,desk_NOUN,nightstand_NOUN,bookshelf_NOUN,sofa_NOUN,stool_NOUN,chair_NOUN,bed_NOUN,table_NOUN,armchair_NOUN,cabinet_NOUN,bench_NOUN,ottoman_NOUN,wardrobe_NOUN`
+- ambiguitiy: *crane*
+:::
 
 ---
 

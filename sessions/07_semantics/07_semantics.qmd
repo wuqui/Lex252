@@ -1,0 +1,272 @@
+---
+title: "7 — Semantics: studying meanings and functions of words"
+subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
+author: "Dr. Quirin Würschinger, LMU Munich"
+date: 2025-12-02
+metadata:
+  linkprefix: ../../
+filters:
+  - ../../filters/strip-revealjs-html.lua
+format:
+  html:
+    output-file: index.html
+  clean-revealjs:
+    output-file: slides.html
+    css:
+      - ../../slides.css
+format-links: false
+params:
+  show_solutions: true
+---
+
+::: {.content-hidden when-format="revealjs"}
+[Open slides version](slides.html){.btn .btn-primary}
+:::
+
+# Outline
+
+- [The meaning of clippings](#the-meaning-of-clippings) — Do *brother* and *bro* have the same meaning?
+- [Theoretical framework](#theoretical-framework) — Should they have different meanings? How can we study this? (Principle of No Synonymy, Distributional Hypothesis)
+- [Studying the meaning of clippings in the COCA](#studying-the-meaning-of-clippings-in-the-coca) — What do corpus data tell us? [@Hilpert2023Meaning]
+- [Practice using Sketch Engine](#practice-studying-meanings-using-sketch-engine) — How can we analyse the meanings of words based on corpora? (collocations, word sketches)
+
+
+# The meaning of clippings {#the-meaning-of-clippings}
+
+## Warm-up
+
+1. Brainstorm 3-5 clippings in English (e.g., *uni*, *info*).
+2. For each, discuss: Does the clipping mean *exactly* the same as the full word? If there are differences, what are they?
+3. Are there situations where you would use one but not the other?
+
+## Research questions
+
+@Hilpert2023Meaning:
+
+- Do clippings (e.g. *dorm* < *dormitory*) and their source words differ in meaning?
+- Are there semantic or pragmatic differences?
+- Are there systematic differences in meaning between clippings and source words?
+
+## Abstract
+
+- **Goal**: study meaning differences between clippings and source words.
+- **Method**: corpus data and distributional semantics.
+- **Data**: 50 English clippings, 100 examples each from COCA.
+- **Findings**:
+    - clippings appear in more "involved" contexts (→ signal familiarity).
+    - clippings and source words have different distributional profiles.
+- **Framework**: Construction Grammar, Principle of No Synonymy.
+
+# Theoretical framework {#theoretical-framework}
+
+## Does clipping involve a change in meaning?
+
+One view: clippings and source words are alternatives that only differ in form, not meaning.
+
+Examples: 
+
+- *mic* vs. *microphone*
+- *lab* vs. *laboratory*
+- *ad* vs. *advertisement*
+
+. . .
+
+**But**: do *brother* and *bro* have the same meaning?
+
+
+## The Principle of No Synonymy
+
+- A difference in linguistic form always indicates a difference in meaning [@Goldberg1995ConstructionsConstruction].
+- "Meaning" is broad: semantic, discourse-functional, interpersonal, etc.
+- **Prediction**: clippings and source words should have distinct distributions, reflecting functional differences.
+
+. . .
+
+::: {.callout-note}
+Think of 3 sentences the words *brother* and *bro* could appear in.
+:::
+
+## The Distributional hypothesis
+
+- The meaning of words is reflected in their contextual elements in language use: **"You shall know a word by the company it keeps" **[@Firth1957SynopsisLinguistic].
+- Words that appear in similar contexts share aspects of their meanings.
+- Example: *happy* and *joyful* share collocates like *very*, *feel*, *make*, *person*.
+
+---
+
+### Cognitive-linguistic models of the lexicon
+
+::: {layout="[40,60]"}
+![](../04_dictionaries/att/image_1698948775221_0.png)
+
+![](../04_dictionaries/att/image_1698948757878_0.png)
+:::
+
+---
+
+## Word embeddings [@Bandyopadhyay2022Interactive]
+
+::: {layout="[50,50]"}
+![](../04_dictionaries/att/image_1698966813935_0.png){width="600"}
+
+![TensorFlow Projector](../04_dictionaries/att/image_1700082493780_0.png){width="500"}
+:::
+
+---
+
+### Exercise
+
+::: {.small}
+[Word Embeddings Explorer](http://vectors.nlpl.eu/explore/embeddings/en/)
+
+1. Explore synonyms and antonyms (Similar words)
+    - Enter a seed word (e.g., `happy_ADJ`).
+    - Inspect the 5 nearest neighbours.
+    - Compare with an antonym (e.g., `sad_ADJ`).
+2. Visualise semantic clusters (Visualization)
+    - Choose two related groups (e.g., animals vs furniture).
+    - Plot in vector space; describe visible groupings.
+3. Word analogies (Calculator)
+    - Try analogies, e.g., `male_ADJ : doctor_NOUN = female_ADJ : ?`.
+    - Test several analogies; note successes and failures.
+4. Investigate ambiguity
+    - Pick a polysemous word (e.g., *bank*).
+    - Analyse how neighbours reflect different senses.
+:::
+
+::: {.notes}
+- animals: `gorilla_NOUN,goat_NOUN,elephant_NOUN,cow_NOUN,dog_NOUN,hawk_NOUN,cat_NOUN,mouse_NOUN,baboon_NOUN,tiger_NOUN,fly_NOUN,hamster_NOUN`
+- furniture: `dresser_NOUN,desk_NOUN,nightstand_NOUN,bookshelf_NOUN,sofa_NOUN,stool_NOUN,chair_NOUN,bed_NOUN,table_NOUN,armchair_NOUN,cabinet_NOUN,bench_NOUN,ottoman_NOUN,wardrobe_NOUN`
+- ambiguitiy: *crane*
+:::
+
+
+# Studying the meaning of clippings in the COCA {#studying-the-meaning-of-clippings-in-the-coca} 
+
+@Hilpert2023Meaning
+
+## Data {#data-sample .small}
+
+- Sample of 50 English clippings and their corresponding source words.
+- Corpus data from COCA [@Davies2008CorpusContemporary] for each clipping and source word.
+
+![](att/image_1683629476811_0.png)
+
+
+## Method
+
+Collocation analysis to investigate semantic profiles across contexts.
+
+![](att/image_1683630867757_0.png)
+
+
+## Results
+
+### Variation across text types
+
+![](att/image_1683630755727_0.png)
+
+___
+
+### Semantic differences
+
+Differences in collocations for *cardiovascular* vs *cardio*
+
+![](att/image_1683630867757_0.png)
+
+
+# Practice: studying meanings using Sketch Engine {#practice-studying-meanings-using-sketch-engine}
+
+## Your Task
+
+1. Choose one of the word pairs from [the sample above](#data-sample) [@Hilpert2023Meaning].
+2. Use the collocations and word sketches in the [enTenTen21](https://www.sketchengine.eu/ententen-english-corpus/) corpus to analyse their meanings.
+3. Use the [Guiding Questions](#guiding-questions) below to structure your analysis.
+4. Take notes in [this PowerPoint file](https://1drv.ms/p/c/9a2ec97d593520f9/IQDlqTdaQcKqRYKvlGBjXmTLAdP_wF-qXEH-2Aj8WIGvOqc).
+5. Share your findings with the class.
+
+
+## Collocation analysis
+
+### 1. Run a query 
+
+e.g. `[word="brother" & tag="N.*"]`
+
+![](att/cql-builder-brother.png)
+
+---
+
+### 2. Click the collocation analysis icon
+
+![](att/image_1684831483384_0.png)
+
+---
+
+### 3. Configure window range and statistics
+
+![](att/image_1684831570709_0.png)
+
+---
+
+### 4. View the results and test collocation measures
+
+![](att/image_1684832062090_0.png)
+
+## Word sketches: Single forms
+
+### 1. Generate a word sketch for a clipped form (e.g. *exam*), specifying the word class.
+
+![](att/Pasted-image-20250612085353.png)
+
+---
+
+### 2. Examine syntactic contexts.
+
+![](att/word-sketch_examination.png)
+
+---
+
+![](att/word-sketch_exam.png)
+
+---
+
+### 3. Visualise results.
+
+![](att/Pasted-image-20250612085617.png)
+
+## Word sketches: Comparison
+
+### 1. Compare source words and clipped forms (e.g. *examination* vs *exam*).
+
+![](att/Pasted-image-20250612085053.png)
+
+---
+
+### 2. Review shared and unique collocates.
+
+![](att/Pasted-image-20250612084821.png)
+
+---
+
+### 3. Inspect collocations in detail.
+
+![](att/Pasted-image-20250612085147.png)
+
+## Guiding questions {#guiding-questions}
+
+1. What is the general semantic signature of the source word?
+2. What is the general semantic signature of the clipped form?
+3. In what ways do they differ (stylistic, social, formality)?
+4. Do they occur in different syntagmatic contexts despite similar denotation?
+5. Does the clipped form have a wider or narrower scope of meaning?
+
+# Summary {#summary}
+
+- **A difference in form (often) implies a difference in meaning.** (Principle of No Synonymy)
+- **Meaning is use.** The contexts a word appears in tell us about its function. (Distributional Hypothesis)
+- **Clippings are not just lazy shortcuts.** They develop unique semantic, pragmatic, and social functions, often signalling familiarity and appearing in more "involved" contexts.
+
+# References
+
+:::: {#refs}
+::::

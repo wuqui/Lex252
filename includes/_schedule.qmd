@@ -6,7 +6,7 @@
 |  4 | 11 Nov. | [Dictionaries: fundamentals, examples, use cases]({{< meta linkprefix >}}sessions/04_dictionaries/04_dictionaries.qmd) |
 |  5 | 18 Nov. | [Using dictionaries and analysing data]({{< meta linkprefix >}}sessions/05_dictionaries-2/05_dictionaries-2.qmd) |
 |  6 | 25 Nov. | [Corpora: theories, methods, and applications]({{< meta linkprefix >}}sessions/06_corpora/06_corpora.qmd) |
-|  7 |  2 Dec. | Semantics: studying meanings and functions of words |
+|  7 |  2 Dec. | [Semantics: studying meanings and functions of words]({{< meta linkprefix >}}sessions/07_semantics/07_semantics.qmd) |
 |  8 |  9 Dec. | Studying lexis empirically |
 |  9 | 16 Dec. | Lexical innovation: new words and meanings |
 |    |         | | 
