@@ -193,7 +193,7 @@ params:
 
 <http://redac.univ-tlse2.fr/lexiques/wind.html>
 
-![](att/WIND_1700084693531_0.png){width="450"}
+![](../04_dictionaries/att/WIND_1700084693531_0.png){width="450"}
 
 ---
 
