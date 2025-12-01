@@ -7,14 +7,12 @@
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-contrib/quarto-auto-dark-mode-1.0.0/auto-dark-mode.css" rel="stylesheet">
-<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../../site_libs/quarto-contrib/quarto-auto-dark-mode-1.0.0/auto-dark-mode.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Dr.&nbsp;Quirin Würschinger, LMU Munich">
-  <meta name="dcterms.date" content="2025-11-25">
-  <title>Lex252 – 6 — Corpora: theories, methods, and applications</title>
+  <meta name="dcterms.date" content="2025-12-02">
+  <title>Lex252 – 7 — Semantics: studying meanings and functions of words</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -155,7 +153,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">6 — Corpora: theories, methods, and applications</h1>
+  <h1 class="title">7 — Semantics: studying meanings and functions of words</h1>
   <p class="subtitle">Lexicology and Lexicography — <a href="../../index.html">Course Website</a></p>
 
 <div class="quarto-title-authors">
@@ -166,230 +164,300 @@ Dr.&nbsp;Quirin Würschinger, LMU Munich
 </div>
 </div>
 
-  <p class="date">November 25, 2025</p>
+  <p class="date">December 2, 2025</p>
 </section>
 <section id="outline" class="title-slide slide level1 center">
 <h1>Outline</h1>
-<ol type="1">
-<li><a href="#/fundamentals-of-corpus-linguistics">Introduction to corpus linguistics</a>: Core concepts, methods, and applications of corpus-based research</li>
-<li><a href="#/sketch-engine-tutorial">Sketch Engine tutorial</a>: Hands-on introduction to key corpus analysis tools</li>
-<li><a href="#/practice-using-sketch-engine-for-lexicology">Practice using Sketch Engine</a>: Group work analysing lexical patterns in BNC 2014 Spoken</li>
-</ol>
+<ul>
+<li><a href="#/the-meaning-of-clippings">The meaning of clippings</a> — Do <em>brother</em> and <em>bro</em> have the same meaning?</li>
+<li><a href="#/theoretical-framework">Theoretical framework</a> — Should they have different meanings? How can we study this? (Principle of No Synonymy, Distributional Hypothesis)</li>
+<li><a href="#/studying-the-meaning-of-clippings-in-the-coca">Studying the meaning of clippings in the COCA</a> — What do corpus data tell us? <span class="citation" data-cites="Hilpert2023Meaning">(<a href="#/references" role="doc-biblioref" onclick="">Hilpert, Saavedra, and Rains 2023</a>)</span></li>
+<li><a href="#/practice-studying-meanings-using-sketch-engine">Practice using Sketch Engine</a> — How can we analyse the meanings of words based on corpora? (collocations, word sketches)</li>
+</ul>
 </section>
 
 <section>
-<section id="fundamentals-of-corpus-linguistics" class="title-slide slide level1 center">
-<h1>Fundamentals of corpus linguistics</h1>
+<section id="the-meaning-of-clippings" class="title-slide slide level1 center">
+<h1>The meaning of clippings</h1>
 
 </section>
-<section id="what-is-corpus-linguistics-about" class="slide level2">
-<h2>What is corpus linguistics about?</h2>
-<p>Corpus linguistics is a <strong>research methodology</strong> that focuses on the <strong>systematic study of language</strong> using large and diverse <strong>collections of authentic texts</strong>, known as <strong>corpora</strong>.</p>
-<p>These collections of language data, either written or spoken, provide an <strong>empirical basis</strong> for analysing:</p>
+<section id="warm-up" class="slide level2">
+<h2>Warm-up</h2>
+<ol type="1">
+<li>Brainstorm 3-5 clippings in English (e.g., <em>uni</em>, <em>info</em>).</li>
+<li>For each, discuss: Does the clipping mean <em>exactly</em> the same as the full word? If there are differences, what are they?</li>
+<li>Are there situations where you would use one but not the other?</li>
+</ol>
+</section>
+<section id="research-questions" class="slide level2">
+<h2>Research questions</h2>
+<p><span class="citation" data-cites="Hilpert2023Meaning">Hilpert, Saavedra, and Rains (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>:</p>
 <ul>
-<li class="fragment"><strong>language use</strong> (e.g.&nbsp;collocational patterns such as <em>pretty woman</em>)</li>
-<li class="fragment"><strong>linguistic variation</strong> across different text types or communities (e.g.&nbsp;neologisms such as <em>smash</em>)</li>
-<li class="fragment"><strong>language change</strong> (e.g.&nbsp;<em>going to</em> future)</li>
+<li>Do clippings (e.g.&nbsp;<em>dorm</em> &lt; <em>dormitory</em>) and their source words differ in meaning?</li>
+<li>Are there semantic or pragmatic differences?</li>
+<li>Are there systematic differences in meaning between clippings and source words?</li>
+</ul>
+</section>
+<section id="abstract" class="slide level2">
+<h2>Abstract</h2>
+<ul>
+<li><strong>Goal</strong>: study meaning differences between clippings and source words.</li>
+<li><strong>Method</strong>: corpus data and distributional semantics.</li>
+<li><strong>Data</strong>: 50 English clippings, 100 examples each from COCA.</li>
+<li><strong>Findings</strong>:
+<ul>
+<li>clippings appear in more “involved” contexts (→ signal familiarity).</li>
+<li>clippings and source words have different distributional profiles.</li>
+</ul></li>
+<li><strong>Framework</strong>: Construction Grammar, Principle of No Synonymy.</li>
+</ul>
+</section></section>
+<section>
+<section id="theoretical-framework" class="title-slide slide level1 center">
+<h1>Theoretical framework</h1>
+
+</section>
+<section id="does-clipping-involve-a-change-in-meaning" class="slide level2">
+<h2>Does clipping involve a change in meaning?</h2>
+<p>One view: clippings and source words are alternatives that only differ in form, not meaning.</p>
+<p>Examples:</p>
+<ul>
+<li><em>mic</em> vs.&nbsp;<em>microphone</em></li>
+<li><em>lab</em> vs.&nbsp;<em>laboratory</em></li>
+<li><em>ad</em> vs.&nbsp;<em>advertisement</em></li>
 </ul>
 <div class="fragment">
-<p>What corpora have you heard of or used? (e.g.&nbsp;COCA, BNC, Google Books)</p>
+<p><strong>But</strong>: do <em>brother</em> and <em>bro</em> have the same meaning?</p>
 </div>
 </section>
-<section id="goals-and-approach" class="slide level2">
-<h2>Goals and approach</h2>
-<p>For a clear and accessible book-length introduction to corpus linguistics, see <span class="citation" data-cites="Stefanowitsch2020CorpusLinguistics">Stefanowitsch (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>.</p>
+<section id="the-principle-of-no-synonymy" class="slide level2">
+<h2>The Principle of No Synonymy</h2>
 <ul>
-<li class="fragment">The primary goal of corpus linguistics is to investigate <strong>linguistic phenomena and patterns</strong> by examining <strong>real-world language usage</strong>.</li>
-<li class="fragment">This approach contrasts with more traditional linguistic methods that rely heavily on <strong>introspection</strong> and <strong>theoretical speculation</strong> (e.g.&nbsp;Chomsky).</li>
-<li class="fragment">Corpus linguistics has gained significant momentum in recent years, thanks to advances in <strong>data</strong> (e.g.&nbsp;social-media and web corpora) and <strong>methods</strong> (e.g.&nbsp;social-network analysis, machine learning).</li>
-<li class="fragment">From a <em>usage-based</em> perspective, <strong>linguistic structure and knowledge emerge from the patterns</strong> that speakers encounter in their experience with language.</li>
+<li>A difference in linguistic form always indicates a difference in meaning <span class="citation" data-cites="Goldberg1995ConstructionsConstruction">(<a href="#/references" role="doc-biblioref" onclick="">Goldberg 1995</a>)</span>.</li>
+<li>“Meaning” is broad: semantic, discourse-functional, interpersonal, etc.</li>
+<li><strong>Prediction</strong>: clippings and source words should have distinct distributions, reflecting functional differences.</li>
 </ul>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Think of 3 sentences the words <em>brother</em> and <em>bro</em> could appear in.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="what-is-corpus-linguistics-good-for" class="slide level2">
-<h2>What is corpus linguistics good for?</h2>
-<p>What advantages might corpus linguistics offer over introspective methods? Consider:</p>
+<section id="the-distributional-hypothesis" class="slide level2">
+<h2>The Distributional hypothesis</h2>
 <ul>
-<li>What kinds of questions can we answer with corpus data that we couldn’t answer (well) otherwise?</li>
-<li>What are potential limitations or challenges?</li>
+<li>The meaning of words is reflected in their contextual elements in language use: <strong>“You shall know a word by the company it keeps” </strong><span class="citation" data-cites="Firth1957SynopsisLinguistic">(<a href="#/references" role="doc-biblioref" onclick="">Firth 1957</a>)</span>.</li>
+<li>Words that appear in similar contexts share aspects of their meanings.</li>
+<li>Example: <em>happy</em> and <em>joyful</em> share collocates like <em>very</em>, <em>feel</em>, <em>make</em>, <em>person</em>.</li>
 </ul>
 </section>
 <section class="slide level2">
 
-<h3 id="advantages-of-corpus-linguistics">Advantages of corpus linguistics</h3>
+<h3 id="cognitive-linguistic-models-of-the-lexicon">Cognitive-linguistic models of the lexicon</h3>
+<div class="quarto-layout-panel" data-layout="[40,60]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<p><img data-src="../04_dictionaries/att/image_1698948775221_0.png"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: center;">
+<p><img data-src="../04_dictionaries/att/image_1698948757878_0.png"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="word-embeddings-bandyopadhyay2022interactive" class="slide level2">
+<h2>Word embeddings <span class="citation" data-cites="Bandyopadhyay2022Interactive">(<a href="#/references" role="doc-biblioref" onclick="">Bandyopadhyay et al. 2022</a>)</span></h2>
+<div class="quarto-layout-panel" data-layout="[50,50]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="../04_dictionaries/att/image_1698966813935_0.png" width="600"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<figcaption>TensorFlow Projector</figcaption>
+<p><img data-src="../04_dictionaries/att/image_1700082493780_0.png" width="500"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="exercise">Exercise</h3>
 <div class="small">
+<p><a href="http://vectors.nlpl.eu/explore/embeddings/en/">Word Embeddings Explorer</a></p>
+<ol type="1">
+<li>Explore synonyms and antonyms (Similar words)
 <ul>
-<li class="fragment"><strong>Authentic language data</strong>: grounded in real-world language use, not idealised examples</li>
-<li class="fragment"><strong>Quantitative analysis</strong>: frequency counts and statistical measures reveal patterns
-<ul>
-<li class="fragment">e.g.&nbsp;<em>going to</em> vs <em>will</em> for future tense across text types</li>
+<li>Enter a seed word (e.g., <code>happy_ADJ</code>).</li>
+<li>Inspect the 5 nearest neighbours.</li>
+<li>Compare with an antonym (e.g., <code>sad_ADJ</code>).</li>
 </ul></li>
-<li class="fragment"><strong>Collocations and constructions</strong>: identify form-meaning pairings in large datasets
+<li>Visualise semantic clusters (Visualization)
 <ul>
-<li class="fragment">e.g.&nbsp;<em>strong tea</em> vs <em>powerful tea</em>; <em>make a decision</em> vs <em>take a decision</em></li>
+<li>Choose two related groups (e.g., animals vs furniture).</li>
+<li>Plot in vector space; describe visible groupings.</li>
 </ul></li>
-<li class="fragment"><strong>Variability and context sensitivity</strong>: examine language across genres, registers, and contexts
+<li>Word analogies (Calculator)
 <ul>
-<li class="fragment">e.g.&nbsp;<em>purchase</em> vs <em>buy</em> in formal vs informal contexts</li>
+<li>Try analogies, e.g., <code>male_ADJ : doctor_NOUN = female_ADJ : ?</code>.</li>
+<li>Test several analogies; note successes and failures.</li>
 </ul></li>
-<li class="fragment"><strong>Language change</strong>: track diachronic and synchronic patterns
+<li>Investigate ambiguity
 <ul>
-<li class="fragment">e.g.&nbsp;rise of <em>selfie</em> over time; decline of <em>telephone</em> in favour of <em>phone</em></li>
+<li>Pick a polysemous word (e.g., <em>bank</em>).</li>
+<li>Analyse how neighbours reflect different senses.</li>
 </ul></li>
-<li class="fragment"><strong>Data-driven applications</strong>: inform language teaching and learning materials
-<ul>
-<li class="fragment">e.g.&nbsp;vocabulary lists based on corpus frequency; collocation dictionaries</li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="key-concepts" class="slide level2">
-<h2>Key concepts</h2>
-<h3 id="corpus-types">Corpus types</h3>
-<p>A <strong>corpus</strong> is a large, <strong>structured collection of texts</strong> that serves as the basis for <strong>linguistic analysis</strong>.</p>
-<div class="fragment">
-<p>What kinds of research questions could you answer with a corpus that includes many text types versus one focused on a specific domain?</p>
-</div>
-<div class="fragment small">
-<h4 id="examples">Examples</h4>
-<ul>
-<li><strong>General</strong>: BNC, COCA, Google Books — wide variety of text types
-<ul>
-<li>e.g.&nbsp;How does the frequency of <em>going to</em> vs <em>will</em> vary across different text types?</li>
-</ul></li>
-<li><strong>Specialised</strong>: BNC 2014 Spoken, academic journal corpora, learner corpora — specific genres or domains
-<ul>
-<li>e.g.&nbsp;What collocations do learners use with <em>make</em> vs <em>do</em> in academic writing?</li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="annotation">Annotation</h3>
-<p><strong>Annotation</strong> refers to the process of adding <strong>metadata</strong> or <strong>linguistic information</strong> to a corpus, such as <strong>part-of-speech tags</strong>, <strong>syntactic structure</strong>, or <strong>semantic roles</strong>.</p>
-<div class="fragment">
-<p>Metadata: data <strong>about</strong> language use on several levels:</p>
-<ul>
-<li>corpus
-<ul>
-<li>texts: author, text type, register, topic
-<ul>
-<li>paragraphs or utterances
-<ul>
-<li>running words (tokens): word class, lemmatisation
-<ul>
-<li>tokens: <em>walk</em>, <em>walks</em>, <em>walked</em></li>
-<li>type, lexeme, lemma: WALK <span class="math inline">\(^v\)</span></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="core-tools-concordance-collocations-frequency">Core tools: concordance, collocations, frequency</h3>
-<ul>
-<li class="fragment"><strong>Concordance</strong>: search for words, phrases, or patterns and display results <strong>in context</strong>
-<ul>
-<li class="fragment">e.g.&nbsp;examining all instances of <em>break down</em> to distinguish phrasal verb vs compound noun usage</li>
-</ul></li>
-<li class="fragment"><strong>Collocation</strong>: <strong>co-occurrence of words</strong> within a specific context or proximity
-<ul>
-<li class="fragment">e.g.&nbsp;identifying that <em>strong</em> collocates with <em>tea</em> but <em>powerful</em> does not</li>
-</ul></li>
-<li class="fragment"><strong>Frequency analysis</strong>: counting occurrences of linguistic features to identify patterns and trends
-<ul>
-<li class="fragment">e.g.&nbsp;comparing frequency of <em>selfie</em> vs <em>self-portrait</em> across different time periods</li>
-</ul></li>
-</ul>
-<div class="fragment">
-<p>What might we discover by comparing the collocations of <em>pretty</em> vs <em>beautiful</em>?</p>
+</ol>
 </div>
 </section></section>
-<section id="sketch-engine-tutorial" class="title-slide slide level1 center">
-<h1>Sketch Engine tutorial</h1>
-<p><a href="https://wuqui.github.io/SkEtut/" class="uri">https://wuqui.github.io/SkEtut/</a></p>
-</section>
-
 <section>
-<section id="practice-using-sketch-engine-for-lexicology" class="title-slide slide level1 center">
-<h1>Practice: using Sketch Engine for lexicology</h1>
-
+<section id="studying-the-meaning-of-clippings-in-the-coca" class="title-slide slide level1 center">
+<h1>Studying the meaning of clippings in the COCA</h1>
+<p><span class="citation" data-cites="Hilpert2023Meaning">Hilpert, Saavedra, and Rains (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
 </section>
-<section id="example-analysis-in-bnc-2014-spoken" class="slide level2 small">
-<h2>Example analysis in BNC 2014 Spoken</h2>
-<p>Steps we will walk through together:</p>
+<section id="data-sample" class="slide level2 small">
+<h2>Data</h2>
 <ul>
-<li class="fragment">Open <strong>BNC 2014 Spoken</strong> and explore the <strong>corpus information</strong> (size, time period, kinds of spoken data, available <strong>text types</strong> / metadata such as age, gender, education).</li>
-<li class="fragment">Run <strong>simple concordances</strong> for two items (e.g.&nbsp;<em>yeah</em> vs <em>yes</em>) and look at a few lines for each to see how they are used.</li>
-<li class="fragment">Check <strong>overall frequency</strong> for both items and then use <strong>frequency by text type</strong> to see whether their usage differs across text type groups.</li>
-<li class="fragment">If time allows, briefly look at a <strong>word sketch / collocation view</strong> for each item to see typical lexical partners.</li>
+<li>Sample of 50 English clippings and their corresponding source words.</li>
+<li>Corpus data from COCA <span class="citation" data-cites="Davies2008CorpusContemporary">(<a href="#/references" role="doc-biblioref" onclick="">Davies 2008</a>)</span> for each clipping and source word.</li>
 </ul>
-</section>
+
+<img data-src="att/image_1683629476811_0.png" class="r-stretch"></section>
+<section id="method" class="slide level2">
+<h2>Method</h2>
+<p>Collocation analysis to investigate semantic profiles across contexts.</p>
+
+<img data-src="att/image_1683630867757_0.png" class="r-stretch"></section>
+<section id="results" class="slide level2">
+<h2>Results</h2>
+<h3 id="variation-across-text-types">Variation across text types</h3>
+
+<img data-src="att/image_1683630755727_0.png" class="r-stretch"></section>
 <section class="slide level2">
 
-<h3 id="demo-screencast">Demo screencast</h3>
-<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="att/freq-across-text-types.mp4"></video>
+<h3 id="semantic-differences">Semantic differences</h3>
+<p>Differences in collocations for <em>cardiovascular</em> vs <em>cardio</em></p>
+
+<img data-src="att/image_1683630867757_0.png" class="r-stretch"></section></section>
+<section>
+<section id="practice-studying-meanings-using-sketch-engine" class="title-slide slide level1 center">
+<h1>Practice: studying meanings using Sketch Engine</h1>
+
 </section>
-<section id="task-overview" class="slide level2">
-<h2>Task overview</h2>
-<p>Work in groups with <strong>BNC 2014 Spoken</strong>. There will be <strong>three groups</strong>, each working on a different set of lexical items but following the <strong>same steps</strong>. You have <strong>about 20 minutes</strong> for the corpus work and then <strong>around 3 minutes per group</strong> to report your findings.</p>
-<p>During the work phase, each group should:</p>
+<section id="your-task" class="slide level2">
+<h2>Your Task</h2>
+<ol type="1">
+<li>Choose one of the word pairs from <a href="#/data-sample">the sample above</a> <span class="citation" data-cites="Hilpert2023Meaning">(<a href="#/references" role="doc-biblioref" onclick="">Hilpert, Saavedra, and Rains 2023</a>)</span>.</li>
+<li>Use the collocations and word sketches in the <a href="https://www.sketchengine.eu/ententen-english-corpus/">enTenTen21</a> corpus to analyse their meanings.</li>
+<li>Use the <a href="#/guiding-questions">Guiding Questions</a> below to structure your analysis.</li>
+<li>Take notes in <a href="https://1drv.ms/p/c/9a2ec97d593520f9/IQDlqTdaQcKqRYKvlGBjXmTLAdP_wF-qXEH-2Aj8WIGvOqc">this PowerPoint file</a>.</li>
+<li>Share your findings with the class.</li>
+</ol>
+</section>
+<section id="collocation-analysis" class="slide level2">
+<h2>Collocation analysis</h2>
+<h3 id="run-a-query">1. Run a query</h3>
+<p>e.g.&nbsp;<code>[word="brother" &amp; tag="N.*"]</code></p>
+
+<img data-src="att/cql-builder-brother.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="click-the-collocation-analysis-icon">2. Click the collocation analysis icon</h3>
+
+<img data-src="att/image_1684831483384_0.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="configure-window-range-and-statistics">3. Configure window range and statistics</h3>
+
+<img data-src="att/image_1684831570709_0.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="view-the-results-and-test-collocation-measures">4. View the results and test collocation measures</h3>
+
+<img data-src="att/image_1684832062090_0.png" class="r-stretch"></section>
+<section id="word-sketches-single-forms" class="slide level2">
+<h2>Word sketches: Single forms</h2>
+<h3 id="generate-a-word-sketch-for-a-clipped-form-e.g.-exam-specifying-the-word-class.">1. Generate a word sketch for a clipped form (e.g.&nbsp;<em>exam</em>), specifying the word class.</h3>
+
+<img data-src="att/Pasted-image-20250612085353.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="examine-syntactic-contexts.">2. Examine syntactic contexts.</h3>
+
+<img data-src="att/word-sketch_examination.png" class="r-stretch"></section>
+<section class="slide level2">
+
+
+<img data-src="att/word-sketch_exam.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="visualise-results.">3. Visualise results.</h3>
+
+<img data-src="att/Pasted-image-20250612085617.png" class="r-stretch"></section>
+<section id="word-sketches-comparison" class="slide level2">
+<h2>Word sketches: Comparison</h2>
+<h3 id="compare-source-words-and-clipped-forms-e.g.-examination-vs-exam.">1. Compare source words and clipped forms (e.g.&nbsp;<em>examination</em> vs <em>exam</em>).</h3>
+
+<img data-src="att/Pasted-image-20250612085053.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="review-shared-and-unique-collocates.">2. Review shared and unique collocates.</h3>
+
+<img data-src="att/Pasted-image-20250612084821.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="inspect-collocations-in-detail.">3. Inspect collocations in detail.</h3>
+
+<img data-src="att/Pasted-image-20250612085147.png" class="r-stretch"></section>
+<section id="guiding-questions" class="slide level2">
+<h2>Guiding questions</h2>
+<ol type="1">
+<li>What is the general semantic signature of the source word?</li>
+<li>What is the general semantic signature of the clipped form?</li>
+<li>In what ways do they differ (stylistic, social, formality)?</li>
+<li>Do they occur in different syntagmatic contexts despite similar denotation?</li>
+<li>Does the clipped form have a wider or narrower scope of meaning?</li>
+</ol>
+</section></section>
+<section id="summary" class="title-slide slide level1 center">
+<h1>Summary</h1>
 <ul>
-<li>explore basic <strong>corpus information</strong> for BNC 2014 Spoken, including which <strong>text types</strong> / metadata categories are available (e.g.&nbsp;age, gender, education)</li>
-<li>run at least one <strong>simple concordance query</strong></li>
-<li>inspect <strong>basic frequency</strong> (and, if time, simple collocation/word sketch information)</li>
-<li>add notes directly to the <a href="https://1drv.ms/p/c/9a2ec97d593520f9/IQA8TwK88pHzSqdixkrzif_XAZzB0bvMxIZ-kW0j0fhK4uc">shared PowerPoint file</a> that you will use for your report</li>
+<li><strong>A difference in form (often) implies a difference in meaning.</strong> (Principle of No Synonymy)</li>
+<li><strong>Meaning is use.</strong> The contexts a word appears in tell us about its function. (Distributional Hypothesis)</li>
+<li><strong>Clippings are not just lazy shortcuts.</strong> They develop unique semantic, pragmatic, and social functions, often signalling familiarity and appearing in more “involved” contexts.</li>
 </ul>
 </section>
-<section id="task-1-intensifiers-really-vs-very" class="slide level2 small">
-<h2>Task 1: Intensifiers — <em>really</em> vs <em>very</em></h2>
-<p><strong>Question</strong>: How are <em>really</em> and <em>very</em> used as intensifiers in spoken English?</p>
-<p>Steps:</p>
-<ol type="1">
-<li>In Sketch Engine, select the corpus <strong>BNC 2014 Spoken</strong>.</li>
-<li>Open the <strong>corpus information</strong> view and note down: approximate size, time period, what kinds of spoken data it contains, and which <strong>text types</strong> / metadata dimensions are available (e.g.&nbsp;age, gender, education).</li>
-<li>Run a <strong>simple concordance</strong> search for lemma <em>really</em> and then for lemma <em>very</em> (one at a time) in BNC 2014 Spoken. Skim a few lines to see how they are used.</li>
-<li>Use a <strong>frequency or word list view</strong> (or the frequency information in the concordance results) to compare how frequent <em>really</em> and <em>very</em> are overall.</li>
-<li>Choose <strong>one “text type” dimension</strong> (as defined in Sketch Engine), such as age group, education level, or gender, where you <strong>expect differences</strong> between <em>really</em> and <em>very</em>. Use the <strong>frequency by text type</strong> view in Sketch Engine to compare how frequent each item is across those groups.</li>
-<li>If time allows, have a quick look at a <strong>word sketch / collocation view</strong> for each item and see what typical collocates appear.</li>
-</ol>
-<p>For your report, decide what is most interesting to show (e.g.&nbsp;example concordance lines, overall frequencies, any noticeable text type differences, collocates) and prepare a short summary.</p>
-</section>
-<section id="task-2-reporting-verbs-say-vs-tell" class="slide level2 small">
-<h2>Task 2: Reporting verbs — <em>say</em> vs <em>tell</em></h2>
-<p><strong>Question</strong>: How are <em>say</em> and <em>tell</em> used in spoken English?</p>
-<p>Steps:</p>
-<ol type="1">
-<li>In Sketch Engine, select <strong>BNC 2014 Spoken</strong> (same corpus as Task 1).</li>
-<li>Look at the <strong>corpus information</strong> and briefly note size, period, main types of spoken interaction, and which <strong>text types</strong> / metadata dimensions are available (e.g.&nbsp;age, gender, education).</li>
-<li>Run a <strong>simple concordance</strong> search for lemma <em>say</em> and then for lemma <em>tell</em> (one at a time). Skim several lines for each.</li>
-<li>Use a <strong>frequency / word list</strong> or concordance frequency information to compare how frequent <em>say</em> and <em>tell</em> are in BNC 2014 Spoken overall.</li>
-<li>Choose <strong>one “text type” dimension</strong> (e.g.&nbsp;age, education, gender) where you <strong>expect differences</strong> in how <em>say</em> and <em>tell</em> are used. Use the <strong>frequency by text type</strong> view in Sketch Engine to compare how frequent each verb is across those groups.</li>
-<li>If time allows, inspect a <strong>basic collocation / word sketch</strong> view for <em>say</em> and <em>tell</em> to see what they typically co-occur with (e.g.&nbsp;pronouns, that-clauses).</li>
-</ol>
-</section>
-<section id="task-3-discourse-markers-like-vs-you-know" class="slide level2 small">
-<h2>Task 3: Discourse markers — <em>like</em> vs <em>you know</em></h2>
-<p><strong>Question</strong>: How are <em>like</em> and <em>you know</em> used as discourse markers in spoken English?</p>
-<p>Steps:</p>
-<ol type="1">
-<li>In Sketch Engine, select <strong>BNC 2014 Spoken</strong>.</li>
-<li>Use the <strong>corpus information</strong> to remind yourselves what kinds of spoken data are included (e.g.&nbsp;everyday conversations, interviews), and which <strong>text types</strong> / metadata dimensions you can use later (e.g.&nbsp;age, gender, education).</li>
-<li>Run a <strong>simple concordance</strong> search for <em>like</em> and then for <em>you know</em> (you may have to filter out some non-discourse uses of <em>like</em> by reading the lines carefully).</li>
-<li>Use a <strong>frequency / word list</strong> or frequency information from the concordance to compare how frequent <em>like</em> and <em>you know</em> are overall.</li>
-<li>Choose <strong>one “text type” dimension</strong> (e.g.&nbsp;age, education, gender) where you <strong>expect differences</strong> in how <em>like</em> and <em>you know</em> are used. Use the <strong>text type / metadata breakdown</strong> in Sketch Engine to compare how frequent each item is across those groups.</li>
-<li>If time allows, look at a <strong>collocation / word sketch</strong> view to see typical patterns (e.g.&nbsp;what comes before/after these items).</li>
-</ol>
-<p>For your report, decide what is most interesting to show (e.g.&nbsp;example concordance lines, overall frequencies, any noticeable text type differences, collocates) and prepare a short summary.</p>
-</section></section>
+
 <section id="references" class="title-slide slide level1 smaller scrollable">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-Stefanowitsch2020CorpusLinguistics" class="csl-entry" role="listitem">
-Stefanowitsch, Anatol. 2020. <em>Corpus Linguistics</em>. Berlin: Language Science Press. <a href="https://doi.org/10.5281/zenodo.3735822">https://doi.org/10.5281/zenodo.3735822</a>.
+<div id="ref-Bandyopadhyay2022Interactive" class="csl-entry" role="listitem">
+Bandyopadhyay, Saptarashmi, Jason Xu, Neel Pawar, and David Touretzky. 2022. <span>“Interactive <span>Visualizations</span> of <span>Word Embeddings</span> for <span>K-12 Students</span>.”</span> <em>Proceedings of the AAAI Conference on Artificial Intelligence</em> 36 (11): 12713–20. <a href="https://doi.org/10.1609/aaai.v36i11.21548">https://doi.org/10.1609/aaai.v36i11.21548</a>.
+</div>
+<div id="ref-Davies2008CorpusContemporary" class="csl-entry" role="listitem">
+Davies, Mark. 2008. <span>“The <span class="nocase">Corpus of Contemporary American English (COCA)</span>: 560 Million Words, 1990-Present.”</span> 2008. <a href="https://www.english-corpora.org/coca/">https://www.english-corpora.org/coca/</a>.
+</div>
+<div id="ref-Firth1957SynopsisLinguistic" class="csl-entry" role="listitem">
+Firth, John R. 1957. <em>A Synopsis of Linguistic Theory, 1930-1955</em>. Studies in <span>Linguistic Analysis</span>. <span>Special</span> Volume of the <span>Philological</span> Society. Oxford: Basil Blackwell.
+</div>
+<div id="ref-Goldberg1995ConstructionsConstruction" class="csl-entry" role="listitem">
+Goldberg, Adele. 1995. <em>Constructions - <span>A</span> Construction Grammar Approach to Argument Structure</em>. Chicago; London: University of Chicago Press.
+</div>
+<div id="ref-Hilpert2023Meaning" class="csl-entry" role="listitem">
+Hilpert, Martin, David Correia Saavedra, and Jennifer Rains. 2023. <span>“Meaning Differences Between <span>English</span> Clippings and Their Source Words: <span>A</span> Corpus-Based Study.”</span> <em>ICAME Journal</em> 47 (1): 19–37. <a href="https://doi.org/10.2478/icame-2023-0002">https://doi.org/10.2478/icame-2023-0002</a>.
 </div>
 </div>
 
@@ -785,7 +853,6 @@ Stefanowitsch, Anatol. 2020. <em>Corpus Linguistics</em>. Berlin: Language Scien
         }
       });
       </script>
-    <script>videojs(video_shortcode_videojs_video1);</script>
     
 
 </body></html>
