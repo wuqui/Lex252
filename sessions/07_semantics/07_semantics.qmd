@@ -31,6 +31,21 @@ params:
 - [Practice using Sketch Engine](#practice-studying-meanings-using-sketch-engine) — How can we analyse the meanings of words based on corpora? (collocations, word sketches)
 
 
+# Preparatory reading: @Hilpert2023Meaning
+
+## Study questions {.small}
+
+Please read the paper and prepare answers to these questions for our class discussion:
+
+1. What is the Principle of No Synonymy, and what does it predict about clippings and their source words?
+2. How do the authors use the principle "You shall know a word by the company it keeps" [@Firth1957SynopsisLinguistic] to study meaning differences? What do they compare?
+3. What does the paper find about clippings in "involved" vs. "informational" contexts? Which linguistic features distinguish them?
+4. Some clippings (e.g., *fridge*/*refrigerator*) are nearly synonymous, while others (e.g., *cardio*/*cardiovascular*) show clear differences. What factors might explain this variation?
+5. How can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.
+6. Choose one pair from Table 1 (e.g., *exam*/*examination*). What differences might you expect, and what would you look for in a corpus analysis?
+7. The paper offers two explanations for clippings in "involved" contexts: familiarity vs. efficiency. What evidence supports each? Which do you find more convincing?
+
+
 # The meaning of clippings {#the-meaning-of-clippings}
 
 ## Warm-up
