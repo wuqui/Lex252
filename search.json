@@ -1442,6 +1442,13 @@
     "text": "Using Microsoft Excel\n\nopen the CSV file\nsave the file as an Excel file (.xlsx extension)\nconvert the exported rows/columns to a Table\ncreate Pivot Tables to analyse the data\ncreate Pivot Charts to visualise the data\n\nModel Excel file"
   },
   {
+    "objectID": "sessions/07_semantics/slides.html#study-questions",
+    "href": "sessions/07_semantics/slides.html#study-questions",
+    "title": "7 — Semantics: studying meanings and functions of words",
+    "section": "Study questions",
+    "text": "Study questions\nPlease read the paper and prepare answers to these questions for our class discussion:\n\nWhat is the Principle of No Synonymy, and what does it predict about clippings and their source words?\nHow do the authors use the principle “You shall know a word by the company it keeps” (Firth 1957) to study meaning differences? What do they compare?\nWhat does the paper find about clippings in “involved” vs. “informational” contexts? Which linguistic features distinguish them?\nSome clippings (e.g., fridge/refrigerator) are nearly synonymous, while others (e.g., cardio/cardiovascular) show clear differences. What factors might explain this variation?\nHow can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.\nChoose one pair from Table 1 (e.g., exam/examination). What differences might you expect, and what would you look for in a corpus analysis?\nThe paper offers two explanations for clippings in “involved” contexts: familiarity vs. efficiency. What evidence supports each? Which do you find more convincing?"
+  },
+  {
     "objectID": "sessions/07_semantics/slides.html#warm-up",
     "href": "sessions/07_semantics/slides.html#warm-up",
     "title": "7 — Semantics: studying meanings and functions of words",
@@ -1552,6 +1559,13 @@
     "title": "7 — Semantics: studying meanings and functions of words",
     "section": "",
     "text": "Open slides version"
+  },
+  {
+    "objectID": "sessions/07_semantics/index.html#study-questions",
+    "href": "sessions/07_semantics/index.html#study-questions",
+    "title": "7 — Semantics: studying meanings and functions of words",
+    "section": "Study questions",
+    "text": "Study questions\nPlease read the paper and prepare answers to these questions for our class discussion:\n\nWhat is the Principle of No Synonymy, and what does it predict about clippings and their source words?\nHow do the authors use the principle “You shall know a word by the company it keeps” (Firth 1957) to study meaning differences? What do they compare?\nWhat does the paper find about clippings in “involved” vs. “informational” contexts? Which linguistic features distinguish them?\nSome clippings (e.g., fridge/refrigerator) are nearly synonymous, while others (e.g., cardio/cardiovascular) show clear differences. What factors might explain this variation?\nHow can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.\nChoose one pair from Table 1 (e.g., exam/examination). What differences might you expect, and what would you look for in a corpus analysis?\nThe paper offers two explanations for clippings in “involved” contexts: familiarity vs. efficiency. What evidence supports each? Which do you find more convincing?"
   },
   {
     "objectID": "sessions/07_semantics/index.html#warm-up",
