@@ -103,9 +103,9 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 {{< video https://www.youtube.com/watch?v=gjesfzWozo4 width=500 height=300 >}}
 :::
 
-:::: {.notes}
+::: {.notes}
 - 10:27–10:29
-::::
+:::
 
 ---
 
@@ -113,9 +113,9 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 
 "If you talk to someone about electricity, and then make them read the phrase *sham dock*, they might very well say *damn shock*, because of prior activation of related words; the Freudian slip depends upon a subject area being readily activated in the brain and brought out inadvertently, whether because of a word related in meaning or pronunciation."
 
-:::: {.notes}
+::: {.notes}
 - 10:29–10:30
-::::
+:::
 
 ---
 
@@ -128,9 +128,9 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 - Network structure: degree, clustering, multiplex links
   - e.g., *dog* linked to *cat* (semantic) and *log* (phonological)
 
-:::: {.notes}
+::: {.notes}
 - 10:30–10:31
-::::
+:::
 
 ---
 
@@ -174,7 +174,7 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
     - Analyse how neighbours reflect different senses.
 :::
 
-::: {.notes} -->
+::: {.notes}
 - 10:37–10:41
 - animals: `gorilla_NOUN,goat_NOUN,elephant_NOUN,cow_NOUN,dog_NOUN,hawk_NOUN,cat_NOUN,mouse_NOUN,baboon_NOUN,tiger_NOUN,fly_NOUN,hamster_NOUN`
 - furniture: `dresser_NOUN,desk_NOUN,nightstand_NOUN,bookshelf_NOUN,sofa_NOUN,stool_NOUN,chair_NOUN,bed_NOUN,table_NOUN,armchair_NOUN,cabinet_NOUN,bench_NOUN,ottoman_NOUN,wardrobe_NOUN`
@@ -237,9 +237,9 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 
 [^controlled-vocab]: Definitions use a restricted set of common words (typically 2,000–3,000) to avoid circular lookups; common in learner's dictionaries.
 
-:::: {.notes}
+::: {.notes}
 - 10:40–10:44
-::::
+:::
 
 ## Ordering senses
 
@@ -247,12 +247,12 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 - Impact on user tasks (history vs learning)
 - Criteria: earliest attested vs most typical/current; user intent matters
 
-:::: {.columns}
+::: {.columns}
 :::: {.column width="50%"}
 **Example: *tablet***  
 
-- OED (historical principle): ‘slab/stone or clay for writing; pill’ → later ‘flat touchscreen computer’  
-- Learner’s (prototype/frequency): foregrounds ‘flat touchscreen computer’ for modern users
+- OED (historical principle): 'slab/stone or clay for writing; pill' → later 'flat touchscreen computer'  
+- Learner's (prototype/frequency): foregrounds 'flat touchscreen computer' for modern users
 ::::
 :::: {.column width="50%"}
 **Consequences**
@@ -260,11 +260,11 @@ b) in the **sense of vocabulary** as seen from a systematic, synchronic point of
 - Chronology helps trace change and citations.
 - Prototype helps comprehension and production.
 ::::
-::::
+:::
 
-:::: {.notes}
+::: {.notes}
 - 10:44–10:48
-::::
+:::
 
 ## Usage labels
 
@@ -289,9 +289,9 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 - *woke* (adjective, politicised) — labels? _______  (stance/region?)
 - *soccer* in UK newspapers — labels? _______  (region/chronology?)
 
-:::: {.notes}
+::: {.notes}
 - 10:48–10:52
-::::
+:::
 
 ::: {.content-visible when-meta="params.show_solutions"}
 ---
@@ -319,9 +319,9 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 4. *commit/make a crime*
 5. *take/make a decision*
 
-:::: {.notes}
+::: {.notes}
 - 10:52–10:56
-::::
+:::
 
 ::: {.content-visible when-meta="params.show_solutions"}
 ---
@@ -344,9 +344,9 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
   - e.g., BrE vs AmE: American news sources over‑represent *make a decision* vs BrE *take a decision*
   - e.g., field bias: biomedical corpora inflate plural *data are* vs general usage *data is*
 
-:::: {.notes}
+::: {.notes}
 - 10:56–10:59
-::::
+:::
 
 ---
 
@@ -476,5 +476,5 @@ model Excel sheet: [URL](https://1drv.ms/x/c/9a2ec97d593520f9/EbTMdPaevpFJqGqbQT
 
 # References
 
-:::: {#refs}
-::::
+::: {#refs}
+:::
