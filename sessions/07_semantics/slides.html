@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Dr.&nbsp;Quirin Würschinger, LMU Munich">
-  <meta name="dcterms.date" content="2025-12-02">
+  <meta name="dcterms.date" content="2025-12-09">
   <title>Lex252 – 7 — Semantics: studying meanings and functions of words</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -164,15 +164,15 @@ Dr.&nbsp;Quirin Würschinger, LMU Munich
 </div>
 </div>
 
-  <p class="date">December 2, 2025</p>
+  <p class="date">December 9, 2025</p>
 </section>
 <section id="outline" class="title-slide slide level1 center">
 <h1>Outline</h1>
 <ul>
-<li><a href="#/the-meaning-of-clippings">The meaning of clippings</a> — Do <em>brother</em> and <em>bro</em> have the same meaning?</li>
-<li><a href="#/theoretical-framework">Theoretical framework</a> — Should they have different meanings? How can we study this? (Principle of No Synonymy, Distributional Hypothesis)</li>
-<li><a href="#/studying-the-meaning-of-clippings-in-the-coca">Studying the meaning of clippings in the COCA</a> — What do corpus data tell us? <span class="citation" data-cites="Hilpert2023Meaning">(<a href="#/references" role="doc-biblioref" onclick="">Hilpert, Saavedra, and Rains 2023</a>)</span></li>
-<li><a href="#/practice-studying-meanings-using-sketch-engine">Practice using Sketch Engine</a> — How can we analyse the meanings of words based on corpora? (collocations, word sketches)</li>
+<li><a href="#/discussion-notes">Discussion of study questions</a> — Q1–Q7 on <span class="citation" data-cites="Hilpert2023Meaning">Hilpert, Saavedra, and Rains (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></li>
+<li><a href="#/theoretical-framework">Theoretical framework</a> — Quick review: Principle of No Synonymy, Distributional Hypothesis</li>
+<li><a href="#/studying-the-meaning-of-clippings-in-the-coca">COCA study overview</a> — Data, method, and results</li>
+<li><a href="#/practice-studying-meanings-using-sketch-engine">Practice using Sketch Engine</a> — Analyse clipping pairs using collocations and word sketches</li>
 </ul>
 </section>
 
@@ -193,42 +193,150 @@ Dr.&nbsp;Quirin Würschinger, LMU Munich
 <li>Choose one pair from Table 1 (e.g., <em>exam</em>/<em>examination</em>). What differences might you expect, and what would you look for in a corpus analysis?</li>
 <li>The paper offers two explanations for clippings in “involved” contexts: familiarity vs.&nbsp;efficiency. What evidence supports each? Which do you find more convincing?</li>
 </ol>
-</section></section>
-<section>
-<section id="the-meaning-of-clippings" class="title-slide slide level1 center">
-<h1>The meaning of clippings</h1>
-
 </section>
-<section id="warm-up" class="slide level2">
-<h2>Warm-up</h2>
+<section id="q1-principle-of-no-synonymy" class="slide level2">
+<h2>Q1: Principle of No Synonymy</h2>
+<p>What is the Principle of No Synonymy, and what does it predict about clippings and their source words?</p>
+<ul>
+<li class="fragment"><strong>Definition</strong>: A difference in linguistic form always indicates a difference in meaning.</li>
+<li class="fragment"><strong>Broad notion of “meaning”</strong>: semantic content, but also discourse-functional, interpersonal, and information-structural aspects.</li>
+<li class="fragment"><strong>Prediction for clippings</strong>: clippings and source words should have distinct distributional characteristics that reflect functional differences.</li>
+</ul>
+<div class="fragment">
+<p><strong>Example</strong>: <em>brother</em> (kinship term) vs <em>bro</em> (address term for close friend within specific communities) — clearly distinct meanings despite shared etymology.</p>
+</div>
+</section>
+<section id="q2-distributional-hypothesis" class="slide level2">
+<h2>Q2: Distributional Hypothesis</h2>
+<p>How do the authors use the principle “You shall know a word by the company it keeps” to study meaning differences? What do they compare?</p>
+<div class="fragment">
+<p><strong>Two levels of comparison</strong>:</p>
 <ol type="1">
-<li>Brainstorm 3-5 clippings in English (e.g., <em>uni</em>, <em>info</em>).</li>
-<li>For each, discuss: Does the clipping mean <em>exactly</em> the same as the full word? If there are differences, what are they?</li>
-<li>Are there situations where you would use one but not the other?</li>
+<li class="fragment"><strong>Aggregate level</strong>: frequency of “involved” vs “informational” markers across all 50 pairs (Table 2)</li>
+<li class="fragment"><strong>Individual level</strong>: token-based semantic vector spaces using second-order collocates</li>
 </ol>
+</div>
 </section>
-<section id="research-questions" class="slide level2">
-<h2>Research questions</h2>
-<p><span class="citation" data-cites="Hilpert2023Meaning">Hilpert, Saavedra, and Rains (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>:</p>
+<section id="q3-involved-vs-informational-contexts" class="slide level2 small">
+<h2>Q3: Involved vs Informational Contexts</h2>
+<p>What does the paper find about clippings in “involved” vs “informational” contexts? Which linguistic features distinguish them?</p>
+<p>The paper tests 12 markers of involved vs informational text production.</p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Involved markers</strong> (more frequent with clippings):</p>
 <ul>
-<li>Do clippings (e.g.&nbsp;<em>dorm</em> &lt; <em>dormitory</em>) and their source words differ in meaning?</li>
-<li>Are there semantic or pragmatic differences?</li>
-<li>Are there systematic differences in meaning between clippings and source words?</li>
+<li>Private verbs (<em>know</em>, <em>think</em>, <em>believe</em>)</li>
+<li>Contractions (<em>it’s</em>, <em>you’re</em>)</li>
+<li>Present tense verbs</li>
+<li>1st and 2nd person pronouns (<em>I</em>, <em>you</em>)</li>
+<li>Indefinite pronouns (<em>something</em>, <em>anyone</em>)</li>
+<li>Pronoun <em>it</em></li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Informational markers</strong> (more frequent with source words):</p>
+<ul>
+<li>Complementiser <em>that</em></li>
+<li>Common nouns</li>
+<li>Prepositions</li>
+</ul>
+</div></div>
+</div>
 </section>
-<section id="abstract" class="slide level2">
-<h2>Abstract</h2>
+<section id="q4-variation-in-synonymy" class="slide level2">
+<h2>Q4: Variation in Synonymy</h2>
+<p>Some clippings (e.g., <em>fridge</em>/<em>refrigerator</em>) are nearly synonymous, while others (e.g., <em>cardio</em>/<em>cardiovascular</em>) show clear differences. What factors might explain this variation?</p>
+<div class="fragment">
+<p><strong>Clearly distinct pairs</strong> (Figure 3):</p>
+<div class="small">
 <ul>
-<li><strong>Goal</strong>: study meaning differences between clippings and source words.</li>
-<li><strong>Method</strong>: corpus data and distributional semantics.</li>
-<li><strong>Data</strong>: 50 English clippings, 100 examples each from COCA.</li>
-<li><strong>Findings</strong>:
-<ul>
-<li>clippings appear in more “involved” contexts (→ signal familiarity).</li>
-<li>clippings and source words have different distributional profiles.</li>
-</ul></li>
-<li><strong>Framework</strong>: Construction Grammar, Principle of No Synonymy.</li>
+<li><em>cardio</em>/<em>cardiovascular</em>: fitness vs medical contexts</li>
+<li><em>chemo</em>/<em>chemotherapy</em>: patient experience vs technical medical</li>
+<li><em>indie</em>/<em>independent</em>: underground culture vs general meaning</li>
+<li><em>dorm</em>/<em>dormitory</em>: includes tourist lodging uses</li>
 </ul>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Near-synonymous pairs</strong> (Figure 4):</p>
+<div class="small">
+<ul>
+<li><em>fridge</em>/<em>refrigerator</em>: same semantic facets accessible to both</li>
+<li><em>porn</em>/<em>pornography</em>: industry, psychological, legal aspects shared</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="q5-collocation-analysis" class="slide level2">
+<h2>Q5: Collocation Analysis</h2>
+<p>How can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.</p>
+<div class="fragment">
+<p><strong>Example: <em>cardio</em> vs <em>cardiovascular</em></strong></p>
+<p>Intuition might suggest they mean the same thing. But collocates reveal:</p>
+<div class="quarto-layout-panel" data-layout="[50,50]">
+<div class="quarto-layout-row">
+<div class="small quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><strong><em>cardiovascular</em></strong>:</p>
+<ul>
+<li><em>disease</em>, <em>diabetes</em>, <em>chronic</em></li>
+<li><em>renal</em>, <em>kidney</em>, <em>liver</em></li>
+<li>Medical/clinical contexts</li>
+</ul>
+</div>
+<div class="small quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><strong><em>cardio</em></strong>:</p>
+<ul>
+<li><em>workout</em>, <em>fat-blasting</em>, <em>calendar</em></li>
+<li><em>recipes</em>, <em>oranges</em>, <em>dishes</em></li>
+<li>Fitness/lifestyle contexts</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="q6-corpus-analysis-of-examexamination" class="slide level2 small">
+<h2>Q6: Corpus Analysis of <em>exam</em>/<em>examination</em></h2>
+<p>Choose one pair from Table 1 (e.g., <em>exam</em>/<em>examination</em>). What differences might you expect, and what would you look for in a corpus analysis?</p>
+<div class="fragment">
+<p><strong>Expected differences</strong>:</p>
+<ul>
+<li class="fragment"><em>exam</em>: academic/medical test contexts, informal register</li>
+<li class="fragment"><em>examination</em>: formal register, plus “investigation/scrutiny” sense</li>
+</ul>
+</div>
+<div class="fragment">
+<p><strong>What to look for in a corpus</strong>:</p>
+<ul>
+<li class="fragment"><strong>Collocates</strong>: <em>final exam</em>, <em>take an exam</em> vs <em>detailed examination</em>, <em>close examination</em>, <em>under examination</em></li>
+<li class="fragment"><strong>Text types</strong>: spoken/informal (blog, fiction) vs written/formal (academic, news)</li>
+<li class="fragment"><strong>Modifiers</strong>: different adjectives? (<em>tough exam</em> vs <em>thorough examination</em>)</li>
+<li class="fragment"><strong>Syntactic patterns</strong>: <em>examination of</em> (investigation) vs <em>exam in/on</em> (subject)?</li>
+</ul>
+</div>
+</section>
+<section id="q7-familiarity-vs-efficiency" class="slide level2">
+<h2>Q7: Familiarity vs Efficiency</h2>
+<p>The paper offers two explanations for clippings in “involved” contexts: familiarity vs efficiency. What evidence supports each? Which do you find more convincing?</p>
+<div class="fragment">
+<p><strong>Familiarity explanation</strong>:</p>
+<div class="small">
+<ul>
+<li>Clippings signal common ground, shared expertise, in-group membership</li>
+<li>Evidence: co-occurrence with “involved” markers; personal experience contexts</li>
+<li>Example: <em>chemo</em> in patient narratives vs <em>chemotherapy</em> in medical papers</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Efficiency explanation</strong>:</p>
+<div class="small">
+<ul>
+<li>Shorter forms preferred when predictable; saves processing effort</li>
+<li>Counter-evidence: predictability effects are limited when forms differ in meaning</li>
+</ul>
+</div>
+</div>
 </section></section>
 <section>
 <section id="theoretical-framework" class="title-slide slide level1 center">

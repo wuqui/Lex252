@@ -1449,25 +1449,53 @@
     "text": "Study questions\nPlease read the paper and prepare answers to these questions for our class discussion:\n\nWhat is the Principle of No Synonymy, and what does it predict about clippings and their source words?\nHow do the authors use the principle “You shall know a word by the company it keeps” (Firth 1957) to study meaning differences? What do they compare?\nWhat does the paper find about clippings in “involved” vs. “informational” contexts? Which linguistic features distinguish them?\nSome clippings (e.g., fridge/refrigerator) are nearly synonymous, while others (e.g., cardio/cardiovascular) show clear differences. What factors might explain this variation?\nHow can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.\nChoose one pair from Table 1 (e.g., exam/examination). What differences might you expect, and what would you look for in a corpus analysis?\nThe paper offers two explanations for clippings in “involved” contexts: familiarity vs. efficiency. What evidence supports each? Which do you find more convincing?"
   },
   {
-    "objectID": "sessions/07_semantics/slides.html#warm-up",
-    "href": "sessions/07_semantics/slides.html#warm-up",
+    "objectID": "sessions/07_semantics/slides.html#q1-principle-of-no-synonymy",
+    "href": "sessions/07_semantics/slides.html#q1-principle-of-no-synonymy",
     "title": "7 — Semantics: studying meanings and functions of words",
-    "section": "Warm-up",
-    "text": "Warm-up\n\nBrainstorm 3-5 clippings in English (e.g., uni, info).\nFor each, discuss: Does the clipping mean exactly the same as the full word? If there are differences, what are they?\nAre there situations where you would use one but not the other?"
+    "section": "Q1: Principle of No Synonymy",
+    "text": "Q1: Principle of No Synonymy\nWhat is the Principle of No Synonymy, and what does it predict about clippings and their source words?\n\nDefinition: A difference in linguistic form always indicates a difference in meaning.\nBroad notion of “meaning”: semantic content, but also discourse-functional, interpersonal, and information-structural aspects.\nPrediction for clippings: clippings and source words should have distinct distributional characteristics that reflect functional differences.\n\n\nExample: brother (kinship term) vs bro (address term for close friend within specific communities) — clearly distinct meanings despite shared etymology."
   },
   {
-    "objectID": "sessions/07_semantics/slides.html#research-questions",
-    "href": "sessions/07_semantics/slides.html#research-questions",
+    "objectID": "sessions/07_semantics/slides.html#q2-distributional-hypothesis",
+    "href": "sessions/07_semantics/slides.html#q2-distributional-hypothesis",
     "title": "7 — Semantics: studying meanings and functions of words",
-    "section": "Research questions",
-    "text": "Research questions\nHilpert, Saavedra, and Rains (2023):\n\nDo clippings (e.g. dorm &lt; dormitory) and their source words differ in meaning?\nAre there semantic or pragmatic differences?\nAre there systematic differences in meaning between clippings and source words?"
+    "section": "Q2: Distributional Hypothesis",
+    "text": "Q2: Distributional Hypothesis\nHow do the authors use the principle “You shall know a word by the company it keeps” to study meaning differences? What do they compare?\n\nTwo levels of comparison:\n\nAggregate level: frequency of “involved” vs “informational” markers across all 50 pairs (Table 2)\nIndividual level: token-based semantic vector spaces using second-order collocates"
   },
   {
-    "objectID": "sessions/07_semantics/slides.html#abstract",
-    "href": "sessions/07_semantics/slides.html#abstract",
+    "objectID": "sessions/07_semantics/slides.html#q3-involved-vs-informational-contexts",
+    "href": "sessions/07_semantics/slides.html#q3-involved-vs-informational-contexts",
     "title": "7 — Semantics: studying meanings and functions of words",
-    "section": "Abstract",
-    "text": "Abstract\n\nGoal: study meaning differences between clippings and source words.\nMethod: corpus data and distributional semantics.\nData: 50 English clippings, 100 examples each from COCA.\nFindings:\n\nclippings appear in more “involved” contexts (→ signal familiarity).\nclippings and source words have different distributional profiles.\n\nFramework: Construction Grammar, Principle of No Synonymy."
+    "section": "Q3: Involved vs Informational Contexts",
+    "text": "Q3: Involved vs Informational Contexts\nWhat does the paper find about clippings in “involved” vs “informational” contexts? Which linguistic features distinguish them?\nThe paper tests 12 markers of involved vs informational text production.\n\n\n\nInvolved markers (more frequent with clippings):\n\nPrivate verbs (know, think, believe)\nContractions (it’s, you’re)\nPresent tense verbs\n1st and 2nd person pronouns (I, you)\nIndefinite pronouns (something, anyone)\nPronoun it\n\n\nInformational markers (more frequent with source words):\n\nComplementiser that\nCommon nouns\nPrepositions"
+  },
+  {
+    "objectID": "sessions/07_semantics/slides.html#q4-variation-in-synonymy",
+    "href": "sessions/07_semantics/slides.html#q4-variation-in-synonymy",
+    "title": "7 — Semantics: studying meanings and functions of words",
+    "section": "Q4: Variation in Synonymy",
+    "text": "Q4: Variation in Synonymy\nSome clippings (e.g., fridge/refrigerator) are nearly synonymous, while others (e.g., cardio/cardiovascular) show clear differences. What factors might explain this variation?\n\nClearly distinct pairs (Figure 3):\n\n\ncardio/cardiovascular: fitness vs medical contexts\nchemo/chemotherapy: patient experience vs technical medical\nindie/independent: underground culture vs general meaning\ndorm/dormitory: includes tourist lodging uses\n\n\n\n\nNear-synonymous pairs (Figure 4):\n\n\nfridge/refrigerator: same semantic facets accessible to both\nporn/pornography: industry, psychological, legal aspects shared"
+  },
+  {
+    "objectID": "sessions/07_semantics/slides.html#q5-collocation-analysis",
+    "href": "sessions/07_semantics/slides.html#q5-collocation-analysis",
+    "title": "7 — Semantics: studying meanings and functions of words",
+    "section": "Q5: Collocation Analysis",
+    "text": "Q5: Collocation Analysis\nHow can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.\n\nExample: cardio vs cardiovascular\nIntuition might suggest they mean the same thing. But collocates reveal:\n\n\n\ncardiovascular:\n\ndisease, diabetes, chronic\nrenal, kidney, liver\nMedical/clinical contexts\n\n\n\ncardio:\n\nworkout, fat-blasting, calendar\nrecipes, oranges, dishes\nFitness/lifestyle contexts"
+  },
+  {
+    "objectID": "sessions/07_semantics/slides.html#q6-corpus-analysis-of-examexamination",
+    "href": "sessions/07_semantics/slides.html#q6-corpus-analysis-of-examexamination",
+    "title": "7 — Semantics: studying meanings and functions of words",
+    "section": "Q6: Corpus Analysis of exam/examination",
+    "text": "Q6: Corpus Analysis of exam/examination\nChoose one pair from Table 1 (e.g., exam/examination). What differences might you expect, and what would you look for in a corpus analysis?\n\nExpected differences:\n\nexam: academic/medical test contexts, informal register\nexamination: formal register, plus “investigation/scrutiny” sense\n\n\n\nWhat to look for in a corpus:\n\nCollocates: final exam, take an exam vs detailed examination, close examination, under examination\nText types: spoken/informal (blog, fiction) vs written/formal (academic, news)\nModifiers: different adjectives? (tough exam vs thorough examination)\nSyntactic patterns: examination of (investigation) vs exam in/on (subject)?"
+  },
+  {
+    "objectID": "sessions/07_semantics/slides.html#q7-familiarity-vs-efficiency",
+    "href": "sessions/07_semantics/slides.html#q7-familiarity-vs-efficiency",
+    "title": "7 — Semantics: studying meanings and functions of words",
+    "section": "Q7: Familiarity vs Efficiency",
+    "text": "Q7: Familiarity vs Efficiency\nThe paper offers two explanations for clippings in “involved” contexts: familiarity vs efficiency. What evidence supports each? Which do you find more convincing?\n\nFamiliarity explanation:\n\n\nClippings signal common ground, shared expertise, in-group membership\nEvidence: co-occurrence with “involved” markers; personal experience contexts\nExample: chemo in patient narratives vs chemotherapy in medical papers\n\n\n\n\nEfficiency explanation:\n\n\nShorter forms preferred when predictable; saves processing effort\nCounter-evidence: predictability effects are limited when forms differ in meaning"
   },
   {
     "objectID": "sessions/07_semantics/slides.html#does-clipping-involve-a-change-in-meaning",
@@ -1568,25 +1596,53 @@
     "text": "Study questions\nPlease read the paper and prepare answers to these questions for our class discussion:\n\nWhat is the Principle of No Synonymy, and what does it predict about clippings and their source words?\nHow do the authors use the principle “You shall know a word by the company it keeps” (Firth 1957) to study meaning differences? What do they compare?\nWhat does the paper find about clippings in “involved” vs. “informational” contexts? Which linguistic features distinguish them?\nSome clippings (e.g., fridge/refrigerator) are nearly synonymous, while others (e.g., cardio/cardiovascular) show clear differences. What factors might explain this variation?\nHow can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.\nChoose one pair from Table 1 (e.g., exam/examination). What differences might you expect, and what would you look for in a corpus analysis?\nThe paper offers two explanations for clippings in “involved” contexts: familiarity vs. efficiency. What evidence supports each? Which do you find more convincing?"
   },
   {
-    "objectID": "sessions/07_semantics/index.html#warm-up",
-    "href": "sessions/07_semantics/index.html#warm-up",
+    "objectID": "sessions/07_semantics/index.html#q1-principle-of-no-synonymy",
+    "href": "sessions/07_semantics/index.html#q1-principle-of-no-synonymy",
     "title": "7 — Semantics: studying meanings and functions of words",
-    "section": "Warm-up",
-    "text": "Warm-up\n\nBrainstorm 3-5 clippings in English (e.g., uni, info).\nFor each, discuss: Does the clipping mean exactly the same as the full word? If there are differences, what are they?\nAre there situations where you would use one but not the other?"
+    "section": "Q1: Principle of No Synonymy",
+    "text": "Q1: Principle of No Synonymy\nWhat is the Principle of No Synonymy, and what does it predict about clippings and their source words?\n\n\nDefinition: A difference in linguistic form always indicates a difference in meaning.\nBroad notion of “meaning”: semantic content, but also discourse-functional, interpersonal, and information-structural aspects.\nPrediction for clippings: clippings and source words should have distinct distributional characteristics that reflect functional differences.\n\n\nExample: brother (kinship term) vs bro (address term for close friend within specific communities) — clearly distinct meanings despite shared etymology."
   },
   {
-    "objectID": "sessions/07_semantics/index.html#research-questions",
-    "href": "sessions/07_semantics/index.html#research-questions",
+    "objectID": "sessions/07_semantics/index.html#q2-distributional-hypothesis",
+    "href": "sessions/07_semantics/index.html#q2-distributional-hypothesis",
     "title": "7 — Semantics: studying meanings and functions of words",
-    "section": "Research questions",
-    "text": "Research questions\nHilpert, Saavedra, and Rains (2023):\n\nDo clippings (e.g. dorm &lt; dormitory) and their source words differ in meaning?\nAre there semantic or pragmatic differences?\nAre there systematic differences in meaning between clippings and source words?"
+    "section": "Q2: Distributional Hypothesis",
+    "text": "Q2: Distributional Hypothesis\nHow do the authors use the principle “You shall know a word by the company it keeps” to study meaning differences? What do they compare?\nTwo levels of comparison:\n\n\nAggregate level: frequency of “involved” vs “informational” markers across all 50 pairs (Table 2)\nIndividual level: token-based semantic vector spaces using second-order collocates"
   },
   {
-    "objectID": "sessions/07_semantics/index.html#abstract",
-    "href": "sessions/07_semantics/index.html#abstract",
+    "objectID": "sessions/07_semantics/index.html#q3-involved-vs-informational-contexts",
+    "href": "sessions/07_semantics/index.html#q3-involved-vs-informational-contexts",
     "title": "7 — Semantics: studying meanings and functions of words",
-    "section": "Abstract",
-    "text": "Abstract\n\nGoal: study meaning differences between clippings and source words.\nMethod: corpus data and distributional semantics.\nData: 50 English clippings, 100 examples each from COCA.\nFindings:\n\nclippings appear in more “involved” contexts (→ signal familiarity).\nclippings and source words have different distributional profiles.\n\nFramework: Construction Grammar, Principle of No Synonymy."
+    "section": "Q3: Involved vs Informational Contexts",
+    "text": "Q3: Involved vs Informational Contexts\nWhat does the paper find about clippings in “involved” vs “informational” contexts? Which linguistic features distinguish them?\nThe paper tests 12 markers of involved vs informational text production.\n\n\nInvolved markers (more frequent with clippings):\n\nPrivate verbs (know, think, believe)\nContractions (it’s, you’re)\nPresent tense verbs\n1st and 2nd person pronouns (I, you)\nIndefinite pronouns (something, anyone)\nPronoun it\n\n\nInformational markers (more frequent with source words):\n\nComplementiser that\nCommon nouns\nPrepositions"
+  },
+  {
+    "objectID": "sessions/07_semantics/index.html#q4-variation-in-synonymy",
+    "href": "sessions/07_semantics/index.html#q4-variation-in-synonymy",
+    "title": "7 — Semantics: studying meanings and functions of words",
+    "section": "Q4: Variation in Synonymy",
+    "text": "Q4: Variation in Synonymy\nSome clippings (e.g., fridge/refrigerator) are nearly synonymous, while others (e.g., cardio/cardiovascular) show clear differences. What factors might explain this variation?\nClearly distinct pairs (Figure 3):\n\n\ncardio/cardiovascular: fitness vs medical contexts\nchemo/chemotherapy: patient experience vs technical medical\nindie/independent: underground culture vs general meaning\ndorm/dormitory: includes tourist lodging uses\n\n\nNear-synonymous pairs (Figure 4):\n\n\nfridge/refrigerator: same semantic facets accessible to both\nporn/pornography: industry, psychological, legal aspects shared"
+  },
+  {
+    "objectID": "sessions/07_semantics/index.html#q5-collocation-analysis",
+    "href": "sessions/07_semantics/index.html#q5-collocation-analysis",
+    "title": "7 — Semantics: studying meanings and functions of words",
+    "section": "Q5: Collocation Analysis",
+    "text": "Q5: Collocation Analysis\nHow can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.\nExample: cardio vs cardiovascular\nIntuition might suggest they mean the same thing. But collocates reveal:\n\n\n\ncardiovascular:\n\ndisease, diabetes, chronic\nrenal, kidney, liver\nMedical/clinical contexts\n\n\n\ncardio:\n\nworkout, fat-blasting, calendar\nrecipes, oranges, dishes\nFitness/lifestyle contexts"
+  },
+  {
+    "objectID": "sessions/07_semantics/index.html#q6-corpus-analysis-of-examexamination",
+    "href": "sessions/07_semantics/index.html#q6-corpus-analysis-of-examexamination",
+    "title": "7 — Semantics: studying meanings and functions of words",
+    "section": "Q6: Corpus Analysis of exam/examination",
+    "text": "Q6: Corpus Analysis of exam/examination\nChoose one pair from Table 1 (e.g., exam/examination). What differences might you expect, and what would you look for in a corpus analysis?\nExpected differences:\n\n\nexam: academic/medical test contexts, informal register\nexamination: formal register, plus “investigation/scrutiny” sense\n\n\nWhat to look for in a corpus:\n\n\nCollocates: final exam, take an exam vs detailed examination, close examination, under examination\nText types: spoken/informal (blog, fiction) vs written/formal (academic, news)\nModifiers: different adjectives? (tough exam vs thorough examination)\nSyntactic patterns: examination of (investigation) vs exam in/on (subject)?"
+  },
+  {
+    "objectID": "sessions/07_semantics/index.html#q7-familiarity-vs-efficiency",
+    "href": "sessions/07_semantics/index.html#q7-familiarity-vs-efficiency",
+    "title": "7 — Semantics: studying meanings and functions of words",
+    "section": "Q7: Familiarity vs Efficiency",
+    "text": "Q7: Familiarity vs Efficiency\nThe paper offers two explanations for clippings in “involved” contexts: familiarity vs efficiency. What evidence supports each? Which do you find more convincing?\nFamiliarity explanation:\n\n\nClippings signal common ground, shared expertise, in-group membership\nEvidence: co-occurrence with “involved” markers; personal experience contexts\nExample: chemo in patient narratives vs chemotherapy in medical papers\n\n\nEfficiency explanation:\n\n\nShorter forms preferred when predictable; saves processing effort\nCounter-evidence: predictability effects are limited when forms differ in meaning"
   },
   {
     "objectID": "sessions/07_semantics/index.html#does-clipping-involve-a-change-in-meaning",
