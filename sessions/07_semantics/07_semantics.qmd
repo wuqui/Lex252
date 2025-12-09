@@ -7,6 +7,7 @@ metadata:
   linkprefix: ../../
 filters:
   - ../../filters/strip-revealjs-html.lua
+  - ../../filters/solution-blocks.lua
 format:
   html:
     output-file: index.html
@@ -16,7 +17,7 @@ format:
       - ../../slides.css
 format-links: false
 params:
-  show_solutions: true
+  show_solutions: false
 ---
 
 ::: {.content-hidden when-format="revealjs"}
@@ -54,7 +55,7 @@ Please read the paper and prepare answers to these questions for our class discu
 
 What is the Principle of No Synonymy, and what does it predict about clippings and their source words?
 
-::: {.incremental}
+::: {.sol .incremental}
 - **Definition**: A difference in linguistic form always indicates a difference in meaning.
 - **Broad notion of "meaning"**: semantic content, but also discourse-functional, interpersonal, and information-structural aspects.
 - **Prediction for clippings**: clippings and source words should have distinct distributional characteristics that reflect functional differences.
@@ -69,7 +70,9 @@ What is the Principle of No Synonymy, and what does it predict about clippings a
 
 . . .
 
+::: {.sol}
 **Example**: *brother* (kinship term) vs *bro* (address term for close friend within specific communities) — clearly distinct meanings despite shared etymology.
+:::
 
 ::: {.notes}
 - 10:17–10:22
@@ -93,9 +96,9 @@ How do the authors use the principle "You shall know a word by the company it ke
 
 . . .
 
+::: {.sol}
 **Two levels of comparison**:
 
-::: {.incremental}
 1. **Aggregate level**: frequency of "involved" vs "informational" markers across all 50 pairs (Table 2)
 2. **Individual level**: token-based semantic vector spaces using second-order collocates
 :::
@@ -111,12 +114,12 @@ How do the authors use the principle "You shall know a word by the company it ke
 
 What does the paper find about clippings in "involved" vs "informational" contexts? Which linguistic features distinguish them?
 
+
+::: {.sol .fragment}
 The paper tests 12 markers of involved vs informational text production.
 
-. . .
-
-::: {.columns}
-:::: {.column width="50%"}
+:::: {.columns}
+::::: {.column width="50%" .fragment}
 **Involved markers** (more frequent with clippings):
 
 - Private verbs (*know*, *think*, *believe*)
@@ -125,13 +128,14 @@ The paper tests 12 markers of involved vs informational text production.
 - 1st and 2nd person pronouns (*I*, *you*)
 - Indefinite pronouns (*something*, *anyone*)
 - Pronoun *it*
-::::
-:::: {.column width="50%"}
+:::::
+::::: {.column width="50%" .fragment}
 **Informational markers** (more frequent with source words):
 
 - Complementiser *that*
 - Common nouns
 - Prepositions
+:::::
 ::::
 :::
 
@@ -147,15 +151,13 @@ The paper tests 12 markers of involved vs informational text production.
 :::
 
 
-## Q4: Variation in Synonymy
+## Q4: Variation in Synonymy {.small}
 
 Some clippings (e.g., *fridge*/*refrigerator*) are nearly synonymous, while others (e.g., *cardio*/*cardiovascular*) show clear differences. What factors might explain this variation?
 
-. . .
-
+::: {.sol .fragment}
 **Clearly distinct pairs** (Figure 3):
 
-::: {.small}
 - *cardio*/*cardiovascular*: fitness vs medical contexts
 - *chemo*/*chemotherapy*: patient experience vs technical medical
 - *indie*/*independent*: underground culture vs general meaning
@@ -173,11 +175,9 @@ Some clippings (e.g., *fridge*/*refrigerator*) are nearly synonymous, while othe
 - *bro* is the clearest example of complete semantic divergence (no longer a kinship term)
 :::
 
-. . .
-
+::: {.sol .fragment}
 **Near-synonymous pairs** (Figure 4):
 
-::: {.small}
 - *fridge*/*refrigerator*: same semantic facets accessible to both
 - *porn*/*pornography*: industry, psychological, legal aspects shared
 :::
@@ -192,28 +192,27 @@ Some clippings (e.g., *fridge*/*refrigerator*) are nearly synonymous, while othe
 
 How can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.
 
-. . .
-
+::: {.sol .fragment}
 **Example: *cardio* vs *cardiovascular***
 
 Intuition might suggest they mean the same thing. But collocates reveal:
 
-::: {layout="[50,50]"}
-::: {.small}
+:::: {layout="[50,50]"}
+::::: {.small}
 ***cardiovascular***:
 
 - *disease*, *diabetes*, *chronic*
 - *renal*, *kidney*, *liver*
 - Medical/clinical contexts
-:::
-
-::: {.small}
+:::::
+::::: {.small}
 ***cardio***:
 
 - *workout*, *fat-blasting*, *calendar*
 - *recipes*, *oranges*, *dishes*
 - Fitness/lifestyle contexts
-:::
+:::::
+::::
 :::
 
 ::: {.notes}
@@ -233,11 +232,9 @@ Intuition might suggest they mean the same thing. But collocates reveal:
 
 Choose one pair from Table 1 (e.g., *exam*/*examination*). What differences might you expect, and what would you look for in a corpus analysis?
 
-. . .
-
+::: {.sol .fragment}
 **Expected differences**:
 
-::: {.incremental}
 - *exam*: academic/medical test contexts, informal register
 - *examination*: formal register, plus "investigation/scrutiny" sense
 :::
@@ -252,15 +249,15 @@ Choose one pair from Table 1 (e.g., *exam*/*examination*). What differences migh
 - This is a good example of partial synonymy with specific non-overlapping domains
 :::
 
-. . .
-
+::: {.sol}
 **What to look for in a corpus**:
 
-::: {.incremental}
+:::: {.incremental}
 - **Collocates**: *final exam*, *take an exam* vs *detailed examination*, *close examination*, *under examination*
 - **Text types**: spoken/informal (blog, fiction) vs written/formal (academic, news)
 - **Modifiers**: different adjectives? (*tough exam* vs *thorough examination*)
 - **Syntactic patterns**: *examination of* (investigation) vs *exam in/on* (subject)?
+::::
 :::
 
 ::: {.notes}
@@ -270,15 +267,13 @@ Choose one pair from Table 1 (e.g., *exam*/*examination*). What differences migh
 :::
 
 
-## Q7: Familiarity vs Efficiency
+## Q7: Familiarity vs Efficiency {.small}
 
 The paper offers two explanations for clippings in "involved" contexts: familiarity vs efficiency. What evidence supports each? Which do you find more convincing?
 
-. . .
-
+::: {.sol .fragment}
 **Familiarity explanation**:
 
-::: {.small}
 - Clippings signal common ground, shared expertise, in-group membership
 - Evidence: co-occurrence with "involved" markers; personal experience contexts
 - Example: *chemo* in patient narratives vs *chemotherapy* in medical papers
@@ -291,11 +286,9 @@ The paper offers two explanations for clippings in "involved" contexts: familiar
 - For most clippings, semantic factors likely dominate
 :::
 
-. . .
-
+::: {.sol .fragment}
 **Efficiency explanation**:
 
-::: {.small}
 - Shorter forms preferred when predictable; saves processing effort
 - Counter-evidence: predictability effects are limited when forms differ in meaning
 :::
