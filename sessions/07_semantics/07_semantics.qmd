@@ -17,7 +17,7 @@ format:
       - ../../slides.css
 format-links: false
 params:
-  show_solutions: false
+  show_solutions: true
 ---
 
 ::: {.content-hidden when-format="revealjs"}
@@ -51,11 +51,11 @@ Please read the paper and prepare answers to these questions for our class discu
 7. The paper offers two explanations for clippings in "involved" contexts: familiarity vs. efficiency. What evidence supports each? Which do you find more convincing?
 
 
-## Q1: Principle of No Synonymy
+## Q1: Principle of No Synonymy {.sol}
 
 What is the Principle of No Synonymy, and what does it predict about clippings and their source words?
 
-::: {.sol .incremental}
+::: {.incremental}
 - **Definition**: A difference in linguistic form always indicates a difference in meaning.
 - **Broad notion of "meaning"**: semantic content, but also discourse-functional, interpersonal, and information-structural aspects.
 - **Prediction for clippings**: clippings and source words should have distinct distributional characteristics that reflect functional differences.
@@ -70,9 +70,7 @@ What is the Principle of No Synonymy, and what does it predict about clippings a
 
 . . .
 
-::: {.sol}
 **Example**: *brother* (kinship term) vs *bro* (address term for close friend within specific communities) — clearly distinct meanings despite shared etymology.
-:::
 
 ::: {.notes}
 - 10:17–10:22
@@ -80,7 +78,7 @@ What is the Principle of No Synonymy, and what does it predict about clippings a
 :::
 
 
-## Q2: Distributional Hypothesis
+## Q2: Distributional Hypothesis {.sol}
 
 ::: {.notes}
 - 10:22–10:27
@@ -96,12 +94,10 @@ How do the authors use the principle "You shall know a word by the company it ke
 
 . . .
 
-::: {.sol}
 **Two levels of comparison**:
 
 1. **Aggregate level**: frequency of "involved" vs "informational" markers across all 50 pairs (Table 2)
 2. **Individual level**: token-based semantic vector spaces using second-order collocates
-:::
 
 ::: {.notes}
 - Second-order collocates: not just what appears next to the word, but what appears next to *those* words
@@ -110,12 +106,12 @@ How do the authors use the principle "You shall know a word by the company it ke
 :::
 
 
-## Q3: Involved vs Informational Contexts {.small}
+## Q3: Involved vs Informational Contexts {.small .sol}
 
 What does the paper find about clippings in "involved" vs "informational" contexts? Which linguistic features distinguish them?
 
+. . .
 
-::: {.sol .fragment}
 The paper tests 12 markers of involved vs informational text production.
 
 :::: {.columns}
@@ -151,18 +147,18 @@ The paper tests 12 markers of involved vs informational text production.
 :::
 
 
-## Q4: Variation in Synonymy {.small}
+## Q4: Variation in Synonymy {.small .sol}
 
 Some clippings (e.g., *fridge*/*refrigerator*) are nearly synonymous, while others (e.g., *cardio*/*cardiovascular*) show clear differences. What factors might explain this variation?
 
-::: {.sol .fragment}
+. . .
+
 **Clearly distinct pairs** (Figure 3):
 
 - *cardio*/*cardiovascular*: fitness vs medical contexts
 - *chemo*/*chemotherapy*: patient experience vs technical medical
 - *indie*/*independent*: underground culture vs general meaning
 - *dorm*/*dormitory*: includes tourist lodging uses
-:::
 
 ::: {.notes}
 - Factors explaining variation:
@@ -175,12 +171,12 @@ Some clippings (e.g., *fridge*/*refrigerator*) are nearly synonymous, while othe
 - *bro* is the clearest example of complete semantic divergence (no longer a kinship term)
 :::
 
-::: {.sol .fragment}
+. . .
+
 **Near-synonymous pairs** (Figure 4):
 
 - *fridge*/*refrigerator*: same semantic facets accessible to both
 - *porn*/*pornography*: industry, psychological, legal aspects shared
-:::
 
 ::: {.notes}
 - 10:32–10:37
@@ -188,11 +184,12 @@ Some clippings (e.g., *fridge*/*refrigerator*) are nearly synonymous, while othe
 :::
 
 
-## Q5: Collocation Analysis
+## Q5: Collocation Analysis {.sol}
 
 How can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.
 
-::: {.sol .fragment}
+. . .
+
 **Example: *cardio* vs *cardiovascular***
 
 Intuition might suggest they mean the same thing. But collocates reveal:
@@ -228,16 +225,16 @@ Intuition might suggest they mean the same thing. But collocates reveal:
 :::
 
 
-## Q6: Corpus Analysis of *exam*/*examination* {.small}
+## Q6: Corpus Analysis of *exam*/*examination* {.small .sol}
 
 Choose one pair from Table 1 (e.g., *exam*/*examination*). What differences might you expect, and what would you look for in a corpus analysis?
 
-::: {.sol .fragment}
+. . .
+
 **Expected differences**:
 
 - *exam*: academic/medical test contexts, informal register
 - *examination*: formal register, plus "investigation/scrutiny" sense
-:::
 
 ::: {.notes}
 - The paper found considerable overlap for this pair (Figure 4)
@@ -267,17 +264,17 @@ Choose one pair from Table 1 (e.g., *exam*/*examination*). What differences migh
 :::
 
 
-## Q7: Familiarity vs Efficiency {.small}
+## Q7: Familiarity vs Efficiency {.small .sol}
 
 The paper offers two explanations for clippings in "involved" contexts: familiarity vs efficiency. What evidence supports each? Which do you find more convincing?
 
-::: {.sol .fragment}
+. . .
+
 **Familiarity explanation**:
 
 - Clippings signal common ground, shared expertise, in-group membership
 - Evidence: co-occurrence with "involved" markers; personal experience contexts
 - Example: *chemo* in patient narratives vs *chemotherapy* in medical papers
-:::
 
 ::: {.notes}
 - The authors favour the familiarity explanation for most cases

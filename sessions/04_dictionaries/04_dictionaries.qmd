@@ -7,6 +7,7 @@ metadata:
   linkprefix: ../../
 filters:
   - ../../filters/strip-revealjs-html.lua
+  - ../../filters/solution-blocks.lua
 format:
   html:
     output-file: index.html
@@ -293,7 +294,7 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 - 10:48–10:52
 :::
 
-::: {.content-visible when-meta="params.show_solutions"}
+::: {.sol}
 ---
 
 #### Solution
@@ -323,7 +324,7 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 - 10:52–10:56
 :::
 
-::: {.content-visible when-meta="params.show_solutions"}
+::: {.sol}
 ---
 
 #### Solution
