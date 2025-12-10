@@ -1,0 +1,234 @@
+/* Solution styling for quarto-exclude extension */
+/* Can be disabled via params.excl-style.enabled: false */
+
+:root {
+  --excl-color: #3b82f6;  /* Medium blue - visible in both light and dark modes */
+  --excl-border-width: 3px;
+  --excl-heading-border-width: 4px;
+  --excl-padding: 1em;
+  --excl-heading-padding: 0.75em;
+  --excl-margin: 0.5em;
+  --excl-underline-thickness: 2px;
+}
+
+/* Dark mode adjustment - lighter blue for better visibility */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --excl-color: #60a5fa;  /* Lighter blue for dark mode */
+  }
+}
+
+/* Disable all styling when body has .excl-style-disabled class */
+body.excl-style-disabled span.excl,
+body.excl-style-disabled div.excl,
+body.excl-style-disabled section.excl,
+body.excl-style-disabled h1.excl,
+body.excl-style-disabled h2.excl,
+body.excl-style-disabled h3.excl,
+body.excl-style-disabled h4.excl,
+body.excl-style-disabled h5.excl,
+body.excl-style-disabled h6.excl {
+  /* Reset all styles */
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+}
+
+/* Span styling (inline content) */
+span.excl {
+  text-decoration: underline !important;
+  text-decoration-color: var(--excl-color) !important;
+  text-decoration-thickness: var(--excl-underline-thickness) !important;
+}
+
+/* Div styling (block content) */
+div.excl {
+  border-left: var(--excl-border-width) solid var(--excl-color) !important;
+  padding-left: var(--excl-padding) !important;
+  margin-left: var(--excl-margin) !important;
+}
+
+/* Section styling - when heading has .excl, entire section gets border */
+section.excl {
+  border-left: var(--excl-heading-border-width) solid var(--excl-color);
+  padding-left: var(--excl-heading-padding);
+  margin-left: 0;
+}
+
+/* Heading styling - only when not inside a section.excl */
+section:not(.excl) > h1.excl,
+section:not(.excl) > h2.excl,
+section:not(.excl) > h3.excl,
+section:not(.excl) > h4.excl,
+section:not(.excl) > h5.excl,
+section:not(.excl) > h6.excl {
+  border-left: var(--excl-heading-border-width) solid var(--excl-color);
+  padding-left: var(--excl-heading-padding);
+  margin-left: 0;
+}
+
+/* Remove border from heading when inside section.excl to avoid double border */
+section.excl > h1.excl,
+section.excl > h2.excl,
+section.excl > h3.excl,
+section.excl > h4.excl,
+section.excl > h5.excl,
+section.excl > h6.excl {
+  border-left: none;
+  padding-left: 0;
+}
+
+/* RevealJS specific styling */
+.reveal span.excl {
+  text-decoration: underline !important;
+  text-decoration-color: var(--excl-color) !important;
+  text-decoration-thickness: var(--excl-underline-thickness) !important;
+}
+
+.reveal div.excl {
+  border-left: var(--excl-border-width) solid var(--excl-color) !important;
+  padding-left: var(--excl-padding) !important;
+  margin-left: var(--excl-margin) !important;
+}
+
+/* CRITICAL: Override general rules for RevealJS to prevent double borders/margins */
+/* Fix for double blue margins: Remove borders from RevealJS sections that have .excl class but NO heading with .excl */
+/* This prevents sections with only .excl class (not containing headings with .excl) from getting borders */
+.reveal section.excl:not(:has(> h1.excl)):not(:has(> h2.excl)):not(:has(> h3.excl)):not(:has(> h4.excl)):not(:has(> h5.excl)):not(:has(> h6.excl)) {
+  border-left: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* RevealJS heading styling - simple underline for headings with .excl */
+.reveal h1.excl,
+.reveal h2.excl,
+.reveal h3.excl,
+.reveal h4.excl,
+.reveal h5.excl,
+.reveal h6.excl {
+  text-decoration: underline !important;
+  text-decoration-color: var(--excl-color) !important;
+  text-decoration-thickness: var(--excl-underline-thickness) !important;
+  border-left: var(--excl-heading-border-width) solid var(--excl-color);
+  padding-left: var(--excl-heading-padding);
+  margin-left: 0;
+}
+
+/* RevealJS: Apply border to content following heading with .excl */
+/* Apply to all following siblings that are not headings of same or higher level */
+/* For h1.excl: stop at h1 (same level) */
+.reveal h1.excl ~ *:not(h1) {
+  border-left: var(--excl-heading-border-width) solid var(--excl-color);
+  padding-left: var(--excl-heading-padding);
+}
+.reveal h1.excl ~ h1 {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+.reveal h1.excl ~ h1 ~ * {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+/* For h2.excl: stop at h1, h2 (same or higher level), continue through h3-h6 */
+.reveal h2.excl ~ *:not(h1):not(h2) {
+  border-left: var(--excl-heading-border-width) solid var(--excl-color);
+  padding-left: var(--excl-heading-padding);
+}
+.reveal h2.excl ~ h1,
+.reveal h2.excl ~ h2 {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+.reveal h2.excl ~ h1 ~ *,
+.reveal h2.excl ~ h2 ~ * {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+/* For h3.excl: stop at h1, h2, h3 (same or higher level), continue through h4-h6 */
+.reveal h3.excl ~ *:not(h1):not(h2):not(h3) {
+  border-left: var(--excl-heading-border-width) solid var(--excl-color);
+  padding-left: var(--excl-heading-padding);
+}
+.reveal h3.excl ~ h1,
+.reveal h3.excl ~ h2,
+.reveal h3.excl ~ h3 {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+.reveal h3.excl ~ h1 ~ *,
+.reveal h3.excl ~ h2 ~ *,
+.reveal h3.excl ~ h3 ~ * {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+/* For h4.excl: stop at h1, h2, h3, h4 (same or higher level), continue through h5-h6 */
+.reveal h4.excl ~ *:not(h1):not(h2):not(h3):not(h4) {
+  border-left: var(--excl-heading-border-width) solid var(--excl-color);
+  padding-left: var(--excl-heading-padding);
+}
+.reveal h4.excl ~ h1,
+.reveal h4.excl ~ h2,
+.reveal h4.excl ~ h3,
+.reveal h4.excl ~ h4 {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+.reveal h4.excl ~ h1 ~ *,
+.reveal h4.excl ~ h2 ~ *,
+.reveal h4.excl ~ h3 ~ *,
+.reveal h4.excl ~ h4 ~ * {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+/* For h5.excl: stop at h1, h2, h3, h4, h5 (same or higher level), continue through h6 */
+.reveal h5.excl ~ *:not(h1):not(h2):not(h3):not(h4):not(h5) {
+  border-left: var(--excl-heading-border-width) solid var(--excl-color);
+  padding-left: var(--excl-heading-padding);
+}
+.reveal h5.excl ~ h1,
+.reveal h5.excl ~ h2,
+.reveal h5.excl ~ h3,
+.reveal h5.excl ~ h4,
+.reveal h5.excl ~ h5 {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+.reveal h5.excl ~ h1 ~ *,
+.reveal h5.excl ~ h2 ~ *,
+.reveal h5.excl ~ h3 ~ *,
+.reveal h5.excl ~ h4 ~ *,
+.reveal h5.excl ~ h5 ~ * {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+/* For h6.excl: stop at h1, h2, h3, h4, h5, h6 (same or higher level) */
+.reveal h6.excl ~ *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  border-left: var(--excl-heading-border-width) solid var(--excl-color);
+  padding-left: var(--excl-heading-padding);
+}
+.reveal h6.excl ~ h1,
+.reveal h6.excl ~ h2,
+.reveal h6.excl ~ h3,
+.reveal h6.excl ~ h4,
+.reveal h6.excl ~ h5,
+.reveal h6.excl ~ h6 {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+.reveal h6.excl ~ h1 ~ *,
+.reveal h6.excl ~ h2 ~ *,
+.reveal h6.excl ~ h3 ~ *,
+.reveal h6.excl ~ h4 ~ *,
+.reveal h6.excl ~ h5 ~ *,
+.reveal h6.excl ~ h6 ~ * {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+

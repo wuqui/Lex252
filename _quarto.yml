@@ -50,6 +50,7 @@ format:
 
 filters:
   - auto-dark
+  - exclude
   - filters/fullcite.lua
 
 revealjs-plugins:
@@ -62,4 +63,4 @@ metadata:
   linkprefix: ""
 
 params:
-  show_solutions: false
+  show_excl: false

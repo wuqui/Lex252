@@ -7,7 +7,7 @@ metadata:
   linkprefix: ../../
 filters:
   - ../../filters/strip-revealjs-html.lua
-  - ../../filters/solution-blocks.lua
+  - exclude
 format:
   html:
     output-file: index.html
@@ -17,7 +17,7 @@ format:
       - ../../slides.css
 format-links: false
 params:
-  show_solutions: true
+  show_excl: true
 ---
 
 ::: {.content-hidden when-format="revealjs"}
@@ -294,17 +294,14 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 - 10:48–10:52
 :::
 
-::: {.sol}
----
 
-#### Solution
+#### Solution  {.excl .slide}
 
 - *sick* (‘excellent’) — **register**: informal/slang; originally AmE but now widespread
 - *they* (singular for a specific person) — **usage note**: grammatical acceptability; register: formal/neutral
 - *data* as a singular mass noun — **field**: computing/technical; **register**: formal contexts favour plural, informal favours singular
 - *woke* (adjective, politicised) — **stance**: pejorative/derogatory in some contexts; **region**: originally AmE
 - *soccer* in UK newspapers — **region**: chiefly AmE (though historically BrE); **chronology**: shift from BrE to AmE usage
-:::
 
 
 ## Phraseology in entries
@@ -324,17 +321,14 @@ Principles: base on attested use; avoid over‑labelling; use neutral wording in
 - 10:52–10:56
 :::
 
-::: {.sol}
----
-
-#### Solution
+#### Solution  {.excl .slide}
 
 1. *heavy rain*
 2. *deeply held belief*
 3. *do research* (though *conduct research* is also common)
 4. *commit a crime* 
 5. *take/make a decision* — Both acceptable: *make a decision* (chiefly AmE), *take a decision* (chiefly BrE)
-:::
+
 
 ## Why examples matter
 

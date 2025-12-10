@@ -7,7 +7,7 @@ metadata:
   linkprefix: ../../
 filters:
   - ../../filters/strip-revealjs-html.lua
-  - ../../filters/solution-blocks.lua
+  - exclude
 format:
   html:
     output-file: index.html
@@ -17,7 +17,7 @@ format:
       - ../../slides.css
 format-links: false
 params:
-  show_solutions: true
+  show_excl: true
 ---
 
 ::: {.content-hidden when-format="revealjs"}
@@ -142,7 +142,7 @@ Further reading: [@Haspelmath2023DefiningWord]{.fullcite}
 
 . . .
 
-::::: {.sol}
+::::: {.excl}
 → orthographic controversy; cf. practical definition (accept spelling conventions)
 :::::
 
@@ -150,7 +150,7 @@ Further reading: [@Haspelmath2023DefiningWord]{.fullcite}
 
 . . .
 
-::::: {.sol}
+::::: {.excl}
 → orthographic criterion; both attested; check dictionary practice
 :::::
 
@@ -308,7 +308,7 @@ Conclusion:
 
 . . .
 
-:::: {.sol}
+:::: {.excl}
 → collocation (light verb construction)
 ::::
 
@@ -316,7 +316,7 @@ Conclusion:
 
 . . .
 
-:::: {.sol}
+:::: {.excl}
 → idiom (non-compositional)
 ::::
 
@@ -386,7 +386,7 @@ Although these examples show individual word families, these series are often ge
 1. Identify all inflected forms for the lexeme *walk*^v^
 
 ::: {.fragment}
-::: {.sol}
+::: {.excl}
 - *walks*: 3rd person present 
 - *walking*: present participle
 - *walked*: past tense 
@@ -397,7 +397,7 @@ Although these examples show individual word families, these series are often ge
 2. Find as many derived forms as possible for the base ANALYE.
 
 ::: {.fragment}
-::: {.sol}
+::: {.excl}
 - N: *analysis*, *analyst*
 - Adj: *analytic*, *analytical*
 - Adv: *analytically*

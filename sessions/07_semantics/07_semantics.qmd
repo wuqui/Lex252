@@ -7,7 +7,7 @@ metadata:
   linkprefix: ../../
 filters:
   - ../../filters/strip-revealjs-html.lua
-  - ../../filters/solution-blocks.lua
+  - exclude
 format:
   html:
     output-file: index.html
@@ -17,7 +17,7 @@ format:
       - ../../slides.css
 format-links: false
 params:
-  show_solutions: true
+  show_excl: true
 ---
 
 ::: {.content-hidden when-format="revealjs"}
@@ -51,7 +51,7 @@ Please read the paper and prepare answers to these questions for our class discu
 7. The paper offers two explanations for clippings in "involved" contexts: familiarity vs. efficiency. What evidence supports each? Which do you find more convincing?
 
 
-## Q1: Principle of No Synonymy {.sol}
+## Q1: Principle of No Synonymy {.excl}
 
 What is the Principle of No Synonymy, and what does it predict about clippings and their source words?
 
@@ -78,7 +78,7 @@ What is the Principle of No Synonymy, and what does it predict about clippings a
 :::
 
 
-## Q2: Distributional Hypothesis {.sol}
+## Q2: Distributional Hypothesis {.excl}
 
 ::: {.notes}
 - 10:22–10:27
@@ -106,7 +106,7 @@ How do the authors use the principle "You shall know a word by the company it ke
 :::
 
 
-## Q3: Involved vs Informational Contexts {.small .sol}
+## Q3: Involved vs Informational Contexts {.small .excl}
 
 What does the paper find about clippings in "involved" vs "informational" contexts? Which linguistic features distinguish them?
 
@@ -114,8 +114,8 @@ What does the paper find about clippings in "involved" vs "informational" contex
 
 The paper tests 12 markers of involved vs informational text production.
 
-:::: {.columns}
-::::: {.column width="50%" .fragment}
+::: {.columns}
+:::: {.column width="50%" .fragment}
 **Involved markers** (more frequent with clippings):
 
 - Private verbs (*know*, *think*, *believe*)
@@ -124,14 +124,13 @@ The paper tests 12 markers of involved vs informational text production.
 - 1st and 2nd person pronouns (*I*, *you*)
 - Indefinite pronouns (*something*, *anyone*)
 - Pronoun *it*
-:::::
-::::: {.column width="50%" .fragment}
+::::
+:::: {.column width="50%" .fragment}
 **Informational markers** (more frequent with source words):
 
 - Complementiser *that*
 - Common nouns
 - Prepositions
-:::::
 ::::
 :::
 
@@ -147,7 +146,7 @@ The paper tests 12 markers of involved vs informational text production.
 :::
 
 
-## Q4: Variation in Synonymy {.small .sol}
+## Q4: Variation in Synonymy {.small .excl}
 
 Some clippings (e.g., *fridge*/*refrigerator*) are nearly synonymous, while others (e.g., *cardio*/*cardiovascular*) show clear differences. What factors might explain this variation?
 
@@ -184,7 +183,7 @@ Some clippings (e.g., *fridge*/*refrigerator*) are nearly synonymous, while othe
 :::
 
 
-## Q5: Collocation Analysis {.sol}
+## Q5: Collocation Analysis {.excl}
 
 How can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.
 
@@ -210,7 +209,6 @@ Intuition might suggest they mean the same thing. But collocates reveal:
 - Fitness/lifestyle contexts
 :::::
 ::::
-:::
 
 ::: {.notes}
 - 10:37–10:42
@@ -225,7 +223,7 @@ Intuition might suggest they mean the same thing. But collocates reveal:
 :::
 
 
-## Q6: Corpus Analysis of *exam*/*examination* {.small .sol}
+## Q6: Corpus Analysis of *exam*/*examination* {.small .excl}
 
 Choose one pair from Table 1 (e.g., *exam*/*examination*). What differences might you expect, and what would you look for in a corpus analysis?
 
@@ -246,7 +244,6 @@ Choose one pair from Table 1 (e.g., *exam*/*examination*). What differences migh
 - This is a good example of partial synonymy with specific non-overlapping domains
 :::
 
-::: {.sol}
 **What to look for in a corpus**:
 
 :::: {.incremental}
@@ -255,7 +252,6 @@ Choose one pair from Table 1 (e.g., *exam*/*examination*). What differences migh
 - **Modifiers**: different adjectives? (*tough exam* vs *thorough examination*)
 - **Syntactic patterns**: *examination of* (investigation) vs *exam in/on* (subject)?
 ::::
-:::
 
 ::: {.notes}
 - 10:42–10:47
@@ -264,7 +260,7 @@ Choose one pair from Table 1 (e.g., *exam*/*examination*). What differences migh
 :::
 
 
-## Q7: Familiarity vs Efficiency {.small .sol}
+## Q7: Familiarity vs Efficiency {.small .excl}
 
 The paper offers two explanations for clippings in "involved" contexts: familiarity vs efficiency. What evidence supports each? Which do you find more convincing?
 
@@ -283,7 +279,7 @@ The paper offers two explanations for clippings in "involved" contexts: familiar
 - For most clippings, semantic factors likely dominate
 :::
 
-::: {.sol .fragment}
+::: {.fragment}
 **Efficiency explanation**:
 
 - Shorter forms preferred when predictable; saves processing effort

@@ -10,7 +10,7 @@
 # - Session-specific metadata (title, subtitle, author, date)
 # - Overrides for session-specific paths (linkprefix, css, output-file)
 # - Multi-format filter (strip-revealjs-html.lua)
-# - Optional: solution-blocks.lua filter (if using .sol class for solutions)
+# - exclude filter is already in project defaults (_quarto.yml)
 # - format-links: false (to disable auto format links)
 # - Session-specific params
 
@@ -23,8 +23,7 @@ metadata:
   linkprefix: ../../
 filters:
   - ../../filters/strip-revealjs-html.lua
-  # Optional: Add solution-blocks.lua if using .sol class for solutions
-  # - ../../filters/solution-blocks.lua
+  # exclude filter is already in project defaults (_quarto.yml)
 format:
   html:
     output-file: index.html
@@ -34,6 +33,6 @@ format:
       - ../../slides.css
 format-links: false
 params:
-  show_solutions: true
+  show_excl: true
 ---
 

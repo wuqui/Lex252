@@ -7,7 +7,7 @@ metadata:
   linkprefix: ../../
 filters:
   - ../../filters/strip-revealjs-html.lua
-  - ../../filters/solution-blocks.lua
+  - exclude
 format:
   html:
     output-file: index.html
@@ -18,7 +18,7 @@ format:
       - force-light.css
 format-links: false
 params:
-  show_solutions: true
+  show_excl: true
 ---
 
 ::: {.content-hidden when-format="revealjs"}
@@ -116,8 +116,8 @@ Which morphemic word-formation processes are there?
 
 Provide a full morphological analysis for the word *misrepresentations*.
 
-::: {.sol}
-{{< svg-frag file="att/misrepresentations_cropped_frag.svg" width="800px" >}}
+::: {.excl .fragment}
+![](att/misrepresentations.excalidraw.svg)
 :::
 
 
@@ -188,7 +188,7 @@ What is the difference between zero-derivation and conversion?
 - 10:50–10:55 Launch quiz; announce code; show leaderboard; stop at time; announce winner.
 :::::
 
-:::: {.sol}
+:::: {.excl}
 ## Reference answers
 
 | Word                     | Process/type                 |
