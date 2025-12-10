@@ -557,7 +557,7 @@
     "href": "sessions/04_dictionaries/slides.html#phraseology-in-entries",
     "title": "4 — Dictionaries: fundamentals, examples, use cases",
     "section": "Phraseology in entries",
-    "text": "Phraseology in entries\n\nCollocations (strong tea, heavy rain), patterns (V + decision)\nMWEs: idioms, phrasal verbs, compounds\n\nWhich is the “better” collocate?\n\nheavy/strong rain\ndeeply/strongly held belief\ndo/make research\ncommit/make a crime\ntake/make a decision\n\n\n\nSolution\n\nheavy rain\ndeeply held belief\ndo research (though conduct research is also common)\ncommit a crime\ntake/make a decision — Both acceptable: make a decision (chiefly AmE), take a decision (chiefly BrE)"
+    "text": "Phraseology in entries\n\nCollocations (strong tea, heavy rain), patterns (V + decision)\nMWEs: idioms, phrasal verbs, compounds\n\nWhich is the “better” collocate?\n\nheavy/strong rain\ndeeply/strongly held belief\ndo/make research\ncommit/make a crime\ntake/make a decision"
   },
   {
     "objectID": "sessions/04_dictionaries/slides.html#why-examples-matter",
@@ -648,7 +648,7 @@
     "href": "sessions/03_morphology/index.html#exercise-conducting-a-morphological-analysis",
     "title": "3 — Morphology and word-formation",
     "section": "Exercise: conducting a morphological analysis",
-    "text": "Exercise: conducting a morphological analysis\nProvide a full morphological analysis for the word misrepresentations.\n\n\n\n\n\n  \n  \n  \n    misrepresentations\n  \n  \n    n\n    \n    \n  \n  \n    n\n    misrepresentation\n    {s}\n  \n  \n    inflection\n    gr.bd\n  \n  \n    misrepresent\n    {ation}\n    v\n    \n    \n    lx.bd\n  \n  \n    derivation/suffixation\n  \n  \n    {mis}\n    {represent}\n    \n    \n  \n  \n    v\n    lx.fr\n    lx.bd\n  \n  \n    derivation/prefixation"
+    "text": "Exercise: conducting a morphological analysis\nProvide a full morphological analysis for the word misrepresentations."
   },
   {
     "objectID": "sessions/03_morphology/index.html#overview",
@@ -732,7 +732,7 @@
     "href": "sessions/03_morphology/slides.html#exercise-conducting-a-morphological-analysis",
     "title": "3 — Morphology and word-formation",
     "section": "Exercise: conducting a morphological analysis",
-    "text": "Exercise: conducting a morphological analysis\nProvide a full morphological analysis for the word misrepresentations.\n\n\n\n\n\n  \n  \n  \n    misrepresentations\n  \n  \n    n\n    \n    \n  \n  \n    n\n    misrepresentation\n    {s}\n  \n  \n    inflection\n    gr.bd\n  \n  \n    misrepresent\n    {ation}\n    v\n    \n    \n    lx.bd\n  \n  \n    derivation/suffixation\n  \n  \n    {mis}\n    {represent}\n    \n    \n  \n  \n    v\n    lx.fr\n    lx.bd\n  \n  \n    derivation/prefixation"
+    "text": "Exercise: conducting a morphological analysis\nProvide a full morphological analysis for the word misrepresentations."
   },
   {
     "objectID": "sessions/03_morphology/slides.html#overview",
@@ -1467,7 +1467,7 @@
     "href": "sessions/07_semantics/slides.html#q3-involved-vs-informational-contexts",
     "title": "7 — Semantics: studying meanings and functions of words",
     "section": "Q3: Involved vs Informational Contexts",
-    "text": "Q3: Involved vs Informational Contexts\nWhat does the paper find about clippings in “involved” vs “informational” contexts? Which linguistic features distinguish them?\n\nThe paper tests 12 markers of involved vs informational text production.\n\n\nInvolved markers (more frequent with clippings):\n\nPrivate verbs (know, think, believe)\nContractions (it’s, you’re)\nPresent tense verbs\n1st and 2nd person pronouns (I, you)\nIndefinite pronouns (something, anyone)\nPronoun it\n\n\nInformational markers (more frequent with source words):\n\nComplementiser that\nCommon nouns\nPrepositions\n\n\n:::"
+    "text": "Q3: Involved vs Informational Contexts\nWhat does the paper find about clippings in “involved” vs “informational” contexts? Which linguistic features distinguish them?\n\nThe paper tests 12 markers of involved vs informational text production.\n\n\nInvolved markers (more frequent with clippings):\n\nPrivate verbs (know, think, believe)\nContractions (it’s, you’re)\nPresent tense verbs\n1st and 2nd person pronouns (I, you)\nIndefinite pronouns (something, anyone)\nPronoun it\n\n\nInformational markers (more frequent with source words):\n\nComplementiser that\nCommon nouns\nPrepositions"
   },
   {
     "objectID": "sessions/07_semantics/slides.html#q4-variation-in-synonymy",
@@ -1481,14 +1481,14 @@
     "href": "sessions/07_semantics/slides.html#q5-collocation-analysis",
     "title": "7 — Semantics: studying meanings and functions of words",
     "section": "Q5: Collocation Analysis",
-    "text": "Q5: Collocation Analysis\nHow can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.\n\nExample: cardio vs cardiovascular\nIntuition might suggest they mean the same thing. But collocates reveal:\n\n\n\ncardiovascular:\n\ndisease, diabetes, chronic\nrenal, kidney, liver\nMedical/clinical contexts\n\n\n\ncardio:\n\nworkout, fat-blasting, calendar\nrecipes, oranges, dishes\nFitness/lifestyle contexts\n\n\n\n\n:::"
+    "text": "Q5: Collocation Analysis\nHow can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.\n\nExample: cardio vs cardiovascular\nIntuition might suggest they mean the same thing. But collocates reveal:\n\n\n\ncardiovascular:\n\ndisease, diabetes, chronic\nrenal, kidney, liver\nMedical/clinical contexts\n\n\n\ncardio:\n\nworkout, fat-blasting, calendar\nrecipes, oranges, dishes\nFitness/lifestyle contexts"
   },
   {
     "objectID": "sessions/07_semantics/slides.html#q6-corpus-analysis-of-examexamination",
     "href": "sessions/07_semantics/slides.html#q6-corpus-analysis-of-examexamination",
     "title": "7 — Semantics: studying meanings and functions of words",
     "section": "Q6: Corpus Analysis of exam/examination",
-    "text": "Q6: Corpus Analysis of exam/examination\nChoose one pair from Table 1 (e.g., exam/examination). What differences might you expect, and what would you look for in a corpus analysis?\n\nExpected differences:\n\nexam: academic/medical test contexts, informal register\nexamination: formal register, plus “investigation/scrutiny” sense\n\n\nWhat to look for in a corpus:\n\nCollocates: final exam, take an exam vs detailed examination, close examination, under examination\nText types: spoken/informal (blog, fiction) vs written/formal (academic, news)\nModifiers: different adjectives? (tough exam vs thorough examination)\nSyntactic patterns: examination of (investigation) vs exam in/on (subject)?"
+    "text": "Q6: Corpus Analysis of exam/examination\nChoose one pair from Table 1 (e.g., exam/examination). What differences might you expect, and what would you look for in a corpus analysis?\n\nExpected differences:\n\nexam: academic/medical test contexts, informal register\nexamination: formal register, plus “investigation/scrutiny” sense\n\nWhat to look for in a corpus:\n\nCollocates: final exam, take an exam vs detailed examination, close examination, under examination\nText types: spoken/informal (blog, fiction) vs written/formal (academic, news)\nModifiers: different adjectives? (tough exam vs thorough examination)\nSyntactic patterns: examination of (investigation) vs exam in/on (subject)?"
   },
   {
     "objectID": "sessions/07_semantics/slides.html#q7-familiarity-vs-efficiency",
@@ -1614,7 +1614,7 @@
     "href": "sessions/07_semantics/index.html#q3-involved-vs-informational-contexts",
     "title": "7 — Semantics: studying meanings and functions of words",
     "section": "Q3: Involved vs Informational Contexts",
-    "text": "Q3: Involved vs Informational Contexts\nWhat does the paper find about clippings in “involved” vs “informational” contexts? Which linguistic features distinguish them?\nThe paper tests 12 markers of involved vs informational text production.\n\n\nInvolved markers (more frequent with clippings):\n\nPrivate verbs (know, think, believe)\nContractions (it’s, you’re)\nPresent tense verbs\n1st and 2nd person pronouns (I, you)\nIndefinite pronouns (something, anyone)\nPronoun it\n\n\nInformational markers (more frequent with source words):\n\nComplementiser that\nCommon nouns\nPrepositions\n\n\n\n:::"
+    "text": "Q3: Involved vs Informational Contexts\nWhat does the paper find about clippings in “involved” vs “informational” contexts? Which linguistic features distinguish them?\nThe paper tests 12 markers of involved vs informational text production.\n\n\nInvolved markers (more frequent with clippings):\n\nPrivate verbs (know, think, believe)\nContractions (it’s, you’re)\nPresent tense verbs\n1st and 2nd person pronouns (I, you)\nIndefinite pronouns (something, anyone)\nPronoun it\n\n\nInformational markers (more frequent with source words):\n\nComplementiser that\nCommon nouns\nPrepositions"
   },
   {
     "objectID": "sessions/07_semantics/index.html#q4-variation-in-synonymy",
@@ -1628,14 +1628,14 @@
     "href": "sessions/07_semantics/index.html#q5-collocation-analysis",
     "title": "7 — Semantics: studying meanings and functions of words",
     "section": "Q5: Collocation Analysis",
-    "text": "Q5: Collocation Analysis\nHow can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.\nExample: cardio vs cardiovascular\nIntuition might suggest they mean the same thing. But collocates reveal:\n\n\n\ncardiovascular:\n\ndisease, diabetes, chronic\nrenal, kidney, liver\nMedical/clinical contexts\n\n\n\ncardio:\n\nworkout, fat-blasting, calendar\nrecipes, oranges, dishes\nFitness/lifestyle contexts\n\n\n\n\n:::"
+    "text": "Q5: Collocation Analysis\nHow can collocation analysis reveal semantic differences not obvious from intuition? Use an example from the paper.\nExample: cardio vs cardiovascular\nIntuition might suggest they mean the same thing. But collocates reveal:\n\n\n\ncardiovascular:\n\ndisease, diabetes, chronic\nrenal, kidney, liver\nMedical/clinical contexts\n\n\n\ncardio:\n\nworkout, fat-blasting, calendar\nrecipes, oranges, dishes\nFitness/lifestyle contexts"
   },
   {
     "objectID": "sessions/07_semantics/index.html#q6-corpus-analysis-of-examexamination",
     "href": "sessions/07_semantics/index.html#q6-corpus-analysis-of-examexamination",
     "title": "7 — Semantics: studying meanings and functions of words",
     "section": "Q6: Corpus Analysis of exam/examination",
-    "text": "Q6: Corpus Analysis of exam/examination\nChoose one pair from Table 1 (e.g., exam/examination). What differences might you expect, and what would you look for in a corpus analysis?\nExpected differences:\n\nexam: academic/medical test contexts, informal register\nexamination: formal register, plus “investigation/scrutiny” sense\n\n\nWhat to look for in a corpus:\n\n\nCollocates: final exam, take an exam vs detailed examination, close examination, under examination\nText types: spoken/informal (blog, fiction) vs written/formal (academic, news)\nModifiers: different adjectives? (tough exam vs thorough examination)\nSyntactic patterns: examination of (investigation) vs exam in/on (subject)?"
+    "text": "Q6: Corpus Analysis of exam/examination\nChoose one pair from Table 1 (e.g., exam/examination). What differences might you expect, and what would you look for in a corpus analysis?\nExpected differences:\n\nexam: academic/medical test contexts, informal register\nexamination: formal register, plus “investigation/scrutiny” sense\n\nWhat to look for in a corpus:\n\n\nCollocates: final exam, take an exam vs detailed examination, close examination, under examination\nText types: spoken/informal (blog, fiction) vs written/formal (academic, news)\nModifiers: different adjectives? (tough exam vs thorough examination)\nSyntactic patterns: examination of (investigation) vs exam in/on (subject)?"
   },
   {
     "objectID": "sessions/07_semantics/index.html#q7-familiarity-vs-efficiency",
