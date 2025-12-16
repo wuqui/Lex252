@@ -1,0 +1,491 @@
+---
+title: "8 — Studying lexis empirically"
+subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
+author: "Dr. Quirin Würschinger, LMU Munich"
+date: 2025-12-16
+metadata:
+  linkprefix: ../../
+filters:
+  - ../../filters/strip-revealjs-html.lua
+  - exclude
+format:
+  html:
+    output-file: index.html
+  clean-revealjs:
+    output-file: slides.html
+    css:
+      - ../../slides.css
+format-links: false
+params:
+  show_excl: true
+---
+
+::: {.content-hidden when-format="revealjs"}
+[Open slides version](slides.html){.btn .btn-primary}
+:::
+
+# Assessment
+
+## Term paper consulting
+
+::: {.columns}
+:::: {.column width="50%"}
+### Procedure
+
+- Register via [email](mailto:q.wuerschinger@lmu.de)
+- Send preliminary information at least one day before meeting:
+    - research questions and hypotheses
+    - theoretical background, data and method
+    - table of contents and bibliography
+::::
+:::: {.column width="50%"}
+### Dates and times
+
+- Fri, 13 Feb
+    - 10:00
+    - 16:00
+- Thu, 12 Feb
+    - 10:00
+    - 16:00
+::::
+:::
+
+---
+
+### Zoom room
+
+- <https://lmu-munich.zoom.us/j/5385530182?pwd=SE5iZDJGQlZ1V3dpN2Q4NW45WjF5Zz09>
+- Meeting ID: 538 553 0182
+- Passcode: 531379
+
+
+## Submission 
+
+::: {.columns}
+:::: {.column width="50%"}
+### Requirements and format
+
+- **3 ECTS**: short paper (≈ 3–5 pages)
+- **6 ECTS**: long paper (≈ 10–12 pages)  
+- **9 ECTS**: project report (≈ 3 pages)
+::::
+:::: {.column width="50%"}
+### Deadlines
+
+- short papers: **27 Feb**
+- long papers: **20 Mar**
+
+::::
+:::: {.callout-note}
+For exact requirements, please check your Studien-/Prüfungsordnung.
+::::
+:::
+
+
+## Modulprüfung
+
+You have to be enrolled in both the Seminar and the Übung class this semester.
+
+All of the assessment for the Modulprüfung takes place in the Seminar.
+
+- presentation: **27 Feb**
+- long paper: **20 Mar**
+
+### Presentation
+
+  - **scope**: recorded presentation on your term paper project (RQ and hypotheses, related work, data, method, initial results, discussion, bibliography)
+  - **format**: slides + audio (+ video) (e.g. on MS PowerPoint)
+  - **length**: 9–11 minutes
+
+
+# Developing Research Projects
+
+## Goals for term papers
+
+- Research question with a **linguistic focus**
+- **Empirical study** using real data
+- Use **corpus and/or dictionary data**
+- Contribute new insights to lexicology
+
+. . .
+
+### Your term paper should demonstrate
+
+- Understanding of theoretical concepts and related research
+- Ability to work with linguistic data
+- Critical analysis and interpretation skills
+
+
+## What makes a good topic?
+
+A good research topic:
+
+- is **not too general** but also **not too specific**
+- has further **relevance for linguistics**
+- includes **new aspects** based on state of the art
+- is **interesting and doable**
+- is based on **previous knowledge** and/or observations
+- allows for a number of **research questions**
+
+___
+
+## From topic to title
+
+Your title is the business card of your paper:
+
+- Must be **informative and explicit**
+- Must have a **reasonable link** to the content
+- Must not **raise expectations** that are not met
+- Often good to use a **subtitle**
+
+
+___
+
+## Finding research questions
+
+Research questions can come from:
+
+. . .
+
+1. **Previous literature**
+    - suggestions for future research
+    - replicating someone else's work
+    - identifying gaps in knowledge
+
+. . .
+
+2. **Observation**
+    - noticing patterns in language use
+    - personal linguistic experiences
+
+. . .
+
+3. **Empirical findings**
+    - discoveries within your own data analysis
+
+
+## Research questions: Key criteria
+
+Ask yourself:
+
+- Is it **broad enough** to be interesting?
+- Is it **narrow enough** to be doable?
+- Does it have a **strong enough linguistic focus**?
+
+::: {.fragment}
+- What do I **expect** the outcome to be? (**hypotheses**)
+- Why do I expect these results?
+- How does my question relate to **previous work**?
+:::
+
+
+## Academic paper structure
+
+- **Introduction**: Contextualise and motivate
+- **Theoretical Background**: Review relevant literature
+- **Data**: Describe your dataset
+- **Method**: Explain your approach
+- **Results**: Present findings clearly
+- **Discussion**: Interpret and discuss
+- **Conclusion**: Summarise and reflect
+
+
+# Research Areas and Examples
+
+## Lexical variation
+
+How do words vary across:
+
+- **Text types**: e.g. academic vs. social media
+- **Regional varieties**: e.g. British vs. American English  
+- **Time periods**: e.g. historical change
+- **Word-formation processes**: e.g. blending differences between registers
+
+---
+
+### Regional variation: *autumn* vs *fall* in BrE and AmE
+
+![](att/autumn_regional_variation.png)
+
+---
+
+### Semantic variation across text types: *problem*
+
+![](att/problem_semantic_variation.png)
+
+
+## Lexical change
+
+- **Frequency change**: How word usage changes over time
+- **Meaning change**: How word meanings evolve
+
+. . .
+
+### Frequency increase
+
+![*phone* in the COHA](att/phone-coha.png)
+
+---
+
+### Frequency decrease
+
+![*walkman* in the COCA](att/walkman-coca.png){height=400}
+
+---
+
+### Collocates of *gay* in COHA showing semantic shift
+
+![](att/gay_meaning_change.png){height="450"}
+
+
+## Word-formation patterns
+
+- **Distribution** of word-formation processes across domains
+- **Productivity** of morphological processes over time
+- **Semantic constraints** on word formation
+
+. . .
+
+### Productivity of word-formation processes over time
+
+![](att/wordformation_productivity.png)
+
+---
+
+### Distribution of shortenings across semantic domains
+
+![](att/shortenings_semantic_domains.png){height="400"}
+
+
+# Data Sources and Methods
+
+## Types of data
+
+### Dictionary data
+
+- Historical dictionaries (OED)
+- Contemporary dictionaries
+- Learner dictionaries
+
+### Corpus data
+
+- Large collections of authentic language use
+- Diachronic corpora (COHA) vs. synchronic (BNC)
+- Specialised corpora (academic, social media)
+
+
+## Key corpus resources {.small}
+
+Selected examples:
+
+### Synchronic corpora
+
+- **BNC 1994**: British National Corpus (100M words)
+- **BNC 2014**: British National Corpus (100M words)
+
+### Diachronic corpora
+
+- **EEBO**: Early English Books Online
+- **Google Books Ngram**: Historical frequency data
+- **COHA**: Corpus of Historical American English (1810s-2000s) [@Davies2010CorpusHistorical]
+- **COCA**: Corpus of Contemporary American English [@Davies2008CorpusContemporary]
+- **NOW**: News on the Web corpus (real-time) [@Davies2016CorpusNews]
+- **[English Trends](https://www.sketchengine.eu/english-trends/)**: huge monitor corpus available on Sketch Engine
+
+
+## Corpus analysis examples
+
+**Text type variation**: *brother* vs *bro* in COCA
+
+Distribution across genres shows clear patterns:
+
+- *brother*: more formal registers (academic, news)
+- *bro*: informal contexts (spoken, fiction)
+
+---
+
+### **COCA analysis for *brother***:
+
+![](att/brother_coca_analysis.png)
+
+### **COCA analysis for *bro***:
+
+![](att/bro_coca_analysis.png)
+
+
+# Academic Resources and Tools
+
+## Finding references
+
+::::{.columns}
+:::{.column width="50%"}
+### Academic databases
+
+- **[LLBA](https://about.proquest.com/en/products-services/llba-set-c/)**: Linguistics and Language Behavior Abstracts
+- **[MLA](https://www.mla.org/Publications/MLA-International-Bibliography)**: International Bibliography
+- **[JSTOR](https://www.jstor.org/)**: Multidisciplinary digital library
+- **[John Benjamins e-Platform](https://benjamins.com/)**: Linguistic publications
+- **[ScienceDirect](https://www.sciencedirect.com/)**: Elsevier journals
+- **[Cambridge Core](https://www.cambridge.org/core)**: Cambridge University Press
+:::
+
+:::{.column width="50%"}
+### Web-based tools
+
+- [Google Scholar](https://scholar.google.com/): comprehensive academic search engine
+- [Semantic Scholar](https://www.semanticscholar.org/): AI-powered research tool with citation analysis
+- [Connected Papers](https://www.connectedpapers.com/): visual maps of research connections
+- [OpenAlex](https://openalex.org/): open source academic database
+- [Elicit.org](https://elicit.org/): AI research assistant for literature reviews
+:::
+::::
+
+---
+
+### Strategies
+
+- **Schneeballprinzip**: Find one good reference, follow its citations
+- Start with handbooks for quality overviews
+- Use research network platforms (ResearchGate, Academia.edu)
+
+---
+
+## Citation management
+
+**Zotero (recommended):**
+
+- Free, open-source reference manager
+- Browser plugin for easy capturing
+- Automatic formatting in e.g. MS Word, Google Docs
+- Collaborative features for group projects
+
+**Alternatives:** Mendeley, EndNote, BibTeX
+
+**Best practices:**
+
+- Start collecting references early
+- Always check for citation accuracy
+- Use consistent citation styles
+
+---
+
+## Citation styles
+
+For this course, use **author-date format**:
+
+- In-text: "Corpus analysis reveals..." (Hilpert et al. 2023: 25)
+- Bibliography: Consistent formatting following one style guide
+
+**Recommended guides:**
+
+- [Anglistik LMU Stilblatt](https://www.anglistik.uni-muenchen.de/service_downloads/allgemeine_handouts/style_sheet_english_version.pdf)
+- [Chicago Author-Date Style](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html)
+- [Unified Style Sheet for Linguistics](https://clas.wayne.edu/linguistics/resources/style)
+
+---
+
+## Writing tools
+
+::: {.columns}
+:::: {.column width="50%"}
+### Language support
+
+- [dict.cc](https://www.dict.cc/): dictionary search
+- [Ozdic.com](https://ozdic.com/): collocations
+- [Netspeak](https://netspeak.org/): usage patterns
+::::
+:::: {.column width="50%"}
+### AI-assisted tools
+
+- [DeepL Write](https://www.deepl.com/write)
+- [Grammarly](https://www.grammarly.com/)
+- [LanguageTool](https://languagetool.org/): free alternative to Grammarly
+
+::::: {.callout-note}
+*Use responsibly - these are aids, not replacements for your thinking!*
+:::::
+::::
+:::
+
+
+## Reference management
+
+**Recommended**: Use [Zotero](https://www.zotero.org/) for:
+
+- Collecting and organising sources
+- Automatic citation formatting
+- Collaboration and sharing
+- Integration with word processors
+
+**Alternative**: Maintain one consistent bibliography file manually
+
+
+# Workshop: Your Research Project
+
+## Individual task
+
+Choose a research area and develop your project:
+
+1. Select a **research area** (lexical variation, change, or word-formation).
+2. Formulate a **specific research question** and **hypotheses**.
+    - What do you want to study?
+    - What do you expect to find?
+    - Why do you expect these results?
+3. Consider what **data** you would need.
+    - Which dictionaries or corpora could you use to test your hypotheses?
+4. Think about potential **methods** of analysis.
+    - How could you analyse your data to answer your research question?
+
+
+## Sharing and feedback
+
+In groups:
+
+1. Present your research question and hypotheses.
+2. Get feedback: Is it clear? Interesting? Doable?
+3. Discuss data sources and methods.
+4. Suggest improvements.
+
+
+## Getting help
+
+### Resources
+
+- **Course materials**: Slides and readings on using dictionaries and corpora for studying lexicology.
+- **Term paper consulting**: Have a meeting with me to discuss your project.
+- [UB courses](https://www.ub.uni-muenchen.de/kurse/schulungstermine/index.html): Research skills and database access
+- [Writing centre](https://www.en.schreibzentrum.fak13.uni-muenchen.de/index.html): Academic writing support
+
+::: {.callout-note}
+Start early, ask questions, and use the resources available!
+:::
+
+
+# Summary
+
+- **Good research projects** combine theoretical insight with empirical analysis.
+- **Research questions** should be focused, linguistically relevant, and answerable with available data.
+- **Corpus and dictionary data** offer rich opportunities for lexicological research.
+- **Academic writing** follows established conventions - learn and apply them consistently.
+- **Planning and preparation** are key to successful research projects.
+
+
+# Next week
+
+**Asynchronous task: Work towards your research project.**
+
+- determine a research question and hypotheses
+- identify suitable data sources and methods
+- check related literature
+
+**Recommended readings:**
+
+- @Stefanowitsch2020CorpusLinguistics: designing and operationalising linguistic research projects based on corpus data (esp. Ch. 3)
+
+- @Wray2012ProjectsLinguistics: general guidance on planning and conducting research projects in linguistics
+
+
+# References
+
+:::: {#refs}
+::::

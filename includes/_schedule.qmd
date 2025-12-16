@@ -7,7 +7,7 @@
 |  5 | 18 Nov. | [Using dictionaries and analysing data]({{< meta linkprefix >}}sessions/05_dictionaries-2/05_dictionaries-2.qmd) |
 |  6 | 25 Nov. | [Corpora: theories, methods, and applications]({{< meta linkprefix >}}sessions/06_corpora/06_corpora.qmd) |
 |  7 |  9 Dec. | [Semantics: studying meanings and functions of words]({{< meta linkprefix >}}sessions/07_semantics/07_semantics.qmd) |
-|  8 | 16 Dec. | Studying lexis empirically |
+|  8 | 16 Dec. | [Studying lexis empirically]({{< meta linkprefix >}}sessions/08_research-projects/08_research-projects.qmd) |
 |    |         | | 
 |  9 | 13 Jan. | Lexical innovation: new words and meanings |
 | 10 | 20 Jan. | Lexical change: historical and recent changes in the English lexicon |

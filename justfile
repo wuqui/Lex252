@@ -89,6 +89,11 @@ push-verify: test-structure push-status
 # Cleanup
 # ============================================================================
 
+# Check for obsolete files
+tidy-obsolete:
+    @echo "Checking for obsolete files..."
+    @uv run --script scripts/check-obsolete-files.py
+
 # Remove rendered output files
 clean:
     @echo "Cleaning rendered files..."

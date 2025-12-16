@@ -27,6 +27,8 @@ website:
             href: sessions/06_corpora/06_corpora.qmd
           - text: "07 — Semantics"
             href: sessions/07_semantics/07_semantics.qmd
+          - text: "08 — Studying lexis empirically"
+            href: sessions/08_research-projects/08_research-projects.qmd
   page-navigation: true
   search: true
 
