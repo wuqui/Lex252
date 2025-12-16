@@ -935,7 +935,336 @@
     "href": "index.html#course-bibliography",
     "title": "Lexicology and Lexicography",
     "section": "Course bibliography",
-    "text": "Course bibliography\n\n\nBandyopadhyay, Saptarashmi, Jason Xu, Neel Pawar, and David Touretzky. 2022. “Interactive Visualizations of Word Embeddings for K-12 Students.” Proceedings of the AAAI Conference on Artificial Intelligence 36 (11): 12713–20. https://doi.org/10.1609/aaai.v36i11.21548.\n\n\nBauer, Laurie. 2022. An Introduction to English Lexicology. Edinburgh University Press.\n\n\nBühler, Karl. 1934. Sprachtheorie. Jena: Fischer.\n\n\nDavies, Mark. 2008. “The Corpus of Contemporary American English (COCA): 560 Million Words, 1990-Present.” 2008. https://www.english-corpora.org/coca/.\n\n\nDi Sciullo, Anna Maria, and Edwin Williams. 1987. On the Definition of Word. Linguistic Inquiry Monographs 14. Cambridge, Massachusetts: MIT Press.\n\n\nFirth, John R. 1957. A Synopsis of Linguistic Theory, 1930-1955. Studies in Linguistic Analysis. Special Volume of the Philological Society. Oxford: Basil Blackwell.\n\n\nGoldberg, Adele. 1995. Constructions - A Construction Grammar Approach to Argument Structure. Chicago; London: University of Chicago Press.\n\n\nGrieve, Jack, Andrea Nini, and Diansheng Guo. 2018. “Mapping Lexical Innovation in American English.” Journal of English Linguistics 46 (4): 293–319. https://doi.org/10.1177/0075424218793191.\n\n\nHaspelmath, Martin. 2023. “Defining the Word.” WORD 69 (3): 283–97. https://doi.org/10.1080/00437956.2023.2237272.\n\n\nHilpert, Martin, and Christian Mair. 2015. “Grammatical Change.” In The Cambridge Handbook of English Corpus Linguistics, edited by Douglas Biber and Randi Reppen. Cambridge: Cambridge University Press.\n\n\nHilpert, Martin, David Correia Saavedra, and Jennifer Rains. 2023. “Meaning Differences Between English Clippings and Their Source Words: A Corpus-Based Study.” ICAME Journal 47 (1): 19–37. https://doi.org/10.2478/icame-2023-0002.\n\n\nJackson, Howard. 1988. Words and Their Meaning. 1st ed. Learning about Language. London: Longman.\n\n\nKeller, Rudi. 1994. Sprachwandel: Von Der Unsichtbaren Hand in Der Sprache. Tübingen: Francke.\n\n\nKemmer, Suzanne. 2003. “Schemas and Lexical Blends.” In Motivation in Language: Studies in Honor of Günther Radden, edited by Günther Radden and Hubert Cuyckens, 69–97. J. Benjamins Pub. Co.\n\n\nKerremans, Daphné. 2015. A Web of New Words. Bern: Peter Lang. https://doi.org/10.3726/978-3-653-04788-2.\n\n\nLipka, Leonhard. 1992. An Outline of English Lexicology. Forschung Und Studium Anglistik. Tübingen: Niemeyer.\n\n\n———. 2002. English Lexicology: Lexical Structure, Word Semantics and Word-Formation. Tübingen: Narr.\n\n\nOgden, Charles Kay, and I. A. Richards. 1923. The Meaning of Meaning. London: K. Paul, Trench, Trubner & Co.\n\n\nSajous, Franck, Basilio Calderone, and Nabil Hathout. 2020. “ENGLAWI: From Human- to Machine-Readable Wiktionary.” In Proceedings of the 12th Language Resources and Evaluation Conference, 3016–26. Marseille, France: European Language Resources Association. https://www.aclweb.org/anthology/2020.lrec-1.369.\n\n\nSaussure, Ferdinand de. 1916. Cours de Linguistique Générale. Lausanne: Payot.\n\n\nSchmid, Hans-Jörg. 2016. English Morphology and Word-Formation - an Introduction. 2nd ed. Berlin: Erich Schmidt Verlag.\n\n\n———. 2020. The Dynamics of the Linguistic System. Usage, Conventionalization, and Entrenchment. Oxford: Oxford University Press.\n\n\nStefanowitsch, Anatol. 2020. Corpus Linguistics. Berlin: Language Science Press. https://doi.org/10.5281/zenodo.3735822.\n\n\nStella, Massimo. 2019. “Modelling Early Word Acquisition Through Multiplex Lexical Networks and Machine Learning.” Big Data and Cognitive Computing 3 (1): 10. https://doi.org/10.3390/bdcc3010010.\n\n\nStroop, J. Ridley. 1935. “Studies of Interference in Serial Verbal Reactions.” Journal of Experimental Psychology 18 (6): 643–62."
+    "text": "Course bibliography\n\n\nBandyopadhyay, Saptarashmi, Jason Xu, Neel Pawar, and David Touretzky. 2022. “Interactive Visualizations of Word Embeddings for K-12 Students.” Proceedings of the AAAI Conference on Artificial Intelligence 36 (11): 12713–20. https://doi.org/10.1609/aaai.v36i11.21548.\n\n\nBauer, Laurie. 2022. An Introduction to English Lexicology. Edinburgh University Press.\n\n\nBühler, Karl. 1934. Sprachtheorie. Jena: Fischer.\n\n\nDavies, Mark. 2008. “The Corpus of Contemporary American English (COCA): 560 Million Words, 1990-Present.” 2008. https://www.english-corpora.org/coca/.\n\n\n———. 2010. “The Corpus of Historical American English (COHA): 400 Million Words, 1810-2009.” 2010. https://www.english-corpora.org/coha/.\n\n\n———. 2016. “Corpus of News on the Web (NOW) - 3+ Billion Words from 20 Countries, Updated Every Day.” 2016. https://www.english-corpora.org/now/.\n\n\nDi Sciullo, Anna Maria, and Edwin Williams. 1987. On the Definition of Word. Linguistic Inquiry Monographs 14. Cambridge, Massachusetts: MIT Press.\n\n\nFirth, John R. 1957. A Synopsis of Linguistic Theory, 1930-1955. Studies in Linguistic Analysis. Special Volume of the Philological Society. Oxford: Basil Blackwell.\n\n\nGoldberg, Adele. 1995. Constructions - A Construction Grammar Approach to Argument Structure. Chicago; London: University of Chicago Press.\n\n\nGrieve, Jack, Andrea Nini, and Diansheng Guo. 2018. “Mapping Lexical Innovation in American English.” Journal of English Linguistics 46 (4): 293–319. https://doi.org/10.1177/0075424218793191.\n\n\nHaspelmath, Martin. 2023. “Defining the Word.” WORD 69 (3): 283–97. https://doi.org/10.1080/00437956.2023.2237272.\n\n\nHilpert, Martin, and Christian Mair. 2015. “Grammatical Change.” In The Cambridge Handbook of English Corpus Linguistics, edited by Douglas Biber and Randi Reppen. Cambridge: Cambridge University Press.\n\n\nHilpert, Martin, David Correia Saavedra, and Jennifer Rains. 2023. “Meaning Differences Between English Clippings and Their Source Words: A Corpus-Based Study.” ICAME Journal 47 (1): 19–37. https://doi.org/10.2478/icame-2023-0002.\n\n\nJackson, Howard. 1988. Words and Their Meaning. 1st ed. Learning about Language. London: Longman.\n\n\nKeller, Rudi. 1994. Sprachwandel: Von Der Unsichtbaren Hand in Der Sprache. Tübingen: Francke.\n\n\nKemmer, Suzanne. 2003. “Schemas and Lexical Blends.” In Motivation in Language: Studies in Honor of Günther Radden, edited by Günther Radden and Hubert Cuyckens, 69–97. J. Benjamins Pub. Co.\n\n\nKerremans, Daphné. 2015. A Web of New Words. Bern: Peter Lang. https://doi.org/10.3726/978-3-653-04788-2.\n\n\nLipka, Leonhard. 1992. An Outline of English Lexicology. Forschung Und Studium Anglistik. Tübingen: Niemeyer.\n\n\n———. 2002. English Lexicology: Lexical Structure, Word Semantics and Word-Formation. Tübingen: Narr.\n\n\nOgden, Charles Kay, and I. A. Richards. 1923. The Meaning of Meaning. London: K. Paul, Trench, Trubner & Co.\n\n\nSajous, Franck, Basilio Calderone, and Nabil Hathout. 2020. “ENGLAWI: From Human- to Machine-Readable Wiktionary.” In Proceedings of the 12th Language Resources and Evaluation Conference, 3016–26. Marseille, France: European Language Resources Association. https://www.aclweb.org/anthology/2020.lrec-1.369.\n\n\nSaussure, Ferdinand de. 1916. Cours de Linguistique Générale. Lausanne: Payot.\n\n\nSchmid, Hans-Jörg. 2016. English Morphology and Word-Formation - an Introduction. 2nd ed. Berlin: Erich Schmidt Verlag.\n\n\n———. 2020. The Dynamics of the Linguistic System. Usage, Conventionalization, and Entrenchment. Oxford: Oxford University Press.\n\n\nStefanowitsch, Anatol. 2020. Corpus Linguistics. Berlin: Language Science Press. https://doi.org/10.5281/zenodo.3735822.\n\n\nStella, Massimo. 2019. “Modelling Early Word Acquisition Through Multiplex Lexical Networks and Machine Learning.” Big Data and Cognitive Computing 3 (1): 10. https://doi.org/10.3390/bdcc3010010.\n\n\nStroop, J. Ridley. 1935. “Studies of Interference in Serial Verbal Reactions.” Journal of Experimental Psychology 18 (6): 643–62.\n\n\nWray, Alison, and Aileen Bloomer. 2012. Projects in Linguistics and Language Studies. 3rd ed. London: Hodder Education."
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#term-paper-consulting",
+    "href": "sessions/08_research-projects/slides.html#term-paper-consulting",
+    "title": "8 — Studying lexis empirically",
+    "section": "Term paper consulting",
+    "text": "Term paper consulting\n\n\nProcedure\n\nRegister via email\nSend preliminary information at least one day before meeting:\n\nresearch questions and hypotheses\ntheoretical background, data and method\ntable of contents and bibliography\n\n\n\nDates and times\n\nFri, 13 Feb\n\n10:00\n16:00\n\nThu, 12 Feb\n\n10:00\n16:00"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#submission",
+    "href": "sessions/08_research-projects/slides.html#submission",
+    "title": "8 — Studying lexis empirically",
+    "section": "Submission",
+    "text": "Submission\n\n\nRequirements and format\n\n3 ECTS: short paper (≈ 3–5 pages)\n6 ECTS: long paper (≈ 10–12 pages)\n\n9 ECTS: project report (≈ 3 pages)\n\n\nDeadlines\n\nshort papers: 27 Feb\nlong papers: 20 Mar\n\n\n\n\n\n\n\nNote\n\n\nFor exact requirements, please check your Studien-/Prüfungsordnung."
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#modulprüfung",
+    "href": "sessions/08_research-projects/slides.html#modulprüfung",
+    "title": "8 — Studying lexis empirically",
+    "section": "Modulprüfung",
+    "text": "Modulprüfung\nYou have to be enrolled in both the Seminar and the Übung class this semester.\nAll of the assessment for the Modulprüfung takes place in the Seminar.\n\npresentation: 27 Feb\nlong paper: 20 Mar\n\nPresentation\n\nscope: recorded presentation on your term paper project (RQ and hypotheses, related work, data, method, initial results, discussion, bibliography)\nformat: slides + audio (+ video) (e.g. on MS PowerPoint)\nlength: 9–11 minutes"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#goals-for-term-papers",
+    "href": "sessions/08_research-projects/slides.html#goals-for-term-papers",
+    "title": "8 — Studying lexis empirically",
+    "section": "Goals for term papers",
+    "text": "Goals for term papers\n\nResearch question with a linguistic focus\nEmpirical study using real data\nUse corpus and/or dictionary data\nContribute new insights to lexicology\n\n\nYour term paper should demonstrate\n\nUnderstanding of theoretical concepts and related research\nAbility to work with linguistic data\nCritical analysis and interpretation skills"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#what-makes-a-good-topic",
+    "href": "sessions/08_research-projects/slides.html#what-makes-a-good-topic",
+    "title": "8 — Studying lexis empirically",
+    "section": "What makes a good topic?",
+    "text": "What makes a good topic?\nA good research topic:\n\nis not too general but also not too specific\nhas further relevance for linguistics\nincludes new aspects based on state of the art\nis interesting and doable\nis based on previous knowledge and/or observations\nallows for a number of research questions"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#from-topic-to-title",
+    "href": "sessions/08_research-projects/slides.html#from-topic-to-title",
+    "title": "8 — Studying lexis empirically",
+    "section": "From topic to title",
+    "text": "From topic to title\nYour title is the business card of your paper:\n\nMust be informative and explicit\nMust have a reasonable link to the content\nMust not raise expectations that are not met\nOften good to use a subtitle"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#finding-research-questions",
+    "href": "sessions/08_research-projects/slides.html#finding-research-questions",
+    "title": "8 — Studying lexis empirically",
+    "section": "Finding research questions",
+    "text": "Finding research questions\nResearch questions can come from:\n\n\nPrevious literature\n\nsuggestions for future research\nreplicating someone else’s work\nidentifying gaps in knowledge\n\n\n\n\n\nObservation\n\nnoticing patterns in language use\npersonal linguistic experiences\n\n\n\n\n\nEmpirical findings\n\ndiscoveries within your own data analysis"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#research-questions-key-criteria",
+    "href": "sessions/08_research-projects/slides.html#research-questions-key-criteria",
+    "title": "8 — Studying lexis empirically",
+    "section": "Research questions: Key criteria",
+    "text": "Research questions: Key criteria\nAsk yourself:\n\nIs it broad enough to be interesting?\nIs it narrow enough to be doable?\nDoes it have a strong enough linguistic focus?\n\n\n\nWhat do I expect the outcome to be? (hypotheses)\nWhy do I expect these results?\nHow does my question relate to previous work?"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#academic-paper-structure",
+    "href": "sessions/08_research-projects/slides.html#academic-paper-structure",
+    "title": "8 — Studying lexis empirically",
+    "section": "Academic paper structure",
+    "text": "Academic paper structure\n\nIntroduction: Contextualise and motivate\nTheoretical Background: Review relevant literature\nData: Describe your dataset\nMethod: Explain your approach\nResults: Present findings clearly\nDiscussion: Interpret and discuss\nConclusion: Summarise and reflect"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#lexical-variation",
+    "href": "sessions/08_research-projects/slides.html#lexical-variation",
+    "title": "8 — Studying lexis empirically",
+    "section": "Lexical variation",
+    "text": "Lexical variation\nHow do words vary across:\n\nText types: e.g. academic vs. social media\nRegional varieties: e.g. British vs. American English\n\nTime periods: e.g. historical change\nWord-formation processes: e.g. blending differences between registers"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#lexical-change",
+    "href": "sessions/08_research-projects/slides.html#lexical-change",
+    "title": "8 — Studying lexis empirically",
+    "section": "Lexical change",
+    "text": "Lexical change\n\nFrequency change: How word usage changes over time\nMeaning change: How word meanings evolve\n\n\nFrequency increase\n\n\nphone in the COHA"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#word-formation-patterns",
+    "href": "sessions/08_research-projects/slides.html#word-formation-patterns",
+    "title": "8 — Studying lexis empirically",
+    "section": "Word-formation patterns",
+    "text": "Word-formation patterns\n\nDistribution of word-formation processes across domains\nProductivity of morphological processes over time\nSemantic constraints on word formation\n\n\nProductivity of word-formation processes over time"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#types-of-data",
+    "href": "sessions/08_research-projects/slides.html#types-of-data",
+    "title": "8 — Studying lexis empirically",
+    "section": "Types of data",
+    "text": "Types of data\nDictionary data\n\nHistorical dictionaries (OED)\nContemporary dictionaries\nLearner dictionaries\n\nCorpus data\n\nLarge collections of authentic language use\nDiachronic corpora (COHA) vs. synchronic (BNC)\nSpecialised corpora (academic, social media)"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#key-corpus-resources",
+    "href": "sessions/08_research-projects/slides.html#key-corpus-resources",
+    "title": "8 — Studying lexis empirically",
+    "section": "Key corpus resources",
+    "text": "Key corpus resources\nSelected examples:\nSynchronic corpora\n\nBNC 1994: British National Corpus (100M words)\nBNC 2014: British National Corpus (100M words)\n\nDiachronic corpora\n\nEEBO: Early English Books Online\nGoogle Books Ngram: Historical frequency data\nCOHA: Corpus of Historical American English (1810s-2000s) (Davies 2010)\nCOCA: Corpus of Contemporary American English (Davies 2008)\nNOW: News on the Web corpus (real-time) (Davies 2016)\nEnglish Trends: huge monitor corpus available on Sketch Engine"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#corpus-analysis-examples",
+    "href": "sessions/08_research-projects/slides.html#corpus-analysis-examples",
+    "title": "8 — Studying lexis empirically",
+    "section": "Corpus analysis examples",
+    "text": "Corpus analysis examples\nText type variation: brother vs bro in COCA\nDistribution across genres shows clear patterns:\n\nbrother: more formal registers (academic, news)\nbro: informal contexts (spoken, fiction)"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#finding-references",
+    "href": "sessions/08_research-projects/slides.html#finding-references",
+    "title": "8 — Studying lexis empirically",
+    "section": "Finding references",
+    "text": "Finding references\n\n\nAcademic databases\n\nLLBA: Linguistics and Language Behavior Abstracts\nMLA: International Bibliography\nJSTOR: Multidisciplinary digital library\nJohn Benjamins e-Platform: Linguistic publications\nScienceDirect: Elsevier journals\nCambridge Core: Cambridge University Press\n\n\nWeb-based tools\n\nGoogle Scholar: comprehensive academic search engine\nSemantic Scholar: AI-powered research tool with citation analysis\nConnected Papers: visual maps of research connections\nOpenAlex: open source academic database\nElicit.org: AI research assistant for literature reviews"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#citation-management",
+    "href": "sessions/08_research-projects/slides.html#citation-management",
+    "title": "8 — Studying lexis empirically",
+    "section": "Citation management",
+    "text": "Citation management\nZotero (recommended):\n\nFree, open-source reference manager\nBrowser plugin for easy capturing\nAutomatic formatting in e.g. MS Word, Google Docs\nCollaborative features for group projects\n\nAlternatives: Mendeley, EndNote, BibTeX\nBest practices:\n\nStart collecting references early\nAlways check for citation accuracy\nUse consistent citation styles"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#citation-styles",
+    "href": "sessions/08_research-projects/slides.html#citation-styles",
+    "title": "8 — Studying lexis empirically",
+    "section": "Citation styles",
+    "text": "Citation styles\nFor this course, use author-date format:\n\nIn-text: “Corpus analysis reveals…” (Hilpert et al. 2023: 25)\nBibliography: Consistent formatting following one style guide\n\nRecommended guides:\n\nAnglistik LMU Stilblatt\nChicago Author-Date Style\nUnified Style Sheet for Linguistics"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#writing-tools",
+    "href": "sessions/08_research-projects/slides.html#writing-tools",
+    "title": "8 — Studying lexis empirically",
+    "section": "Writing tools",
+    "text": "Writing tools\n\n\nLanguage support\n\ndict.cc: dictionary search\nOzdic.com: collocations\nNetspeak: usage patterns\n\n\nAI-assisted tools\n\nDeepL Write\nGrammarly\nLanguageTool: free alternative to Grammarly\n\n\n\n\n\n\n\nNote\n\n\nUse responsibly - these are aids, not replacements for your thinking!"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#reference-management",
+    "href": "sessions/08_research-projects/slides.html#reference-management",
+    "title": "8 — Studying lexis empirically",
+    "section": "Reference management",
+    "text": "Reference management\nRecommended: Use Zotero for:\n\nCollecting and organising sources\nAutomatic citation formatting\nCollaboration and sharing\nIntegration with word processors\n\nAlternative: Maintain one consistent bibliography file manually"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#individual-task",
+    "href": "sessions/08_research-projects/slides.html#individual-task",
+    "title": "8 — Studying lexis empirically",
+    "section": "Individual task",
+    "text": "Individual task\nChoose a research area and develop your project:\n\nSelect a research area (lexical variation, change, or word-formation).\nFormulate a specific research question and hypotheses.\n\nWhat do you want to study?\nWhat do you expect to find?\nWhy do you expect these results?\n\nConsider what data you would need.\n\nWhich dictionaries or corpora could you use to test your hypotheses?\n\nThink about potential methods of analysis.\n\nHow could you analyse your data to answer your research question?"
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#sharing-and-feedback",
+    "href": "sessions/08_research-projects/slides.html#sharing-and-feedback",
+    "title": "8 — Studying lexis empirically",
+    "section": "Sharing and feedback",
+    "text": "Sharing and feedback\nIn groups:\n\nPresent your research question and hypotheses.\nGet feedback: Is it clear? Interesting? Doable?\nDiscuss data sources and methods.\nSuggest improvements."
+  },
+  {
+    "objectID": "sessions/08_research-projects/slides.html#getting-help",
+    "href": "sessions/08_research-projects/slides.html#getting-help",
+    "title": "8 — Studying lexis empirically",
+    "section": "Getting help",
+    "text": "Getting help\nResources\n\nCourse materials: Slides and readings on using dictionaries and corpora for studying lexicology.\nTerm paper consulting: Have a meeting with me to discuss your project.\nUB courses: Research skills and database access\nWriting centre: Academic writing support\n\n\n\n\n\n\n\nNote\n\n\nStart early, ask questions, and use the resources available!"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html",
+    "href": "sessions/08_research-projects/index.html",
+    "title": "8 — Studying lexis empirically",
+    "section": "",
+    "text": "Open slides version"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#term-paper-consulting",
+    "href": "sessions/08_research-projects/index.html#term-paper-consulting",
+    "title": "8 — Studying lexis empirically",
+    "section": "Term paper consulting",
+    "text": "Term paper consulting\n\n\n\nProcedure\n\nRegister via email\nSend preliminary information at least one day before meeting:\n\nresearch questions and hypotheses\ntheoretical background, data and method\ntable of contents and bibliography\n\n\n\n\n\nDates and times\n\nFri, 13 Feb\n\n10:00\n16:00\n\nThu, 12 Feb\n\n10:00\n16:00\n\n\n\n\n\n\nZoom room\n\nhttps://lmu-munich.zoom.us/j/5385530182?pwd=SE5iZDJGQlZ1V3dpN2Q4NW45WjF5Zz09\nMeeting ID: 538 553 0182\nPasscode: 531379"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#submission",
+    "href": "sessions/08_research-projects/index.html#submission",
+    "title": "8 — Studying lexis empirically",
+    "section": "Submission",
+    "text": "Submission\n\n\n\nRequirements and format\n\n3 ECTS: short paper (≈ 3–5 pages)\n6 ECTS: long paper (≈ 10–12 pages)\n\n9 ECTS: project report (≈ 3 pages)\n\n\n\n\nDeadlines\n\nshort papers: 27 Feb\nlong papers: 20 Mar\n\n\n\n\n\n\n\n\nNote\n\n\n\nFor exact requirements, please check your Studien-/Prüfungsordnung."
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#modulprüfung",
+    "href": "sessions/08_research-projects/index.html#modulprüfung",
+    "title": "8 — Studying lexis empirically",
+    "section": "Modulprüfung",
+    "text": "Modulprüfung\nYou have to be enrolled in both the Seminar and the Übung class this semester.\nAll of the assessment for the Modulprüfung takes place in the Seminar.\n\npresentation: 27 Feb\nlong paper: 20 Mar\n\n\nPresentation\n\nscope: recorded presentation on your term paper project (RQ and hypotheses, related work, data, method, initial results, discussion, bibliography)\nformat: slides + audio (+ video) (e.g. on MS PowerPoint)\nlength: 9–11 minutes"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#goals-for-term-papers",
+    "href": "sessions/08_research-projects/index.html#goals-for-term-papers",
+    "title": "8 — Studying lexis empirically",
+    "section": "Goals for term papers",
+    "text": "Goals for term papers\n\nResearch question with a linguistic focus\nEmpirical study using real data\nUse corpus and/or dictionary data\nContribute new insights to lexicology\n\n\nYour term paper should demonstrate\n\nUnderstanding of theoretical concepts and related research\nAbility to work with linguistic data\nCritical analysis and interpretation skills"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#what-makes-a-good-topic",
+    "href": "sessions/08_research-projects/index.html#what-makes-a-good-topic",
+    "title": "8 — Studying lexis empirically",
+    "section": "What makes a good topic?",
+    "text": "What makes a good topic?\nA good research topic:\n\nis not too general but also not too specific\nhas further relevance for linguistics\nincludes new aspects based on state of the art\nis interesting and doable\nis based on previous knowledge and/or observations\nallows for a number of research questions"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#from-topic-to-title",
+    "href": "sessions/08_research-projects/index.html#from-topic-to-title",
+    "title": "8 — Studying lexis empirically",
+    "section": "From topic to title",
+    "text": "From topic to title\nYour title is the business card of your paper:\n\nMust be informative and explicit\nMust have a reasonable link to the content\nMust not raise expectations that are not met\nOften good to use a subtitle"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#finding-research-questions",
+    "href": "sessions/08_research-projects/index.html#finding-research-questions",
+    "title": "8 — Studying lexis empirically",
+    "section": "Finding research questions",
+    "text": "Finding research questions\nResearch questions can come from:\n\nPrevious literature\n\nsuggestions for future research\nreplicating someone else’s work\nidentifying gaps in knowledge\n\n\n\nObservation\n\nnoticing patterns in language use\npersonal linguistic experiences\n\n\n\nEmpirical findings\n\ndiscoveries within your own data analysis"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#research-questions-key-criteria",
+    "href": "sessions/08_research-projects/index.html#research-questions-key-criteria",
+    "title": "8 — Studying lexis empirically",
+    "section": "Research questions: Key criteria",
+    "text": "Research questions: Key criteria\nAsk yourself:\n\nIs it broad enough to be interesting?\nIs it narrow enough to be doable?\nDoes it have a strong enough linguistic focus?\n\n\n\nWhat do I expect the outcome to be? (hypotheses)\nWhy do I expect these results?\nHow does my question relate to previous work?"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#academic-paper-structure",
+    "href": "sessions/08_research-projects/index.html#academic-paper-structure",
+    "title": "8 — Studying lexis empirically",
+    "section": "Academic paper structure",
+    "text": "Academic paper structure\n\nIntroduction: Contextualise and motivate\nTheoretical Background: Review relevant literature\nData: Describe your dataset\nMethod: Explain your approach\nResults: Present findings clearly\nDiscussion: Interpret and discuss\nConclusion: Summarise and reflect"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#lexical-variation",
+    "href": "sessions/08_research-projects/index.html#lexical-variation",
+    "title": "8 — Studying lexis empirically",
+    "section": "Lexical variation",
+    "text": "Lexical variation\nHow do words vary across:\n\nText types: e.g. academic vs. social media\nRegional varieties: e.g. British vs. American English\n\nTime periods: e.g. historical change\nWord-formation processes: e.g. blending differences between registers\n\n\nRegional variation: autumn vs fall in BrE and AmE\n\n\n\nSemantic variation across text types: problem"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#lexical-change",
+    "href": "sessions/08_research-projects/index.html#lexical-change",
+    "title": "8 — Studying lexis empirically",
+    "section": "Lexical change",
+    "text": "Lexical change\n\nFrequency change: How word usage changes over time\nMeaning change: How word meanings evolve\n\n\nFrequency increase\n\n\nphone in the COHA\n\n\n\n\n\nFrequency decrease\n\n\nwalkman in the COCA\n\n\n\n\n\nCollocates of gay in COHA showing semantic shift"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#word-formation-patterns",
+    "href": "sessions/08_research-projects/index.html#word-formation-patterns",
+    "title": "8 — Studying lexis empirically",
+    "section": "Word-formation patterns",
+    "text": "Word-formation patterns\n\nDistribution of word-formation processes across domains\nProductivity of morphological processes over time\nSemantic constraints on word formation\n\n\nProductivity of word-formation processes over time\n\n\n\nDistribution of shortenings across semantic domains"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#types-of-data",
+    "href": "sessions/08_research-projects/index.html#types-of-data",
+    "title": "8 — Studying lexis empirically",
+    "section": "Types of data",
+    "text": "Types of data\n\nDictionary data\n\nHistorical dictionaries (OED)\nContemporary dictionaries\nLearner dictionaries\n\n\n\nCorpus data\n\nLarge collections of authentic language use\nDiachronic corpora (COHA) vs. synchronic (BNC)\nSpecialised corpora (academic, social media)"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#key-corpus-resources",
+    "href": "sessions/08_research-projects/index.html#key-corpus-resources",
+    "title": "8 — Studying lexis empirically",
+    "section": "Key corpus resources",
+    "text": "Key corpus resources\nSelected examples:\n\nSynchronic corpora\n\nBNC 1994: British National Corpus (100M words)\nBNC 2014: British National Corpus (100M words)\n\n\n\nDiachronic corpora\n\nEEBO: Early English Books Online\nGoogle Books Ngram: Historical frequency data\nCOHA: Corpus of Historical American English (1810s-2000s) (Davies 2010)\nCOCA: Corpus of Contemporary American English (Davies 2008)\nNOW: News on the Web corpus (real-time) (Davies 2016)\nEnglish Trends: huge monitor corpus available on Sketch Engine"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#corpus-analysis-examples",
+    "href": "sessions/08_research-projects/index.html#corpus-analysis-examples",
+    "title": "8 — Studying lexis empirically",
+    "section": "Corpus analysis examples",
+    "text": "Corpus analysis examples\nText type variation: brother vs bro in COCA\nDistribution across genres shows clear patterns:\n\nbrother: more formal registers (academic, news)\nbro: informal contexts (spoken, fiction)\n\n\nCOCA analysis for brother:\n\n\n\nCOCA analysis for bro:"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#finding-references",
+    "href": "sessions/08_research-projects/index.html#finding-references",
+    "title": "8 — Studying lexis empirically",
+    "section": "Finding references",
+    "text": "Finding references\n\n\n\nAcademic databases\n\nLLBA: Linguistics and Language Behavior Abstracts\nMLA: International Bibliography\nJSTOR: Multidisciplinary digital library\nJohn Benjamins e-Platform: Linguistic publications\nScienceDirect: Elsevier journals\nCambridge Core: Cambridge University Press\n\n\n\n\nWeb-based tools\n\nGoogle Scholar: comprehensive academic search engine\nSemantic Scholar: AI-powered research tool with citation analysis\nConnected Papers: visual maps of research connections\nOpenAlex: open source academic database\nElicit.org: AI research assistant for literature reviews\n\n\n\n\n\nStrategies\n\nSchneeballprinzip: Find one good reference, follow its citations\nStart with handbooks for quality overviews\nUse research network platforms (ResearchGate, Academia.edu)"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#citation-management",
+    "href": "sessions/08_research-projects/index.html#citation-management",
+    "title": "8 — Studying lexis empirically",
+    "section": "Citation management",
+    "text": "Citation management\nZotero (recommended):\n\nFree, open-source reference manager\nBrowser plugin for easy capturing\nAutomatic formatting in e.g. MS Word, Google Docs\nCollaborative features for group projects\n\nAlternatives: Mendeley, EndNote, BibTeX\nBest practices:\n\nStart collecting references early\nAlways check for citation accuracy\nUse consistent citation styles"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#citation-styles",
+    "href": "sessions/08_research-projects/index.html#citation-styles",
+    "title": "8 — Studying lexis empirically",
+    "section": "Citation styles",
+    "text": "Citation styles\nFor this course, use author-date format:\n\nIn-text: “Corpus analysis reveals…” (Hilpert et al. 2023: 25)\nBibliography: Consistent formatting following one style guide\n\nRecommended guides:\n\nAnglistik LMU Stilblatt\nChicago Author-Date Style\nUnified Style Sheet for Linguistics"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#writing-tools",
+    "href": "sessions/08_research-projects/index.html#writing-tools",
+    "title": "8 — Studying lexis empirically",
+    "section": "Writing tools",
+    "text": "Writing tools\n\n\n\nLanguage support\n\ndict.cc: dictionary search\nOzdic.com: collocations\nNetspeak: usage patterns\n\n\n\n\nAI-assisted tools\n\nDeepL Write\nGrammarly\nLanguageTool: free alternative to Grammarly\n\n\n\n\n\n\n\nNote\n\n\n\nUse responsibly - these are aids, not replacements for your thinking!"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#reference-management",
+    "href": "sessions/08_research-projects/index.html#reference-management",
+    "title": "8 — Studying lexis empirically",
+    "section": "Reference management",
+    "text": "Reference management\nRecommended: Use Zotero for:\n\nCollecting and organising sources\nAutomatic citation formatting\nCollaboration and sharing\nIntegration with word processors\n\nAlternative: Maintain one consistent bibliography file manually"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#individual-task",
+    "href": "sessions/08_research-projects/index.html#individual-task",
+    "title": "8 — Studying lexis empirically",
+    "section": "Individual task",
+    "text": "Individual task\nChoose a research area and develop your project:\n\nSelect a research area (lexical variation, change, or word-formation).\nFormulate a specific research question and hypotheses.\n\nWhat do you want to study?\nWhat do you expect to find?\nWhy do you expect these results?\n\nConsider what data you would need.\n\nWhich dictionaries or corpora could you use to test your hypotheses?\n\nThink about potential methods of analysis.\n\nHow could you analyse your data to answer your research question?"
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#sharing-and-feedback",
+    "href": "sessions/08_research-projects/index.html#sharing-and-feedback",
+    "title": "8 — Studying lexis empirically",
+    "section": "Sharing and feedback",
+    "text": "Sharing and feedback\nIn groups:\n\nPresent your research question and hypotheses.\nGet feedback: Is it clear? Interesting? Doable?\nDiscuss data sources and methods.\nSuggest improvements."
+  },
+  {
+    "objectID": "sessions/08_research-projects/index.html#getting-help",
+    "href": "sessions/08_research-projects/index.html#getting-help",
+    "title": "8 — Studying lexis empirically",
+    "section": "Getting help",
+    "text": "Getting help\n\nResources\n\nCourse materials: Slides and readings on using dictionaries and corpora for studying lexicology.\nTerm paper consulting: Have a meeting with me to discuss your project.\nUB courses: Research skills and database access\nWriting centre: Academic writing support\n\n\n\n\n\n\n\nNote\n\n\n\nStart early, ask questions, and use the resources available!"
   },
   {
     "objectID": "sessions/02_lexicon/slides.html#utterance-criterion",

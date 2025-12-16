@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Quirin Würschinger, LMU Munich">
+<meta name="dcterms.date" content="2025-12-16">
+
+<title>8 — Studying lexis empirically – Lex252</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-8fd1faf6fd93e4e6d207ae0f9db51d78.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/quarto-auto-dark-mode-1.0.0/auto-dark-mode.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/quarto-exclude-1.5.0/exclude-styles.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../document.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Lex252</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sessions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Sessions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-sessions">    
+        <li>
+    <a class="dropdown-item" href="../../sessions/01_intro/index.html">
+ <span class="dropdown-text">01 — Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../sessions/02_lexicon/index.html">
+ <span class="dropdown-text">02 — The lexicon</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../sessions/03_morphology/index.html">
+ <span class="dropdown-text">03 — Morphology</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../sessions/04_dictionaries/index.html">
+ <span class="dropdown-text">04 — Dictionaries</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../sessions/05_dictionaries-2/index.html">
+ <span class="dropdown-text">05 — Using dictionaries</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../sessions/06_corpora/index.html">
+ <span class="dropdown-text">06 — Corpora</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../sessions/07_semantics/index.html">
+ <span class="dropdown-text">07 — Semantics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../sessions/08_research-projects/index.html">
+ <span class="dropdown-text">08 — Studying lexis empirically</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#assessment" id="toc-assessment" class="nav-link active" data-scroll-target="#assessment">Assessment</a>
+  <ul class="collapse">
+  <li><a href="#term-paper-consulting" id="toc-term-paper-consulting" class="nav-link" data-scroll-target="#term-paper-consulting">Term paper consulting</a>
+  <ul class="collapse">
+  <li><a href="#zoom-room" id="toc-zoom-room" class="nav-link" data-scroll-target="#zoom-room">Zoom room</a></li>
+  </ul></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
+  <li><a href="#modulprüfung" id="toc-modulprüfung" class="nav-link" data-scroll-target="#modulprüfung">Modulprüfung</a>
+  <ul class="collapse">
+  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation">Presentation</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#developing-research-projects" id="toc-developing-research-projects" class="nav-link" data-scroll-target="#developing-research-projects">Developing Research Projects</a>
+  <ul class="collapse">
+  <li><a href="#goals-for-term-papers" id="toc-goals-for-term-papers" class="nav-link" data-scroll-target="#goals-for-term-papers">Goals for term papers</a>
+  <ul class="collapse">
+  <li><a href="#your-term-paper-should-demonstrate" id="toc-your-term-paper-should-demonstrate" class="nav-link" data-scroll-target="#your-term-paper-should-demonstrate">Your term paper should demonstrate</a></li>
+  </ul></li>
+  <li><a href="#what-makes-a-good-topic" id="toc-what-makes-a-good-topic" class="nav-link" data-scroll-target="#what-makes-a-good-topic">What makes a good topic?</a></li>
+  <li><a href="#from-topic-to-title" id="toc-from-topic-to-title" class="nav-link" data-scroll-target="#from-topic-to-title">From topic to title</a></li>
+  <li><a href="#finding-research-questions" id="toc-finding-research-questions" class="nav-link" data-scroll-target="#finding-research-questions">Finding research questions</a></li>
+  <li><a href="#research-questions-key-criteria" id="toc-research-questions-key-criteria" class="nav-link" data-scroll-target="#research-questions-key-criteria">Research questions: Key criteria</a></li>
+  <li><a href="#academic-paper-structure" id="toc-academic-paper-structure" class="nav-link" data-scroll-target="#academic-paper-structure">Academic paper structure</a></li>
+  </ul></li>
+  <li><a href="#research-areas-and-examples" id="toc-research-areas-and-examples" class="nav-link" data-scroll-target="#research-areas-and-examples">Research Areas and Examples</a>
+  <ul class="collapse">
+  <li><a href="#lexical-variation" id="toc-lexical-variation" class="nav-link" data-scroll-target="#lexical-variation">Lexical variation</a>
+  <ul class="collapse">
+  <li><a href="#regional-variation-autumn-vs-fall-in-bre-and-ame" id="toc-regional-variation-autumn-vs-fall-in-bre-and-ame" class="nav-link" data-scroll-target="#regional-variation-autumn-vs-fall-in-bre-and-ame">Regional variation: <em>autumn</em> vs <em>fall</em> in BrE and AmE</a></li>
+  <li><a href="#semantic-variation-across-text-types-problem" id="toc-semantic-variation-across-text-types-problem" class="nav-link" data-scroll-target="#semantic-variation-across-text-types-problem">Semantic variation across text types: <em>problem</em></a></li>
+  </ul></li>
+  <li><a href="#lexical-change" id="toc-lexical-change" class="nav-link" data-scroll-target="#lexical-change">Lexical change</a>
+  <ul class="collapse">
+  <li><a href="#frequency-increase" id="toc-frequency-increase" class="nav-link" data-scroll-target="#frequency-increase">Frequency increase</a></li>
+  <li><a href="#frequency-decrease" id="toc-frequency-decrease" class="nav-link" data-scroll-target="#frequency-decrease">Frequency decrease</a></li>
+  <li><a href="#collocates-of-gay-in-coha-showing-semantic-shift" id="toc-collocates-of-gay-in-coha-showing-semantic-shift" class="nav-link" data-scroll-target="#collocates-of-gay-in-coha-showing-semantic-shift">Collocates of <em>gay</em> in COHA showing semantic shift</a></li>
+  </ul></li>
+  <li><a href="#word-formation-patterns" id="toc-word-formation-patterns" class="nav-link" data-scroll-target="#word-formation-patterns">Word-formation patterns</a>
+  <ul class="collapse">
+  <li><a href="#productivity-of-word-formation-processes-over-time" id="toc-productivity-of-word-formation-processes-over-time" class="nav-link" data-scroll-target="#productivity-of-word-formation-processes-over-time">Productivity of word-formation processes over time</a></li>
+  <li><a href="#distribution-of-shortenings-across-semantic-domains" id="toc-distribution-of-shortenings-across-semantic-domains" class="nav-link" data-scroll-target="#distribution-of-shortenings-across-semantic-domains">Distribution of shortenings across semantic domains</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#data-sources-and-methods" id="toc-data-sources-and-methods" class="nav-link" data-scroll-target="#data-sources-and-methods">Data Sources and Methods</a>
+  <ul class="collapse">
+  <li><a href="#types-of-data" id="toc-types-of-data" class="nav-link" data-scroll-target="#types-of-data">Types of data</a>
+  <ul class="collapse">
+  <li><a href="#dictionary-data" id="toc-dictionary-data" class="nav-link" data-scroll-target="#dictionary-data">Dictionary data</a></li>
+  <li><a href="#corpus-data" id="toc-corpus-data" class="nav-link" data-scroll-target="#corpus-data">Corpus data</a></li>
+  </ul></li>
+  <li><a href="#key-corpus-resources" id="toc-key-corpus-resources" class="nav-link" data-scroll-target="#key-corpus-resources">Key corpus resources</a>
+  <ul class="collapse">
+  <li><a href="#synchronic-corpora" id="toc-synchronic-corpora" class="nav-link" data-scroll-target="#synchronic-corpora">Synchronic corpora</a></li>
+  <li><a href="#diachronic-corpora" id="toc-diachronic-corpora" class="nav-link" data-scroll-target="#diachronic-corpora">Diachronic corpora</a></li>
+  </ul></li>
+  <li><a href="#corpus-analysis-examples" id="toc-corpus-analysis-examples" class="nav-link" data-scroll-target="#corpus-analysis-examples">Corpus analysis examples</a>
+  <ul class="collapse">
+  <li><a href="#coca-analysis-for-brother" id="toc-coca-analysis-for-brother" class="nav-link" data-scroll-target="#coca-analysis-for-brother"><strong>COCA analysis for <em>brother</em></strong>:</a></li>
+  <li><a href="#coca-analysis-for-bro" id="toc-coca-analysis-for-bro" class="nav-link" data-scroll-target="#coca-analysis-for-bro"><strong>COCA analysis for <em>bro</em></strong>:</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#academic-resources-and-tools" id="toc-academic-resources-and-tools" class="nav-link" data-scroll-target="#academic-resources-and-tools">Academic Resources and Tools</a>
+  <ul class="collapse">
+  <li><a href="#finding-references" id="toc-finding-references" class="nav-link" data-scroll-target="#finding-references">Finding references</a>
+  <ul class="collapse">
+  <li><a href="#strategies" id="toc-strategies" class="nav-link" data-scroll-target="#strategies">Strategies</a></li>
+  </ul></li>
+  <li><a href="#citation-management" id="toc-citation-management" class="nav-link" data-scroll-target="#citation-management">Citation management</a></li>
+  <li><a href="#citation-styles" id="toc-citation-styles" class="nav-link" data-scroll-target="#citation-styles">Citation styles</a></li>
+  <li><a href="#writing-tools" id="toc-writing-tools" class="nav-link" data-scroll-target="#writing-tools">Writing tools</a></li>
+  <li><a href="#reference-management" id="toc-reference-management" class="nav-link" data-scroll-target="#reference-management">Reference management</a></li>
+  </ul></li>
+  <li><a href="#workshop-your-research-project" id="toc-workshop-your-research-project" class="nav-link" data-scroll-target="#workshop-your-research-project">Workshop: Your Research Project</a>
+  <ul class="collapse">
+  <li><a href="#individual-task" id="toc-individual-task" class="nav-link" data-scroll-target="#individual-task">Individual task</a></li>
+  <li><a href="#sharing-and-feedback" id="toc-sharing-and-feedback" class="nav-link" data-scroll-target="#sharing-and-feedback">Sharing and feedback</a></li>
+  <li><a href="#getting-help" id="toc-getting-help" class="nav-link" data-scroll-target="#getting-help">Getting help</a>
+  <ul class="collapse">
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#next-week" id="toc-next-week" class="nav-link" data-scroll-target="#next-week">Next week</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">8 — Studying lexis empirically</h1>
+<p class="subtitle lead">Lexicology and Lexicography</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Quirin Würschinger, LMU Munich </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 16, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="slides.html" class="btn btn-primary">Open slides version</a></p>
+<section id="assessment" class="level1">
+<h1>Assessment</h1>
+<section id="term-paper-consulting" class="level2">
+<h2 class="anchored" data-anchor-id="term-paper-consulting">Term paper consulting</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="procedure" class="level3">
+<h3 class="anchored" data-anchor-id="procedure">Procedure</h3>
+<ul>
+<li>Register via <a href="mailto:q.wuerschinger@lmu.de">email</a></li>
+<li>Send preliminary information at least one day before meeting:
+<ul>
+<li>research questions and hypotheses</li>
+<li>theoretical background, data and method</li>
+<li>table of contents and bibliography</li>
+</ul></li>
+</ul>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="dates-and-times" class="level3">
+<h3 class="anchored" data-anchor-id="dates-and-times">Dates and times</h3>
+<ul>
+<li>Fri, 13 Feb
+<ul>
+<li>10:00</li>
+<li>16:00</li>
+</ul></li>
+<li>Thu, 12 Feb
+<ul>
+<li>10:00</li>
+<li>16:00</li>
+</ul></li>
+</ul>
+</section>
+</div>
+</div>
+<section id="zoom-room" class="level3">
+<h3 class="anchored" data-anchor-id="zoom-room">Zoom room</h3>
+<ul>
+<li><a href="https://lmu-munich.zoom.us/j/5385530182?pwd=SE5iZDJGQlZ1V3dpN2Q4NW45WjF5Zz09" class="uri">https://lmu-munich.zoom.us/j/5385530182?pwd=SE5iZDJGQlZ1V3dpN2Q4NW45WjF5Zz09</a></li>
+<li>Meeting ID: 538 553 0182</li>
+<li>Passcode: 531379</li>
+</ul>
+</section>
+</section>
+<section id="submission" class="level2">
+<h2 class="anchored" data-anchor-id="submission">Submission</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="requirements-and-format" class="level3">
+<h3 class="anchored" data-anchor-id="requirements-and-format">Requirements and format</h3>
+<ul>
+<li><strong>3 ECTS</strong>: short paper (≈ 3–5 pages)</li>
+<li><strong>6 ECTS</strong>: long paper (≈ 10–12 pages)<br>
+</li>
+<li><strong>9 ECTS</strong>: project report (≈ 3 pages)</li>
+</ul>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="deadlines" class="level3">
+<h3 class="anchored" data-anchor-id="deadlines">Deadlines</h3>
+<ul>
+<li>short papers: <strong>27 Feb</strong></li>
+<li>long papers: <strong>20 Mar</strong></li>
+</ul>
+</section>
+</div><div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For exact requirements, please check your Studien-/Prüfungsordnung.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="modulprüfung" class="level2">
+<h2 class="anchored" data-anchor-id="modulprüfung">Modulprüfung</h2>
+<p>You have to be enrolled in both the Seminar and the Übung class this semester.</p>
+<p>All of the assessment for the Modulprüfung takes place in the Seminar.</p>
+<ul>
+<li>presentation: <strong>27 Feb</strong></li>
+<li>long paper: <strong>20 Mar</strong></li>
+</ul>
+<section id="presentation" class="level3">
+<h3 class="anchored" data-anchor-id="presentation">Presentation</h3>
+<ul>
+<li><strong>scope</strong>: recorded presentation on your term paper project (RQ and hypotheses, related work, data, method, initial results, discussion, bibliography)</li>
+<li><strong>format</strong>: slides + audio (+ video) (e.g.&nbsp;on MS PowerPoint)</li>
+<li><strong>length</strong>: 9–11 minutes</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="developing-research-projects" class="level1">
+<h1>Developing Research Projects</h1>
+<section id="goals-for-term-papers" class="level2">
+<h2 class="anchored" data-anchor-id="goals-for-term-papers">Goals for term papers</h2>
+<ul>
+<li>Research question with a <strong>linguistic focus</strong></li>
+<li><strong>Empirical study</strong> using real data</li>
+<li>Use <strong>corpus and/or dictionary data</strong></li>
+<li>Contribute new insights to lexicology</li>
+</ul>
+<section id="your-term-paper-should-demonstrate" class="level3">
+<h3 class="anchored" data-anchor-id="your-term-paper-should-demonstrate">Your term paper should demonstrate</h3>
+<ul>
+<li>Understanding of theoretical concepts and related research</li>
+<li>Ability to work with linguistic data</li>
+<li>Critical analysis and interpretation skills</li>
+</ul>
+</section>
+</section>
+<section id="what-makes-a-good-topic" class="level2">
+<h2 class="anchored" data-anchor-id="what-makes-a-good-topic">What makes a good topic?</h2>
+<p>A good research topic:</p>
+<ul>
+<li>is <strong>not too general</strong> but also <strong>not too specific</strong></li>
+<li>has further <strong>relevance for linguistics</strong></li>
+<li>includes <strong>new aspects</strong> based on state of the art</li>
+<li>is <strong>interesting and doable</strong></li>
+<li>is based on <strong>previous knowledge</strong> and/or observations</li>
+<li>allows for a number of <strong>research questions</strong></li>
+</ul>
+</section>
+<section id="from-topic-to-title" class="level2">
+<h2 class="anchored" data-anchor-id="from-topic-to-title">From topic to title</h2>
+<p>Your title is the business card of your paper:</p>
+<ul>
+<li>Must be <strong>informative and explicit</strong></li>
+<li>Must have a <strong>reasonable link</strong> to the content</li>
+<li>Must not <strong>raise expectations</strong> that are not met</li>
+<li>Often good to use a <strong>subtitle</strong></li>
+</ul>
+</section>
+<section id="finding-research-questions" class="level2">
+<h2 class="anchored" data-anchor-id="finding-research-questions">Finding research questions</h2>
+<p>Research questions can come from:</p>
+<ol type="1">
+<li><strong>Previous literature</strong>
+<ul>
+<li>suggestions for future research</li>
+<li>replicating someone else’s work</li>
+<li>identifying gaps in knowledge</li>
+</ul></li>
+</ol>
+<ol start="2" type="1">
+<li><strong>Observation</strong>
+<ul>
+<li>noticing patterns in language use</li>
+<li>personal linguistic experiences</li>
+</ul></li>
+</ol>
+<ol start="3" type="1">
+<li><strong>Empirical findings</strong>
+<ul>
+<li>discoveries within your own data analysis</li>
+</ul></li>
+</ol>
+</section>
+<section id="research-questions-key-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="research-questions-key-criteria">Research questions: Key criteria</h2>
+<p>Ask yourself:</p>
+<ul>
+<li>Is it <strong>broad enough</strong> to be interesting?</li>
+<li>Is it <strong>narrow enough</strong> to be doable?</li>
+<li>Does it have a <strong>strong enough linguistic focus</strong>?</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>What do I <strong>expect</strong> the outcome to be? (<strong>hypotheses</strong>)</li>
+<li>Why do I expect these results?</li>
+<li>How does my question relate to <strong>previous work</strong>?</li>
+</ul>
+</div>
+</section>
+<section id="academic-paper-structure" class="level2">
+<h2 class="anchored" data-anchor-id="academic-paper-structure">Academic paper structure</h2>
+<ul>
+<li><strong>Introduction</strong>: Contextualise and motivate</li>
+<li><strong>Theoretical Background</strong>: Review relevant literature</li>
+<li><strong>Data</strong>: Describe your dataset</li>
+<li><strong>Method</strong>: Explain your approach</li>
+<li><strong>Results</strong>: Present findings clearly</li>
+<li><strong>Discussion</strong>: Interpret and discuss</li>
+<li><strong>Conclusion</strong>: Summarise and reflect</li>
+</ul>
+</section>
+</section>
+<section id="research-areas-and-examples" class="level1">
+<h1>Research Areas and Examples</h1>
+<section id="lexical-variation" class="level2">
+<h2 class="anchored" data-anchor-id="lexical-variation">Lexical variation</h2>
+<p>How do words vary across:</p>
+<ul>
+<li><strong>Text types</strong>: e.g.&nbsp;academic vs.&nbsp;social media</li>
+<li><strong>Regional varieties</strong>: e.g.&nbsp;British vs.&nbsp;American English<br>
+</li>
+<li><strong>Time periods</strong>: e.g.&nbsp;historical change</li>
+<li><strong>Word-formation processes</strong>: e.g.&nbsp;blending differences between registers</li>
+</ul>
+<section id="regional-variation-autumn-vs-fall-in-bre-and-ame" class="level3">
+<h3 class="anchored" data-anchor-id="regional-variation-autumn-vs-fall-in-bre-and-ame">Regional variation: <em>autumn</em> vs <em>fall</em> in BrE and AmE</h3>
+<p><img src="att/autumn_regional_variation.png" class="img-fluid"></p>
+</section>
+<section id="semantic-variation-across-text-types-problem" class="level3">
+<h3 class="anchored" data-anchor-id="semantic-variation-across-text-types-problem">Semantic variation across text types: <em>problem</em></h3>
+<p><img src="att/problem_semantic_variation.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="lexical-change" class="level2">
+<h2 class="anchored" data-anchor-id="lexical-change">Lexical change</h2>
+<ul>
+<li><strong>Frequency change</strong>: How word usage changes over time</li>
+<li><strong>Meaning change</strong>: How word meanings evolve</li>
+</ul>
+<section id="frequency-increase" class="level3">
+<h3 class="anchored" data-anchor-id="frequency-increase">Frequency increase</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><em>phone</em> in the COHA</figcaption>
+<p><img src="att/phone-coha.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="frequency-decrease" class="level3">
+<h3 class="anchored" data-anchor-id="frequency-decrease">Frequency decrease</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><em>walkman</em> in the COCA</figcaption>
+<p><img src="att/walkman-coca.png" height="400" class="figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="collocates-of-gay-in-coha-showing-semantic-shift" class="level3">
+<h3 class="anchored" data-anchor-id="collocates-of-gay-in-coha-showing-semantic-shift">Collocates of <em>gay</em> in COHA showing semantic shift</h3>
+<p><img src="att/gay_meaning_change.png" height="450"></p>
+</section>
+</section>
+<section id="word-formation-patterns" class="level2">
+<h2 class="anchored" data-anchor-id="word-formation-patterns">Word-formation patterns</h2>
+<ul>
+<li><strong>Distribution</strong> of word-formation processes across domains</li>
+<li><strong>Productivity</strong> of morphological processes over time</li>
+<li><strong>Semantic constraints</strong> on word formation</li>
+</ul>
+<section id="productivity-of-word-formation-processes-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="productivity-of-word-formation-processes-over-time">Productivity of word-formation processes over time</h3>
+<p><img src="att/wordformation_productivity.png" class="img-fluid"></p>
+</section>
+<section id="distribution-of-shortenings-across-semantic-domains" class="level3">
+<h3 class="anchored" data-anchor-id="distribution-of-shortenings-across-semantic-domains">Distribution of shortenings across semantic domains</h3>
+<p><img src="att/shortenings_semantic_domains.png" height="400"></p>
+</section>
+</section>
+</section>
+<section id="data-sources-and-methods" class="level1">
+<h1>Data Sources and Methods</h1>
+<section id="types-of-data" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-data">Types of data</h2>
+<section id="dictionary-data" class="level3">
+<h3 class="anchored" data-anchor-id="dictionary-data">Dictionary data</h3>
+<ul>
+<li>Historical dictionaries (OED)</li>
+<li>Contemporary dictionaries</li>
+<li>Learner dictionaries</li>
+</ul>
+</section>
+<section id="corpus-data" class="level3">
+<h3 class="anchored" data-anchor-id="corpus-data">Corpus data</h3>
+<ul>
+<li>Large collections of authentic language use</li>
+<li>Diachronic corpora (COHA) vs.&nbsp;synchronic (BNC)</li>
+<li>Specialised corpora (academic, social media)</li>
+</ul>
+</section>
+</section>
+<section id="key-corpus-resources" class="level2">
+<h2 class="anchored" data-anchor-id="key-corpus-resources">Key corpus resources</h2>
+<p>Selected examples:</p>
+<section id="synchronic-corpora" class="level3">
+<h3 class="anchored" data-anchor-id="synchronic-corpora">Synchronic corpora</h3>
+<ul>
+<li><strong>BNC 1994</strong>: British National Corpus (100M words)</li>
+<li><strong>BNC 2014</strong>: British National Corpus (100M words)</li>
+</ul>
+</section>
+<section id="diachronic-corpora" class="level3">
+<h3 class="anchored" data-anchor-id="diachronic-corpora">Diachronic corpora</h3>
+<ul>
+<li><strong>EEBO</strong>: Early English Books Online</li>
+<li><strong>Google Books Ngram</strong>: Historical frequency data</li>
+<li><strong>COHA</strong>: Corpus of Historical American English (1810s-2000s) <span class="citation" data-cites="Davies2010CorpusHistorical">(<a href="#ref-Davies2010CorpusHistorical" role="doc-biblioref">Davies 2010</a>)</span></li>
+<li><strong>COCA</strong>: Corpus of Contemporary American English <span class="citation" data-cites="Davies2008CorpusContemporary">(<a href="#ref-Davies2008CorpusContemporary" role="doc-biblioref">Davies 2008</a>)</span></li>
+<li><strong>NOW</strong>: News on the Web corpus (real-time) <span class="citation" data-cites="Davies2016CorpusNews">(<a href="#ref-Davies2016CorpusNews" role="doc-biblioref">Davies 2016</a>)</span></li>
+<li><strong><a href="https://www.sketchengine.eu/english-trends/">English Trends</a></strong>: huge monitor corpus available on Sketch Engine</li>
+</ul>
+</section>
+</section>
+<section id="corpus-analysis-examples" class="level2">
+<h2 class="anchored" data-anchor-id="corpus-analysis-examples">Corpus analysis examples</h2>
+<p><strong>Text type variation</strong>: <em>brother</em> vs <em>bro</em> in COCA</p>
+<p>Distribution across genres shows clear patterns:</p>
+<ul>
+<li><em>brother</em>: more formal registers (academic, news)</li>
+<li><em>bro</em>: informal contexts (spoken, fiction)</li>
+</ul>
+<section id="coca-analysis-for-brother" class="level3">
+<h3 class="anchored" data-anchor-id="coca-analysis-for-brother"><strong>COCA analysis for <em>brother</em></strong>:</h3>
+<p><img src="att/brother_coca_analysis.png" class="img-fluid"></p>
+</section>
+<section id="coca-analysis-for-bro" class="level3">
+<h3 class="anchored" data-anchor-id="coca-analysis-for-bro"><strong>COCA analysis for <em>bro</em></strong>:</h3>
+<p><img src="att/bro_coca_analysis.png" class="img-fluid"></p>
+</section>
+</section>
+</section>
+<section id="academic-resources-and-tools" class="level1">
+<h1>Academic Resources and Tools</h1>
+<section id="finding-references" class="level2">
+<h2 class="anchored" data-anchor-id="finding-references">Finding references</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="academic-databases" class="level3">
+<h3 class="anchored" data-anchor-id="academic-databases">Academic databases</h3>
+<ul>
+<li><strong><a href="https://about.proquest.com/en/products-services/llba-set-c/">LLBA</a></strong>: Linguistics and Language Behavior Abstracts</li>
+<li><strong><a href="https://www.mla.org/Publications/MLA-International-Bibliography">MLA</a></strong>: International Bibliography</li>
+<li><strong><a href="https://www.jstor.org/">JSTOR</a></strong>: Multidisciplinary digital library</li>
+<li><strong><a href="https://benjamins.com/">John Benjamins e-Platform</a></strong>: Linguistic publications</li>
+<li><strong><a href="https://www.sciencedirect.com/">ScienceDirect</a></strong>: Elsevier journals</li>
+<li><strong><a href="https://www.cambridge.org/core">Cambridge Core</a></strong>: Cambridge University Press</li>
+</ul>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="web-based-tools" class="level3">
+<h3 class="anchored" data-anchor-id="web-based-tools">Web-based tools</h3>
+<ul>
+<li><a href="https://scholar.google.com/">Google Scholar</a>: comprehensive academic search engine</li>
+<li><a href="https://www.semanticscholar.org/">Semantic Scholar</a>: AI-powered research tool with citation analysis</li>
+<li><a href="https://www.connectedpapers.com/">Connected Papers</a>: visual maps of research connections</li>
+<li><a href="https://openalex.org/">OpenAlex</a>: open source academic database</li>
+<li><a href="https://elicit.org/">Elicit.org</a>: AI research assistant for literature reviews</li>
+</ul>
+</section>
+</div>
+</div>
+<section id="strategies" class="level3">
+<h3 class="anchored" data-anchor-id="strategies">Strategies</h3>
+<ul>
+<li><strong>Schneeballprinzip</strong>: Find one good reference, follow its citations</li>
+<li>Start with handbooks for quality overviews</li>
+<li>Use research network platforms (ResearchGate, Academia.edu)</li>
+</ul>
+</section>
+</section>
+<section id="citation-management" class="level2">
+<h2 class="anchored" data-anchor-id="citation-management">Citation management</h2>
+<p><strong>Zotero (recommended):</strong></p>
+<ul>
+<li>Free, open-source reference manager</li>
+<li>Browser plugin for easy capturing</li>
+<li>Automatic formatting in e.g.&nbsp;MS Word, Google Docs</li>
+<li>Collaborative features for group projects</li>
+</ul>
+<p><strong>Alternatives:</strong> Mendeley, EndNote, BibTeX</p>
+<p><strong>Best practices:</strong></p>
+<ul>
+<li>Start collecting references early</li>
+<li>Always check for citation accuracy</li>
+<li>Use consistent citation styles</li>
+</ul>
+</section>
+<section id="citation-styles" class="level2">
+<h2 class="anchored" data-anchor-id="citation-styles">Citation styles</h2>
+<p>For this course, use <strong>author-date format</strong>:</p>
+<ul>
+<li>In-text: “Corpus analysis reveals…” (Hilpert et al.&nbsp;2023: 25)</li>
+<li>Bibliography: Consistent formatting following one style guide</li>
+</ul>
+<p><strong>Recommended guides:</strong></p>
+<ul>
+<li><a href="https://www.anglistik.uni-muenchen.de/service_downloads/allgemeine_handouts/style_sheet_english_version.pdf">Anglistik LMU Stilblatt</a></li>
+<li><a href="https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html">Chicago Author-Date Style</a></li>
+<li><a href="https://clas.wayne.edu/linguistics/resources/style">Unified Style Sheet for Linguistics</a></li>
+</ul>
+</section>
+<section id="writing-tools" class="level2">
+<h2 class="anchored" data-anchor-id="writing-tools">Writing tools</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="language-support" class="level3">
+<h3 class="anchored" data-anchor-id="language-support">Language support</h3>
+<ul>
+<li><a href="https://www.dict.cc/">dict.cc</a>: dictionary search</li>
+<li><a href="https://ozdic.com/">Ozdic.com</a>: collocations</li>
+<li><a href="https://netspeak.org/">Netspeak</a>: usage patterns</li>
+</ul>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="ai-assisted-tools" class="level3">
+<h3 class="anchored" data-anchor-id="ai-assisted-tools">AI-assisted tools</h3>
+<ul>
+<li><a href="https://www.deepl.com/write">DeepL Write</a></li>
+<li><a href="https://www.grammarly.com/">Grammarly</a></li>
+<li><a href="https://languagetool.org/">LanguageTool</a>: free alternative to Grammarly</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Use responsibly - these are aids, not replacements for your thinking!</em></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section id="reference-management" class="level2">
+<h2 class="anchored" data-anchor-id="reference-management">Reference management</h2>
+<p><strong>Recommended</strong>: Use <a href="https://www.zotero.org/">Zotero</a> for:</p>
+<ul>
+<li>Collecting and organising sources</li>
+<li>Automatic citation formatting</li>
+<li>Collaboration and sharing</li>
+<li>Integration with word processors</li>
+</ul>
+<p><strong>Alternative</strong>: Maintain one consistent bibliography file manually</p>
+</section>
+</section>
+<section id="workshop-your-research-project" class="level1">
+<h1>Workshop: Your Research Project</h1>
+<section id="individual-task" class="level2">
+<h2 class="anchored" data-anchor-id="individual-task">Individual task</h2>
+<p>Choose a research area and develop your project:</p>
+<ol type="1">
+<li>Select a <strong>research area</strong> (lexical variation, change, or word-formation).</li>
+<li>Formulate a <strong>specific research question</strong> and <strong>hypotheses</strong>.
+<ul>
+<li>What do you want to study?</li>
+<li>What do you expect to find?</li>
+<li>Why do you expect these results?</li>
+</ul></li>
+<li>Consider what <strong>data</strong> you would need.
+<ul>
+<li>Which dictionaries or corpora could you use to test your hypotheses?</li>
+</ul></li>
+<li>Think about potential <strong>methods</strong> of analysis.
+<ul>
+<li>How could you analyse your data to answer your research question?</li>
+</ul></li>
+</ol>
+</section>
+<section id="sharing-and-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="sharing-and-feedback">Sharing and feedback</h2>
+<p>In groups:</p>
+<ol type="1">
+<li>Present your research question and hypotheses.</li>
+<li>Get feedback: Is it clear? Interesting? Doable?</li>
+<li>Discuss data sources and methods.</li>
+<li>Suggest improvements.</li>
+</ol>
+</section>
+<section id="getting-help" class="level2">
+<h2 class="anchored" data-anchor-id="getting-help">Getting help</h2>
+<section id="resources" class="level3">
+<h3 class="anchored" data-anchor-id="resources">Resources</h3>
+<ul>
+<li><strong>Course materials</strong>: Slides and readings on using dictionaries and corpora for studying lexicology.</li>
+<li><strong>Term paper consulting</strong>: Have a meeting with me to discuss your project.</li>
+<li><a href="https://www.ub.uni-muenchen.de/kurse/schulungstermine/index.html">UB courses</a>: Research skills and database access</li>
+<li><a href="https://www.en.schreibzentrum.fak13.uni-muenchen.de/index.html">Writing centre</a>: Academic writing support</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Start early, ask questions, and use the resources available!</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<ul>
+<li><strong>Good research projects</strong> combine theoretical insight with empirical analysis.</li>
+<li><strong>Research questions</strong> should be focused, linguistically relevant, and answerable with available data.</li>
+<li><strong>Corpus and dictionary data</strong> offer rich opportunities for lexicological research.</li>
+<li><strong>Academic writing</strong> follows established conventions - learn and apply them consistently.</li>
+<li><strong>Planning and preparation</strong> are key to successful research projects.</li>
+</ul>
+</section>
+<section id="next-week" class="level1">
+<h1>Next week</h1>
+<p><strong>Asynchronous task: Work towards your research project.</strong></p>
+<ul>
+<li>determine a research question and hypotheses</li>
+<li>identify suitable data sources and methods</li>
+<li>check related literature</li>
+</ul>
+<p><strong>Recommended readings:</strong></p>
+<ul>
+<li><p><span class="citation" data-cites="Stefanowitsch2020CorpusLinguistics">Stefanowitsch (<a href="#ref-Stefanowitsch2020CorpusLinguistics" role="doc-biblioref">2020</a>)</span>: designing and operationalising linguistic research projects based on corpus data (esp.&nbsp;Ch. 3)</p></li>
+<li><p><span class="citation" data-cites="Wray2012ProjectsLinguistics">Wray and Bloomer (<a href="#ref-Wray2012ProjectsLinguistics" role="doc-biblioref">2012</a>)</span>: general guidance on planning and conducting research projects in linguistics</p></li>
+</ul>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Davies2008CorpusContemporary" class="csl-entry" role="listitem">
+Davies, Mark. 2008. <span>“The <span class="nocase">Corpus of Contemporary American English (COCA)</span>: 560 Million Words, 1990-Present.”</span> 2008. <a href="https://www.english-corpora.org/coca/">https://www.english-corpora.org/coca/</a>.
+</div>
+<div id="ref-Davies2010CorpusHistorical" class="csl-entry" role="listitem">
+———. 2010. <span>“The <span>Corpus</span> of <span>Historical American English</span> (<span>COHA</span>): 400 Million Words, 1810-2009.”</span> 2010. <a href="https://www.english-corpora.org/coha/">https://www.english-corpora.org/coha/</a>.
+</div>
+<div id="ref-Davies2016CorpusNews" class="csl-entry" role="listitem">
+———. 2016. <span>“Corpus of News on the Web (<span>NOW</span>) - 3+ Billion Words from 20 Countries, Updated Every Day.”</span> 2016. <a href="https://www.english-corpora.org/now/">https://www.english-corpora.org/now/</a>.
+</div>
+<div id="ref-Stefanowitsch2020CorpusLinguistics" class="csl-entry" role="listitem">
+Stefanowitsch, Anatol. 2020. <em>Corpus Linguistics</em>. Berlin: Language Science Press. <a href="https://doi.org/10.5281/zenodo.3735822">https://doi.org/10.5281/zenodo.3735822</a>.
+</div>
+<div id="ref-Wray2012ProjectsLinguistics" class="csl-entry" role="listitem">
+Wray, Alison, and Aileen Bloomer. 2012. <em>Projects in Linguistics and Language Studies</em>. 3rd ed. London: Hodder Education.
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
