@@ -17,7 +17,7 @@ format:
       - ../../slides.css
 format-links: false
 params:
-  show_excl: false
+  show_excl: true
 ---
 
 ::: {.content-hidden when-format="revealjs"}
@@ -181,12 +181,9 @@ Ask yourself:
 - Is it **broad enough** to be interesting?
 - Is it **narrow enough** to be doable?
 - Does it have a **strong enough linguistic focus**?
-
-::: {.fragment}
 - What do I **expect** the outcome to be? (**hypotheses**)
 - Why do I expect these results?
 - How does my question relate to **previous work**?
-:::
 
 
 ## Practice: Improving research questions
@@ -199,58 +196,63 @@ Try to improve these research questions. For each one, identify what's wrong and
 4. "How has the English lexicon changed over the past 500 years?"
 5. "Are compounds and blends different?"
 
+---
 
-### RQ1 "How do people use words differently?" {.excl .slide}
+### RQ1 "How do people use words differently?"
 
+::: {.excl .fragment}
 - **Problems**: Too vague and broad; no specific linguistic focus; no indication of what kind of variation (regional, register, text type); not answerable
 - **How to improve**: Focus on specific variation type (e.g., regional, text type, register); specify lexical items or word-formation processes; add method indication
 - **Improved example**: "How do phrasal verbs (e.g., *look up*, *take off*) differ in frequency and usage patterns across academic vs informal text types in COCA?" or "How does the frequency of intensifiers (*really* vs *very*) vary across spoken vs written registers in the BNC?"
 - **Why better**: Specific variation type, clear lexical items, method/data source indicated
+:::
 
+---
 
-### RQ2 "What is the frequency of the word *Brangelina* in COCA?" {.excl .slide}
+### RQ2 "What is the frequency of the word *Brangelina* in COCA?" 
 
+::: {.excl .fragment}
 - **Problems**: Not a research question - it's a descriptive fact-finding task; no theoretical angle; no research purpose; could be answered with a single number
 - **How to improve**: Add theoretical framework (productivity, semantic domain, word-formation type); ask about patterns, changes, or comparisons; connect to lexicological concepts
 - **Improved example**: "How has the productivity of blending processes changed over time, as evidenced by the rise of words like *Brangelina*, *glitterati*, and other recent blends?" or "What semantic domains do recent blends belong to, and how does this compare to earlier blending patterns?"
 - **Why better**: Addresses theoretical question about word-formation; compares patterns; connects to lexicological concepts
+:::
 
+---
 
-### RQ3 "What's the difference between *exam* and *examination*?" {.excl .slide}
+### RQ3 "What's the difference between *exam* and *examination*?" 
 
-::: {.small}
+::: {.excl .fragment .small}
 - **Problems**: Too simple; lacks theoretical grounding; no method indicated; could be answered with intuition; doesn't connect to course concepts; focuses on single word pair rather than patterns
 - **How to improve**: Connect to Principle of No Synonymy or Distributional Hypothesis; specify method (collocation analysis, word sketches, frequency by text type); frame as theoretical question; expand to lexical field or word-formation process
 - **Improved example**: "Do clippings and their source words (e.g., *exam*/*examination*, *lab*/*laboratory*, *ad*/*advertisement*) show distinct distributional patterns that support the Principle of No Synonymy, as revealed through collocation analysis and word sketch comparison in COCA?" or "How do the collocational profiles of clippings vs their source words differ across text types, and what do these differences reveal about register variation and semantic/pragmatic functions?"
 - **Why better**: Grounded in theoretical framework (Principle of No Synonymy/Distributional Hypothesis); specifies method; addresses lexicological concepts; studies word-formation process (clipping) rather than single pair; allows for pattern identification
 :::
 
+---
 
-### RQ4 "How has the English lexicon changed over the past 500 years?" {.excl .slide}
+### RQ4 "How has the English lexicon changed over the past 500 years?" 
 
+::: {.excl .fragment}
 - **Problems**: Scope impossibly large; not answerable in a term paper; too ambitious; no specific focus; would require massive dataset
 - **How to improve**: Narrow to specific words, word-formation processes, or semantic domains; limit time period; focus on specific register or text type; make it doable
 - **Improved example**: "How has the frequency and usage of modal verbs changed in written English from the 19th to 21st century, as evidenced in COHA?" or "What patterns of semantic change can be observed in specific lexical items (e.g., *gay*, *nice*) from 1800 to 2000 in COHA?"
 - **Why better**: Focused scope (specific lexical items or processes); manageable time period; answerable with available data; connects to course concepts
+:::
 
+---
 
-### RQ5 "Are compounds and blends different?" {.excl .slide}
+### RQ5 "Are compounds and blends different?" 
 
+::: {.excl .fragment}
 - **Problems**: Yes/no question (limits scope); too general; no specific focus on what kind of differences; no method indicated; doesn't leverage course concepts
 - **How to improve**: Specify what kind of differences (distributional, semantic, productivity, behavioural profiles); add method; make it comparative and analytical
 - **Improved example**: "How do the behavioural profiles of compounds (e.g., *blackbird*, *coffee pot*) and blends (e.g., *Brangelina*, *glitterati*) differ in terms of frequency, text type distribution, and semantic domains in COCA?" or "What differences in productivity and distribution patterns exist between morphemic (compounding) and non-morphemic (blending) word-formation processes over time?"
 - **Why better**: Specifies type of differences; includes method; connects to theoretical concepts (morphemic vs non-morphemic, behavioural profiles); analytical rather than yes/no
-
-**General points to emphasize:**
-- Good RQs are specific, focused, and answerable with available data and methods
-- They connect to theoretical frameworks students have learned
-- They indicate both what to study and how to study it
-- They are doable within the scope of a term paper
-- They contribute to lexicological knowledge, not just describe facts
 :::
 
 
-## Academic paper structure
+## Structure of an empirical paper in linguistics
 
 - **Introduction**: Contextualise and motivate
 - **Theoretical Background**: Review relevant literature
@@ -318,8 +320,6 @@ Empirical research in lexicology connects to theoretical questions. Consider the
 
 
 # Research Areas and Examples
-
-Now let's explore concrete research areas you might investigate, along with methods and tools we've covered in previous sessions.
 
 ## Lexical variation
 
