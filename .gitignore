@@ -3,6 +3,9 @@ _site/
 .quarto/
 _freeze/
 
+# macOS
+.DS_Store
+
 /.quarto/
 
 **/*.quarto_ipynb
