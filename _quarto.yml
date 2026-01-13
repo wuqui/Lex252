@@ -29,6 +29,8 @@ website:
             href: sessions/07_semantics/07_semantics.qmd
           - text: "08 — Studying lexis empirically"
             href: sessions/08_research-projects/08_research-projects.qmd
+          - text: "09 — Lexical innovation"
+            href: sessions/09_lexical-innovation/09_lexical-innovation.qmd
   page-navigation: true
   search: true
 
