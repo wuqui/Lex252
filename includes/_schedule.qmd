@@ -10,6 +10,6 @@
 |    8 | 16 Dec. | [Studying lexis empirically]({{< meta linkprefix >}}sessions/08_research-projects/08_research-projects.qmd)                   |
 |      |         |                                                                                                                               |
 |    9 | 13 Jan. | [Lexical innovation: new words and meanings]({{< meta linkprefix >}}sessions/09_lexical-innovation/09_lexical-innovation.qmd) |
-|   10 | 20 Jan. | Lexical change: historical and recent changes in the English lexicon                                                          |
+|   10 | 20 Jan. | [Language change: historical and recent changes in the English lexicon]({{< meta linkprefix >}}sessions/10_language-change/10_language-change.qmd) |
 |   11 | 27 Jan. | Lexical variation: text types & speakers and communities                                                                      |
 |   12 |  3 Feb. | Review & discussion                                                                                                           |

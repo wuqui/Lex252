@@ -31,6 +31,8 @@ website:
             href: sessions/08_research-projects/08_research-projects.qmd
           - text: "09 — Lexical innovation"
             href: sessions/09_lexical-innovation/09_lexical-innovation.qmd
+          - text: "10 — Language change"
+            href: sessions/10_language-change/10_language-change.qmd
   page-navigation: true
   search: true
 
