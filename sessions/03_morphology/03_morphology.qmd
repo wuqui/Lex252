@@ -1,5 +1,5 @@
 ---
-title: "3 — Morphology and word-formation"
+title: "Morphology and word-formation"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-11-04

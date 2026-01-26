@@ -1,5 +1,5 @@
 ---
-title: "2 — The lexicon"
+title: "The lexicon"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-10-28

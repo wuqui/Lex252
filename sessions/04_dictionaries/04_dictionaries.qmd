@@ -1,5 +1,5 @@
 ---
-title: "4 — Dictionaries: fundamentals, examples, use cases"
+title: "Dictionaries: fundamentals, examples, use cases"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-11-11

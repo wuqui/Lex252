@@ -1,5 +1,5 @@
 ---
-title: "8 — Studying lexis empirically"
+title: "Studying lexis empirically"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-12-16

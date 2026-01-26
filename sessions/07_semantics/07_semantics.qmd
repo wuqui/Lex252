@@ -1,5 +1,5 @@
 ---
-title: "7 — Semantics: studying meanings and functions of words"
+title: "Semantics: studying meanings and functions of words"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-12-09

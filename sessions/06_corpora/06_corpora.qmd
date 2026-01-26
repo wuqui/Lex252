@@ -1,5 +1,5 @@
 ---
-title: "6 — Corpora: theories, methods, and applications"
+title: "Corpora: theories, methods, and applications"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-11-25

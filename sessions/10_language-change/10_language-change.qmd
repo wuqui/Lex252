@@ -1,13 +1,10 @@
 ---
-title: "10 — Language change: historical and recent changes in the English lexicon"
+title: "Language change: historical and recent changes in the English lexicon"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2026-01-20
 metadata:
   linkprefix: ../../
-filters:
-  - ../../filters/strip-revealjs-html.lua
-  - exclude
 format:
   html:
     output-file: index.html
@@ -45,21 +42,18 @@ params:
   - 793: sacking of Monastery of Lindisfarne
 - **878**: establishment of the 'Danelaw'
 
----
 
-### Germanic conquest
+### Germanic conquest {.slide}
 
 ![Germanic tribes settling in Britain](att/germanic_conquest.png){width="500"}
 
----
 
-### Viking raids and the Danelaw
+### Viking raids and the Danelaw {.slide}
 
 ![Viking raids and the Danelaw](att/viking_raids.png){width="500"}
 
----
 
-#### Linguistic characteristics
+#### Linguistic characteristics {.slide}
 
 - **Word order**: Relatively free.
 - **Vocabulary**: Germanic with some Latin (e.g., *wine*, *cheese*, *street*) and Scandinavian (e.g. *take*, *die*, *sky*) loanwords.
@@ -87,10 +81,8 @@ ___
 
 3. **English**: peasants, lower clergy, most people in cities
 
-___
 
-
-### Middle English linguistic characteristics
+### Middle English linguistic characteristics {.slide}
 
 - **synthetic → analytic shift**: breakdown of inflection due to weakening of final syllables ('Entsilbenabschwächung': /a/, /u/, /o/ > /ə/ > ∅)
 - **loss of grammatical gender** (c. 1200): article *the* adopts natural gender
@@ -99,10 +91,8 @@ ___
 - **mass borrowing**: war/military, administration/law, religion/church, fashion, social life → mixed Germanic/Romance vocabulary
 - huge number of **borrowings** in the field of war/military, administration/law, religion/church, fashion, social life etc. (+ influence on word formation and stress patterns) → end of Middle English: mixed Germanic/Romance vocabulary
 
-___
 
 ## Early Modern English (ca. 1500–1800)
-
 
 #### External history
 
@@ -113,10 +103,8 @@ ___
 - **1611**: King James Bible (first official English translation of the Bible for the English church)
 - growing literacy → literacy spread down the social ranks, and from the male to the female sex (→ new reading public → translations needed)
 
-___
 
-
-### Key linguistic developments
+### Key linguistic developments {.slide}
 
 - **Great Vowel Shift** (c. 1400/1500): Raising and diphthongisation of long vowels, increasing the discrepancy between spelling and pronunciation.
 - **Inflectional system**: The weakening and loss of inflections continues.
@@ -126,21 +114,16 @@ ___
 - **Learned vocabulary**: Influx of loanwords from Latin and Greek ('hard words').
 
 
-___
-
 ## Late Modern English (ca. 1800–1945)
 
-
-#### External history
+### External history
 
 - **from 1700s**: British Imperialism → expansion of English all over the world (Australia, India etc.)
 - **1700s/1800s**: normativism and prescriptivism (1755: Samuel Johnson *A Dictionary of the English Language* → first comprehensive dictionary of the English language)
 - **1900s**: scientific and industrial revolutions → development of technical registers
 
-___
 
-
-#### Linguistic characteristics
+### Linguistic characteristics {.slide}
 
 - ***do*-periphrasis**: Becomes obligatory in interrogatives and sentential negation (from 1700).
 - **Grammaticalisation**: Beginning of the progressive aspect and present perfect (from 1800).
@@ -148,12 +131,10 @@ ___
 - **American English**: An emergent standard develops.
 - **Global borrowing**: Vocabulary expands with words from languages around the world, leading to **vocabulary expansion and global influence**.
 
-___
 
 ## Present-Day English (since ca. 1945)
 
-
-#### External history
+### External history
 
 - **New media**: The rise of telephone, TV, internet etc. accelerates change.
 - **American English**: Increasing importance and influence after WWI and WWII.
@@ -165,21 +146,17 @@ ___
 
 ## A unique mixture
 
-
 "Der heutige englische Wortschatz ist eine einzigartige Mischung von germanischen und romanischen Elementen; in Bezug auf das Vokabular stellt also das Englische einen Sonderfall unter den europäischen Sprachen dar." (Leisi 2008: 41)
 
 
 ## Most frequent words in English
 
-
 **Analysis based on COCA:**
 
 ![Top frequent words showing mixed origins](att/most_frequent_words.png){width="400"}
 
----
 
-### Languages of origin in high-frequency words
-
+### Languages of origin in high-frequency words {.slide .smaller}
 
 **Scandinavian (Old Norse):**
 
@@ -194,10 +171,8 @@ ___
 
 - *just*, *to use*, *number*, *state*, *question*, *form*
 
-___
 
 ## Germanic core vocabulary
-
 
 Elements surviving from Old English form the basic vocabulary:
 
@@ -210,33 +185,29 @@ Elements surviving from Old English form the basic vocabulary:
     - OE *drincan* → *drink*
     - OE *libban* → *live*
 
-___
 
 ## Latin influence
 
-
-#### Continental borrowings
+**Continental borrowings**
 
 - *street*, *wine*, *kitchen*, *mile*, *butter*, *cheese*
 
-#### After settlement (post-450)
+**After settlement (post-450)**
 
 - *port*, *mount*, *-chester*
 
-#### Christianisation
+**Christianisation**
 
 - *martyr*, *clerk*, *creed*, *nun*, *verse*
 
-#### Renaissance and later
+**Renaissance and later**
 
 - *humanist*, *abdomen*, *skeleton*
 
-___
 
 ## Old Norse influence
 
-
-#### Viking raids and the Danelaw
+### Viking raids and the Danelaw
 
 - Genetic resemblance between Old Norse and Old English
 - Strong influence on **basic vocabulary**
@@ -250,7 +221,6 @@ ___
 
 **Consequence**: English drifts apart from West Germanic languages
 
-___
 
 ## French superstrate influence {.small}
 
@@ -268,8 +238,6 @@ ___
 
 - **Fashion**: *diamond*, *dress*, *fashion*, *fur*, *garment*, *gown*, *jewel*, *lace*, *robe*, *satin*, *wardrobe*
 
-___
-
 
 ## Loans from other languages
 
@@ -283,17 +251,13 @@ ___
 
 - **Persian**: *azure*, *chess*
 
-___
 
-### Global loan words
-
+### Global loan words {.slide}
 
 ![](att/loan_words_world_map.png){width="700"}
 
-___
 
 ## Recent European loans and dialectal terms
-
 
 ![Recent borrowings from European languages](att/recent_european_loans.png){width="450"}
 
@@ -330,10 +294,7 @@ ___
 ::::
 
 
-___
-
-### Partial synonymy
-
+### Partial synonymy {.slide}
 
 #### Register differences
 
@@ -348,25 +309,21 @@ ___
 
 **Result**: Greater linguistic choice through partial synonyms
 
-___
 
-### "Hard words"
-
+### "Hard words" {.slide}
 
 Often etymologically unrelated → difficult to learn:
 
-#### Examples of confusion (malapropisms)
+**Examples of confusion (malapropisms)**
 
 - *illiterate* vs *illegitimate*
 - *missile* vs *missive*  
 - *epitaph* vs *epithet*
 
-___
 
 ## Change in usage frequency
 
-
-### Lexical innovation
+### Lexical innovation {.slide}
 
 #### The interplay of cultural and linguistic innovation
 
@@ -380,10 +337,8 @@ ___
 - **Semantic neologisms**: *hotspot*, *Querdenker*, *social distancing*, *spreader*
 :::
 
-___
 
-### Lexical attrition
-
+### Lexical attrition {.slide}
 
 **Word loss through decreased frequency:**
 
@@ -409,15 +364,13 @@ Common patterns: narrowing, broadening, amelioration, pejoration
 
 ![Frequency decline of *whilst* in the COHA.](att/coha_whilst.png)
 
----
 
-### *awfully*
+### *awfully* {.slide}
 
 ![Frequency of *awfully* in the COHA.](att/coha_awfully.png)
 
----
 
-### *chairperson*
+### *chairperson* {.slide}
 
 ![Frequency of *chairperson* in the COHA.](att/coha_chairperson.png)
 
@@ -439,25 +392,22 @@ Common patterns: narrowing, broadening, amelioration, pejoration
 
 ![List view for query `admin*` in COCA](att/list-view-example.png){width="600"}
 
-___
 
-### Chart view
+### Chart view {.slide}
 
 ![Chart view for query `decaf` in NOW corpus](att/chart-view-example.png){width="600"}
 
-___
 
 ## Query syntax
 
-### Lexemes (all forms of a word)
+### Lexemes (all forms of a word) {.slide}
 
 ![Query `ADMIN` (all forms) in NOW corpus](att/lexeme-query-example.png){width="600"}
 
 Use capital letters to search for all forms: `WALK` finds *walk*, *walks*, *walked*, *walking*
 
-___
 
-### Word classes
+### Word classes {.slide}
 
 ![Query `run_nn` (noun) in NOW corpus](att/word-classes-example.png){width="600"}
 
@@ -467,14 +417,11 @@ ___
 
 Common tags: `_nn` (noun), `_vv` (verb), `_jj` (adjective), `_rb` (adverb)
 
-___
-
-### Wildcards
+**Wildcards**
 
 - `*` matches any characters: `admin*` → *admin*, *administration*, *administrator*
 - `?` matches single character: `wom?n` → *woman*, *women*
 
-___
 
 ## Useful features
 
@@ -482,7 +429,6 @@ ___
 - **Chart**: Visualize frequency over time or across categories
 - **KWIC**: View concordance lines (keyword in context)
 - **Collocates**: Find words that frequently co-occur
-
 
 
 # Practice: language change in progress
@@ -511,8 +457,8 @@ Collect your findings in this PowerPoint presentation: <https://1drv.ms/p/c/9a2e
 ## Group findings
 
 1. What are your results?
-2. What might explain these results?
-3. How can we interpret them linguistically?
+2. How can we interpret them linguistically?
+3. What might explain these changes?
 
 
 ## Discussion

@@ -1,15 +1,14 @@
-|      |    Date | Topic                                                                                                                         |
-| ---: | ------: | ----------------------------------------------------------------------------------------------------------------------------- |
-|    1 | 21 Oct. | [Organisation and introduction]({{< meta linkprefix >}}sessions/01_intro/01_intro.qmd)                                        |
-|    2 | 28 Oct. | [Words, dictionaries, and the lexicon]({{< meta linkprefix >}}sessions/02_lexicon/02_lexicon.qmd)                             |
-|    3 |  4 Nov. | [Morphology and word-formation]({{< meta linkprefix >}}sessions/03_morphology/03_morphology.qmd)                              |
-|    4 | 11 Nov. | [Dictionaries: fundamentals, examples, use cases]({{< meta linkprefix >}}sessions/04_dictionaries/04_dictionaries.qmd)        |
-|    5 | 18 Nov. | [Using dictionaries and analysing data]({{< meta linkprefix >}}sessions/05_dictionaries-2/05_dictionaries-2.qmd)              |
-|    6 | 25 Nov. | [Corpora: theories, methods, and applications]({{< meta linkprefix >}}sessions/06_corpora/06_corpora.qmd)                     |
-|    7 |  9 Dec. | [Semantics: studying meanings and functions of words]({{< meta linkprefix >}}sessions/07_semantics/07_semantics.qmd)          |
-|    8 | 16 Dec. | [Studying lexis empirically]({{< meta linkprefix >}}sessions/08_research-projects/08_research-projects.qmd)                   |
-|      |         |                                                                                                                               |
-|    9 | 13 Jan. | [Lexical innovation: new words and meanings]({{< meta linkprefix >}}sessions/09_lexical-innovation/09_lexical-innovation.qmd) |
-|   10 | 20 Jan. | [Language change: historical and recent changes in the English lexicon]({{< meta linkprefix >}}sessions/10_language-change/10_language-change.qmd) |
-|   11 | 27 Jan. | Lexical variation: text types & speakers and communities                                                                      |
-|   12 |  3 Feb. | Review & discussion                                                                                                           |
+|    Date | Topic                                                                                                                         |
+| ------: | ----------------------------------------------------------------------------------------------------------------------------- |
+| 21 Oct. | [Organisation and introduction]({{< meta linkprefix >}}sessions/01_intro/01_intro.qmd) |
+| 28 Oct. | [Words, dictionaries, and the lexicon]({{< meta linkprefix >}}sessions/02_lexicon/02_lexicon.qmd) |
+|  4 Nov. | [Morphology and word-formation]({{< meta linkprefix >}}sessions/03_morphology/03_morphology.qmd) |
+| 11 Nov. | [Dictionaries: fundamentals, examples, use cases]({{< meta linkprefix >}}sessions/04_dictionaries/04_dictionaries.qmd) |
+| 18 Nov. | [Using dictionaries and analysing data]({{< meta linkprefix >}}sessions/05_dictionaries-2/05_dictionaries-2.qmd) |
+| 25 Nov. | [Corpora: theories, methods, and applications]({{< meta linkprefix >}}sessions/06_corpora/06_corpora.qmd) |
+|  9 Dec. | [Semantics: studying meanings and functions of words]({{< meta linkprefix >}}sessions/07_semantics/07_semantics.qmd) |
+| 16 Dec. | [Studying lexis empirically]({{< meta linkprefix >}}sessions/08_research-projects/08_research-projects.qmd) |
+|         | |
+| 13 Jan. | [Lexical innovation: new words and meanings]({{< meta linkprefix >}}sessions/09_lexical-innovation/09_lexical-innovation.qmd) |
+| 20 Jan. | [Language change: historical and recent changes in the English lexicon]({{< meta linkprefix >}}sessions/10_language-change/10_language-change.qmd) |
+|  3 Feb. | [Lexical variation]({{< meta linkprefix >}}sessions/11_lexical-variation/11_lexical-variation.qmd) |

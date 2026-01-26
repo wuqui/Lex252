@@ -1,5 +1,5 @@
 ---
-title: "9 — Lexical innovation: new words and meanings"
+title: "Lexical innovation: new words and meanings"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2026-01-13

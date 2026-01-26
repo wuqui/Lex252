@@ -1,5 +1,5 @@
 ---
-title: "1 — Organisation and introduction"
+title: "Organisation and introduction"
 subtitle: "Lexicology and Lexicography — [Course Website](../../index.qmd)"
 author: "Dr. Quirin Würschinger, LMU Munich"
 date: 2025-10-21

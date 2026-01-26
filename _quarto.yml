@@ -13,26 +13,28 @@ website:
     left:
       - text: "Sessions"
         menu:
-          - text: "01 — Introduction"
+          - text: "Introduction"
             href: sessions/01_intro/01_intro.qmd
-          - text: "02 — The lexicon"
+          - text: "The lexicon"
             href: sessions/02_lexicon/02_lexicon.qmd
-          - text: "03 — Morphology"
+          - text: "Morphology"
             href: sessions/03_morphology/03_morphology.qmd
-          - text: "04 — Dictionaries"
+          - text: "Dictionaries"
             href: sessions/04_dictionaries/04_dictionaries.qmd
-          - text: "05 — Using dictionaries"
+          - text: "Using dictionaries"
             href: sessions/05_dictionaries-2/05_dictionaries-2.qmd
-          - text: "06 — Corpora"
+          - text: "Corpora"
             href: sessions/06_corpora/06_corpora.qmd
-          - text: "07 — Semantics"
+          - text: "Semantics"
             href: sessions/07_semantics/07_semantics.qmd
-          - text: "08 — Studying lexis empirically"
+          - text: "Studying lexis empirically"
             href: sessions/08_research-projects/08_research-projects.qmd
-          - text: "09 — Lexical innovation"
+          - text: "Lexical innovation"
             href: sessions/09_lexical-innovation/09_lexical-innovation.qmd
-          - text: "10 — Language change"
+          - text: "Language change"
             href: sessions/10_language-change/10_language-change.qmd
+          - text: "Lexical variation"
+            href: sessions/11_lexical-variation/11_lexical-variation.qmd
   page-navigation: true
   search: true
 
@@ -53,11 +55,14 @@ format:
       button: false
       shortcut: "`"
       theme: "light"
+    filters:
+      - filters/slide-break.lua
 
 filters:
   - auto-dark
   - exclude
   - filters/fullcite.lua
+  - filters/strip-revealjs-html.lua
 
 revealjs-plugins:
   - pointer
