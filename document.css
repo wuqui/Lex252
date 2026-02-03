@@ -18,3 +18,30 @@ figure > p,
 .figure { display: flex; flex-direction: column; align-items: center; }
 .figure > p.caption { order: -1; text-align: center; margin-bottom: 0.35em; }
 
+/* Simple button styling for session links */
+:root {
+  --btn-primary-bg: #3B82F6;
+  --btn-secondary-bg: #94A3B8;
+  --btn-text: #0B1220;
+  --btn-padding: 0.4em 0.9em;
+  --btn-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --btn-primary-bg: #60A5FA;
+    --btn-secondary-bg: #64748B;
+    --btn-text: #0B1220;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--btn-padding);
+  border-radius: var(--btn-radius);
+  text-decoration: none;
+  color: var(--btn-text);
+}
+
+.btn-primary { background: var(--btn-primary-bg); }
+.btn-secondary { background: var(--btn-secondary-bg); }
