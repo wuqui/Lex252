@@ -22,7 +22,7 @@ params:
 ---
 
 ::: {.content-hidden when-format="revealjs"}
-[Open slides version](slides.html){.btn .btn-primary}
+[open slides](slides.html){.btn .btn-primary} [download slides (pdf)](slides.pdf){.btn .btn-secondary}
 :::
 
 # @Hilpert2015Grammatical: study questions

@@ -7,12 +7,19 @@ set -e  # Exit on error
 # Get the script directory (should be quarto/scripts/)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+TARGET_DIR="${1:-$PROJECT_ROOT/_site}"
 
 echo "=== Generating PDFs from RevealJS slides ==="
 echo "Project root: $PROJECT_ROOT"
+echo "Target dir: $TARGET_DIR"
 
-# Find all slides.html files in the _site directory
-cd "$PROJECT_ROOT/_site"
+# Find all slides.html files in the target directory
+if [ ! -d "$TARGET_DIR" ]; then
+    echo "Target directory not found: $TARGET_DIR"
+    exit 1
+fi
+
+cd "$TARGET_DIR"
 
 # Counter for processed files
 count=0
