@@ -25,7 +25,7 @@ params:
 [open slides](slides.html){.btn .btn-primary} [download slides (pdf)](slides.pdf){.btn .btn-secondary}
 :::
 
-# @Hilpert2015Grammatical: study questions
+# @Hilpert2015Grammatical: Study questions
 
 ## 1. What are the three main types of grammatical change that Hilpert discusses, and can you give an example of each?
 
