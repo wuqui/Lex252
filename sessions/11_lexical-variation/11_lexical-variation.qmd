@@ -27,6 +27,48 @@ params:
 
 # @Hilpert2015Grammatical: study questions
 
+## 1. What are the three main types of grammatical change that Hilpert discusses, and can you give an example of each?
+
+. . .
+
+- **Grammaticalization**: New grammatical option emerges 
+    - e.g., passive progressive *the meat is being cooked* alongside older *the meat is cooking*
+- **Frequency change**: Statistical shifts without new forms 
+    - e.g., *I haven't the time* declining vs. *I don't have the time* increasing
+- **Style change**: Genre-confined fluctuations 
+    - e.g., *shall* retracting to academic metalinguistic contexts: *as we shall see*
+
+
+## 2. How do corpus design choices (balanced vs. single text type) affect what kinds of changes we can observe, and what are the advantages and limitations of each approach?
+
+. . .
+
+- **Balanced corpora** (Brown family): Compare across varieties/time; distinguish divergence, convergence, Americanization; but smaller per genre
+- **Single text type** (Time corpus): More data within one genre; reveals genre-specific trends; but cannot separate grammatical change from style change
+- Discrepancies between corpus types may reflect genuine genre-specific change or sampling error
+
+
+## 3. How do lexical change (Session 10) and grammatical change (Hilpert) differ in how they manifest in corpus data, and how might the methods used to study each type differ?
+
+. . .
+
+- Grammatical change often manifests in **shifting relative frequencies** of co-existing forms, not just appearance/disappearance
+- Point-wise comparison shows *that* change happened; corpus analysis reveals *how*, *when*, and *why*
+- Methods: Multivariate regression analyzing conditioning factors (phonological, syntactic, social) and how their influence changes
+- Systemic patterns (e.g., "great complement shift") require analyzing multiple phenomena together
+    - e.g. *I dislike to do this* → *I dislike doing this*
+
+
+## 4. How does understanding synchronic variation help us interpret diachronic change patterns, and what can corpus methods reveal about the relationship between variation and change?
+
+. . .
+
+- **Variation as seed of change**: Diachronic change proceeds through synchronic variation 
+    - e.g., *writeth/hath/doth* vs. *writes/has/does* coexisting before *-s* wins
+- **Conditioning factors shift**: Corpus methods reveal which factors govern variation at each stage (e.g., cross-gender effect only significant in period 3)
+- **Entrenchment**: High-frequency forms resist change longest (*doth*, *hath* persisting)
+- **Diagnostic**: Significant time × factor interactions signal genuine grammatical change
+
 
 # Dimensions of variation
 
