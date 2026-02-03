@@ -1,19 +1,16 @@
 #!/usr/bin/env bash
-# Post-render script to generate PDF versions of RevealJS slides using decktape
-# This script is called automatically by Quarto after rendering the website
+# Generate PDF versions of RevealJS slides using decktape
+# Only regenerates PDFs when slides.html content has changed
 
-set -e  # Exit on error
+set -e
 
-# Get the script directory (should be quarto/scripts/)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 TARGET_DIR="${1:-$PROJECT_ROOT/_site}"
 
 echo "=== Generating PDFs from RevealJS slides ==="
-echo "Project root: $PROJECT_ROOT"
 echo "Target dir: $TARGET_DIR"
 
-# Find all slides.html files in the target directory
 if [ ! -d "$TARGET_DIR" ]; then
     echo "Target directory not found: $TARGET_DIR"
     exit 1
@@ -21,22 +18,31 @@ fi
 
 cd "$TARGET_DIR"
 
-# Counter for processed files
 count=0
+skipped=0
 
-# Process each slides.html file
 for html_file in sessions/*/slides.html; do
-    # Check if file exists (in case no matches)
     [ -e "$html_file" ] || continue
 
-    # Get directory and base name
     dir=$(dirname "$html_file")
     pdf_file="$dir/slides.pdf"
+    hash_file="$dir/.slides.html.sha256"
+
+    # Calculate current hash of slides.html
+    current_hash=$(sha256sum "$html_file" | cut -d' ' -f1)
+
+    # Check if PDF exists and hash matches (no changes)
+    if [ -f "$pdf_file" ] && [ -f "$hash_file" ]; then
+        stored_hash=$(cat "$hash_file")
+        if [ "$current_hash" = "$stored_hash" ]; then
+            echo "⊘ Skipping: $pdf_file (unchanged)"
+            skipped=$((skipped + 1))
+            continue
+        fi
+    fi
 
     echo "Processing: $html_file -> $pdf_file"
 
-    # Use npx to run decktape (downloads if needed)
-    # --chrome-arg flags: compatibility with various environments
     npx -y decktape reveal \
         --chrome-arg=--no-sandbox \
         --chrome-arg=--disable-setuid-sandbox \
@@ -44,6 +50,8 @@ for html_file in sessions/*/slides.html; do
         "$pdf_file"
 
     if [ $? -eq 0 ]; then
+        # Store hash for next comparison
+        echo "$current_hash" > "$hash_file"
         echo "✓ Generated: $pdf_file"
         count=$((count + 1))
     else
@@ -51,8 +59,4 @@ for html_file in sessions/*/slides.html; do
     fi
 done
 
-if [ $count -eq 0 ]; then
-    echo "No slides.html files found to process."
-else
-    echo "=== PDF generation complete: $count file(s) processed ==="
-fi
+echo "=== PDF generation complete: $count generated, $skipped unchanged ==="
