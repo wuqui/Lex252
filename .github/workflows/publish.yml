@@ -19,16 +19,8 @@ jobs:
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
       - name: Render Quarto Project
         run: quarto render
-
-      - name: Generate PDFs from slides
-        run: ./scripts/generate-pdfs.sh
 
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
