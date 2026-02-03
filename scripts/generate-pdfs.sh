@@ -37,11 +37,9 @@ for html_file in sessions/*/slides.html; do
 
     # Use npx to run decktape (downloads if needed)
     # --chrome-arg flags: compatibility with various environments
-    # --fragments: capture all fragment states in the slides
     npx -y decktape reveal \
         --chrome-arg=--no-sandbox \
         --chrome-arg=--disable-setuid-sandbox \
-        --fragments \
         "$html_file" \
         "$pdf_file"
 
