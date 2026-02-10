@@ -1,4 +1,4 @@
-# Term paper consulting {.slide}
+# Term paper consulting {.slide .unlisted}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -30,7 +30,7 @@
 - Meeting ID: `538 553 0182`
 - Passcode: `531379`
 
-# Requirements {.slide}
+# Requirements {.slide .unlisted}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -54,7 +54,7 @@
 For exact requirements, please check your Studien-/Prüfungsordnung.
 ::::
 
-## Modulprüfung {#modulpruefung .slide .small}
+## Modulprüfung {#modulpruefung .slide .small .unlisted}
 
 You have to be enrolled in **both the Seminar and the Übung** class this semester.
 

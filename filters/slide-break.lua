@@ -1,4 +1,4 @@
--- Filter to create slide breaks for headings with .slide class
+-- Filter to create slide breaks for headings with .slide class.
 -- When a heading has .slide class at H3+ level, it creates a new top-level slide
 -- by promoting the heading to H2 level.
 --
@@ -6,6 +6,10 @@
 -- H2 headings appear as top-level blocks rather than nested within parent sections.
 --
 -- Works with slide-level: 2 where H2 headings create slides.
+--
+-- Note: for included content wrapped in ::: {.shift-headings}, the .slide
+-- promotion is handled directly by shift-headings.lua (which runs first).
+-- This filter handles .slide headings in non-included content.
 
 PANDOC_VERSION:must_be_at_least {2,8}
 
