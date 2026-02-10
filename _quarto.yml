@@ -63,6 +63,7 @@ filters:
   - exclude
   - filters/fullcite.lua
   - filters/strip-revealjs-html.lua
+  - filters/shift-headings.lua
 
 revealjs-plugins:
   - pointer

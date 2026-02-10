@@ -1,0 +1,70 @@
+# Term paper consulting {.slide}
+
+::: {.columns}
+:::: {.column width="50%"}
+## Procedure
+
+- Register via [email](mailto:q.wuerschinger@lmu.de)
+- Send preliminary information at least one day before meeting:
+    - research questions and hypotheses
+    - theoretical background, data and method
+    - table of contents and bibliography
+::::
+:::: {.column width="50%"}
+## Dates and times
+
+- Thu, 12 Feb
+    - 10:00
+    - 16:00
+- Fri, 13 Feb
+    - 10:00
+    - 16:00
+::::
+:::
+
+---
+
+## Place: Zoom room
+
+- <https://lmu-munich.zoom.us/j/5385530182?pwd=SE5iZDJGQlZ1V3dpN2Q4NW45WjF5Zz09>
+- Meeting ID: `538 553 0182`
+- Passcode: `531379`
+
+# Requirements {.slide}
+
+::: {.columns}
+:::: {.column width="50%"}
+## Format
+
+- **3 ECTS**: short paper (≈ 3–5 pages)
+- **6 ECTS**: long paper (≈ 10–12 pages)
+- **9 ECTS**: [Modulprüfung](#modulpruefung)
+::::
+:::: {.column width="50%"}
+## Deadlines
+
+- short papers: **27 Feb**
+- long papers: **20 Mar**
+::::
+
+**Submission** via email as PDF to [q.wuerschinger@lmu.de](mailto:q.wuerschinger@lmu.de).
+:::
+
+:::: {.callout-note}
+For exact requirements, please check your Studien-/Prüfungsordnung.
+::::
+
+## Modulprüfung {#modulpruefung .slide .small}
+
+You have to be enrolled in **both the Seminar and the Übung** class this semester.
+
+All of the assessment for the Modulprüfung takes place in the **Seminar**.
+
+- presentation: **27 Feb**
+- long paper: **20 Mar**
+
+### Presentation
+
+- **scope**: recorded presentation on your term paper project (RQ and hypotheses, related work, data, method, initial results, discussion, bibliography)
+- **format**: slides + audio (+ video) (e.g. on MS PowerPoint)
+- **length**: 9–11 minutes

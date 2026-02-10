@@ -7,12 +7,21 @@ nocite: |
   @*
 ---
 
-## Schedule
+# Schedule
 
+::: {.shift-headings by=1}
 {{< include includes/_schedule.qmd >}}
+:::
 
 
-## Course bibliography
+# Assessment
+
+::: {.shift-headings by=1}
+{{< include includes/_assessment.qmd >}}
+:::
+
+
+# Course bibliography
 
 ::: {#refs}
 :::
